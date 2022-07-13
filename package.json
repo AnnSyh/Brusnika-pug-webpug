@@ -1,0 +1,23 @@
+{
+  "name": "brusnika",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnSyh/Brusnika.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnSyh/Brusnika/issues"
+  },
+  "homepage": "https://github.com/AnnSyh/Brusnika#readme",
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}

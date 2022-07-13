@@ -1,0 +1,36 @@
+.page-popup {
+    font-size: 14px;
+    font-weight: 400;
+
+    max-width: 430px;
+    padding: 55px 45px;
+}
+
+.page-popup-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.page-popup-title--small {
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.page-popup .form-label {
+    color:#666666;
+}
+
+.page-popup .form .link {
+    text-decoration: underline;
+}
+
+.page-popup .tabs-heading .tab-heading-item {
+    min-width: auto;
+    white-space: nowrap;
+}

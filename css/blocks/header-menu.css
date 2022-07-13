@@ -1,0 +1,116 @@
+.header-logo {
+    max-width: 201px;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu__list {
+    display: flex;
+}
+.header-toolbar-item span {
+    position: absolute;
+    right: -5px;
+    top: -1px;
+    display: block;
+    width: 7px;
+    height: 7px;
+    background-color: #e81717;
+    border-radius: 50%;
+}
+
+.header-menu__item {
+    margin: 10px;
+    align-items: center;
+    display: flex;
+}
+.header-menu__item-catalog,
+.header-menu__item_search {
+    display: flex;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+}
+.header-menu__item_search.open-search:before,
+.header-menu__item_search:before {
+    content: "";
+    margin-right: 10px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+}
+.header-menu__item_search:before {
+    background: url(../../svg/search.svg) no-repeat center center;
+}
+.header-menu__item_search.open-search:before {
+    background: url(../../svg/close.svg) no-repeat center center;
+}
+.header-menu__item-catalog:before {
+    content: "";
+    margin-right: 10px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../../svg/burger.svg) no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+}
+.header-menu__item-basket:before {
+    content: "";
+    margin-right: 10px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../../svg/basket.svg) no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+}
+
+.header-menu__item a {
+    text-decoration: none;
+    color: #1D1D1D;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+}
+
+.catalog-menu-submenu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.page-header {
+    padding: 15px 0;
+    border-bottom: 1px solid transparent;
+}
+
+@media screen and (max-width: 980px){
+
+    .header-menu__item.favorites,
+    .header-menu__item.enter,
+    .header-menu__item_search span {
+        display: none;
+    }
+
+    .header-menu__item.blog,
+    .header-menu__item.shops,
+    .header-menu__item-dropdown,
+    .header-menu__item-catalog span {
+        display: none;
+    }
+
+}
+
+
+.page-heading .page-heading-description {
+    margin: 67px auto 0 auto;
+}

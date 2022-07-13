@@ -1,0 +1,4 @@
+#AuthType Basic
+#AuthName "Password Protected Area"
+#AuthUserFile /var/www/atlant.ruformat.ru/data/atlant_htpasswd
+#Require valid-user

@@ -1,0 +1,4 @@
+.mobile-filter label,
+.mobile-filter input { /* label */
+    font-weight: lighter;
+}

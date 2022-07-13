@@ -1,0 +1,12 @@
+/*-----------правки ------------------*/
+
+/* Страница бренда */
+
+.page-section--brand,
+.page-section--section {
+    padding: 55px 0;
+}
+.breadcrumbs--brand,
+.breadcrumbs--section {
+  margin-bottom: 4px;
+}
