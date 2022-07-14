@@ -1,0 +1,43 @@
+#catalog-items
+    .catalog-items.row(data-params='')
+
+        - for (var x = 0; x < 4; x++)
+            .col-6.col-lg-3
+                .catalog-item.w2
+                    .catalog-item-photo-holder
+                        img.cover(src='../dummy/catalog/c1.jpg')
+                    .catalog-item-title
+                        | КОМБИНЕЗОН
+                        .catalog-item-color +2 цвета
+                    .catalog-item-price
+                        b 11 300 РУБ.
+                    a.catalog-item-link(href='#')
+                    button.catalog-item-like(type='button')  
+
+        .col-12
+            .catalog-item-text
+                .catalog-item-text__title
+                    | ПЛАТЬЯ И КОМБИНЕЗОНЫ НОВОГО
+                    | СЕЗОНА ДЛЯ ЖЕНЩИН
+                .catalog-item-text__lid
+                    | Подготовьте свой гардероб к первым дням весны с нашей новой подборкой,
+                    | в которую вошли новые модели актуальных оттенков
+                a.link-more(href='#') Подробнее
+
+        - for (var x = 0; x < 8; x++)
+            .col-6.col-lg-3
+                .catalog-item.w2
+                    .catalog-item-photo-holder
+                        img.cover(src='../dummy/catalog/c1.jpg')
+                    .catalog-item-title
+                        | КОМБИНЕЗОН
+                        .catalog-item-color +2 цвета
+                    .catalog-item-price
+                        b 11 300 РУБ.
+                    a.catalog-item-link(href='#')
+                    button.catalog-item-like(type='button')    
+
+    .page-toolbar
+        .load-more-holder
+            a.btn.btn--black_border.btn--medium.load-more(href='section.html' data-container='#catalog-items' data-itemsselector='#catalog-items .catalog-items') ПОКАЗАТЬ ЕЩЕ 20
+
