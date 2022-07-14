@@ -26,7 +26,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/project.responsive-ann.css">
     <style>
        body {
-  background-color: red;
+  border: 1px solid red;
 }/*# sourceMappingURL=style.css.map */
     </style>
   </head>
@@ -45,9 +45,199 @@
           </div>
         </body>
       </html>
-      <header> 
-        <div class="header"> 
-          <h1>Шапка сайта</h1>
+      <header class="page-header" itemscope="" itemtype="http://schema.org/WPHeader">
+        <div class="page-inner page-inner--w1 desktop">
+          <div class="header-menu">
+            <div class="header-menu__left">
+              <ul class="header-menu__list">
+                <li class="header-menu__item"><a class="header-menu__item-catalog catalog-open" href="#"><span>Каталог</span></a></li>
+                <li class="header-menu__item header-menu__item-dropdown catalog-dropdown"><a href="#">Покупателям</a></li>
+                <li class="header-menu__item shops"><a href="#">Магазины</a></li>
+                <li class="header-menu__item blog"><a href="#">Блог</a></li>
+              </ul>
+            </div>
+            <div class="header-menu__center"><a class="header-logo" href="#"><img src="../svg/header_logo.svg" alt=""></a></div>
+            <div class="header-menu__right">
+              <ul class="header-menu__list">
+                <li class="header-menu__item header-menu__item_search catalog-search-open"><a href="#"><span>Поиск</span></a></li>
+                <li class="header-menu__item enter"><a class="header-toolbar-item" href="#auth-form" data-popup="{&quot;type&quot;:&quot;inline&quot;}">Вход</a></li>
+                <li class="header-menu__item favorites"><a href="favorites.html">Избранное</a></li>
+                <li class="header-menu__item basket"><a class="header-toolbar-item" href="basket.html"><img src="../svg/basket.svg"><span></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-buyer-menu" id="catalog-buyer-menu">
+          <div class="page-inner" style1="position: relative;">
+            <div class="menu-sections">
+              <ul class="buyer-menu__list">
+                <li><a class="buyer-menu__link active" href="#cm1">Подарочные сертификаты</a></li>
+                <li><a class="buyer-menu__link" href="#cm2">Доставка и оплата</a></li>
+                <li><a class="buyer-menu__link" href="#cm2">Гарантия и возврат</a></li>
+                <li><a class="buyer-menu__link" href="#cm2">Система лояльности</a></li>
+                <li><a class="buyer-menu__link" href="#cm2">Руководство по покупке</a></li>
+                <li><a class="buyer-menu__link" href="#cm2">Работа у нас</a></li>
+              </ul>
+              <ul class="buyer-menu__list">
+                <li><a class="buyer-menu__link" href="#cm2">Telegram</a></li>
+                <li><a class="buyer-menu__link" href="#cm2">Вконтакте</a></li>
+                <li><a class="buyer-menu__link" href="tel:+88003508991">8 800 350 89 91</a></li>
+                <li><a class="buyer-menu__link" href="tel:+79296081332">+7 929 608 13 32</a></li>
+              </ul>
+              <ul class="buyer-menu__list">
+                <li><a class="buyer-menu__link" href="#cm2">О компании</a></li>
+                <li><a class="buyer-menu__link" href="#cm2">Контакты</a></li>
+                <li><a class="buyer-menu__link" href="#cm2">Магазины</a></li>
+                <li><a class="buyer-menu__link" href="#cm2">Мои заказы</a></li>
+                <li><a class="buyer-menu__link" href="#cm2">Личный кабинет</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-search-menu" id="catalog-search-menu">
+          <div class="page-inner page-inner--w2">
+            <div class="menu-sections">
+              <!-- search-menu-->
+              <div class="menu-sections__inner page-inner--w2">
+                <form action="search.html">
+                  <div class="search-form">
+                    <input class="search-form__input" type="text" placeholder="">
+                    <button class="search-form__clear" type="button"></button>
+                    <button class="search-form__submit btn btn--black btn--medium" type="submit">Найти</button>
+                  </div>
+                  <div class="search-results">
+                    <div class="search-history">
+                      <ul class="search-history__list">
+                        <li class="search-history__title">ИСТОРИЯ ПОИСКА</li>
+                        <li><a class="search-history__link" href="#">Платье</a></li>
+                        <li><a class="search-history__link" href="#">Жабо</a></li>
+                        <li><a class="search-history__link" href="#">Юбка</a></li>
+                      </ul>
+                      <ul>
+                        <li class="search-history__title">Часто ищут</li>
+                        <li><a class="search-history__link" href="#">Боди</a></li>
+                        <li><a class="search-history__link" href="#">Платье</a></li>
+                        <li><a class="search-history__link" href="#">Топы</a></li>
+                        <li><a class="search-history__link" href="#">Футболки</a></li>
+                      </ul>
+                    </div>
+                    <div class="search-products">
+                      <!-- search-products-->
+                      <div class="row search-products__catalog-items">
+                        <div class="col-md-3 col-sm-6">
+                          <div class="catalog-item w1">
+                            <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c1.jpg"></div>
+                            <div class="catalog-item-title">ПЛАТЬЕ</div>
+                            <div class="catalog-item-price">15 900 Р</div><a class="catalog-item-link" href="#"></a>
+                            <button class="catalog-item-like" type="button"> </button>
+                          </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <div class="catalog-item w1">
+                            <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c2.jpg"></div>
+                            <div class="catalog-item-title">ПЛАТЬЕ</div>
+                            <div class="catalog-item-price">15 900 Р</div><a class="catalog-item-link" href="#"></a>
+                            <button class="catalog-item-like" type="button"> </button>
+                          </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <div class="catalog-item w1">
+                            <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c3.jpg"></div>
+                            <div class="catalog-item-title">ПЛАТЬЕ</div>
+                            <div class="catalog-item-price">15 900 Р</div><a class="catalog-item-link" href="#"></a>
+                            <button class="catalog-item-like" type="button"> </button>
+                          </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <div class="catalog-item w1">
+                            <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c4.jpg"></div>
+                            <div class="catalog-item-title">ПЛАТЬЕ</div>
+                            <div class="catalog-item-price">15 900 Р</div><a class="catalog-item-link" href="#"></a>
+                            <button class="catalog-item-like" type="button"> </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- /search-menu-->
+            </div>
+          </div>
+        </div>
+        <div class="catalog-menu catalog-menu_visible1" id="catalog-menu">
+          <div class="page-inner page-inner--w2">
+            <div class="catalog-menu-sections">
+              <div class="catalog-open catalog-menu__close"></div>
+              <ul class="catalog-menu__list accordion accordion_catalog-menu">
+                <li><a class="catalog-menu__link submenu active" href="#cm1">NEW</a></li>
+                <li><a class="catalog-menu__link" href="#cm2">LOOKBOOK</a></li>
+                <li class="accordion-item">
+                  <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm3">SS`22</a></div>
+                  <ul class="accordion-item-content">
+                    <li><a class="catalog-menu__sublink" href="#">Summer City Wibe</a></li>
+                    <li><a class="catalog-menu__sublink" href="#">East way</a></li>
+                    <li><a class="catalog-menu__sublink" href="#">With Nature</a></li>
+                    <li><a class="catalog-menu__sublink" href="#">Textile</a></li>
+                    <li><a class="catalog-menu__sublink" href="#">Prod Dress</a></li>
+                  </ul>
+                </li>
+                <li><a class="catalog-menu__link" href="#cm4">OFFICE</a></li>
+                <li><a class="catalog-menu__link" href="#cm5">ЛЕН</a></li>
+                <li><a class="catalog-menu__link" href="#cm7">EVENING</a></li>
+                <li><a class="catalog-menu__link" href="#cm8">Верхняя одежда</a></li>
+                <li><a class="catalog-menu__link" href="#cm6">СПОРТ</a></li>
+                <li class="accordion-item">
+                  <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm9">ПЛАТЬЯ | КОМБИНЕЗОНЫ</a></div>
+                  <ul class="accordion-item-content">
+                    <li><a class="catalog-menu__sublink" href="#">Эко-кожа</a></li>
+                    <li><a class="catalog-menu__sublink" href="#">Вискоза / Хлопок</a></li>
+                    <li><a class="catalog-menu__sublink" href="#">Шерсть / Кашемир</a></li>
+                    <li><a class="catalog-menu__sublink" href="#">Комбинезоны</a></li>
+                    <li><a class="catalog-menu__sublink" href="#">Лен</a></li>
+                  </ul>
+                </li>
+                <li><a class="catalog-menu__link" href="#cm10">джемперы</a></li>
+                <li><a class="catalog-menu__link" href="#cm11">КАРДИГАНЫ</a></li>
+                <li><a class="catalog-menu__link" href="#cm12">ЖАКЕТЫ</a></li>
+                <li><a class="catalog-menu__link" href="#cm13">ЖИЛЕТЫ</a></li>
+                <li><a class="catalog-menu__link" href="#cm14">РУБАШКИ</a></li>
+                <li><a class="catalog-menu__link" href="#cm15">ВОДОЛАЗКИ</a></li>
+                <li><a class="catalog-menu__link" href="#cm16">БРЮКИ</a></li>
+                <li class="accordion-item">
+                  <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm17">ЮБКИ</a></div>
+                  <ul class="accordion-item-content">
+                    <li><a class="catalog-menu__sublink" href="#">Плиссирвоанные</a></li>
+                    <li><a class="catalog-menu__sublink" href="#">Прямые</a></li>
+                    <li><a class="catalog-menu__sublink" href="#">Юбка-брюки</a></li>
+                    <li><a class="catalog-menu__sublink" href="#">Трапецевидные</a></li>
+                  </ul>
+                </li>
+                <li><a class="catalog-menu__link" href="#cm18">ШОРТЫ</a></li>
+                <li><a class="catalog-menu__link" href="#cm19">ФУТБОЛКИ</a></li>
+                <li><a class="catalog-menu__link" href="#cm19">ТОПЫ</a></li>
+                <li><a class="catalog-menu__link" href="#cm19">БОДИ</a></li>
+                <li><a class="catalog-menu__link" href="#cm19">КОМПЛЕКТЫ</a></li>
+                <li><a class="catalog-menu__link" href="#cm19">АКСЕССУАРЫ</a></li>
+                <li><a class="catalog-menu__link" href="#cm19">ДЕТИ</a></li>
+                <li><a class="catalog-menu__link" href="#cm19">THE MOUNTAINS</a></li>
+                <li><a class="catalog-menu__link" href="#cm19">КАШЕМИР</a></li>
+                <li><a class="catalog-menu__link catalog-menu__separator catalog-menu__link-red" href="#cm19">SALE</a></li>
+                <!-- <li class="catalog-menu__separator"></li>-->
+                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Мои заказы</a></li>
+                <li><a class="catalog-menu__link catalog-menu__link_lowercase mb-20px" href="#cm19">Личный кабинет</a></li>
+                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">О компании</a></li>
+                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Магазины</a></li>
+                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Подарочные сертификаты</a></li>
+                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Доставка и оплата</a></li>
+                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Гарантия и возврат</a></li>
+                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Система лояльности</a></li>
+                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Блог</a></li>
+                <li class="catalog-menu-footer"><a href="favorites.html">Избранное (2)</a><a href="#">Вход</a></li>
+                <li> </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </header>
       <h1>Pug - node template engine</h1>
@@ -127,7 +317,7 @@
                   <button class="btn btn--black btn--medium w100 max-w100" type="submit">ВЫСЛАТЬ КОД</button>
                 </div>
                 <div class="form-row">
-                  <div class="form-group-inner"><a class="link link--black_simple" href="#"><span>Я забыл пароль </span></a><a class="link link--black_simple" href="#"><span>Регистрация</span></a></div>
+                  <div class="form-group-inner"><a class="link link--black_simple" href="#"><span>Я забыл пароль  </span></a><a class="link link--black_simple" href="#"><span>Регистрация</span></a></div>
                 </div>
               </div>
               <div class="tab-content-item auth-tab active form-tab-content-item" id="auth-form_email">
@@ -147,7 +337,7 @@
                   <button class="btn btn--black btn--medium w100 max-w100" type="submit">Войти</button>
                 </div>
                 <div class="form-row">
-                  <div class="form-group-inner"><a class="link link--black_simple" href="#"><span>Я забыл пароль </span></a><a class="link link--black_simple" href="#"><span>Регистрация</span></a></div>
+                  <div class="form-group-inner"><a class="link link--black_simple" href="#"><span>Я забыл пароль  </span></a><a class="link link--black_simple" href="#"><span>Регистрация</span></a></div>
                 </div>
               </div>
             </div>
@@ -166,54 +356,54 @@
             <input class="form-item form-item--text" id="login_form_login" type="text" name="login">
           </div>
           <div class="form-row">
-            <label class="form-label" for="login_form_password">&Pcy;&acy;&rcy;&ocy;&lcy;&softcy;</label>
+            <label class="form-label" for="login_form_password">Пароль</label>
             <input class="form-item form-item--text" id="login_form_password" type="password" name="password">
           </div>
           <div class="form-row">
-            <button class="btn btn--black btn--medium btn--fullwidth" type="submit">&Vcy;&ocy;&jcy;&tcy;&icy;</button>
+            <button class="btn btn--black btn--medium btn--fullwidth" type="submit">Войти</button>
           </div>
         </div>
       </form>
       <div class="page-popup-buttons">
         <div class="row">
-          <div class="col-6"><a class="link link--black" href="#restore-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><b>&YAcy; &zcy;&acy;&bcy;&ycy;&lcy; &pcy;&acy;&rcy;&ocy;&lcy;&softcy;</b></a></div>
-          <div class="col-6"><a class="link link--black" href="register.html"><b>&Rcy;&iecy;&gcy;&icy;&scy;&tcy;&rcy;&acy;&tscy;&icy;&yacy;</b></a></div>
+          <div class="col-6"><a class="link link--black" href="#restore-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><b>Я забыл пароль</b></a></div>
+          <div class="col-6"><a class="link link--black" href="register.html"><b>Регистрация</b></a></div>
         </div>
       </div>
     </div>
     <div class="page-popup mfp-hide" id="restore-popup">
       <div class="page-popup-heading">
-        <div class="page-popup-heading-title h1 uppercase"><b>&Scy;&Mcy;&IEcy;&Ncy;&Icy;&Tcy;&IEcy; &scy;&vcy;&ocy;&jcy; &pcy;&acy;&rcy;&ocy;&lcy;&softcy;</b></div>
-        <div class="page-popup-heading-description">&Vcy;&vcy;&iecy;&dcy;&icy;&tcy;&iecy; &acy;&dcy;&rcy;&iecy;&scy; &ecy;&lcy;&iecy;&kcy;&tcy;&rcy;&ocy;&ncy;&ncy;&ocy;&jcy; &pcy;&ocy;&chcy;&tcy;&ycy;, &icy; &mcy;&ycy; &ncy;&acy;&pcy;&rcy;&acy;&vcy;&icy;&mcy; &pcy;&icy;&scy;&softcy;&mcy;&ocy; &scy; &icy;&ncy;&scy;&tcy;&rcy;&ucy;&kcy;&tscy;&icy;&iecy;&jcy;.</div>
+        <div class="page-popup-heading-title h1 uppercase"><b>СМЕНИТЕ свой пароль</b></div>
+        <div class="page-popup-heading-description">Введите адрес электронной почты, и мы направим письмо с инструкцией.</div>
       </div>
       <form class="form">
         <div class="form-fields">
           <div class="form-row">
-            <label class="form-label" for="restore_restore_email">&Acy;&dcy;&rcy;&iecy;&scy; &ecy;&lcy;&iecy;&kcy;&tcy;&rcy;&ocy;&ncy;&ncy;&ocy;&jcy; &pcy;&ocy;&chcy;&tcy;&ycy;</label>
+            <label class="form-label" for="restore_restore_email">Адрес электронной почты</label>
             <input class="form-item form-item--text" id="restore_restore_email" type="password" name="restore_email">
           </div>
           <div class="form-row">
-            <button class="btn btn--black btn--medium btn--fullwidth" type="submit">&Vcy;&ocy;&jcy;&tcy;&icy;</button>
+            <button class="btn btn--black btn--medium btn--fullwidth" type="submit">Войти</button>
           </div>
         </div>
       </form>
     </div>
     <div class="page-popup mfp-hide" id="callback-popup">
       <div class="page-popup-heading">
-        <div class="page-popup-heading-title h1 uppercase"><b>&Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &zcy;&vcy;&ocy;&ncy;&ocy;&kcy;</b></div>
-        <div class="page-popup-heading-description">&Pcy;&ocy;&scy;&tcy;&acy;&rcy;&acy;&iecy;&mcy;&scy;&yacy; &pcy;&iecy;&rcy;&iecy;&zcy;&vcy;&ocy;&ncy;&icy;&tcy;&softcy; &vcy; &tcy;&iecy;&chcy;&iecy;&ncy;&icy;&iecy; 15 &mcy;&icy;&ncy;&ucy;&tcy; &vcy; &bcy;&ucy;&dcy;&ncy;&icy;.</div>
+        <div class="page-popup-heading-title h1 uppercase"><b>Заказать звонок</b></div>
+        <div class="page-popup-heading-description">Постараемся перезвонить в течение 15 минут в будни.</div>
       </div>
       <form class="form">
         <div class="form-fields">
           <div class="form-row">
-            <label class="form-label" for="callback_form_phone">&Tcy;&iecy;&lcy;&iecy;&fcy;&ocy;&ncy;</label>
+            <label class="form-label" for="callback_form_phone">Телефон</label>
             <input class="form-item form-item--text" id="callback_form_phone" type="text" name="phone" data-validation="{&quot;message&quot;: &quot;Укажите номер телефона&quot;, &quot;pattern&quot;: &quot;phoneRU&quot;, &quot;mask&quot;: &quot;+7 (999) 999-99-99&quot;}" required="required" placeholder="+7 (__) ___-__-__">
           </div>
           <div class="form-row">
-            <button class="btn btn--black btn--medium btn--fullwidth" type="submit">&Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy;</button>
+            <button class="btn btn--black btn--medium btn--fullwidth" type="submit">Заказать</button>
             <div class="form-policy">
               <div class="page-text">
-                <div class="small">&Ncy;&acy;&zhcy;&icy;&mcy;&acy;&yacy; &kcy;&ncy;&ocy;&pcy;&kcy;&ucy; &vcy;&ycy; &dcy;&acy;&iecy;&tcy;&iecy; &scy;&ocy;&gcy;&lcy;&acy;&scy;&icy;&iecy; &ncy;&acy; &ocy;&bcy;&rcy;&acy;&bcy;&ocy;&tcy;&kcy;&ucy; <a href="#">&pcy;&iecy;&rcy;&scy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ycy;&khcy; &dcy;&acy;&ncy;&ncy;&ycy;&khcy;</a></div>
+                <div class="small">Нажимая кнопку вы даете согласие на обработку <a href="#">персональных данных</a></div>
               </div>
             </div>
           </div>
@@ -222,28 +412,28 @@
     </div>
     <div class="page-popup mfp-hide" id="mail-popup">
       <div class="page-popup-heading">
-        <div class="page-popup-heading-title h1 uppercase"><b>&Zcy;&acy;&dcy;&acy;&tcy;&softcy; &vcy;&ocy;&pcy;&rcy;&ocy;&scy;</b></div>
-        <div class="page-popup-heading-description">&Pcy;&ocy;&scy;&tcy;&acy;&rcy;&acy;&iecy;&mcy;&scy;&yacy; &pcy;&iecy;&rcy;&iecy;&zcy;&vcy;&ocy;&ncy;&icy;&tcy;&softcy; &vcy; &tcy;&iecy;&chcy;&iecy;&ncy;&icy;&iecy; 15 &mcy;&icy;&ncy;&ucy;&tcy; &vcy; &bcy;&ucy;&dcy;&ncy;&icy;.</div>
+        <div class="page-popup-heading-title h1 uppercase"><b>Задать вопрос</b></div>
+        <div class="page-popup-heading-description">Постараемся перезвонить в течение 15 минут в будни.</div>
       </div>
       <form class="form">
         <div class="form-fields">
           <div class="form-row">
-            <label class="form-label" for="mail_form_name">&Vcy;&ocy;&pcy;&rcy;&ocy;&scy;</label>
+            <label class="form-label" for="mail_form_name">Вопрос</label>
             <textarea class="form-item form-item--textarea" id="mail_form_name" placeholder=""></textarea>
           </div>
           <div class="form-row">
-            <label class="form-label" for="mail_form_name">&Icy;&mcy;&yacy;</label>
+            <label class="form-label" for="mail_form_name">Имя</label>
             <input class="form-item form-item--text" id="mail_form_name" type="text" name="name" placeholder="Например, Иван">
           </div>
           <div class="form-row">
-            <label class="form-label" for="mail_form_phone">&Tcy;&iecy;&lcy;&iecy;&fcy;&ocy;&ncy;</label>
+            <label class="form-label" for="mail_form_phone">Телефон</label>
             <input class="form-item form-item--text" id="mail_form_phone" type="text" name="phone" data-validation="{&quot;message&quot;: &quot;Укажите номер телефона&quot;, &quot;pattern&quot;: &quot;phoneRU&quot;, &quot;mask&quot;: &quot;+7 (999) 999-99-99&quot;}" required="required" placeholder="+7 (__) ___-__-__">
           </div>
           <div class="form-row">
-            <button class="btn btn--black btn--medium btn--fullwidth" type="submit">&Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy;</button>
+            <button class="btn btn--black btn--medium btn--fullwidth" type="submit">Заказать</button>
             <div class="form-policy">
               <div class="page-text">
-                <div class="small">&Ncy;&acy;&zhcy;&icy;&mcy;&acy;&yacy; &kcy;&ncy;&ocy;&pcy;&kcy;&ucy; &vcy;&ycy; &dcy;&acy;&iecy;&tcy;&iecy; &scy;&ocy;&gcy;&lcy;&acy;&scy;&icy;&iecy; &ncy;&acy; &ocy;&bcy;&rcy;&acy;&bcy;&ocy;&tcy;&kcy;&ucy; <a href="#">&pcy;&iecy;&rcy;&scy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ycy;&khcy; &dcy;&acy;&ncy;&ncy;&ycy;&khcy;</a></div>
+                <div class="small">Нажимая кнопку вы даете согласие на обработку <a href="#">персональных данных</a></div>
               </div>
             </div>
           </div>
@@ -252,7 +442,7 @@
     </div>
     <div class="page-popup buy mfp-hide" id="buy-popup">
       <div class="page-popup-heading">
-        <div class="page-popup-heading-title h1 uppercase">&Tcy;&Ocy;&Vcy;&Acy;&Rcy; &Dcy;&Ocy;&Bcy;&Acy;&Vcy;&Lcy;&IEcy;&Ncy; &Vcy; &Kcy;&Ocy;&Rcy;&Zcy;&Icy;&Ncy;&Ucy;</div>
+        <div class="page-popup-heading-title h1 uppercase">ТОВАР ДОБАВЛЕН В КОРЗИНУ</div>
       </div>
       <div class="row mb-4 mt-4">
         <div class="col-12 col-lg-5 mb-4 mb-lg-0">
@@ -260,23 +450,23 @@
         </div>
         <div class="col-12 col-lg-7">
           <div class="h2 mb-2">Nike Phantom GT Elite FG</div>
-          <div class="gray mb-4">&Mcy;&ucy;&zhcy;&scy;&kcy;&icy;&iecy;</div>
-          <div class="lg-4 mb-lg-5"><b class="mr-20">5 290 &Rcy;</b><span class="old">7 368 &Rcy;</span></div>
-          <div class="mb-2">&TScy;&vcy;&iecy;&tcy;: &chcy;&iocy;&rcy;&ncy;&ycy;&jcy;</div>
-          <div class="mb-2">&Rcy;&acy;&zcy;&mcy;&iecy;&rcy;: 42</div>
-          <div class="mb-2">&Acy;&rcy;&tcy;&icy;&kcy;&ucy;&lcy;: JHVF6O9VJU</div>
+          <div class="gray mb-4">Мужские</div>
+          <div class="lg-4 mb-lg-5"><b class="mr-20">5 290 Р</b><span class="old">7 368 Р</span></div>
+          <div class="mb-2">Цвет: чёрный</div>
+          <div class="mb-2">Размер: 42</div>
+          <div class="mb-2">Артикул: JHVF6O9VJU</div>
         </div>
       </div>
       <div class="row justify-content-center align-items-center mb-5">
         <div class="col-12 mb-3 mb-lg-0 col-lg-auto"><a class="btn btn--black btn--medium" href="make_order.html">
-            &Ocy;&fcy;&ocy;&rcy;&mcy;&icy;&tcy;&softcy;
-            &zcy;&acy;&kcy;&acy;&zcy;</a></div>
-        <div class="col-12 col-lg-auto"><a class="link link--black_border popup-close" href="#">&Pcy;&rcy;&ocy;&dcy;&ocy;&lcy;&zhcy;&icy;&tcy;&softcy; &pcy;&ocy;&kcy;&ucy;&pcy;&kcy;&icy;</a></div>
+            Оформить
+            заказ</a></div>
+        <div class="col-12 col-lg-auto"><a class="link link--black_border popup-close" href="#">Продолжить покупки</a></div>
       </div>
       <div class="catalog">
         <div class="row justify-content-between align-items-center">
           <div class="col-auto">
-            <div class="h1">&Scy; &ecy;&tcy;&icy;&mcy; &tcy;&ocy;&vcy;&acy;&rcy;&ocy;&mcy; &pcy;&ocy;&kcy;&ucy;&pcy;&acy;&yucy;&tcy;</div>
+            <div class="h1">С этим товаром покупают</div>
           </div>
           <div class="col-auto d-none d-lg-block">
             <div class="slider-arrows"><span class="slider-arrow prev">
@@ -292,24 +482,24 @@
           <div class="col-md-2">
             <div class="catalog-item w1 popup">
               <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/product/p1.jpg"></div>
-              <div class="catalog-item-title">&Dcy;&iecy;&tcy;&scy;&kcy;&icy;&jcy; &fcy;&ucy;&tcy;&bcy;&ocy;&lcy;&softcy;&ncy;&ycy;&jcy; &kcy;&ocy;&mcy;&pcy;&lcy;&iecy;&kcy;&tcy; Nike &Bcy;&iecy;&lcy;&ycy;&jcy;</div>
-              <div class="catalog-item-price"><b>4 949 &Rcy;</b></div><a class="catalog-item-link" href="#"></a>
+              <div class="catalog-item-title">Детский футбольный комплект Nike Белый</div>
+              <div class="catalog-item-price"><b>4 949 Р</b></div><a class="catalog-item-link" href="#"></a>
               <button class="catalog-item-like" type="button"> </button>
             </div>
           </div>
           <div class="col-md-2">
             <div class="catalog-item w1 popup">
               <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/product/p2.jpg"></div>
-              <div class="catalog-item-title">&SHcy;&icy;&pcy;&ocy;&vcy;&kcy;&icy; Joma Top Flex 902.TF 2019</div>
-              <div class="catalog-item-price"><b>4 949 &Rcy;</b></div><a class="catalog-item-link" href="#"></a>
+              <div class="catalog-item-title">Шиповки Joma Top Flex 902.TF 2019</div>
+              <div class="catalog-item-price"><b>4 949 Р</b></div><a class="catalog-item-link" href="#"></a>
               <button class="catalog-item-like" type="button"> </button>
             </div>
           </div>
           <div class="col-md-2">
             <div class="catalog-item w1 popup">
               <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/product/p3.jpg"></div>
-              <div class="catalog-item-title">&Mcy;&yacy;&chcy; &fcy;&ucy;&tcy;&bcy;&ocy;&lcy;&softcy;&ncy;&ycy;&jcy; Nike Strike Premier </div>
-              <div class="catalog-item-price"><b>4 949 &Rcy;</b></div><a class="catalog-item-link" href="#"></a>
+              <div class="catalog-item-title">Мяч футбольный Nike Strike Premier </div>
+              <div class="catalog-item-price"><b>4 949 Р</b></div><a class="catalog-item-link" href="#"></a>
               <button class="catalog-item-like" type="button"> </button>
             </div>
           </div>
@@ -326,41 +516,41 @@
             <div class="mobile-nav">
               <div class="mobile-blocks" id="mobile">
                 <div class="mobile-block" id="mobile-block_products" data-prev="#mobile-block_default">
-                  <div class="mobile-nav-title">&Ocy;&bcy;&ucy;&vcy;&softcy;</div>
+                  <div class="mobile-nav-title">Обувь</div>
                   <nav class="mobile-nav-menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                     <ul class="mobile-nav-menu-inner">
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Fcy;&ucy;&tcy;&bcy;&ocy;&lcy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Kcy;&rcy;&ocy;&scy;&scy;&ocy;&vcy;&kcy;&icy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Bcy;&acy;&scy;&kcy;&iecy;&tcy;&bcy;&ocy;&lcy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Vcy;&ocy;&lcy;&lcy;&iecy;&jcy;&bcy;&ocy;&lcy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Kcy;&rcy;&ocy;&scy;&scy;&ocy;&vcy;&kcy;&icy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&IEcy;&dcy;&icy;&ncy;&ocy;&bcy;&ocy;&rcy;&scy;&tcy;&vcy;&acy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Dcy;&iecy;&tcy;&scy;&kcy;&icy;&iecy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Lcy;&iecy;&gcy;&kcy;&acy;&yacy; &acy;&tcy;&lcy;&iecy;&tcy;&icy;&kcy;&acy;</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Футбол</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Кроссовки</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Баскетбол</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Воллейбол</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Кроссовки</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Единоборства</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Детские</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Легкая атлетика</span></a></li>
                     </ul>
                   </nav>
-                  <div class="mobile-nav-inner"><a class="btn btn--black_border btn--small btn--fullwidth" href="#">&Scy;&Mcy;&Ocy;&Tcy;&Rcy;&IEcy;&Tcy;&SOFTcy; &Vcy;&Scy;&YUcy; &Ocy;&Bcy;&Ucy;&Vcy;&SOFTcy;</a></div>
+                  <div class="mobile-nav-inner"><a class="btn btn--black_border btn--small btn--fullwidth" href="#">СМОТРЕТЬ ВСЮ ОБУВЬ</a></div>
                 </div>
                 <div class="mobile-block show" id="mobile-block_default">
                   <nav class="mobile-nav-menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                     <ul class="mobile-nav-menu-inner">
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Ocy;&bcy;&ucy;&vcy;&softcy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Ecy;&pcy;&icy;&kcy;&icy;&rcy;&ocy;&vcy;&kcy;&acy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Acy;&kcy;&scy;&iecy;&scy;&scy;&ucy;&acy;&rcy;&ycy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Kcy;&ocy;&mcy;&acy;&ncy;&dcy;&ncy;&ycy;&iecy; &vcy;&icy;&dcy;&ycy; &scy;&pcy;&ocy;&rcy;&tcy;&acy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Fcy;&icy;&tcy;&ncy;&iecy;&scy;, &scy;&pcy;&ocy;&rcy;&tcy;&zcy;&acy;&lcy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Acy;&kcy;&tcy;&icy;&vcy;&ncy;&ycy;&jcy; &ocy;&tcy;&dcy;&ycy;&khcy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Scy;&acy;&mcy;&ocy;&kcy;&acy;&tcy;&ycy;, &Rcy;&ocy;&lcy;&icy;&kcy;&icy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Tcy;&iecy;&ncy;&ncy;&icy;&scy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Pcy;&lcy;&acy;&vcy;&acy;&ncy;&icy;&iecy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Tcy;&ucy;&rcy;&icy;&zcy;&mcy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Tcy;&rcy;&iecy;&ncy;&icy;&rcy;&ocy;&vcy;&ocy;&chcy;&ncy;&ycy;&jcy; &icy;&ncy;&vcy;&iecy;&ncy;&tcy;&acy;&rcy;&softcy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Ncy;&acy;&gcy;&rcy;&acy;&dcy;&ncy;&acy;&yacy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tscy;&icy;&yacy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Scy;&pcy;&ocy;&rcy;&tcy;&icy;&vcy;&ncy;&ocy;&iecy; &ocy;&bcy;&ocy;&rcy;&ucy;&dcy;&ocy;&vcy;&acy;&ncy;&icy;&iecy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Scy;&ucy;&mcy;&kcy;&icy; &icy; &rcy;&yucy;&kcy;&zcy;&acy;&kcy;&icy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Bcy;&rcy;&iecy;&ncy;&dcy;&ycy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Acy;&kcy;&tscy;&icy;&icy;</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Vcy;&icy;&dcy;&ycy; &scy;&pcy;&ocy;&rcy;&tcy;&acy;</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Обувь</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Эпикировка</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Аксессуары</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Командные виды спорта</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Фитнес, спортзал</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Активный отдых</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Самокаты, Ролики</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Теннис</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Плавание</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Туризм</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Тренировочный инвентарь</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Наградная продукция</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Спортивное оборудование</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Сумки и рюкзаки</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Бренды</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Акции</span></a></li>
+                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Виды спорта</span></a></li>
                     </ul>
                   </nav>
                 </div>
@@ -369,15 +559,15 @@
                 <div class="mobile-nav-inner">
                   <div class="mobile-nav-contacts-items">
                     <div class="mobile-nav-contact-item"><a href="tel:+78632273135">+7 (863) 227-31-35</a></div>
-                    <div class="mobile-nav-contact-item"><a class="link link--black" href="#callback-popup" data-popup="{&quot;type&quot;: &quot;inline&quot;}">&Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &zcy;&vcy;&ocy;&ncy;&ocy;&kcy; </a></div>
+                    <div class="mobile-nav-contact-item"><a class="link link--black" href="#callback-popup" data-popup="{&quot;type&quot;: &quot;inline&quot;}">Заказать звонок </a></div>
                   </div>
                 </div>
               </div>
               <nav class="mobile-nav-menu mobile-nav-menu--gray" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                 <ul class="mobile-nav-menu-inner">
-                  <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="dashboard.html" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Lcy;&icy;&chcy;&ncy;&ycy;&jcy; &kcy;&acy;&bcy;&icy;&ncy;&iecy;&tcy;</span></a></li>
-                  <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="favorites.html" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Icy;&zcy;&bcy;&rcy;&acy;&ncy;&ncy;&ocy;&iecy;</span></a></li>
-                  <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">&Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ycy;</span></a></li>
+                  <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="dashboard.html" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Личный кабинет</span></a></li>
+                  <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="favorites.html" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Избранное</span></a></li>
+                  <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Контакты</span></a></li>
                   <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Instagram</span></a></li>
                   <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Facebook</span></a></li>
                 </ul>
@@ -397,12 +587,12 @@
           <form class="mobile-filter">
             <div class="mobile-filter-close"></div>
             <div class="mobile-filter-heading">
-              <div class="mobile-filter-heading-title">&Fcy;&icy;&lcy;&softcy;&tcy;&rcy;&ycy;(4)</div>
+              <div class="mobile-filter-heading-title">Фильтры(4)</div>
             </div>
             <div class="mobile-filter-items">
               <div class="mobile-filter-item">
                 <div class="mobile-filter-item-heading">
-                  <div class="mobile-filter-item-heading-title">&TScy;&vcy;&iecy;&tcy;(2)</div>
+                  <div class="mobile-filter-item-heading-title">Цвет(2)</div>
                   <div class="mobile-filter-item-heading-toggler"></div>
                 </div>
                 <div class="mobile-filter-item-content">
@@ -410,44 +600,44 @@
                     <div class="col-6">
                       <div class="filter-row">
                         <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox bg-green" type="checkbox"><span class="form-checkbox-title">&Bcy;&iecy;&zhcy;&iecy;&vcy;&ycy;&jcy;</span>
+                          <input class="form-item form-item--checkbox bg-green" type="checkbox"><span class="form-checkbox-title">Бежевый</span>
                         </label>
                       </div>
                       <div class="filter-row">
                         <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox bg-red" type="checkbox"><span class="form-checkbox-title">&Bcy;&iecy;&lcy;&ycy;&jcy;</span>
+                          <input class="form-item form-item--checkbox bg-red" type="checkbox"><span class="form-checkbox-title">Белый</span>
                         </label>
                       </div>
                       <div class="filter-row">
                         <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&Bcy;&icy;&rcy;&yucy;&zcy;&ocy;&vcy;&ycy;&jcy;</span>
+                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Бирюзовый</span>
                         </label>
                       </div>
                       <div class="filter-row">
                         <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&Bcy;&ocy;&rcy;&dcy;&ocy;&vcy;&ycy;&jcy;</span>
+                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Бордовый</span>
                         </label>
                       </div>
                     </div>
                     <div class="col-6">
                       <div class="filter-row">
                         <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&Bcy;&iecy;&zhcy;&iecy;&vcy;&ycy;&jcy;</span>
+                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Бежевый</span>
                         </label>
                       </div>
                       <div class="filter-row">
                         <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&Bcy;&iecy;&lcy;&ycy;&jcy;</span>
+                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Белый</span>
                         </label>
                       </div>
                       <div class="filter-row">
                         <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&Bcy;&icy;&rcy;&yucy;&zcy;&ocy;&vcy;&ycy;&jcy;</span>
+                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Бирюзовый</span>
                         </label>
                       </div>
                       <div class="filter-row">
                         <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&Bcy;&ocy;&rcy;&dcy;&ocy;&vcy;&ycy;&jcy;</span>
+                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Бордовый</span>
                         </label>
                       </div>
                     </div>
@@ -456,74 +646,74 @@
               </div>
               <div class="mobile-filter-item">
                 <div class="mobile-filter-item-heading">
-                  <div class="mobile-filter-item-heading-title">&Mcy;&acy;&tcy;&iecy;&rcy;&icy;&acy;&lcy;&ycy;</div>
+                  <div class="mobile-filter-item-heading-title">Материалы</div>
                   <div class="mobile-filter-item-heading-toggler"></div>
                 </div>
                 <div class="mobile-filter-item-content">
                   <div class="filter-row">
                     <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&Vcy;&icy;&scy;&kcy;&ocy;&zcy;&acy;</span>
+                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Вискоза</span>
                     </label>
                   </div>
                   <div class="filter-row">
                     <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&Kcy;&acy;&shcy;&iecy;&mcy;&icy;&rcy;</span>
+                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Кашемир</span>
                     </label>
                   </div>
                   <div class="filter-row">
                     <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&Lcy;&iecy;&ncy;</span>
+                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Лен</span>
                     </label>
                   </div>
                   <div class="filter-row">
                     <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&Mcy;&ocy;&khcy;&iecy;&rcy;</span>
+                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Мохер</span>
                     </label>
                   </div>
                   <div class="filter-row">
                     <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&Pcy;&ocy;&lcy;&icy;&ecy;&scy;&tcy;&iecy;&rcy;</span>
+                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Полиэстер</span>
                     </label>
                   </div>
                   <div class="filter-row">
                     <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&KHcy;&lcy;&ocy;&pcy;&ocy;&kcy;</span>
+                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Хлопок</span>
                     </label>
                   </div>
                   <div class="filter-row">
                     <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&SHcy;&iecy;&rcy;&scy;&tcy;&softcy;</span>
+                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Шерсть</span>
                     </label>
                   </div>
                   <div class="filter-row">
                     <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&SHcy;&icy;&fcy;&ocy;&ncy;</span>
+                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Шифон</span>
                     </label>
                   </div>
                   <div class="filter-row">
                     <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&Ecy;&kcy;&ocy;-&kcy;&ocy;&zhcy;&acy;</span>
+                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Эко-кожа</span>
                     </label>
                   </div>
                   <div class="filter-row">
                     <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">&Ecy;&kcy;&ocy;-&mcy;&iecy;&khcy;</span>
+                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Эко-мех</span>
                     </label>
                   </div>
                 </div>
               </div>
               <div class="mobile-filter-item">
                 <div class="mobile-filter-item-heading">
-                  <div class="mobile-filter-item-heading-title">&Rcy;&acy;&zcy;&mcy;&iecy;&rcy;</div>
+                  <div class="mobile-filter-item-heading-title">Размер</div>
                   <div class="mobile-filter-item-heading-toggler"></div>
                 </div>
-                <div class="mobile-filter-item-content"><a class="mobile-filter__link" href="#">&Rcy;&ucy;&kcy;&ocy;&vcy;&ocy;&dcy;&scy;&tcy;&vcy;&ocy; &pcy;&ocy; &rcy;&acy;&zcy;&mcy;&iecy;&rcy;&acy;&mcy;</a>
+                <div class="mobile-filter-item-content"><a class="mobile-filter__link" href="#">Руководство по размерам</a>
                   <div class="filter-row filter-row__size">
                     <label class="form-checkbox">
                       <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">One size</span>
                     </label>
-                    <label class="form-checkbox"><span class="form-checkbox-title">&Rcy;&ocy;&scy;&tcy; H1</span></label>
-                    <label class="form-checkbox"><span class="form-checkbox-title">&Rcy;&Ocy;&Scy;&Tcy; H2</span></label>
+                    <label class="form-checkbox"><span class="form-checkbox-title">Рост H1</span></label>
+                    <label class="form-checkbox"><span class="form-checkbox-title">РОСТ H2</span></label>
                   </div>
                   <div class="filter-row filter-row__size">
                     <label class="form-checkbox">
@@ -589,46 +779,46 @@
               </div>
               <div class="mobile-filter-item">
                 <div class="mobile-filter-item-heading">
-                  <div class="mobile-filter-item-heading-title">&Scy;&ocy;&rcy;&tcy;&icy;&rcy;&ocy;&vcy;&acy;&tcy;&softcy; (&TScy;&iecy;&ncy;&acy; &pcy;&ocy; &ucy;&bcy;&ycy;&vcy;&acy;&ncy;&icy;&yucy;)</div>
+                  <div class="mobile-filter-item-heading-title">Сортировать (Цена по убыванию)</div>
                   <div class="mobile-filter-item-heading-toggler"></div>
                 </div>
                 <div class="mobile-filter-item-content">
                   <div class="filter-row">
                     <label class="form-radio">
-                      <input class="form-item form-item--radio" type="radio" name="product"><span class="form-radio-title">&TScy;&iecy;&ncy;&acy; &pcy;&ocy; &ucy;&bcy;&ycy;&vcy;&acy;&ncy;&icy;&yucy;</span>
+                      <input class="form-item form-item--radio" type="radio" name="product"><span class="form-radio-title">Цена по убыванию</span>
                     </label>
                   </div>
                   <div class="filter-row">
                     <label class="form-radio">
-                      <input class="form-item form-item--radio" type="radio" name="product"><span class="form-radio-title">&TScy;&iecy;&ncy;&acy; &pcy;&ocy; &vcy;&ocy;&zcy;&vcy;&rcy;&acy;&scy;&tcy;&acy;&ncy;&icy;&yucy;</span>
+                      <input class="form-item form-item--radio" type="radio" name="product"><span class="form-radio-title">Цена по возврастанию</span>
                     </label>
                   </div>
                   <div class="filter-row">
                     <label class="form-radio">
-                      <input class="form-item form-item--radio" type="radio" name="product"><span class="form-radio-title">&Scy;&ncy;&acy;&chcy;&acy;&lcy;&acy; &ncy;&ocy;&vcy;&ycy;&iecy;</span>
+                      <input class="form-item form-item--radio" type="radio" name="product"><span class="form-radio-title">Сначала новые</span>
                     </label>
                   </div>
                   <div class="filter-row">
                     <label class="form-radio">
-                      <input class="form-item form-item--radio" type="radio" name="product"><span class="form-radio-title">&Scy;&ncy;&acy;&chcy;&acy;&lcy;&acy; &khcy;&icy;&tcy;&ycy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;</span>
+                      <input class="form-item form-item--radio" type="radio" name="product"><span class="form-radio-title">Сначала хиты продаж</span>
                     </label>
                   </div>
                 </div>
               </div>
               <div class="mobile-filter-item open">
                 <div class="mobile-filter-item-heading">
-                  <div class="mobile-filter-item-heading-title">&TScy;&iecy;&ncy;&acy;</div>
+                  <div class="mobile-filter-item-heading-title">Цена</div>
                   <div class="mobile-filter-item-heading-toggler"></div>
                 </div>
                 <div class="mobile-filter-item-content">
                   <div class="filter-price">
                     <div class="filter-price-fields">
                       <div class="filter-price-field-item">
-                        <label class="filter-price-field-item-title">&ocy;&tcy;</label>
+                        <label class="filter-price-field-item-title">от</label>
                         <input class="form-item form-item--text filter-price-field filter-price-field--from" type="text" value="1000">
                       </div>
                       <div class="filter-price-field-item">
-                        <label class="filter-price-field-item-title">&dcy;&ocy;</label>
+                        <label class="filter-price-field-item-title">до</label>
                         <input class="form-item form-item--text filter-price-field filter-price-field--to" type="text" value="1000000">
                       </div>
                     </div>
@@ -637,9 +827,9 @@
                 </div>
               </div>
               <div class="mobile-filter-btns">
-                <button class="btn btn--black btn--medium">&Pcy;&Ocy;&Kcy;&Acy;&Zcy;&Acy;&Tcy;&SOFTcy; &Rcy;&IEcy;&Zcy;&Ucy;&Lcy;&SOFTcy;&Tcy;&Acy;&Tcy;&Ycy; (688)</button><a class="mobile-filter-reset" href="#" onclick="window.location.reload();return false;">
-                  &Ocy;&chcy;&icy;&scy;&tcy;&icy;&tcy;&softcy;
-                  &fcy;&icy;&lcy;&softcy;&tcy;&rcy;</a>
+                <button class="btn btn--black btn--medium">ПОКАЗАТЬ РЕЗУЛЬТАТЫ (688)</button><a class="mobile-filter-reset" href="#" onclick="window.location.reload();return false;">
+                  Очистить
+                  фильтр</a>
               </div>
             </div>
           </form>

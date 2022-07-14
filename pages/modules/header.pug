@@ -1,3 +1,249 @@
-header 
-  .header 
-    h1 Шапка сайта
+header.page-header(itemscope='' itemtype='http://schema.org/WPHeader')
+  .page-inner.page-inner--w1.desktop
+    .header-menu
+      .header-menu__left
+        ul.header-menu__list
+          li.header-menu__item
+            a.header-menu__item-catalog.catalog-open(href='#')
+              span Каталог
+          li.header-menu__item.header-menu__item-dropdown.catalog-dropdown
+            a(href='#') Покупателям
+          li.header-menu__item.shops
+            a(href='#') Магазины
+          li.header-menu__item.blog
+            a(href='#') Блог
+      .header-menu__center
+        a.header-logo(href='#')
+          img(src='../svg/header_logo.svg' alt='')
+      .header-menu__right
+        ul.header-menu__list
+          li.header-menu__item.header-menu__item_search.catalog-search-open
+            a(href='#')
+              span Поиск
+          li.header-menu__item.enter
+            a.header-toolbar-item(href='#auth-form' data-popup='{"type":"inline"}')
+              | Вход
+          li.header-menu__item.favorites
+            a(href='favorites.html') Избранное
+          li.header-menu__item.basket
+            a.header-toolbar-item(href='basket.html')
+              img(src='../svg/basket.svg')
+              span
+  #catalog-buyer-menu.catalog-buyer-menu
+    .page-inner(style1='position: relative;')
+      .menu-sections
+        ul.buyer-menu__list
+          li
+            a.buyer-menu__link.active(href='#cm1') Подарочные сертификаты
+          li
+            a.buyer-menu__link(href='#cm2') Доставка и оплата
+          li
+            a.buyer-menu__link(href='#cm2') Гарантия и возврат
+          li
+            a.buyer-menu__link(href='#cm2') Система лояльности
+          li
+            a.buyer-menu__link(href='#cm2') Руководство по покупке
+          li
+            a.buyer-menu__link(href='#cm2') Работа у нас
+        ul.buyer-menu__list
+          li
+            a.buyer-menu__link(href='#cm2') Telegram
+          li
+            a.buyer-menu__link(href='#cm2') Вконтакте
+          li
+            a.buyer-menu__link(href='tel:+88003508991') 8 800 350 89 91
+          li
+            a.buyer-menu__link(href='tel:+79296081332') +7 929 608 13 32
+        ul.buyer-menu__list
+          li
+            a.buyer-menu__link(href='#cm2') О компании
+          li
+            a.buyer-menu__link(href='#cm2') Контакты
+          li
+            a.buyer-menu__link(href='#cm2') Магазины
+          li
+            a.buyer-menu__link(href='#cm2') Мои заказы
+          li
+            a.buyer-menu__link(href='#cm2') Личный кабинет
+  #catalog-search-menu.catalog-search-menu
+    .page-inner.page-inner--w2
+      .menu-sections
+        // search-menu
+        .menu-sections__inner.page-inner--w2
+          form(action='search.html')
+            .search-form
+              input.search-form__input(type='text' placeholder='')
+              button.search-form__clear(type='button')
+              button.search-form__submit.btn.btn--black.btn--medium(type='submit') Найти
+            .search-results
+              .search-history
+                ul.search-history__list
+                  li.search-history__title ИСТОРИЯ ПОИСКА
+                  li
+                    a.search-history__link(href='#') Платье
+                  li
+                    a.search-history__link(href='#') Жабо
+                  li
+                    a.search-history__link(href='#') Юбка
+                ul
+                  li.search-history__title Часто ищут
+                  li
+                    a.search-history__link(href='#') Боди
+                  li
+                    a.search-history__link(href='#') Платье
+                  li
+                    a.search-history__link(href='#') Топы
+                  li
+                    a.search-history__link(href='#') Футболки
+              .search-products
+                // search-products
+                .row.search-products__catalog-items
+                  .col-md-3.col-sm-6
+                    .catalog-item.w1
+                      .catalog-item-photo-holder
+                        img.cover(src='../dummy/catalog/c1.jpg')
+                      .catalog-item-title ПЛАТЬЕ
+                      .catalog-item-price 15 900 Р
+                      a.catalog-item-link(href='#')
+                      button.catalog-item-like(type='button')  
+                  .col-md-3.col-sm-6
+                    .catalog-item.w1
+                      .catalog-item-photo-holder
+                        img.cover(src='../dummy/catalog/c2.jpg')
+                      .catalog-item-title ПЛАТЬЕ
+                      .catalog-item-price 15 900 Р
+                      a.catalog-item-link(href='#')
+                      button.catalog-item-like(type='button')  
+                  .col-md-3.col-sm-6
+                    .catalog-item.w1
+                      .catalog-item-photo-holder
+                        img.cover(src='../dummy/catalog/c3.jpg')
+                      .catalog-item-title ПЛАТЬЕ
+                      .catalog-item-price 15 900 Р
+                      a.catalog-item-link(href='#')
+                      button.catalog-item-like(type='button')  
+                  .col-md-3.col-sm-6
+                    .catalog-item.w1
+                      .catalog-item-photo-holder
+                        img.cover(src='../dummy/catalog/c4.jpg')
+                      .catalog-item-title ПЛАТЬЕ
+                      .catalog-item-price 15 900 Р
+                      a.catalog-item-link(href='#')
+                      button.catalog-item-like(type='button')  
+        // /search-menu
+  #catalog-menu.catalog-menu.catalog-menu_visible1
+    .page-inner.page-inner--w2
+      .catalog-menu-sections
+        .catalog-open.catalog-menu__close
+        ul.catalog-menu__list.accordion.accordion_catalog-menu
+          li
+            a.catalog-menu__link.submenu.active(href='#cm1') NEW
+          li
+            a.catalog-menu__link(href='#cm2') LOOKBOOK
+          li.accordion-item
+            .accordion-item-heading
+              a.catalog-menu__link(href='#cm3') SS`22
+            ul.accordion-item-content
+              li
+                a.catalog-menu__sublink(href='#') Summer City Wibe
+              li
+                a.catalog-menu__sublink(href='#') East way
+              li
+                a.catalog-menu__sublink(href='#') With Nature
+              li
+                a.catalog-menu__sublink(href='#') Textile
+              li
+                a.catalog-menu__sublink(href='#') Prod Dress
+          li
+            a.catalog-menu__link(href='#cm4') OFFICE
+          li
+            a.catalog-menu__link(href='#cm5') ЛЕН
+          li
+            a.catalog-menu__link(href='#cm7') EVENING
+          li
+            a.catalog-menu__link(href='#cm8') Верхняя одежда
+          li
+            a.catalog-menu__link(href='#cm6') СПОРТ
+          li.accordion-item
+            .accordion-item-heading
+              a.catalog-menu__link(href='#cm9') ПЛАТЬЯ | КОМБИНЕЗОНЫ
+            ul.accordion-item-content
+              li
+                a.catalog-menu__sublink(href='#') Эко-кожа
+              li
+                a.catalog-menu__sublink(href='#') Вискоза / Хлопок
+              li
+                a.catalog-menu__sublink(href='#') Шерсть / Кашемир
+              li
+                a.catalog-menu__sublink(href='#') Комбинезоны
+              li
+                a.catalog-menu__sublink(href='#') Лен
+          li
+            a.catalog-menu__link(href='#cm10') джемперы
+          li
+            a.catalog-menu__link(href='#cm11') КАРДИГАНЫ
+          li
+            a.catalog-menu__link(href='#cm12') ЖАКЕТЫ
+          li
+            a.catalog-menu__link(href='#cm13') ЖИЛЕТЫ
+          li
+            a.catalog-menu__link(href='#cm14') РУБАШКИ
+          li
+            a.catalog-menu__link(href='#cm15') ВОДОЛАЗКИ
+          li
+            a.catalog-menu__link(href='#cm16') БРЮКИ
+          li.accordion-item
+            .accordion-item-heading
+              a.catalog-menu__link(href='#cm17') ЮБКИ
+            ul.accordion-item-content
+              li
+                a.catalog-menu__sublink(href='#') Плиссирвоанные
+              li
+                a.catalog-menu__sublink(href='#') Прямые
+              li
+                a.catalog-menu__sublink(href='#') Юбка-брюки
+              li
+                a.catalog-menu__sublink(href='#') Трапецевидные
+          li
+            a.catalog-menu__link(href='#cm18') ШОРТЫ
+          li
+            a.catalog-menu__link(href='#cm19') ФУТБОЛКИ
+          li
+            a.catalog-menu__link(href='#cm19') ТОПЫ
+          li
+            a.catalog-menu__link(href='#cm19') БОДИ
+          li
+            a.catalog-menu__link(href='#cm19') КОМПЛЕКТЫ
+          li
+            a.catalog-menu__link(href='#cm19') АКСЕССУАРЫ
+          li
+            a.catalog-menu__link(href='#cm19') ДЕТИ
+          li
+            a.catalog-menu__link(href='#cm19') THE MOUNTAINS
+          li
+            a.catalog-menu__link(href='#cm19') КАШЕМИР
+          li
+            a.catalog-menu__link.catalog-menu__separator.catalog-menu__link-red(href='#cm19') SALE
+          // <li class="catalog-menu__separator"></li>
+          li
+            a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') Мои заказы
+          li
+            a.catalog-menu__link.catalog-menu__link_lowercase.mb-20px(href='#cm19') Личный кабинет
+          li
+            a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') О компании
+          li
+            a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') Магазины
+          li
+            a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') Подарочные сертификаты
+          li
+            a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') Доставка и оплата
+          li
+            a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') Гарантия и возврат
+          li
+            a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') Система лояльности
+          li
+            a.catalog-menu__link.catalog-menu__link_lowercase(href='#cm19') Блог
+          li.catalog-menu-footer
+            a(href='favorites.html') Избранное (2)
+            a(href='#') Вход
+          li  

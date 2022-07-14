@@ -6,37 +6,37 @@
       .tabs.form-tabs
         .tabs-heading.form-tabs-heading
           .form-tabs-heading-items
-            .tab-heading-item.active.form-tab-heading-item(data-tab='#auth-form_email', data-tabs='.auth-tab') Войдите по E-mail
-            .tab-heading-item.form-tab-heading-item(data-tab='#auth-form_phone', data-tabs='.auth-tab') Войдите через смс
+            .tab-heading-item.active.form-tab-heading-item(data-tab='#auth-form_email' data-tabs='.auth-tab') Войдите по E-mail
+            .tab-heading-item.form-tab-heading-item(data-tab='#auth-form_phone' data-tabs='.auth-tab') Войдите через смс
         .tabs-content.form-tabs-content
           #auth-form_phone.tab-content-item.auth-tab.show.form-tab-content-item
             .form-row
               label.form-label(for='auth_sms') Контактный телефон
               .form-item-holder
-                input#auth_sms.form-item.form-item--text(type='email', name='auth_sms', required='', data-validation='')
+                input#auth_sms.form-item.form-item--text(type='email' name='auth_sms' required='' data-validation='')
             .form-row
               button.btn.btn--black.btn--medium.w100.max-w100(type='submit') ВЫСЛАТЬ КОД
             .form-row
               .form-group-inner
                 a.link.link--black_simple(href='#')
-                  span Я забыл пароль 
+                  span Я забыл пароль  
                 a.link.link--black_simple(href='#')
                   span Регистрация
           #auth-form_email.tab-content-item.auth-tab.active.form-tab-content-item
             .form-row
               label.form-label(for='auth_email') Ваш E-mail
               .form-item-holder
-                input#auth_email.form-item.form-item--text(type='email', name='auth_email', required='', data-validation='')
+                input#auth_email.form-item.form-item--text(type='email' name='auth_email' required='' data-validation='')
             .form-row
               label.form-label(for='auth_pass') Пароль
               .form-item-holder
-                input#auth_pass.form-item.form-item--password(type='password', name='auth_pass', required='', data-validation='')
+                input#auth_pass.form-item.form-item--password(type='password' name='auth_pass' required='' data-validation='')
             .form-row
               button.btn.btn--black.btn--medium.w100.max-w100(type='submit') Войти
             .form-row
               .form-group-inner
                 a.link.link--black_simple(href='#')
-                  span Я забыл пароль 
+                  span Я забыл пароль  
                 a.link.link--black_simple(href='#')
                   span Регистрация
 #login-popup.page-popup.mfp-hide
@@ -47,134 +47,134 @@
     .form-fields
       .form-row
         label.form-label(for='login_form_login') Логин или e-mail
-        input#login_form_login.form-item.form-item--text(type='text', name='login')
+        input#login_form_login.form-item.form-item--text(type='text' name='login')
       .form-row
-        label.form-label(for='login_form_password') &Pcy;&acy;&rcy;&ocy;&lcy;&softcy;
-        input#login_form_password.form-item.form-item--text(type='password', name='password')
+        label.form-label(for='login_form_password') Пароль
+        input#login_form_password.form-item.form-item--text(type='password' name='password')
       .form-row
-        button.btn.btn--black.btn--medium.btn--fullwidth(type='submit') &Vcy;&ocy;&jcy;&tcy;&icy;
+        button.btn.btn--black.btn--medium.btn--fullwidth(type='submit') Войти
   .page-popup-buttons
     .row
       .col-6
-        a.link.link--black(href='#restore-popup', data-popup='{"type":"inline"}')
-          b &YAcy; &zcy;&acy;&bcy;&ycy;&lcy; &pcy;&acy;&rcy;&ocy;&lcy;&softcy;
+        a.link.link--black(href='#restore-popup' data-popup='{"type":"inline"}')
+          b Я забыл пароль
       .col-6
         a.link.link--black(href='register.html')
-          b &Rcy;&iecy;&gcy;&icy;&scy;&tcy;&rcy;&acy;&tscy;&icy;&yacy;
+          b Регистрация
 #restore-popup.page-popup.mfp-hide
   .page-popup-heading
     .page-popup-heading-title.h1.uppercase
-      b &Scy;&Mcy;&IEcy;&Ncy;&Icy;&Tcy;&IEcy; &scy;&vcy;&ocy;&jcy; &pcy;&acy;&rcy;&ocy;&lcy;&softcy;
+      b СМЕНИТЕ свой пароль
     .page-popup-heading-description
-      | &Vcy;&vcy;&iecy;&dcy;&icy;&tcy;&iecy; &acy;&dcy;&rcy;&iecy;&scy; &ecy;&lcy;&iecy;&kcy;&tcy;&rcy;&ocy;&ncy;&ncy;&ocy;&jcy; &pcy;&ocy;&chcy;&tcy;&ycy;, &icy; &mcy;&ycy; &ncy;&acy;&pcy;&rcy;&acy;&vcy;&icy;&mcy; &pcy;&icy;&scy;&softcy;&mcy;&ocy; &scy; &icy;&ncy;&scy;&tcy;&rcy;&ucy;&kcy;&tscy;&icy;&iecy;&jcy;.
+      | Введите адрес электронной почты, и мы направим письмо с инструкцией.
   form.form
     .form-fields
       .form-row
-        label.form-label(for='restore_restore_email') &Acy;&dcy;&rcy;&iecy;&scy; &ecy;&lcy;&iecy;&kcy;&tcy;&rcy;&ocy;&ncy;&ncy;&ocy;&jcy; &pcy;&ocy;&chcy;&tcy;&ycy;
-        input#restore_restore_email.form-item.form-item--text(type='password', name='restore_email')
+        label.form-label(for='restore_restore_email') Адрес электронной почты
+        input#restore_restore_email.form-item.form-item--text(type='password' name='restore_email')
       .form-row
-        button.btn.btn--black.btn--medium.btn--fullwidth(type='submit') &Vcy;&ocy;&jcy;&tcy;&icy;
+        button.btn.btn--black.btn--medium.btn--fullwidth(type='submit') Войти
 #callback-popup.page-popup.mfp-hide
   .page-popup-heading
     .page-popup-heading-title.h1.uppercase
-      b &Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &zcy;&vcy;&ocy;&ncy;&ocy;&kcy;
-    .page-popup-heading-description &Pcy;&ocy;&scy;&tcy;&acy;&rcy;&acy;&iecy;&mcy;&scy;&yacy; &pcy;&iecy;&rcy;&iecy;&zcy;&vcy;&ocy;&ncy;&icy;&tcy;&softcy; &vcy; &tcy;&iecy;&chcy;&iecy;&ncy;&icy;&iecy; 15 &mcy;&icy;&ncy;&ucy;&tcy; &vcy; &bcy;&ucy;&dcy;&ncy;&icy;.
+      b Заказать звонок
+    .page-popup-heading-description Постараемся перезвонить в течение 15 минут в будни.
   form.form
     .form-fields
       .form-row
-        label.form-label(for='callback_form_phone') &Tcy;&iecy;&lcy;&iecy;&fcy;&ocy;&ncy;
-        input#callback_form_phone.form-item.form-item--text(type='text', name='phone', data-validation='{"message": "Укажите номер телефона", "pattern": "phoneRU", "mask": "+7 (999) 999-99-99"}', required='required', placeholder='+7 (__) ___-__-__')
+        label.form-label(for='callback_form_phone') Телефон
+        input#callback_form_phone.form-item.form-item--text(type='text' name='phone' data-validation='{"message": "Укажите номер телефона", "pattern": "phoneRU", "mask": "+7 (999) 999-99-99"}' required='required' placeholder='+7 (__) ___-__-__')
       .form-row
-        button.btn.btn--black.btn--medium.btn--fullwidth(type='submit') &Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy;
+        button.btn.btn--black.btn--medium.btn--fullwidth(type='submit') Заказать
         .form-policy
           .page-text
             .small
-              | &Ncy;&acy;&zhcy;&icy;&mcy;&acy;&yacy; &kcy;&ncy;&ocy;&pcy;&kcy;&ucy; &vcy;&ycy; &dcy;&acy;&iecy;&tcy;&iecy; &scy;&ocy;&gcy;&lcy;&acy;&scy;&icy;&iecy; &ncy;&acy; &ocy;&bcy;&rcy;&acy;&bcy;&ocy;&tcy;&kcy;&ucy; 
-              a(href='#') &pcy;&iecy;&rcy;&scy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ycy;&khcy; &dcy;&acy;&ncy;&ncy;&ycy;&khcy;
+              | Нажимая кнопку вы даете согласие на обработку 
+              a(href='#') персональных данных
 #mail-popup.page-popup.mfp-hide
   .page-popup-heading
     .page-popup-heading-title.h1.uppercase
-      b &Zcy;&acy;&dcy;&acy;&tcy;&softcy; &vcy;&ocy;&pcy;&rcy;&ocy;&scy;
-    .page-popup-heading-description &Pcy;&ocy;&scy;&tcy;&acy;&rcy;&acy;&iecy;&mcy;&scy;&yacy; &pcy;&iecy;&rcy;&iecy;&zcy;&vcy;&ocy;&ncy;&icy;&tcy;&softcy; &vcy; &tcy;&iecy;&chcy;&iecy;&ncy;&icy;&iecy; 15 &mcy;&icy;&ncy;&ucy;&tcy; &vcy; &bcy;&ucy;&dcy;&ncy;&icy;.
+      b Задать вопрос
+    .page-popup-heading-description Постараемся перезвонить в течение 15 минут в будни.
   form.form
     .form-fields
       .form-row
-        label.form-label(for='mail_form_name') &Vcy;&ocy;&pcy;&rcy;&ocy;&scy;
+        label.form-label(for='mail_form_name') Вопрос
         textarea#mail_form_name.form-item.form-item--textarea(placeholder='')
       .form-row
-        label.form-label(for='mail_form_name') &Icy;&mcy;&yacy;
-        input#mail_form_name.form-item.form-item--text(type='text', name='name', placeholder='Например, Иван')
+        label.form-label(for='mail_form_name') Имя
+        input#mail_form_name.form-item.form-item--text(type='text' name='name' placeholder='Например, Иван')
       .form-row
-        label.form-label(for='mail_form_phone') &Tcy;&iecy;&lcy;&iecy;&fcy;&ocy;&ncy;
-        input#mail_form_phone.form-item.form-item--text(type='text', name='phone', data-validation='{"message": "Укажите номер телефона", "pattern": "phoneRU", "mask": "+7 (999) 999-99-99"}', required='required', placeholder='+7 (__) ___-__-__')
+        label.form-label(for='mail_form_phone') Телефон
+        input#mail_form_phone.form-item.form-item--text(type='text' name='phone' data-validation='{"message": "Укажите номер телефона", "pattern": "phoneRU", "mask": "+7 (999) 999-99-99"}' required='required' placeholder='+7 (__) ___-__-__')
       .form-row
-        button.btn.btn--black.btn--medium.btn--fullwidth(type='submit') &Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy;
+        button.btn.btn--black.btn--medium.btn--fullwidth(type='submit') Заказать
         .form-policy
           .page-text
             .small
-              | &Ncy;&acy;&zhcy;&icy;&mcy;&acy;&yacy; &kcy;&ncy;&ocy;&pcy;&kcy;&ucy; &vcy;&ycy; &dcy;&acy;&iecy;&tcy;&iecy; &scy;&ocy;&gcy;&lcy;&acy;&scy;&icy;&iecy; &ncy;&acy; &ocy;&bcy;&rcy;&acy;&bcy;&ocy;&tcy;&kcy;&ucy; 
-              a(href='#') &pcy;&iecy;&rcy;&scy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ycy;&khcy; &dcy;&acy;&ncy;&ncy;&ycy;&khcy;
+              | Нажимая кнопку вы даете согласие на обработку 
+              a(href='#') персональных данных
 #buy-popup.page-popup.buy.mfp-hide
   .page-popup-heading
-    .page-popup-heading-title.h1.uppercase &Tcy;&Ocy;&Vcy;&Acy;&Rcy; &Dcy;&Ocy;&Bcy;&Acy;&Vcy;&Lcy;&IEcy;&Ncy; &Vcy; &Kcy;&Ocy;&Rcy;&Zcy;&Icy;&Ncy;&Ucy;
+    .page-popup-heading-title.h1.uppercase ТОВАР ДОБАВЛЕН В КОРЗИНУ
   .row.mb-4.mt-4
     .col-12.col-lg-5.mb-4.mb-lg-0
       .buy-popup-photo
         img.cover(src='../dummy/product/popup.jpg')
     .col-12.col-lg-7
       .h2.mb-2 Nike Phantom GT Elite FG
-      .gray.mb-4 &Mcy;&ucy;&zhcy;&scy;&kcy;&icy;&iecy;
+      .gray.mb-4 Мужские
       .lg-4.mb-lg-5
-        b.mr-20 5 290 &Rcy;
-        span.old 7 368 &Rcy;
-      .mb-2 &TScy;&vcy;&iecy;&tcy;: &chcy;&iocy;&rcy;&ncy;&ycy;&jcy;
-      .mb-2 &Rcy;&acy;&zcy;&mcy;&iecy;&rcy;: 42
-      .mb-2 &Acy;&rcy;&tcy;&icy;&kcy;&ucy;&lcy;: JHVF6O9VJU
+        b.mr-20 5 290 Р
+        span.old 7 368 Р
+      .mb-2 Цвет: чёрный
+      .mb-2 Размер: 42
+      .mb-2 Артикул: JHVF6O9VJU
   .row.justify-content-center.align-items-center.mb-5
     .col-12.mb-3.mb-lg-0.col-lg-auto
       a.btn.btn--black.btn--medium(href='make_order.html')
-        | &Ocy;&fcy;&ocy;&rcy;&mcy;&icy;&tcy;&softcy;
-        | &zcy;&acy;&kcy;&acy;&zcy;
+        | Оформить
+        | заказ
     .col-12.col-lg-auto
-      a.link.link--black_border.popup-close(href='#') &Pcy;&rcy;&ocy;&dcy;&ocy;&lcy;&zhcy;&icy;&tcy;&softcy; &pcy;&ocy;&kcy;&ucy;&pcy;&kcy;&icy;
+      a.link.link--black_border.popup-close(href='#') Продолжить покупки
   .catalog
     .row.justify-content-between.align-items-center
       .col-auto
-        .h1 &Scy; &ecy;&tcy;&icy;&mcy; &tcy;&ocy;&vcy;&acy;&rcy;&ocy;&mcy; &pcy;&ocy;&kcy;&ucy;&pcy;&acy;&yucy;&tcy;
+        .h1 С этим товаром покупают
       .col-auto.d-none.d-lg-block
         .slider-arrows
           span.slider-arrow.prev
-            svg(width='59', height='58', viewBox='0 0 59 58', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M34.8888 40.4277L23.3359 28.8771L34.8888 17.3264', stroke='#1D1D1D', stroke-width='3')
+            svg(width='59' height='58' viewBox='0 0 59 58' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M34.8888 40.4277L23.3359 28.8771L34.8888 17.3264' stroke='#1D1D1D' stroke-width='3')
           span.slider-arrow.next
-            svg(width='59', height='58', viewBox='0 0 59 58', fill='none', xmlns='http://www.w3.org/2000/svg')
-              path(d='M23.8182 17.3242L35.3711 28.8749L23.8182 40.4256', stroke='#1D1D1D', stroke-width='3')
+            svg(width='59' height='58' viewBox='0 0 59 58' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M23.8182 17.3242L35.3711 28.8749L23.8182 40.4256' stroke='#1D1D1D' stroke-width='3')
     .catalog-items.row.catalog-items--slider(data-params='{"slidesToShow": 3, "slidesToScroll": 3}')
       .col-md-2
         .catalog-item.w1.popup
           .catalog-item-photo-holder
             img.cover(src='../dummy/product/p1.jpg')
-          .catalog-item-title &Dcy;&iecy;&tcy;&scy;&kcy;&icy;&jcy; &fcy;&ucy;&tcy;&bcy;&ocy;&lcy;&softcy;&ncy;&ycy;&jcy; &kcy;&ocy;&mcy;&pcy;&lcy;&iecy;&kcy;&tcy; Nike &Bcy;&iecy;&lcy;&ycy;&jcy;
+          .catalog-item-title Детский футбольный комплект Nike Белый
           .catalog-item-price
-            b 4 949 &Rcy;
+            b 4 949 Р
           a.catalog-item-link(href='#')
           button.catalog-item-like(type='button')  
       .col-md-2
         .catalog-item.w1.popup
           .catalog-item-photo-holder
             img.cover(src='../dummy/product/p2.jpg')
-          .catalog-item-title &SHcy;&icy;&pcy;&ocy;&vcy;&kcy;&icy; Joma Top Flex 902.TF 2019
+          .catalog-item-title Шиповки Joma Top Flex 902.TF 2019
           .catalog-item-price
-            b 4 949 &Rcy;
+            b 4 949 Р
           a.catalog-item-link(href='#')
           button.catalog-item-like(type='button')  
       .col-md-2
         .catalog-item.w1.popup
           .catalog-item-photo-holder
             img.cover(src='../dummy/product/p3.jpg')
-          .catalog-item-title &Mcy;&yacy;&chcy; &fcy;&ucy;&tcy;&bcy;&ocy;&lcy;&softcy;&ncy;&ycy;&jcy; Nike Strike Premier 
+          .catalog-item-title Мяч футбольный Nike Strike Premier 
           .catalog-item-price
-            b 4 949 &Rcy;
+            b 4 949 Р
           a.catalog-item-link(href='#')
           button.catalog-item-like(type='button')  
 .mobile-nav-holder
@@ -186,112 +186,112 @@
         .mobile-nav
           #mobile.mobile-blocks
             #mobile-block_products.mobile-block(data-prev='#mobile-block_default')
-              .mobile-nav-title &Ocy;&bcy;&ucy;&vcy;&softcy;
-              nav.mobile-nav-menu(itemscope='itemscope', itemtype='http://schema.org/SiteNavigationElement')
+              .mobile-nav-title Обувь
+              nav.mobile-nav-menu(itemscope='itemscope' itemtype='http://schema.org/SiteNavigationElement')
                 ul.mobile-nav-menu-inner
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black(href='#', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Fcy;&ucy;&tcy;&bcy;&ocy;&lcy;
+                    a.mobile-nav-menu-item.link.link--black(href='#' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Футбол
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black(href='#', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Kcy;&rcy;&ocy;&scy;&scy;&ocy;&vcy;&kcy;&icy;
+                    a.mobile-nav-menu-item.link.link--black(href='#' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Кроссовки
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black(href='#', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Bcy;&acy;&scy;&kcy;&iecy;&tcy;&bcy;&ocy;&lcy;
+                    a.mobile-nav-menu-item.link.link--black(href='#' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Баскетбол
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black(href='#', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Vcy;&ocy;&lcy;&lcy;&iecy;&jcy;&bcy;&ocy;&lcy;
+                    a.mobile-nav-menu-item.link.link--black(href='#' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Воллейбол
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black(href='#', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Kcy;&rcy;&ocy;&scy;&scy;&ocy;&vcy;&kcy;&icy;
+                    a.mobile-nav-menu-item.link.link--black(href='#' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Кроссовки
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black(href='#', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &IEcy;&dcy;&icy;&ncy;&ocy;&bcy;&ocy;&rcy;&scy;&tcy;&vcy;&acy;
+                    a.mobile-nav-menu-item.link.link--black(href='#' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Единоборства
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black(href='#', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Dcy;&iecy;&tcy;&scy;&kcy;&icy;&iecy;
+                    a.mobile-nav-menu-item.link.link--black(href='#' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Детские
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black(href='#', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Lcy;&iecy;&gcy;&kcy;&acy;&yacy; &acy;&tcy;&lcy;&iecy;&tcy;&icy;&kcy;&acy;
+                    a.mobile-nav-menu-item.link.link--black(href='#' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Легкая атлетика
               .mobile-nav-inner
-                a.btn.btn--black_border.btn--small.btn--fullwidth(href='#') &Scy;&Mcy;&Ocy;&Tcy;&Rcy;&IEcy;&Tcy;&SOFTcy; &Vcy;&Scy;&YUcy; &Ocy;&Bcy;&Ucy;&Vcy;&SOFTcy;
+                a.btn.btn--black_border.btn--small.btn--fullwidth(href='#') СМОТРЕТЬ ВСЮ ОБУВЬ
             #mobile-block_default.mobile-block.show
-              nav.mobile-nav-menu(itemscope='itemscope', itemtype='http://schema.org/SiteNavigationElement')
+              nav.mobile-nav-menu(itemscope='itemscope' itemtype='http://schema.org/SiteNavigationElement')
                 ul.mobile-nav-menu-inner
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Ocy;&bcy;&ucy;&vcy;&softcy;
+                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Обувь
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Ecy;&pcy;&icy;&kcy;&icy;&rcy;&ocy;&vcy;&kcy;&acy;
+                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Эпикировка
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Acy;&kcy;&scy;&iecy;&scy;&scy;&ucy;&acy;&rcy;&ycy;
+                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Аксессуары
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Kcy;&ocy;&mcy;&acy;&ncy;&dcy;&ncy;&ycy;&iecy; &vcy;&icy;&dcy;&ycy; &scy;&pcy;&ocy;&rcy;&tcy;&acy;
+                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Командные виды спорта
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Fcy;&icy;&tcy;&ncy;&iecy;&scy;, &scy;&pcy;&ocy;&rcy;&tcy;&zcy;&acy;&lcy;
+                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Фитнес, спортзал
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Acy;&kcy;&tcy;&icy;&vcy;&ncy;&ycy;&jcy; &ocy;&tcy;&dcy;&ycy;&khcy;
+                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Активный отдых
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Scy;&acy;&mcy;&ocy;&kcy;&acy;&tcy;&ycy;, &Rcy;&ocy;&lcy;&icy;&kcy;&icy;
+                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Самокаты, Ролики
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Tcy;&iecy;&ncy;&ncy;&icy;&scy;
+                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Теннис
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Pcy;&lcy;&acy;&vcy;&acy;&ncy;&icy;&iecy;
+                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Плавание
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Tcy;&ucy;&rcy;&icy;&zcy;&mcy;
+                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Туризм
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Tcy;&rcy;&iecy;&ncy;&icy;&rcy;&ocy;&vcy;&ocy;&chcy;&ncy;&ycy;&jcy; &icy;&ncy;&vcy;&iecy;&ncy;&tcy;&acy;&rcy;&softcy;
+                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Тренировочный инвентарь
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Ncy;&acy;&gcy;&rcy;&acy;&dcy;&ncy;&acy;&yacy; &pcy;&rcy;&ocy;&dcy;&ucy;&kcy;&tscy;&icy;&yacy;
+                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Наградная продукция
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Scy;&pcy;&ocy;&rcy;&tcy;&icy;&vcy;&ncy;&ocy;&iecy; &ocy;&bcy;&ocy;&rcy;&ucy;&dcy;&ocy;&vcy;&acy;&ncy;&icy;&iecy;
+                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Спортивное оборудование
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Scy;&ucy;&mcy;&kcy;&icy; &icy; &rcy;&yucy;&kcy;&zcy;&acy;&kcy;&icy;
+                    a.mobile-nav-menu-item.link.link--black.mobile-open-block(href='#mobile-block_products' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Сумки и рюкзаки
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black(href='#', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Bcy;&rcy;&iecy;&ncy;&dcy;&ycy;
+                    a.mobile-nav-menu-item.link.link--black(href='#' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Бренды
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black(href='#', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Acy;&kcy;&tscy;&icy;&icy;
+                    a.mobile-nav-menu-item.link.link--black(href='#' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Акции
                   li.mobile-nav-menu-item-holder
-                    a.mobile-nav-menu-item.link.link--black(href='#', data-menu='', itemprop='url', target='')
-                      span.mobile-nav-menu-item-name(itemprop='name') &Vcy;&icy;&dcy;&ycy; &scy;&pcy;&ocy;&rcy;&tcy;&acy;
+                    a.mobile-nav-menu-item.link.link--black(href='#' data-menu='' itemprop='url' target='')
+                      span.mobile-nav-menu-item-name(itemprop='name') Виды спорта
           .mobile-nav-contacts
             .mobile-nav-inner
               .mobile-nav-contacts-items
                 .mobile-nav-contact-item
                   a(href='tel:+78632273135') +7 (863) 227-31-35
                 .mobile-nav-contact-item
-                  a.link.link--black(href='#callback-popup', data-popup='{"type": "inline"}') &Zcy;&acy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &zcy;&vcy;&ocy;&ncy;&ocy;&kcy; 
-          nav.mobile-nav-menu.mobile-nav-menu--gray(itemscope='itemscope', itemtype='http://schema.org/SiteNavigationElement')
+                  a.link.link--black(href='#callback-popup' data-popup='{"type": "inline"}') Заказать звонок 
+          nav.mobile-nav-menu.mobile-nav-menu--gray(itemscope='itemscope' itemtype='http://schema.org/SiteNavigationElement')
             ul.mobile-nav-menu-inner
               li.mobile-nav-menu-item-holder
-                a.mobile-nav-menu-item.link.link--black(href='dashboard.html', data-menu='', itemprop='url', target='')
-                  span.mobile-nav-menu-item-name(itemprop='name') &Lcy;&icy;&chcy;&ncy;&ycy;&jcy; &kcy;&acy;&bcy;&icy;&ncy;&iecy;&tcy;
+                a.mobile-nav-menu-item.link.link--black(href='dashboard.html' data-menu='' itemprop='url' target='')
+                  span.mobile-nav-menu-item-name(itemprop='name') Личный кабинет
               li.mobile-nav-menu-item-holder
-                a.mobile-nav-menu-item.link.link--black(href='favorites.html', data-menu='', itemprop='url', target='')
-                  span.mobile-nav-menu-item-name(itemprop='name') &Icy;&zcy;&bcy;&rcy;&acy;&ncy;&ncy;&ocy;&iecy;
+                a.mobile-nav-menu-item.link.link--black(href='favorites.html' data-menu='' itemprop='url' target='')
+                  span.mobile-nav-menu-item-name(itemprop='name') Избранное
               li.mobile-nav-menu-item-holder
-                a.mobile-nav-menu-item.link.link--black(href='#', data-menu='', itemprop='url', target='')
-                  span.mobile-nav-menu-item-name(itemprop='name') &Kcy;&ocy;&ncy;&tcy;&acy;&kcy;&tcy;&ycy;
+                a.mobile-nav-menu-item.link.link--black(href='#' data-menu='' itemprop='url' target='')
+                  span.mobile-nav-menu-item-name(itemprop='name') Контакты
               li.mobile-nav-menu-item-holder
-                a.mobile-nav-menu-item.link.link--black(href='#', data-menu='', itemprop='url', target='')
+                a.mobile-nav-menu-item.link.link--black(href='#' data-menu='' itemprop='url' target='')
                   span.mobile-nav-menu-item-name(itemprop='name') Instagram
               li.mobile-nav-menu-item-holder
-                a.mobile-nav-menu-item.link.link--black(href='#', data-menu='', itemprop='url', target='')
+                a.mobile-nav-menu-item.link.link--black(href='#' data-menu='' itemprop='url' target='')
                   span.mobile-nav-menu-item-name(itemprop='name') Facebook
 .mobile-filter-holder
   .mobile-filter-scroll-holder
@@ -302,11 +302,11 @@
       form.mobile-filter
         .mobile-filter-close
         .mobile-filter-heading
-          .mobile-filter-heading-title &Fcy;&icy;&lcy;&softcy;&tcy;&rcy;&ycy;(4)
+          .mobile-filter-heading-title Фильтры(4)
         .mobile-filter-items
           .mobile-filter-item
             .mobile-filter-item-heading
-              .mobile-filter-item-heading-title &TScy;&vcy;&iecy;&tcy;(2)
+              .mobile-filter-item-heading-title Цвет(2)
               .mobile-filter-item-heading-toggler
             .mobile-filter-item-content
               .row
@@ -314,95 +314,95 @@
                   .filter-row
                     label.form-checkbox
                       input.form-item.form-item--checkbox.bg-green(type='checkbox')
-                      span.form-checkbox-title &Bcy;&iecy;&zhcy;&iecy;&vcy;&ycy;&jcy;
+                      span.form-checkbox-title Бежевый
                   .filter-row
                     label.form-checkbox
                       input.form-item.form-item--checkbox.bg-red(type='checkbox')
-                      span.form-checkbox-title &Bcy;&iecy;&lcy;&ycy;&jcy;
+                      span.form-checkbox-title Белый
                   .filter-row
                     label.form-checkbox
                       input.form-item.form-item--checkbox(type='checkbox')
-                      span.form-checkbox-title &Bcy;&icy;&rcy;&yucy;&zcy;&ocy;&vcy;&ycy;&jcy;
+                      span.form-checkbox-title Бирюзовый
                   .filter-row
                     label.form-checkbox
                       input.form-item.form-item--checkbox(type='checkbox')
-                      span.form-checkbox-title &Bcy;&ocy;&rcy;&dcy;&ocy;&vcy;&ycy;&jcy;
+                      span.form-checkbox-title Бордовый
                 .col-6
                   .filter-row
                     label.form-checkbox
                       input.form-item.form-item--checkbox(type='checkbox')
-                      span.form-checkbox-title &Bcy;&iecy;&zhcy;&iecy;&vcy;&ycy;&jcy;
+                      span.form-checkbox-title Бежевый
                   .filter-row
                     label.form-checkbox
                       input.form-item.form-item--checkbox(type='checkbox')
-                      span.form-checkbox-title &Bcy;&iecy;&lcy;&ycy;&jcy;
+                      span.form-checkbox-title Белый
                   .filter-row
                     label.form-checkbox
                       input.form-item.form-item--checkbox(type='checkbox')
-                      span.form-checkbox-title &Bcy;&icy;&rcy;&yucy;&zcy;&ocy;&vcy;&ycy;&jcy;
+                      span.form-checkbox-title Бирюзовый
                   .filter-row
                     label.form-checkbox
                       input.form-item.form-item--checkbox(type='checkbox')
-                      span.form-checkbox-title &Bcy;&ocy;&rcy;&dcy;&ocy;&vcy;&ycy;&jcy;
+                      span.form-checkbox-title Бордовый
           .mobile-filter-item
             .mobile-filter-item-heading
-              .mobile-filter-item-heading-title &Mcy;&acy;&tcy;&iecy;&rcy;&icy;&acy;&lcy;&ycy;
+              .mobile-filter-item-heading-title Материалы
               .mobile-filter-item-heading-toggler
             .mobile-filter-item-content
               .filter-row
                 label.form-checkbox
                   input.form-item.form-item--checkbox(type='checkbox')
-                  span.form-checkbox-title &Vcy;&icy;&scy;&kcy;&ocy;&zcy;&acy;
+                  span.form-checkbox-title Вискоза
               .filter-row
                 label.form-checkbox
                   input.form-item.form-item--checkbox(type='checkbox')
-                  span.form-checkbox-title &Kcy;&acy;&shcy;&iecy;&mcy;&icy;&rcy;
+                  span.form-checkbox-title Кашемир
               .filter-row
                 label.form-checkbox
                   input.form-item.form-item--checkbox(type='checkbox')
-                  span.form-checkbox-title &Lcy;&iecy;&ncy;
+                  span.form-checkbox-title Лен
               .filter-row
                 label.form-checkbox
                   input.form-item.form-item--checkbox(type='checkbox')
-                  span.form-checkbox-title &Mcy;&ocy;&khcy;&iecy;&rcy;
+                  span.form-checkbox-title Мохер
               .filter-row
                 label.form-checkbox
                   input.form-item.form-item--checkbox(type='checkbox')
-                  span.form-checkbox-title &Pcy;&ocy;&lcy;&icy;&ecy;&scy;&tcy;&iecy;&rcy;
+                  span.form-checkbox-title Полиэстер
               .filter-row
                 label.form-checkbox
                   input.form-item.form-item--checkbox(type='checkbox')
-                  span.form-checkbox-title &KHcy;&lcy;&ocy;&pcy;&ocy;&kcy;
+                  span.form-checkbox-title Хлопок
               .filter-row
                 label.form-checkbox
                   input.form-item.form-item--checkbox(type='checkbox')
-                  span.form-checkbox-title &SHcy;&iecy;&rcy;&scy;&tcy;&softcy;
+                  span.form-checkbox-title Шерсть
               .filter-row
                 label.form-checkbox
                   input.form-item.form-item--checkbox(type='checkbox')
-                  span.form-checkbox-title &SHcy;&icy;&fcy;&ocy;&ncy;
+                  span.form-checkbox-title Шифон
               .filter-row
                 label.form-checkbox
                   input.form-item.form-item--checkbox(type='checkbox')
-                  span.form-checkbox-title &Ecy;&kcy;&ocy;-&kcy;&ocy;&zhcy;&acy;
+                  span.form-checkbox-title Эко-кожа
               .filter-row
                 label.form-checkbox
                   input.form-item.form-item--checkbox(type='checkbox')
-                  span.form-checkbox-title &Ecy;&kcy;&ocy;-&mcy;&iecy;&khcy;
+                  span.form-checkbox-title Эко-мех
           .mobile-filter-item
             .mobile-filter-item-heading
-              .mobile-filter-item-heading-title &Rcy;&acy;&zcy;&mcy;&iecy;&rcy;
+              .mobile-filter-item-heading-title Размер
               .mobile-filter-item-heading-toggler
             .mobile-filter-item-content
-              a.mobile-filter__link(href='#') &Rcy;&ucy;&kcy;&ocy;&vcy;&ocy;&dcy;&scy;&tcy;&vcy;&ocy; &pcy;&ocy; &rcy;&acy;&zcy;&mcy;&iecy;&rcy;&acy;&mcy;
+              a.mobile-filter__link(href='#') Руководство по размерам
               .filter-row.filter-row__size
                 label.form-checkbox
                   input.form-item.form-item--checkbox(type='checkbox')
                   span.form-checkbox-title One size
                 label.form-checkbox
-                  span.form-checkbox-title &Rcy;&ocy;&scy;&tcy; H1
+                  span.form-checkbox-title Рост H1
                 label.form-checkbox
-                  span.form-checkbox-title &Rcy;&Ocy;&Scy;&Tcy; H2
+                  span.form-checkbox-title РОСТ H2
               .filter-row.filter-row__size
                 label.form-checkbox
                   input.form-item.form-item--checkbox(type='checkbox')
@@ -459,42 +459,42 @@
                   span.form-checkbox-title XL(RU56-58)
           .mobile-filter-item
             .mobile-filter-item-heading
-              .mobile-filter-item-heading-title &Scy;&ocy;&rcy;&tcy;&icy;&rcy;&ocy;&vcy;&acy;&tcy;&softcy; (&TScy;&iecy;&ncy;&acy; &pcy;&ocy; &ucy;&bcy;&ycy;&vcy;&acy;&ncy;&icy;&yucy;)
+              .mobile-filter-item-heading-title Сортировать (Цена по убыванию)
               .mobile-filter-item-heading-toggler
             .mobile-filter-item-content
               .filter-row
                 label.form-radio
-                  input.form-item.form-item--radio(type='radio', name='product')
-                  span.form-radio-title &TScy;&iecy;&ncy;&acy; &pcy;&ocy; &ucy;&bcy;&ycy;&vcy;&acy;&ncy;&icy;&yucy;
+                  input.form-item.form-item--radio(type='radio' name='product')
+                  span.form-radio-title Цена по убыванию
               .filter-row
                 label.form-radio
-                  input.form-item.form-item--radio(type='radio', name='product')
-                  span.form-radio-title &TScy;&iecy;&ncy;&acy; &pcy;&ocy; &vcy;&ocy;&zcy;&vcy;&rcy;&acy;&scy;&tcy;&acy;&ncy;&icy;&yucy;
+                  input.form-item.form-item--radio(type='radio' name='product')
+                  span.form-radio-title Цена по возврастанию
               .filter-row
                 label.form-radio
-                  input.form-item.form-item--radio(type='radio', name='product')
-                  span.form-radio-title &Scy;&ncy;&acy;&chcy;&acy;&lcy;&acy; &ncy;&ocy;&vcy;&ycy;&iecy;
+                  input.form-item.form-item--radio(type='radio' name='product')
+                  span.form-radio-title Сначала новые
               .filter-row
                 label.form-radio
-                  input.form-item.form-item--radio(type='radio', name='product')
-                  span.form-radio-title &Scy;&ncy;&acy;&chcy;&acy;&lcy;&acy; &khcy;&icy;&tcy;&ycy; &pcy;&rcy;&ocy;&dcy;&acy;&zhcy;
+                  input.form-item.form-item--radio(type='radio' name='product')
+                  span.form-radio-title Сначала хиты продаж
           .mobile-filter-item.open
             .mobile-filter-item-heading
-              .mobile-filter-item-heading-title &TScy;&iecy;&ncy;&acy;
+              .mobile-filter-item-heading-title Цена
               .mobile-filter-item-heading-toggler
             .mobile-filter-item-content
               .filter-price
                 .filter-price-fields
                   .filter-price-field-item
-                    label.filter-price-field-item-title &ocy;&tcy;
-                    input.form-item.form-item--text.filter-price-field.filter-price-field--from(type='text', value='1000')
+                    label.filter-price-field-item-title от
+                    input.form-item.form-item--text.filter-price-field.filter-price-field--from(type='text' value='1000')
                   .filter-price-field-item
-                    label.filter-price-field-item-title &dcy;&ocy;
-                    input.form-item.form-item--text.filter-price-field.filter-price-field--to(type='text', value='1000000')
-                input.form-item.form-item--range(type='range', data-value='1000,1000000', value='1000, 1000000', min='1000', max='1000000', step='1', multiple='')
+                    label.filter-price-field-item-title до
+                    input.form-item.form-item--text.filter-price-field.filter-price-field--to(type='text' value='1000000')
+                input.form-item.form-item--range(type='range' data-value='1000,1000000' value='1000, 1000000' min='1000' max='1000000' step='1' multiple='')
           .mobile-filter-btns
             button.btn.btn--black.btn--medium
-              | &Pcy;&Ocy;&Kcy;&Acy;&Zcy;&Acy;&Tcy;&SOFTcy; &Rcy;&IEcy;&Zcy;&Ucy;&Lcy;&SOFTcy;&Tcy;&Acy;&Tcy;&Ycy; (688)
-            a.mobile-filter-reset(href='#', onclick='window.location.reload();return false;')
-              | &Ocy;&chcy;&icy;&scy;&tcy;&icy;&tcy;&softcy;
-              | &fcy;&icy;&lcy;&softcy;&tcy;&rcy;
+              | ПОКАЗАТЬ РЕЗУЛЬТАТЫ (688)
+            a.mobile-filter-reset(href='#' onclick='window.location.reload();return false;')
+              | Очистить
+              | фильтр

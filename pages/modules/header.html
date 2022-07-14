@@ -1,6 +1,196 @@
 
-<header> 
-  <div class="header"> 
-    <h1>Шапка сайта</h1>
+<header class="page-header" itemscope="" itemtype="http://schema.org/WPHeader">
+  <div class="page-inner page-inner--w1 desktop">
+    <div class="header-menu">
+      <div class="header-menu__left">
+        <ul class="header-menu__list">
+          <li class="header-menu__item"><a class="header-menu__item-catalog catalog-open" href="#"><span>Каталог</span></a></li>
+          <li class="header-menu__item header-menu__item-dropdown catalog-dropdown"><a href="#">Покупателям</a></li>
+          <li class="header-menu__item shops"><a href="#">Магазины</a></li>
+          <li class="header-menu__item blog"><a href="#">Блог</a></li>
+        </ul>
+      </div>
+      <div class="header-menu__center"><a class="header-logo" href="#"><img src="../svg/header_logo.svg" alt=""/></a></div>
+      <div class="header-menu__right">
+        <ul class="header-menu__list">
+          <li class="header-menu__item header-menu__item_search catalog-search-open"><a href="#"><span>Поиск</span></a></li>
+          <li class="header-menu__item enter"><a class="header-toolbar-item" href="#auth-form" data-popup="{&quot;type&quot;:&quot;inline&quot;}">Вход</a></li>
+          <li class="header-menu__item favorites"><a href="favorites.html">Избранное</a></li>
+          <li class="header-menu__item basket"><a class="header-toolbar-item" href="basket.html"><img src="../svg/basket.svg"/><span></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="catalog-buyer-menu" id="catalog-buyer-menu">
+    <div class="page-inner" style1="position: relative;">
+      <div class="menu-sections">
+        <ul class="buyer-menu__list">
+          <li><a class="buyer-menu__link active" href="#cm1">Подарочные сертификаты</a></li>
+          <li><a class="buyer-menu__link" href="#cm2">Доставка и оплата</a></li>
+          <li><a class="buyer-menu__link" href="#cm2">Гарантия и возврат</a></li>
+          <li><a class="buyer-menu__link" href="#cm2">Система лояльности</a></li>
+          <li><a class="buyer-menu__link" href="#cm2">Руководство по покупке</a></li>
+          <li><a class="buyer-menu__link" href="#cm2">Работа у нас</a></li>
+        </ul>
+        <ul class="buyer-menu__list">
+          <li><a class="buyer-menu__link" href="#cm2">Telegram</a></li>
+          <li><a class="buyer-menu__link" href="#cm2">Вконтакте</a></li>
+          <li><a class="buyer-menu__link" href="tel:+88003508991">8 800 350 89 91</a></li>
+          <li><a class="buyer-menu__link" href="tel:+79296081332">+7 929 608 13 32</a></li>
+        </ul>
+        <ul class="buyer-menu__list">
+          <li><a class="buyer-menu__link" href="#cm2">О компании</a></li>
+          <li><a class="buyer-menu__link" href="#cm2">Контакты</a></li>
+          <li><a class="buyer-menu__link" href="#cm2">Магазины</a></li>
+          <li><a class="buyer-menu__link" href="#cm2">Мои заказы</a></li>
+          <li><a class="buyer-menu__link" href="#cm2">Личный кабинет</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="catalog-search-menu" id="catalog-search-menu">
+    <div class="page-inner page-inner--w2">
+      <div class="menu-sections">
+        <!-- search-menu-->
+        <div class="menu-sections__inner page-inner--w2">
+          <form action="search.html">
+            <div class="search-form">
+              <input class="search-form__input" type="text" placeholder=""/>
+              <button class="search-form__clear" type="button"></button>
+              <button class="search-form__submit btn btn--black btn--medium" type="submit">Найти</button>
+            </div>
+            <div class="search-results">
+              <div class="search-history">
+                <ul class="search-history__list">
+                  <li class="search-history__title">ИСТОРИЯ ПОИСКА</li>
+                  <li><a class="search-history__link" href="#">Платье</a></li>
+                  <li><a class="search-history__link" href="#">Жабо</a></li>
+                  <li><a class="search-history__link" href="#">Юбка</a></li>
+                </ul>
+                <ul>
+                  <li class="search-history__title">Часто ищут</li>
+                  <li><a class="search-history__link" href="#">Боди</a></li>
+                  <li><a class="search-history__link" href="#">Платье</a></li>
+                  <li><a class="search-history__link" href="#">Топы</a></li>
+                  <li><a class="search-history__link" href="#">Футболки</a></li>
+                </ul>
+              </div>
+              <div class="search-products">
+                <!-- search-products-->
+                <div class="row search-products__catalog-items">
+                  <div class="col-md-3 col-sm-6">
+                    <div class="catalog-item w1">
+                      <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c1.jpg"/></div>
+                      <div class="catalog-item-title">ПЛАТЬЕ</div>
+                      <div class="catalog-item-price">15 900 Р</div><a class="catalog-item-link" href="#"></a>
+                      <button class="catalog-item-like" type="button"> </button>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="catalog-item w1">
+                      <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c2.jpg"/></div>
+                      <div class="catalog-item-title">ПЛАТЬЕ</div>
+                      <div class="catalog-item-price">15 900 Р</div><a class="catalog-item-link" href="#"></a>
+                      <button class="catalog-item-like" type="button"> </button>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="catalog-item w1">
+                      <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c3.jpg"/></div>
+                      <div class="catalog-item-title">ПЛАТЬЕ</div>
+                      <div class="catalog-item-price">15 900 Р</div><a class="catalog-item-link" href="#"></a>
+                      <button class="catalog-item-like" type="button"> </button>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="catalog-item w1">
+                      <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c4.jpg"/></div>
+                      <div class="catalog-item-title">ПЛАТЬЕ</div>
+                      <div class="catalog-item-price">15 900 Р</div><a class="catalog-item-link" href="#"></a>
+                      <button class="catalog-item-like" type="button"> </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- /search-menu-->
+      </div>
+    </div>
+  </div>
+  <div class="catalog-menu catalog-menu_visible1" id="catalog-menu">
+    <div class="page-inner page-inner--w2">
+      <div class="catalog-menu-sections">
+        <div class="catalog-open catalog-menu__close"></div>
+        <ul class="catalog-menu__list accordion accordion_catalog-menu">
+          <li><a class="catalog-menu__link submenu active" href="#cm1">NEW</a></li>
+          <li><a class="catalog-menu__link" href="#cm2">LOOKBOOK</a></li>
+          <li class="accordion-item">
+            <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm3">SS`22</a></div>
+            <ul class="accordion-item-content">
+              <li><a class="catalog-menu__sublink" href="#">Summer City Wibe</a></li>
+              <li><a class="catalog-menu__sublink" href="#">East way</a></li>
+              <li><a class="catalog-menu__sublink" href="#">With Nature</a></li>
+              <li><a class="catalog-menu__sublink" href="#">Textile</a></li>
+              <li><a class="catalog-menu__sublink" href="#">Prod Dress</a></li>
+            </ul>
+          </li>
+          <li><a class="catalog-menu__link" href="#cm4">OFFICE</a></li>
+          <li><a class="catalog-menu__link" href="#cm5">ЛЕН</a></li>
+          <li><a class="catalog-menu__link" href="#cm7">EVENING</a></li>
+          <li><a class="catalog-menu__link" href="#cm8">Верхняя одежда</a></li>
+          <li><a class="catalog-menu__link" href="#cm6">СПОРТ</a></li>
+          <li class="accordion-item">
+            <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm9">ПЛАТЬЯ | КОМБИНЕЗОНЫ</a></div>
+            <ul class="accordion-item-content">
+              <li><a class="catalog-menu__sublink" href="#">Эко-кожа</a></li>
+              <li><a class="catalog-menu__sublink" href="#">Вискоза / Хлопок</a></li>
+              <li><a class="catalog-menu__sublink" href="#">Шерсть / Кашемир</a></li>
+              <li><a class="catalog-menu__sublink" href="#">Комбинезоны</a></li>
+              <li><a class="catalog-menu__sublink" href="#">Лен</a></li>
+            </ul>
+          </li>
+          <li><a class="catalog-menu__link" href="#cm10">джемперы</a></li>
+          <li><a class="catalog-menu__link" href="#cm11">КАРДИГАНЫ</a></li>
+          <li><a class="catalog-menu__link" href="#cm12">ЖАКЕТЫ</a></li>
+          <li><a class="catalog-menu__link" href="#cm13">ЖИЛЕТЫ</a></li>
+          <li><a class="catalog-menu__link" href="#cm14">РУБАШКИ</a></li>
+          <li><a class="catalog-menu__link" href="#cm15">ВОДОЛАЗКИ</a></li>
+          <li><a class="catalog-menu__link" href="#cm16">БРЮКИ</a></li>
+          <li class="accordion-item">
+            <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm17">ЮБКИ</a></div>
+            <ul class="accordion-item-content">
+              <li><a class="catalog-menu__sublink" href="#">Плиссирвоанные</a></li>
+              <li><a class="catalog-menu__sublink" href="#">Прямые</a></li>
+              <li><a class="catalog-menu__sublink" href="#">Юбка-брюки</a></li>
+              <li><a class="catalog-menu__sublink" href="#">Трапецевидные</a></li>
+            </ul>
+          </li>
+          <li><a class="catalog-menu__link" href="#cm18">ШОРТЫ</a></li>
+          <li><a class="catalog-menu__link" href="#cm19">ФУТБОЛКИ</a></li>
+          <li><a class="catalog-menu__link" href="#cm19">ТОПЫ</a></li>
+          <li><a class="catalog-menu__link" href="#cm19">БОДИ</a></li>
+          <li><a class="catalog-menu__link" href="#cm19">КОМПЛЕКТЫ</a></li>
+          <li><a class="catalog-menu__link" href="#cm19">АКСЕССУАРЫ</a></li>
+          <li><a class="catalog-menu__link" href="#cm19">ДЕТИ</a></li>
+          <li><a class="catalog-menu__link" href="#cm19">THE MOUNTAINS</a></li>
+          <li><a class="catalog-menu__link" href="#cm19">КАШЕМИР</a></li>
+          <li><a class="catalog-menu__link catalog-menu__separator catalog-menu__link-red" href="#cm19">SALE</a></li>
+          <!-- <li class="catalog-menu__separator"></li>-->
+          <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Мои заказы</a></li>
+          <li><a class="catalog-menu__link catalog-menu__link_lowercase mb-20px" href="#cm19">Личный кабинет</a></li>
+          <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">О компании</a></li>
+          <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Магазины</a></li>
+          <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Подарочные сертификаты</a></li>
+          <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Доставка и оплата</a></li>
+          <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Гарантия и возврат</a></li>
+          <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Система лояльности</a></li>
+          <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Блог</a></li>
+          <li class="catalog-menu-footer"><a href="favorites.html">Избранное (2)</a><a href="#">Вход</a></li>
+          <li> </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </header>
