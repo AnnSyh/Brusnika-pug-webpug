@@ -440,6 +440,7 @@ body {
 .header-menu .header-menu-item:last-child {
   margin-right: 0;
 }
+.basket-open .page:after,
 .show-filter .page:after,
 .catalog-open .page:after,
 .search-open .page:after {

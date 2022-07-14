@@ -146,6 +146,7 @@ a.catalog-menu__link_lowercase {
     right: -16px;
 }
 
+.basket-open .page:after,
 .catalog-open .page:after,
 .search-open .page:after {
     z-index: 100;
@@ -155,6 +156,7 @@ a.catalog-menu__link_lowercase {
 }
 
 
+.basket-open .page-header,
 .show-filter .page-header,
 .catalog-open .page-header {
     background-color: transparent;

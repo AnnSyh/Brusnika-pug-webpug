@@ -3,6 +3,7 @@
 @import url(../css/blocks/cards/__list/cards__list.css);
 @import url(../css/blocks/header-menu.css);
 @import url(../css/blocks/catalog-menu.css);
+@import url(../css/blocks/basket-menu.css);
 @import url(../css/blocks/catalog.css);
 @import url(../css/blocks/page-note.css);
 @import url(../css/blocks/filter.css);
@@ -234,6 +235,11 @@ body,
 
 
 /*-----------правки ------------------*/
+
+/* Страница поиска */
+.page-section--search {
+  padding: 0;
+}
 
 /* Страница бренда */
 

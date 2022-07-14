@@ -32,11 +32,14 @@
 				$menu: null,
 				$searchMenu: null,
 				$buyerMenu: null,
+				$basketMenu: null,
 				$links: null,
 				$blocks: null,
+
 				opened: false,
 				openedSearchMenu: false,
 				openedBuyerhMenu: false,
+				openedBaskethMenu: false,
 
 				showTimer: false,
 				hideTimer: false,
@@ -44,12 +47,16 @@
 				init: function() {
 					var self = this;
 
+					self.$basketOpenBtn = $(".basket-open", $sel.page);
+					self.$basketMenu = $("#catalog-basket", $sel.page);
+
 					self.$dropdown = $(".header-menu__item-dropdown", $sel.page);
 					self.$buyerMenu = $("#catalog-buyer-menu", $sel.page);
 					self.$buyerMenuSections = $(".menu-sections", $sel.page);
 
 					self.$btn = $(".catalog-open", $sel.page);
 					self.$menu = $("#catalog-menu", $sel.page);
+
 
 					self.$searchBtn = $(".catalog-search-open", $sel.page);
 					self.$searchMenu = $("#catalog-search-menu", $sel.page);
@@ -74,6 +81,13 @@
 						self.opened ? self.closeMenu() : self.openMenu();
 					});
 
+					self.$basketOpenBtn.on("click", function(e) { //раскрытие меню при клике
+
+						e.preventDefault();
+						e.stopPropagation();
+						self.openedBaskethMenu ? self.closeBasketMenu() : self.openBasketMenu();
+					});
+
 					$sel.window.on("click", function(e) {
 
 						if(!$(e.target).closest("#catalog-menu").length) {
@@ -85,6 +99,12 @@
 						if(!$(e.target).closest("#catalog-search-menu").length) {
 							if(self.openedSearchMenu) {
 								self.closeSearchMenu();
+							}
+						}
+				
+						if(!$(e.target).closest("#catalog-basket").length) {
+							if(self.openedBasketMenu) {
+								self.closeBasketMenu();
 							}
 						}
 					});
@@ -164,6 +184,32 @@
 					$sel.body.removeClass("search-open");
 					self.openedSearchMenu = false;
 				},
+
+				openBasketMenu: function() {
+					var self = this;
+					console.log('2222openBasketMenu');
+
+					self.$basketMenu.addClass("basket-menu_visible");
+					self.$basketOpenBtn.addClass("active");
+					// очистить класы менюшек у боди т.е.закрыть их
+					self.$buyerMenu.hide();
+					$sel.body.removeClass('dropdown');
+					$sel.body.removeClass('search-open');
+					$sel.body.removeClass('show-filter');
+
+					$sel.body.addClass("basket-open");
+					self.openedBasketMenu = true;
+				},
+				closeBasketMenu: function() {
+					var self = this;
+					console.log('closeBasketMenu');
+
+					self.$basketMenu.removeClass("basket-menu_visible");
+					self.$basketOpenBtn.removeClass("active");
+					$sel.body.removeClass("basket-open");
+					self.openedBasketMenu = false;
+				},
+	
 
 				openBuyerMenu: function() {
 					console.log('openBuyerMenu');
