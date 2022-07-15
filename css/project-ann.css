@@ -14,14 +14,22 @@
 @import url(../css/blocks/form-tabs.css);
 @import url(../css/blocks/form-tabs.css);
 @import url(../css/blocks/page-popup.css);
+@import url(../css/blocks/order.css);
+@import url(../css/blocks/cards.css);
 
+
+.jcf-number {
+  border-radius: 0px;
+}
 
 .w100 {
   width: 100%;
 }
+
 .max-w100 {
   max-width: 100%;
 }
+
 .page-inner--w3 {
   max-width: 1368px;
 }
@@ -33,48 +41,68 @@
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.m0 {margin: 0;}
-.p0 {padding: 0;}
+
+.m0 {
+  margin: 0;
+}
+
+.p0 {
+  padding: 0;
+}
+
 .hidden-x {
   overflow-x: hidden;
 }
+
 .align-items-end {
   align-items: flex-end;
 }
+
 .align-items-center {
   align-items: center;
 }
+
 .txt-red {
   color: #FF300A;
 }
+
 .ml-auto {
   margin-left: auto;
 }
+
 .mb-100px {
   margin-bottom: 100px;
 }
+
 .mb-50px {
   margin-bottom: 50px;
 }
+
 .img-fluid {
   max-width: 100%;
-  height:auto;
+  height: auto;
 }
-.white-space-normal
-{
+
+.white-space-normal {
   white-space: normal;
 }
+
 .w-100 {
   width: 100%;
   max-width: 100%;
 }
+
 .mt-60px {
   margin-top: 60px;
 }
+
 .bold {
   font-weight: bold;
 }
-.tooltip_templates { display: none; }
+
+.tooltip_templates {
+  display: none;
+}
 
 
 
@@ -90,26 +118,28 @@
   line-height: 32px;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 480px) {
   .sport-delivery--title-big {
     font-size: 24px;
     line-height: 32px;
   }
 }
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 576px) {
   .sport-delivery--title-big {
     font-size: 33px;
     line-height: 32px;
   }
 }
-@media screen and (min-width: 768px){
+
+@media screen and (min-width: 768px) {
   .sport-delivery--title-big {
     font-size: 40px;
     line-height: 72px;
   }
 }
-@media screen and (min-width: 990px){
+
+@media screen and (min-width: 990px) {
   .sport-delivery--title-big {
     font-size: 56px;
     line-height: 72px;
@@ -119,15 +149,17 @@
 .sport-delivery--img-row .col-12 {
   padding: 0px;
 }
+
 .sport-delivery--img-row .col-lg-6 {
   margin-bottom: 50px;
 
 }
+
 .sport-delivery--img {
   border-radius: 25px;
   max-width: 100%;
   width: 100%;
-  height:auto;
+  height: auto;
   margin-bottom: 20px;
 }
 
@@ -136,6 +168,7 @@
   line-height: 24px;
   font-weight: 400;
 }
+
 .sport-delivery--title {
   font-size: 24px;
   line-height: 32px;
@@ -154,40 +187,47 @@
   text-align: center;
 
 }
-@media screen and (max-width: 320px){
+
+@media screen and (max-width: 320px) {
   .big-logo {
     font-size: 25px;
-   }
+  }
 }
-@media screen and (min-width: 480px){
+
+@media screen and (min-width: 480px) {
   .big-logo {
     font-size: 38px;
-   }
+  }
 }
-@media screen and (min-width: 576px){
+
+@media screen and (min-width: 576px) {
   .big-logo {
     font-size: 46px;
-   }
+  }
 }
-@media screen and (min-width: 768px){
+
+@media screen and (min-width: 768px) {
   .big-logo {
     font-size: 64px;
-   }
+  }
 }
-@media screen and (min-width: 992px){
+
+@media screen and (min-width: 992px) {
   .big-logo {
     font-size: 82px;
-   }
+  }
 }
-@media screen and (min-width: 1200px){
+
+@media screen and (min-width: 1200px) {
   .big-logo {
     font-size: 100px;
-   }
+  }
 }
-@media screen and (min-width: 1570px){
+
+@media screen and (min-width: 1570px) {
   .big-logo {
     font-size: 134px;
-   }
+  }
 }
 
 .news__title {
@@ -197,18 +237,22 @@
   text-transform: uppercase;
   margin: 25px 0;
 }
+
 .news__lead,
 .news__time {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
+
 .news__lead {
   text-transform: uppercase;
 }
+
 .news__time {
   text-transform: lowercase;
 }
+
 .promo500-txt {
   font-size: 24px;
   line-height: 32px;
@@ -218,13 +262,17 @@
 
 body,
 .form-item,
-.jcf-number input  {
+.jcf-number input {
   font-family: 'SFProDisplay', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .cards__list .catalog-item-photo-holder {
   padding-top: 137%;
 }
+
 .cards__list .catalog-item-photo-holder img {
   border-radius: 25px;
 }
@@ -252,10 +300,12 @@ body,
   display: flex;
   margin-bottom: 30px;
 }
+
 .product-basket .product-buy {
   margin-bottom: 0px;
   margin-left: 10px;
 }
+
 .product-basket .jcf-number {
   /* border: 1px solid red; */
   top: 0;
@@ -267,7 +317,9 @@ body,
 }
 
 /* //----------------------- */
-#open-popup {padding:20px}
+#open-popup {
+  padding: 20px
+}
 
 .white-popup {
   position: relative;
@@ -294,3 +346,13 @@ body,
   border-radius: 20px;
 }
 
+/* заголовки */
+
+
+
+.page-text h1,
+.h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}

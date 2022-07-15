@@ -1,9 +1,8 @@
-
 @font-face {
   font-family: 'SFProDisplay';
   font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/SFProDisplay-Semibold.woff') format('woff');
+  font-weight: 200;
+  src: url('../fonts/SFProDisplay-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'SFProDisplay';
@@ -14,6 +13,6 @@
 @font-face {
   font-family: 'SFProDisplay';
   font-style: normal;
-  font-weight: 200;
-  src: url('../fonts/SFProDisplay-Regular.woff') format('woff');
+  font-weight: 600;
+  src: url('../fonts/SFProDisplay-Semibold.woff') format('woff');
 }

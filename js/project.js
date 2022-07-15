@@ -341,6 +341,55 @@
 
 				product: function() {
 					console.log('product slider');
+// ------------------------------
+
+$(".card-photos-nav").on("init", function(e, s) {
+	s.$slides.on("click", function() {
+		s.$slides.removeClass("current");
+		$(".card-photos").slick("slickGoTo", s.$slides.index($(this)));
+	});
+}).slick({
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	arrows: true,
+	infinite: false,
+	dots: false,
+	swipeToSlide: true,
+	focusOnSelect: true,
+	swipe: false,
+	vertical: true,
+	responsive: [
+		{
+			breakpoint: 960,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				swipe: true
+			}
+		}
+	]
+});
+
+$(".card-photos").on("init", function(e, s) {
+	$($(".card-photos-nav").slick("getSlick").$slides[0]).addClass("current");
+}).on("beforeChange", function(e, s, curSlide, nextSlide) {
+	$(".card-photos-nav").slick("getSlick").$slides.removeClass("current");
+	$($(".card-photos-nav").slick("getSlick").$slides[nextSlide]).addClass("current");
+	$(".card-photos-nav").slick("slickGoTo", nextSlide);
+}).slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	dots: true,
+	arrows: false,
+	infinite: false
+});
+
+
+
+// ------------------------------
+
+
+
 					$(".product-media", $sel.page).on("init", function(e, s) {
 						if(s.slideCount == 1) {
 							s.$dots.remove();

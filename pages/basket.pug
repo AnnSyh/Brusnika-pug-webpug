@@ -1,0 +1,145 @@
+- var pageTitle = 'Брусника корзина'
+
+doctype html
+html.no-js(lang='ru' prefix='og:http://ogp.me/ns#')
+  head
+    //- Meta
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title pageTitle
+    meta(name='robots' content='index, follow')
+    //- Meta
+    //- Open graph
+    meta(property='og:type' content='website')
+    meta(property='og:title' content='Брусника')
+    meta(property='og:site_name' content='Брусника')
+    meta(property='og:image' content='/i/og.jpg')
+    //- Open graph
+    //- Icons
+    link(href='/i/favicon.ico' rel='shortcut icon' type='image/x-icon')
+    link(href='/i/favicon.ico' rel='icon' type='image/x-icon')
+    link(href='../i/icons/apple-touch-icon.jpg' rel='apple-touch-icon')
+    link(href='../i/icons/apple-touch-icon-76.jpg' rel='apple-touch-icon' sizes='76x76')
+    link(href='../i/icons/apple-touch-icon-140.jpg' rel='apple-touch-icon' sizes='140x140')
+    link(href='../i/icons/apple-touch-icon-152.jpg' rel='apple-touch-icon' sizes='152x152')
+    //- Icons
+    //- CSS
+    link(rel='stylesheet' type='text/css' media='screen' href='../css/plugins/bootstrap-grid.min.css')
+    link(rel='stylesheet' type='text/css' media='screen' href='../css/plugins/tooltipster.bundle.min.css')
+    link(rel='stylesheet' type='text/css' media='screen' href='../css/plugins/slick.css')
+    link(rel='stylesheet' type='text/css' media='screen' href='../css/plugins/magnific-popup.css')
+    link(rel='stylesheet' type='text/css' media='screen' href='../css/plugins/datepicker.min.css')
+    link(rel='stylesheet' type='text/css' media='screen' href='../css/project.css')
+    link(rel='stylesheet' type='text/css' media='screen' href='../css/project-ann.css')
+    link(rel='stylesheet' type='text/css' media='screen' href='../css/project.responsive.css')
+    link(rel='stylesheet' type='text/css' media='screen' href='../css/project.responsive-ann.css')
+    //- CSS  
+    style 
+      include ../css/style.css    
+  body
+    .page
+      include modules/page-note
+      include modules/header
+      main.page-content
+        .page-section
+          .page-inner.page-inner--w2
+            .page-heading
+              .row.align-items-end.justify-content-between
+                .col-md-6
+                  .d-md-none.mb-3
+                    a.link.link--gray_border(href='section.html') Назад к покупкам
+                  .h1 ОФОРМЛЕНИЕ ЗАКАЗОВ
+                  p.mt-2
+                    | Обработка заказов ежедневно
+                    nobr 09:00 — 21:00
+                .col-auto.d-none.d-md-block
+                  a.link.link--black(href='section.html') Назад к покупкам
+          .page-inner.page-inner--w2
+            .order.row.justify-content-between
+              .col-12.col-xl-7
+                .order-content
+                  .h3.d-none.d-md-block Товары в заказе
+                  .order-table.basket
+                    .row.justify-content-between
+                      .col-md-7
+                        .row
+                          .col-4.col-md-3
+                            .order-photo-holder
+                              img.cover(src='../dummy/orders/1.jpg')
+                          .col-8.col-md-9
+                            .d-md-none
+                              a.order-table-delete(href='#')  
+                            .basket-name-holder БРЮКИ 
+                            .basket-price 6 500 Р
+                            .basket-size Размер: S
+                            .basket-color цвет: коричневый
+                            .d-md-none
+                              .row.justify-content-between.align-items-center
+                                .col-auto цвет: коричневый
+                                .col-auto
+                                  input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
+                      .col-md-4.d-none.d-md-block
+                        .row.justify-content-between
+                          .col-md-5
+                            input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
+                          .col-md-5 8 990 Р
+                          .col-md-2
+                            a.order-table-delete(href='#')  
+                    .row.justify-content-between
+                      .col-md-7
+                        .row
+                          .col-4.col-md-3
+                            .order-photo-holder
+                              img.cover(src='../dummy/orders/2.jpg')
+                          .col-8.col-md-9
+                            .d-md-none
+                              a.order-table-delete(href='#')  
+                            .mb-3.mb-md-1.basket-name-holder
+                              b Мяч футбольный Select Diamond
+                            .mb-2.d-none.d-md-block Размер: 5
+                            .d-none.d-md-block
+                              b 2 390 Р
+                            .d-md-none
+                              .row.justify-content-between.align-items-center
+                                .col-auto
+                                  b 2 390 Р
+                                .col-auto
+                                  input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
+                      .col-md-4.d-none.d-md-block
+                        .row.justify-content-between
+                          .col-md-5
+                            input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
+                          .col-md-5
+                            b 2 390 Р
+                          .col-md-2
+                            a.order-table-delete(href='#')  
+                  .d-md-none.mobile-table-summary.center К оплате: 14 760 Р
+                  .d-none.d-md-block
+                    a.link.link--gray_border.small(href='basket_empty.html') Очистить корзину
+              .col-12.col-md-12.col-xl-4.justify-content-center
+                .order-aside.order-aside-sticky
+                  .h3.mb-20 Общая стоимость 14 760 Р
+                  .mb-30 Вы получаете бесплатную доставку курьером
+                  .mb-20
+                    .mb-1 Товары на сумму  — 11 792 Р
+                    .mb-1 Доставка — Бесплатно
+                    .mb-1 Скидка — 2 940 Р
+                  .row.justify-content-between.mb-30
+                    .col-12.col-xxl-6
+                      .h3 К оплате: 14 760 Р
+                    .col-12.col-xxl-auto.mt-1.mt-xxl-0
+                      a.link.link--black_border.open-promocode(href='#') Есть промо-код
+                  #promocode-block.mb-40
+                    label.form-item-label(for='promocode') Промо-код
+                    .row
+                      .col-12.col-xxl-7
+                        input#promocode.form-item.form-item--text(type='text')
+                      .col-12.col-xxl-5.mt-2.mt-xxl-0
+                        button.btn.btn--medium.btn--black_border.mx-auto(type='button') Применить
+                  a.btn.btn--large.btn--black.btn--fullwidth(href='make_order.html') ОФОРМИТЬ ЗАКАЗ
+                  .under-btn Нажимая на кнопку «Оформить заказ» вы соглашаетесь 
+                  | с условиями оферты и политикой конфиденциальности.
+
+      include modules/footer
+    include modules/footer-page
+    include modules/footer-scripts
