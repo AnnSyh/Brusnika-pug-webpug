@@ -4,6 +4,7 @@
 @import url(../css/blocks/header-menu.css);
 @import url(../css/blocks/catalog-menu.css);
 @import url(../css/blocks/basket-menu.css);
+@import url(../css/blocks/size-menu.css);
 @import url(../css/blocks/catalog.css);
 @import url(../css/blocks/page-note.css);
 @import url(../css/blocks/filter.css);
@@ -15,8 +16,9 @@
 @import url(../css/blocks/form-tabs.css);
 @import url(../css/blocks/page-popup.css);
 @import url(../css/blocks/order.css);
-@import url(../css/blocks/cards.css);
-@import url(../css/blocks/card-galary.css);
+/* @import url(../css/blocks/cards.css); */
+@import url(../css/blocks/product.css);
+@import url(../css/blocks/complete-look.css);
 
 
 .jcf-number {

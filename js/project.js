@@ -33,6 +33,7 @@
 				$searchMenu: null,
 				$buyerMenu: null,
 				$basketMenu: null,
+				$sizeMenu: null,
 				$links: null,
 				$blocks: null,
 
@@ -40,12 +41,16 @@
 				openedSearchMenu: false,
 				openedBuyerhMenu: false,
 				openedBaskethMenu: false,
+				openedSizeMenu: false,
 
 				showTimer: false,
 				hideTimer: false,
 
 				init: function () {
 					var self = this;
+
+					self.$sizeOpenBtn = $(".size-open", $sel.page);
+					self.$sizeMenu = $("#catalog-size", $sel.page);
 
 					self.$basketOpenBtn = $(".basket-open", $sel.page);
 					self.$basketMenu = $("#catalog-basket", $sel.page);
@@ -88,6 +93,14 @@
 						self.openedBaskethMenu ? self.closeBasketMenu() : self.openBasketMenu();
 					});
 
+					self.$sizeOpenBtn.on("click", function (e) { //раскрытие меню при клике
+						console.log('sizeOpenBtn');
+
+						e.preventDefault();
+						e.stopPropagation();
+						self.openedSizehMenu ? self.closeSizeMenu() : self.openSizeMenu();
+					});
+
 					$sel.window.on("click", function (e) {
 
 						if (!$(e.target).closest("#catalog-menu").length) {
@@ -105,6 +118,12 @@
 						if (!$(e.target).closest("#catalog-basket").length) {
 							if (self.openedBasketMenu) {
 								self.closeBasketMenu();
+							}
+						}
+
+						if (!$(e.target).closest("#catalog-size").length) {
+							if (self.openedSizeMenu) {
+								self.closeSizeMenu();
 							}
 						}
 					});
@@ -157,7 +176,7 @@
 				},
 				closeMenu: function () {
 					var self = this;
-					// console.log('closeMenu');
+					console.log('111closeMenu');
 
 					self.$menu.removeClass("catalog-menu_visible");
 					self.$btn.removeClass("active");
@@ -210,7 +229,6 @@
 					self.openedBasketMenu = false;
 				},
 
-
 				openBuyerMenu: function () {
 					console.log('openBuyerMenu');
 					var self = this;
@@ -231,6 +249,31 @@
 					self.$buyerMenu.hide();
 					$sel.body.removeClass("dropdown");
 					self.openedBuyerhMenu = false;
+				},
+
+				openSizeMenu: function () {
+					console.log('openSizeMenu');
+					var self = this;
+
+					self.$sizeMenu.addClass("size-menu_visible");
+					self.$sizeOpenBtn.addClass("active");
+					
+					// очистить класы менюшек у боди т.е.закрыть их
+					// self.$buyerMenu.hide();
+					$sel.body.removeClass('dropdown');
+					$sel.body.removeClass('size-open');
+					$sel.body.removeClass('show-filter');
+
+					$sel.body.addClass("size-open");
+					self.openedSizeMenu = true;
+				},
+				closeSizeMenu: function () {
+					var self = this;
+					console.log('closeSizeMenu');
+
+					self.$sizeMenu.removeClass("size-menu_visible");
+					$sel.body.removeClass("size-open");
+					self.openedSizeMenu = false;
 				}
 			},
 
@@ -343,13 +386,13 @@
 					console.log('product slider');
 					// ------------------------------
 
-					$(".card-photos-nav").on("init", function (e, s) {
+					$(".product-photos-nav").on("init", function (e, s) {
 						s.$slides.on("click", function () {
 							s.$slides.removeClass("current");
-							$(".card-photos").slick("slickGoTo", s.$slides.index($(this)));
+							$(".product-photos").slick("slickGoTo", s.$slides.index($(this)));
 						});
 					}).slick({
-						slidesToShow: 3,
+						slidesToShow: 6,
 						slidesToScroll: 1,
 						arrows: true,
 						infinite: false,
@@ -362,7 +405,7 @@
 							{
 								breakpoint: 960,
 								settings: {
-									slidesToShow: 3,
+									slidesToShow: 6,
 									slidesToScroll: 1,
 									swipe: true
 								}
@@ -370,18 +413,19 @@
 						]
 					});
 
-					$(".card-photos").on("init", function (e, s) {
-						$($(".card-photos-nav").slick("getSlick").$slides[0]).addClass("current");
+					$(".product-photos").on("init", function (e, s) {
+						$($(".product-photos-nav").slick("getSlick").$slides[0]).addClass("current");
 					}).on("beforeChange", function (e, s, curSlide, nextSlide) {
-						$(".card-photos-nav").slick("getSlick").$slides.removeClass("current");
-						$($(".card-photos-nav").slick("getSlick").$slides[nextSlide]).addClass("current");
-						$(".card-photos-nav").slick("slickGoTo", nextSlide);
+						$(".product-photos-nav").slick("getSlick").$slides.removeClass("current");
+						$($(".product-photos-nav").slick("getSlick").$slides[nextSlide]).addClass("current");
+						$(".product-photos-nav").slick("slickGoTo", nextSlide);
 					}).slick({
 						slidesToShow: 1,
 						slidesToScroll: 1,
-						dots: true,
+						dots: false,
 						arrows: false,
-						infinite: false
+						infinite: false,
+						vertical: true,
 					});
 
 

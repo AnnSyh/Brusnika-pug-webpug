@@ -146,6 +146,7 @@ a.catalog-menu__link_lowercase {
     right: -16px;
 }
 
+.size-open .page:after,
 .basket-open .page:after,
 .catalog-open .page:after,
 .search-open .page:after {
@@ -156,6 +157,7 @@ a.catalog-menu__link_lowercase {
 }
 
 
+.size-open .page-header,
 .basket-open .page-header,
 .show-filter .page-header,
 .catalog-open .page-header {
