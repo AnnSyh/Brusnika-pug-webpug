@@ -40,7 +40,7 @@
 				opened: false,
 				openedSearchMenu: false,
 				openedBuyerhMenu: false,
-				openedBaskethMenu: false,
+				openedBasketMenu: false,
 				openedSizeMenu: false,
 
 				showTimer: false,
@@ -90,7 +90,7 @@
 
 						e.preventDefault();
 						e.stopPropagation();
-						self.openedBaskethMenu ? self.closeBasketMenu() : self.openBasketMenu();
+						self.openedBasketMenu ? self.closeBasketMenu() : self.openBasketMenu();
 					});
 
 					self.$sizeOpenBtn.on("click", function (e) { //раскрытие меню при клике
@@ -98,7 +98,7 @@
 
 						e.preventDefault();
 						e.stopPropagation();
-						self.openedSizehMenu ? self.closeSizeMenu() : self.openSizeMenu();
+						self.openedSizeMenu ? self.closeSizeMenu() : self.openSizeMenu();
 					});
 
 					$sel.window.on("click", function (e) {

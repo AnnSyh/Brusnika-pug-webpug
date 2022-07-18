@@ -26,8 +26,10 @@
 
 .basket-menu__close {
     position: absolute;
-    right: 35px;
-    top: 35px;
+    right: 24px;
+    top: 24px;
+    width: 24px;
+    height: 24px;
 }
 
 .basket-menu__close::before {

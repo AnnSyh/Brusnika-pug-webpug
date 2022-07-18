@@ -3,6 +3,7 @@
 }
 
 .gallery__item {
+    width: 100%;
     border: 1px solid green;
 }
 
@@ -27,12 +28,13 @@
     padding-top: calc(154% - 70px);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1023px) {
     .gallery {
         grid-template-columns: repeat(2, calc(100% / 2 - 8px));
         gap: 1rem;
     }
 }
+
 @media screen and (min-width: 1024px) {
     .gallery {
         grid-template-columns: repeat(3, calc(100% / 3 - 12px));
