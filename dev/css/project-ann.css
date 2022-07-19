@@ -16,9 +16,10 @@
 @import url(../css/blocks/form-tabs.css);
 @import url(../css/blocks/page-popup.css);
 @import url(../css/blocks/order.css);
-/* @import url(../css/blocks/cards.css); */
 @import url(../css/blocks/product.css);
+
 @import url(../css/blocks/complete-look.css);
+@import url(../css/blocks/tables.css);
 
 
 .jcf-number {
