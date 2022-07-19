@@ -3,46 +3,21 @@
 doctype html
 html.no-js(lang='ru', prefix='og:http://ogp.me/ns#')
   head
-    //- Meta
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title pageTitle
-    meta(name='robots', content='index, follow')
-    //- Meta
-    //- Open graph
-    meta(property='og:type', content='website')
-    meta(property='og:title', content='Брусника')
-    meta(property='og:site_name', content='Брусника')
-    meta(property='og:image', content='/i/og.jpg')
-    //- Open graph
-    //- Icons
-    link(href='/i/favicon.ico', rel='shortcut icon', type='image/x-icon')
-    link(href='/i/favicon.ico', rel='icon', type='image/x-icon')
-    link(href='../i/icons/apple-touch-icon.jpg', rel='apple-touch-icon')
-    link(href='../i/icons/apple-touch-icon-76.jpg', rel='apple-touch-icon', sizes='76x76')
-    link(href='../i/icons/apple-touch-icon-140.jpg', rel='apple-touch-icon', sizes='140x140')
-    link(href='../i/icons/apple-touch-icon-152.jpg', rel='apple-touch-icon', sizes='152x152')
-    //- Icons
-    //- CSS
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/plugins/bootstrap-grid.min.css')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/plugins/tooltipster.bundle.min.css')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/plugins/slick.css')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/plugins/magnific-popup.css')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/plugins/datepicker.min.css')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/project.css')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/project-ann.css')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/project.responsive.css')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/project.responsive-ann.css')
-    //- CSS  
+    include modules/head  
     style 
-      include css/style.css    
+      include css/style.css     
   body
     .page
       include modules/page-note
       include modules/header
+      include modules/size-menu
       main.page-content
-        .page-section
-            h1 Pug - card
+        .page-inner.page-inner--w1
+          .page-section
+            include modules/card
+            include modules/card-nav
+            include modules/complete-look
       include modules/footer
     include modules/footer-page
+    include modules/card-popup
     include modules/footer-scripts

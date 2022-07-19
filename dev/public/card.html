@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ru" prefix="og:http://ogp.me/ns#">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pageTitle</title>
-    <meta name="robots" content="index, follow">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Брусника">
-    <meta property="og:site_name" content="Брусника">
-    <meta property="og:image" content="/i/og.jpg">
-    <link href="/i/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="/i/favicon.ico" rel="icon" type="image/x-icon">
-    <link href="../i/icons/apple-touch-icon.jpg" rel="apple-touch-icon">
-    <link href="../i/icons/apple-touch-icon-76.jpg" rel="apple-touch-icon" sizes="76x76">
-    <link href="../i/icons/apple-touch-icon-140.jpg" rel="apple-touch-icon" sizes="140x140">
-    <link href="../i/icons/apple-touch-icon-152.jpg" rel="apple-touch-icon" sizes="152x152">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/plugins/bootstrap-grid.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/plugins/tooltipster.bundle.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/plugins/slick.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/plugins/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/plugins/datepicker.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/project.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/project-ann.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/project.responsive.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/project.responsive-ann.css">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>pageTitle</title>
+      <meta name="robots" content="index, follow">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Брусника">
+      <meta property="og:site_name" content="Брусника">
+      <meta property="og:image" content="/i/og.jpg">
+      <link href="/i/favicon.ico" rel="shortcut icon" type="image/x-icon">
+      <link href="/i/favicon.ico" rel="icon" type="image/x-icon">
+      <link href="../i/icons/apple-touch-icon.jpg" rel="apple-touch-icon">
+      <link href="../i/icons/apple-touch-icon-76.jpg" rel="apple-touch-icon" sizes="76x76">
+      <link href="../i/icons/apple-touch-icon-140.jpg" rel="apple-touch-icon" sizes="140x140">
+      <link href="../i/icons/apple-touch-icon-152.jpg" rel="apple-touch-icon" sizes="152x152">
+      <link rel="stylesheet" type="text/css" media="screen" href="../css/plugins/bootstrap-grid.min.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="../css/plugins/tooltipster.bundle.min.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="../css/plugins/slick.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="../css/plugins/magnific-popup.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="../css/plugins/datepicker.min.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="../css/project.css?v=11312">
+      <link rel="stylesheet" type="text/css" media="screen" href="../css/project-ann.css?v=797191">
+      <link rel="stylesheet" type="text/css" media="screen" href="../css/project.responsive.css?v=724611">
+      <link rel="stylesheet" type="text/css" media="screen" href="../css/project.responsive-ann.css?v=724611">
+    </head>
     <style>
        body {
   border: 1px solid red;
@@ -349,120 +351,337 @@
             </div>
           </div>
         </div>
-        <div class="size-menu size-menu_visible1" id="catalog-size">
-          <div class="basket-inner page-inner--w2">
-            <div class="basket-open basket-menu__close"></div>
-            <div class="basket-menu-sections">
-              <div class="basket-mobile-menu__header"><a class="basket__title-link" href="basket.html">Товары в корзине(2)</a><a class="basket__title-link-clean-basket" href="#">Очистить корзину</a></div>
-              <div class="basket-mobile-menu__body">
-                <div class="order-table basket">
-                  <div class="order-table__row">
-                    <div class="order-table__item">
-                      <div class="order-table__img">
-                        <div class="order-photo-holder"><img class="cover" src="../dummy/orders/2.jpg"></div>
-                      </div>
-                      <div class="order-table__info">
-                        <div class="order-table__name">БРЮКИ </div>
-                        <div class="order-table__price">118 990 Р</div>
-                        <div class="order-table__size">Размер: 41 RU</div>
-                        <div class="order-table__color">Цвет: коричневый</div>
-                        <div class="order-table__counter">
-                          <input class="form-item form-item--number" type="number" min="1" max="100" step="1" value="1">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-2"><a class="order-table-delete" href="#"> </a></div>
+      </header>
+      <div class="size-menu size-menu_visible1" id="catalog-size">
+        <div class="size-inner">
+          <div class="size-open size-menu__close1 size-menu__close"></div>
+          <div class="size-menu-sections">
+            <div class="size-menu__title">Таблица размеров</div>
+            <div class="size-menu__text">
+              Этот справочник по размерам носит ориентировочный характер.
+              Если у вас уже есть похожая модель нашего бренда, размер
+              которой вам подходит, рекомендуем выбрать тот же размер.
+            </div>
+            <!-- ----size table-------------------------------------------->
+            <div class="size-table" id="#tabNav">
+              <div class="size-items tabs-heading">
+                <label class="active" data-tab="#size-tabs_one" data-tabs=".size-tab">
+                  <div class="size-item-content">
+                    <div class="size-item-title">XS</div>
                   </div>
-                  <div class="order-table__row">
-                    <div class="order-table__item">
-                      <div class="order-table__img">
-                        <div class="order-photo-holder"><img class="cover" src="../dummy/orders/2.jpg"></div>
-                      </div>
-                      <div class="order-table__info">
-                        <div class="order-table__name">БРЮКИ </div>
-                        <div class="order-table__price">118 990 Р</div>
-                        <div class="order-table__size">Размер: 41 RU</div>
-                        <div class="order-table__color">Цвет: коричневый</div>
-                        <div class="order-table__counter">
-                          <input class="form-item form-item--number" type="number" min="1" max="100" step="1" value="1">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-2"><a class="order-table-delete" href="#"> </a></div>
+                </label>
+                <label data-tab="#size-tabs_two" data-tabs=".size-tab">
+                  <div class="size-item-content">
+                    <div class="size-item-title">S</div>
                   </div>
-                  <div class="order-table__row">
-                    <div class="order-table__item">
-                      <div class="order-table__img">
-                        <div class="order-photo-holder"><img class="cover" src="../dummy/orders/2.jpg"></div>
-                      </div>
-                      <div class="order-table__info">
-                        <div class="order-table__name">БРЮКИ </div>
-                        <div class="order-table__price">118 990 Р</div>
-                        <div class="order-table__size">Размер: 41 RU</div>
-                        <div class="order-table__color">Цвет: коричневый</div>
-                        <div class="order-table__counter">
-                          <input class="form-item form-item--number" type="number" min="1" max="100" step="1" value="1">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-2"><a class="order-table-delete" href="#"> </a></div>
+                </label>
+                <label data-tab="#size-tabs_three" data-tabs=".size-tab">
+                  <div class="size-item-content">
+                    <div class="size-item-title">M</div>
                   </div>
-                  <div class="order-table__row">
-                    <div class="order-table__item">
-                      <div class="order-table__img">
-                        <div class="order-photo-holder"><img class="cover" src="../dummy/orders/2.jpg"></div>
-                      </div>
-                      <div class="order-table__info">
-                        <div class="order-table__name">БРЮКИ </div>
-                        <div class="order-table__price">118 990 Р</div>
-                        <div class="order-table__size">Размер: 41 RU</div>
-                        <div class="order-table__color">Цвет: коричневый</div>
-                        <div class="order-table__counter">
-                          <input class="form-item form-item--number" type="number" min="1" max="100" step="1" value="1">
-                        </div>
-                      </div>
+                </label>
+                <label data-tab="#size-tabs_four" data-tabs=".size-tab">
+                  <div class="size-item-content">
+                    <div class="size-item-title">L</div>
+                  </div>
+                </label>
+                <label data-tab="#size-tabs_five" data-tabs=".size-tab">
+                  <div class="size-item-content">
+                    <div class="size-item-title">XL</div>
+                  </div>
+                </label>
+                <label data-tab="#size-tabs_six" data-tabs=".size-tab">
+                  <div class="size-item-content">
+                    <div class="size-item-title">Рост H1</div>
+                  </div>
+                </label>
+                <label data-tab="#size-tabs_seven" data-tabs=".size-tab">
+                  <div class="size-item-content">
+                    <div class="size-item-title">Рост H2</div>
+                  </div>
+                </label>
+              </div>
+              <div class="tabs-content">
+                <div class="tab-content-item size-tab active" id="size-tabs_one">
+                  <div class="table-size">
+                    <div class="table-size__row">
+                      <div>Российский размер</div>
+                      <div>40 – 42</div>
                     </div>
-                    <div class="col-md-2"><a class="order-table-delete" href="#"> </a></div>
+                    <div class="table-size__row">
+                      <div>Обхват груди, см</div>
+                      <div>80 – 86</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват талии, см</div>
+                      <div>58 – 84</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват бёдер, см</div>
+                      <div>86 – 92</div>
+                    </div>
                   </div>
                 </div>
-                <div class="order-table__block">
-                  <div class="order-table__title">С этим товаром смотрят</div>
-                  <div class="order-table basket">
-                    <div class="order-table__row">
-                      <div class="order-table__item">
-                        <div class="order-table__img">
-                          <div class="order-photo-holder"><img class="cover" src="../dummy/orders/2.jpg"></div>
-                        </div>
-                        <div class="order-table__info">
-                          <div class="order-table__name">БРЮКИ </div>
-                          <div class="order-table__price">118 990 Р</div>
-                          <div class="order-table__color">Цвет: коричневый</div>
-                          <select class="order-table__select" name="select">
-                            <option value="value1" selected="">Выберите размер</option>
-                            <option value="value2">размер 1</option>
-                            <option value="value3">размер 2</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div><a class="order-table-delete" href="#"> </a></div>
+                <div class="tab-content-item size-tab" id="size-tabs_two">
+                  <div class="table-size">
+                    <div class="table-size__row">
+                      <div>Российский размер</div>
+                      <div>42 – 44</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват груди, см</div>
+                      <div>80 – 86</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват талии, см</div>
+                      <div>58 – 84</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват бёдер, см</div>
+                      <div>86 – 92</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content-item size-tab" id="size-tabs_three">
+                  <div class="table-size">
+                    <div class="table-size__row">
+                      <div>Российский размер</div>
+                      <div>44 – 46</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват груди, см</div>
+                      <div>80 – 86</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват талии, см</div>
+                      <div>58 – 84</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват бёдер, см</div>
+                      <div>86 – 92</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content-item size-tab" id="size-tabs_four">
+                  <div class="table-size">
+                    <div class="table-size__row">
+                      <div>Российский размер</div>
+                      <div>46 – 48</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват груди, см</div>
+                      <div>80 – 86</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват талии, см</div>
+                      <div>58 – 84</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват бёдер, см</div>
+                      <div>86 – 92</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content-item size-tab" id="size-tabs_five">
+                  <div class="table-size">
+                    <div class="table-size__row">
+                      <div>Российский размер</div>
+                      <div>48 – 50</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват груди, см</div>
+                      <div>80 – 86</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват талии, см</div>
+                      <div>58 – 84</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват бёдер, см</div>
+                      <div>86 – 92</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content-item size-tab" id="size-tabs_six">
+                  <div class="table-size">
+                    <div class="table-size__row">
+                      <div>Российский размер</div>
+                      <div>50 – 52</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват груди, см</div>
+                      <div>80 – 86</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват талии, см</div>
+                      <div>58 – 84</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват бёдер, см</div>
+                      <div>86 – 92</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content-item size-tab" id="size-tabs_seven">
+                  <div class="table-size">
+                    <div class="table-size__row">
+                      <div>Российский размер</div>
+                      <div>52 – 54</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват груди, см</div>
+                      <div>80 – 86</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват талии, см</div>
+                      <div>58 – 84</div>
+                    </div>
+                    <div class="table-size__row">
+                      <div>Обхват бёдер, см</div>
+                      <div>86 – 92</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="basket-mobile-menu__footer">
-              <div class="basket-mobile-menu__footer-links">
-                <div class="basket__title-link">4 Товара на сумму</div>
-                <div class="basket__title-link">6 900 РУБ.</div>
-              </div>
-              <button class="btn btn--black btn--medium w100 max-w100" type="submit">Оформить заказ</button>
-            </div>
+            <!-- ----/size table-------------------------------------------->
+            <div class="size-menu__title size-menu__title_left">Как снять мерки для себя</div>
+            <div class="size-img"><img src="../dummy/SizeGuide.jpg" alt="Как снять мерки для себя"></div>
           </div>
         </div>
-      </header>
+      </div>
       <main class="page-content">
-        <div class="page-section">
-          <h1>Pug - card</h1>
+        <div class="page-inner page-inner--w1">
+          <div class="page-section">
+            <div class="product">
+              <div class="product-info">
+                <div class="breadcrumbs"><a class="link link--gray" href="#">Назад</a></div>
+                <div class="product-info__content">
+                  <div class="product-razdel">Жакеты</div>
+                  <div class="product-title">
+                    Классический двубортный жакет из 100% льна,
+                    застежка на пуговицы.
+                  </div>
+                  <div class="product-properties">Цвет: Коричневый<br>                                    Артикул: 005-Жа3500-15<br>                                    Состав: 100% Лён</div>
+                  <div class="accordion">
+                    <div class="accordion-item">
+                      <div class="accordion-item-heading">Наличие в магазинах</div>
+                      <div class="accordion-item-content">
+                        <div class="page-text">Наличие в магазинах</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-item-heading">УХОД ЗА ИЗДЕЛИЕМ</div>
+                      <div class="accordion-item-content">
+                        <div class="page-text">УХОД ЗА ИЗДЕЛИЕМ</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-item-heading">ОБМЕРЫ </div>
+                      <div class="accordion-item-content">
+                        <div class="page-text">Легкий возврат за 14 дней<br>Доставка бесплатна от 5
+                                                                          000Р<br>Гарантия на товар от производителя <br>Официальный представитель
+                                                                          брендов
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="products-photos__wrapper">
+                <div class="product-photos"><a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><img src="../dummy/catalog/c1.jpg"></a><a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><img src="../dummy/catalog/c2.jpg"></a><a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><img src="../dummy/catalog/c3.jpg"></a><a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><img src="../dummy/catalog/c4.jpg"></a><a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><img src="../dummy/catalog/c5.jpg"></a><a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><img src="../dummy/catalog/c6.jpg"></a></div>
+                <div class="product-photos-nav"><img src="../dummy/catalog/c1.jpg"><img src="../dummy/catalog/c2.jpg"><img src="../dummy/catalog/c3.jpg"><img src="../dummy/catalog/c4.jpg"><img src="../dummy/catalog/c5.jpg"><img src="../dummy/catalog/c6.jpg"></div>
+              </div>
+              <div class="product-to-basket">
+                <div class="product-to-basket__content">
+                  <div class="product-title-holder">
+                    <div class="product-title">Жакет
+                      <button class="product-like" type="button"></button>
+                    </div>
+                    <div class="product-price">12 500 P</div>
+                    <ul class="product-list"> 
+                      <li class="product-list-item"><a class="product-list-link" href="#"><img class="product-list-img" src="../dummy/catalog/c1.jpg" alt="красный цвет"></a></li>
+                      <li class="product-list-item"><a class="product-list-link" href="#"><img class="product-list-img" src="../dummy/catalog/c1.jpg" alt="зеленый цвет"></a></li>
+                    </ul>
+                  </div>
+                  <div class="product-size">
+                    <div class="product-size__link"><a class="link link--black_border size-open" href="#">Как подобрать размер</a></div>
+                    <div class="product-size-select">
+                      <select class="form-item form-item--select w100">
+                        <option value="" selected="">Выберите размер </option>
+                        <option value="42">4122А (H-43см. D-180 мм) </option>
+                        <option value="43">4122А (H-43см. D-180 мм) </option>
+                        <option value="44">4122А (H-43см. D-180 мм) </option>
+                      </select>
+                    </div>
+                  </div><a class="btn btn--black btn--medium btn--fullwidth product-buy" href="#buy-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">В корзину</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-nav">
+              <div class="card-nav__col1"><span class="product-title">Жакет</span><span class="product-price">12 500 P</span></div>
+              <div class="card-nav__col2">
+                <ul class="product-list">
+                  <li class="product-list-item"><a class="product-list-link" href="#"><img class="product-list-img" src="../dummy/catalog/c1.jpg" alt="красный цвет"></a></li>
+                  <li class="product-list-item"><a class="product-list-link" href="#"><img class="product-list-img" src="../dummy/catalog/c1.jpg" alt="зеленый цвет"></a></li>
+                </ul>
+                <div class="product-size">
+                  <div class="product-size-select">
+                    <select class="form-item form-item--select w100 jcf-hidden">
+                      <option value="" selected="">Выберите размер </option>
+                      <option value="42">4122А (H-43см. D-180 мм) </option>
+                      <option value="43">4122А (H-43см. D-180 мм) </option>
+                      <option value="44">4122А (H-43см. D-180 мм) </option>
+                    </select>
+                  </div>
+                </div><a class="btn btn--black btn--medium btn--fullwidth product-buy" href="#buy-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">В корзину</a>
+              </div>
+            </div>
+            <h2>Завершите свой образ</h2>
+            <section class="gallery content__gallery">
+              <div class="gallery__item gallery__item__2x"><img src="../dummy/catalog/c1.jpg" alt=""></div>
+              <div class="gallery__item">
+                <div class="catalog-item w2">
+                  <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c5.jpg" alt=""></div>
+                  <div class="catalog-item-title">КОМБИНЕЗОН
+                    <div class="catalog-item-color">+2 цвета</div>
+                  </div>
+                  <div class="catalog-item-price"><b>11 300 РУБ.</b></div><a class="catalog-item-link" href="#"></a>
+                  <button class="catalog-item-like" type="button"> </button>
+                </div>
+              </div>
+              <div class="gallery__item">
+                <div class="catalog-item w2">
+                  <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c3.jpg" alt=""></div>
+                  <div class="catalog-item-title">Платье
+                    <div class="catalog-item-color">+2 цвета</div>
+                  </div>
+                  <div class="catalog-item-price"><b>11 300 РУБ.</b></div><a class="catalog-item-link" href="#"></a>
+                  <button class="catalog-item-like" type="button"> </button>
+                </div>
+              </div>
+              <div class="gallery__item">
+                <div class="catalog-item w2">
+                  <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c5.jpg" alt=""></div>
+                  <div class="catalog-item-title">Платье
+                    <div class="catalog-item-color">+2 цвета</div>
+                  </div>
+                  <div class="catalog-item-price"><b>11 300 РУБ.</b></div><a class="catalog-item-link" href="#"></a>
+                  <button class="catalog-item-like" type="button"> </button>
+                </div>
+              </div>
+              <div class="gallery__item">
+                <div class="catalog-item w2">
+                  <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c4.jpg" alt=""></div>
+                  <div class="catalog-item-title">Платье
+                    <div class="catalog-item-color">+2 цвета</div>
+                  </div>
+                  <div class="catalog-item-price"><b>11 300 РУБ.</b></div><a class="catalog-item-link" href="#"></a>
+                  <button class="catalog-item-like" type="button"> </button>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </main>
       <footer class="page-footer" itemscope="" itemtype="http://schema.org/WPFooter">
@@ -1057,6 +1276,15 @@
               </div>
             </div>
           </form>
+        </div>
+      </div>
+    </div>
+    <div class="page-popup mfp-hide" id="card-popup">
+      <div class="card-popup-title h2 only-desktop">Компактный быстросъёмный Фильтр АКТИВ Сила Сердца</div>
+      <div class="card-popup-media">
+        <div class="products-photos__wrapper">
+          <div class="product-photos"><a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><img src="../dummy/catalog/c1.jpg"></a><a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><img src="../dummy/catalog/c2.jpg"></a><a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><img src="../dummy/catalog/c3.jpg"></a><a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><img src="../dummy/catalog/c4.jpg"></a><a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><img src="../dummy/catalog/c5.jpg"></a><a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><img src="../dummy/catalog/c6.jpg"></a></div>
+          <div class="product-photos-nav"><img src="../dummy/catalog/c1.jpg"><img src="../dummy/catalog/c2.jpg"><img src="../dummy/catalog/c3.jpg"><img src="../dummy/catalog/c4.jpg"><img src="../dummy/catalog/c5.jpg"><img src="../dummy/catalog/c6.jpg"></div>
         </div>
       </div>
     </div>

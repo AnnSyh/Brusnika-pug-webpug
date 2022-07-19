@@ -3241,12 +3241,12 @@ span.form-item--error {
 .accordion-item .accordion-item-heading:before {
   right: 0;
   height: 2px;
-  width: 10px;
+  width: 20px;
 }
 .accordion-item .accordion-item-heading:after {
-  right: 4px;
+  right: 9px;
   width: 2px;
-  height: 10px;
+  height: 20px;
 }
 .accordion-item .accordion-item-heading:hover {
   opacity: 0.7;

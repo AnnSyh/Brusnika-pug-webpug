@@ -25,6 +25,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/project-ann.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/project.responsive.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/project.responsive-ann.css">
+    
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="test-popup.css"> -->
     <style>
         body {
             border: 1px solid red;
@@ -603,6 +605,7 @@
             <div class="page-inner page-inner--w1">
 
                 <section class="page-section">
+
                     <div class="product">
                         <div class="product-info">
                             <div class="breadcrumbs">
@@ -650,24 +653,27 @@
                         <div class="products-photos__wrapper">
                             <!-- -------------------------------- -->
                             <div class="product-photos">
-                                <!-- <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"> -->
-
-                                <!-- <div class="card-photo-item"><img src="dummy/catalog/c1.jpg" class="contain"></div>
-                                <div class="card-photo-item"><img src="dummy/catalog/c2.jpg" class="contain"></div>
-                                <div class="card-photo-item"><img src="dummy/catalog/c3.jpg" class="contain"></div>
-                                <div class="card-photo-item"><img src="dummy/catalog/c4.jpg" class="contain"></div>
-                                <div class="card-photo-item"><img src="dummy/catalog/c5.jpg" class="contain"></div>
-                                <div class="card-photo-item"><img src="dummy/catalog/c6.jpg" class="contain"></div> -->
-
-                                <img src="dummy/catalog/c1.jpg">
-                                <img src="dummy/catalog/c2.jpg">
-                                <img src="dummy/catalog/c3.jpg">
-                                <img src="dummy/catalog/c4.jpg">
-                                <img src="dummy/catalog/c5.jpg">
-                                <img src="dummy/catalog/c6.jpg">
+                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">
+                                    <img src="dummy/catalog/c1.jpg">
+                                </a>
+                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">
+                                    <img src="dummy/catalog/c2.jpg">
+                                </a>
+                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">
+                                    <img src="dummy/catalog/c3.jpg">
+                                </a>
+                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">
+                                    <img src="dummy/catalog/c4.jpg">
+                                </a>
+                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">
+                                    <img src="dummy/catalog/c5.jpg">
+                                </a>
+                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">
+                                    <img src="dummy/catalog/c6.jpg">
+                                </a>
 
                                 <!-- <img src="dummy/catalog/c7.jpg"> -->
-                                <!-- </a> -->
+
                             </div>
                             <div class="product-photos-nav">
                                 <img src="dummy/catalog/c1.jpg">
@@ -683,16 +689,13 @@
                         <div class="product-to-basket">
 
                             <div class="product-to-basket__content">
+
                                 <div class="product-title-holder">
-                                    <h1 class="product-title h3">Жакет</h1>
+                                    <div class="product-title">Жакет</div>
                                     <button type="button" class="product-like"></button>
                                 </div>
                                 <div class="product-size">
                                     <div class="product-size__link">
-                                        <!-- <a  href="#" 
-                                            class="link link--black_border basket-open">
-                                            Как подобрать размер
-                                        </a> -->
                                         <a href="#" class="link link--black_border size-open">
                                             Как подобрать размер
                                         </a>
@@ -714,6 +717,37 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="card-nav">
+                        <div class="card-nav__col1">
+                            <span class="product-title">Жакет</span>
+                            <span class="product-price">12 500 P</span>
+                        </div>
+
+                        <div class="card-nav__col2">
+                            <ul class="product-list">
+                                <li class="product-list-item"><a class="product-list-link" href="#"><img
+                                            class="product-list-img" src="dummy/catalog/c1.jpg" alt="красный цвет"></a>
+                                </li>
+                                <li class="product-list-item"><a class="product-list-link" href="#"><img
+                                            class="product-list-img" src="dummy/catalog/c1.jpg" alt="зеленый цвет"></a>
+                                </li>
+                            </ul>
+                            <div class="product-size">
+                                <div class="product-size-select">
+                                    <select class="form-item form-item--select w100 jcf-hidden">
+                                        <option value="" selected="">Выберите&nbsp;размер </option>
+                                        <option value="42">4122А (H-43см. D-180 мм) </option>
+                                        <option value="43">4122А (H-43см. D-180 мм) </option>
+                                        <option value="44">4122А (H-43см. D-180 мм) </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <a class="btn btn--black btn--medium btn--fullwidth product-buy" href="#buy-popup"
+                                data-popup="{&quot;type&quot;:&quot;inline&quot;}">В корзину</a>
+                        </div>
+                    </div>
+
                 </section>
 
                 <section class="gallery content__gallery">
@@ -831,102 +865,15 @@
         </footer>
     </div>
 
-    <div id="card-popup" class="page-popup mfp-hide">
-        <div class="card-popup-title h2 only-desktop">Компактный быстросъёмный Фильтр АКТИВ Сила Сердца</div>
-        <!--
+    <div id="card-popup" class="card-popup page-popup mfp-hide">
         <div class="card-popup-media">
-            <div class="card-popup-photos">
-                <div data-id="p0" class="card-popup-photo-item"><img
-                        src="https://cdn1.ozone.ru/multimedia/wc1200/1034599783.jpg" class="contain" /></div>
-                <div data-id="p1" class="card-popup-photo-item"><img
-                        src="https://cdn1.ozone.ru/multimedia/wc1200/1034599797.jpg" class="contain" /></div>
-                <div data-id="p2" class="card-popup-photo-item"><img
-                        src="https://cdn1.ozone.ru/multimedia/wc1200/1034599811.jpg" class="contain" /></div>
-                <div data-id="p3" class="card-popup-photo-item"><img
-                        src="https://cdn1.ozone.ru/s3/multimedia-a/wc1200/6020224306.jpg" class="contain" /></div>
-                <div data-id="p4" class="card-popup-photo-item"><img
-                        src="https://cdn1.ozone.ru/s3/multimedia-8/wc1200/6020224304.jpg" class="contain" /></div>
-                <div data-id="p5" class="card-popup-photo-item"><img
-                        src="https://cdn1.ozone.ru/s3/multimedia-9/wc1200/6020224305.jpg" class="contain" /></div>
-                <div data-id="v1" class="card-popup-photo-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XpTLQaQnNU8"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen="allowfullscreen" class="contain"></iframe>
-                </div>
-                <div data-id="v2" class="card-popup-photo-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sF6EPYcNJLY"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen="allowfullscreen" class="contain"></iframe>
-                </div>
+          <div class="card-popup-photos">
+            <div class="card-popup-photo-item">
+                <img src="dummy/catalog/c1.jpg" class="contain">
             </div>
-            <div class="card-popup-photos-nav only-mobile">
-                <div data-id="p0" class="card-popup-photos-nav-item"><img
-                        src="https://cdn1.ozone.ru/multimedia/wc1200/1034599783.jpg" class="contain" /></div>
-                <div data-id="p1" class="card-popup-photos-nav-item"><img
-                        src="https://cdn1.ozone.ru/multimedia/wc1200/1034599797.jpg" class="contain" /></div>
-                <div data-id="p2" class="card-popup-photos-nav-item"><img
-                        src="https://cdn1.ozone.ru/multimedia/wc1200/1034599811.jpg" class="contain" /></div>
-                <div data-id="p3" class="card-popup-photos-nav-item"><img
-                        src="https://cdn1.ozone.ru/s3/multimedia-a/wc1200/6020224306.jpg" class="contain" /></div>
-                <div data-id="p4" class="card-popup-photos-nav-item"><img
-                        src="https://cdn1.ozone.ru/s3/multimedia-8/wc1200/6020224304.jpg" class="contain" /></div>
-                <div data-id="p5" class="card-popup-photos-nav-item"><img
-                        src="https://cdn1.ozone.ru/s3/multimedia-9/wc1200/6020224305.jpg" class="contain" /></div>
-                <div data-id="v1" class="card-popup-photos-nav-item"><img src="../dummy/card/video1.jpg"
-                        class="contain" /></div>
-                <div data-id="v2" class="card-popup-photos-nav-item"><img src="../dummy/card/video2.jpg"
-                        class="contain" /></div>
-            </div>
-            <div class="card-popup-toolbar only-desktop">
-                <div class="card-popup-toolbar-title h3">Фото</div>
-                <div class="card-popup-toolbar-items">
-                    <div data-id="p0" class="card-popup-toolbar-item card-popup-toolbar-item--small active">
-                        <div class="card-popup-toolbar-item-photo-holder"><img
-                                src="https://cdn1.ozone.ru/multimedia/wc1200/1034599783.jpg" class="contain" /></div>
-                    </div>
-                    <div data-id="p1" class="card-popup-toolbar-item card-popup-toolbar-item--small ">
-                        <div class="card-popup-toolbar-item-photo-holder"><img
-                                src="https://cdn1.ozone.ru/multimedia/wc1200/1034599797.jpg" class="contain" /></div>
-                    </div>
-                    <div data-id="p2" class="card-popup-toolbar-item card-popup-toolbar-item--small ">
-                        <div class="card-popup-toolbar-item-photo-holder"><img
-                                src="https://cdn1.ozone.ru/multimedia/wc1200/1034599811.jpg" class="contain" /></div>
-                    </div>
-                    <div data-id="p3" class="card-popup-toolbar-item card-popup-toolbar-item--small ">
-                        <div class="card-popup-toolbar-item-photo-holder"><img
-                                src="https://cdn1.ozone.ru/s3/multimedia-a/wc1200/6020224306.jpg" class="contain" />
-                        </div>
-                    </div>
-                    <div data-id="p4" class="card-popup-toolbar-item card-popup-toolbar-item--small ">
-                        <div class="card-popup-toolbar-item-photo-holder"><img
-                                src="https://cdn1.ozone.ru/s3/multimedia-8/wc1200/6020224304.jpg" class="contain" />
-                        </div>
-                    </div>
-                    <div data-id="p5" class="card-popup-toolbar-item card-popup-toolbar-item--small ">
-                        <div class="card-popup-toolbar-item-photo-holder"><img
-                                src="https://cdn1.ozone.ru/s3/multimedia-9/wc1200/6020224305.jpg" class="contain" />
-                        </div>
-                    </div>
-                </div>
-                <div class="card-popup-toolbar-title h3">Видео</div>
-                <div class="card-popup-toolbar-items">
-                    <div data-id="v1" class="card-popup-toolbar-item card-popup-toolbar-item--medium">
-                        <div class="card-popup-toolbar-item-photo-holder"><img src="../dummy/card/video1.jpg"
-                                class="cover" /></div>
-                        <div class="card-popup-toolbar-item-title">Рекламный ролик</div>
-                    </div>
-                    <div data-id="v2" class="card-popup-toolbar-item card-popup-toolbar-item--medium">
-                        <div class="card-popup-toolbar-item-photo-holder"><img src="../dummy/card/video2.jpg"
-                                class="cover" /></div>
-                        <div class="card-popup-toolbar-item-title">Обзор</div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    -->
-    </div>
+      </div>
 
     <div class="page-popup mfp-hide" id="auth-form">
         <div class="page-popup-inner">
