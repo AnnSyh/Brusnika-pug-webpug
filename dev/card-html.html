@@ -26,7 +26,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/project.responsive.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/project.responsive-ann.css">
 
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="test-popup.css"> -->
     <style>
         body {
             border: 1px solid red;
@@ -600,7 +599,6 @@
         </header>
         <main class="page-content">
 
-
             <div class="page-inner page-inner--w1">
 
                 <section class="page-section">
@@ -653,24 +651,24 @@
                         <div class="products-photos__wrapper">
                             <!-- -------------------------------- -->
                             <div class="product-photos">
-                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">
-                                    <img src="dummy/catalog/c1.jpg">
-                                </a>
-                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">
+                                <!-- <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"> -->
+                                    <img src="dummy/catalog/c1.jpg" data-zoom-src="dummy/zoom/62011f342e5e5-04-02-202214622.jpg">
+                                <!-- </a>
+                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"> -->
                                     <img src="dummy/catalog/c2.jpg">
-                                </a>
-                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">
+                                <!-- </a>
+                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"> -->
                                     <img src="dummy/catalog/c3.jpg">
-                                </a>
-                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">
+                                <!-- </a>
+                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"> -->
                                     <img src="dummy/catalog/c4.jpg">
-                                </a>
-                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">
+                                <!-- </a>
+                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"> -->
                                     <img src="dummy/catalog/c5.jpg">
-                                </a>
-                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">
+                                <!-- </a>
+                                <a href="#card-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"> -->
                                     <img src="dummy/catalog/c6.jpg">
-                                </a>
+                                <!-- </a> -->
 
                                 <!-- <img src="dummy/catalog/c7.jpg"> -->
 
@@ -685,35 +683,14 @@
                                 <!-- <img src="dummy/catalog/c7.jpg"> -->
                             </div>
                         </div>
-                        <!-- ------------ -->
-                        <div class="tooltip_templates">
-                            <div id="tooltip_content" class="white-popup">
-                                <div class="add-favorites">
-                                    <div class="add-favorites__img">
-                                        <img src="dummy/catalog/c1.jpg" alt="">
-                                    </div>
-                                    <div class="add-favorites__text">
-                                        <div class="add-favorites__title">
-                                            Вы набрали максимальное количество товаров на складе.
-                                        </div>
-                                        <div>
-                                            <a href="#" class="link link--black_border add-favorites__link">
-                                                Перейти в избранное
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <img src="../svg/close.svg" alt="">
-                            </div>
-                        </div>
-                        <!-- ------------ -->
+
                         <div class="product-to-basket">
 
-                            
+
                             <span class="tooltip product-add-favorites" data-tooltip-content="#tooltip_content"></span>
-                            
+
                             <div class="product-to-basket__content">
-                                
+
 
                                 <div class="product-title-holder">
                                     <div class="product-title">Жакет</div>
@@ -737,7 +714,7 @@
                                 </div>
                                 <a href="#buy-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"
                                     class="btn btn--black btn--medium btn--fullwidth product-buy">
-                                    В корзину
+                                    ДОБАВИТЬ В КОРЗИНУ
                                 </a>
                             </div>
                         </div>
@@ -769,7 +746,7 @@
                                 </div>
                             </div>
                             <a class="btn btn--black btn--medium btn--fullwidth product-buy" href="#buy-popup"
-                                data-popup="{&quot;type&quot;:&quot;inline&quot;}">В корзину</a>
+                                data-popup="{&quot;type&quot;:&quot;inline&quot;}">ДОБАВИТЬ В КОРЗИНУ</a>
                         </div>
                     </div>
 
@@ -844,18 +821,47 @@
                 </div>
                 <div class="footer-content">
                     <div class="footer-content__left">
-                        <ul class="footer-content__list">
-                            <li><a href="#">Доставка и оплата</a></li>
-                            <li><a href="#">Гарантия и возврат</a></li>
-                            <li><a href="#">Руководство по покупке</a></li>
-                            <li><a href="#">Система лояльности</a></li>
-                        </ul>
-                        <ul class="footer-content__list">
-                            <li><a href="#">Магазины</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li><a href="#">Работа у нас</a></li>
-                        </ul>
+
+                        <div class="accordion d-block d-lg-none" style="width: 100%;">
+                            <div  class="accordion-item">
+                                <div class="accordion-item-heading">Покупателю</div>
+                                <div class="accordion-item-content">
+                                    <ul class="footer-content__list">
+                                        <li><a href="#">Доставка и оплата</a></li>
+                                        <li><a href="#">Гарантия и возврат</a></li>
+                                        <li><a href="#">Руководство по покупке</a></li>
+                                        <li><a href="#">Система лояльности</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div  class="accordion-item">
+                                <div class="accordion-item-heading">Компания</div>
+                                <div class="accordion-item-content">
+                                    <ul class="footer-content__list">
+                                        <li><a href="#">Магазины</a></li>
+                                        <li><a href="#">О нас</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                        <li><a href="#">Работа у нас</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-none d-lg-flex w-100">
+                            <ul class="footer-content__list">
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">Гарантия и возврат</a></li>
+                                <li><a href="#">Руководство по покупке</a></li>
+                                <li><a href="#">Система лояльности</a></li>
+                            </ul>
+                            <ul class="footer-content__list">
+                                <li><a href="#">Магазины</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Работа у нас</a></li>
+                            </ul>
+                        </div>
+
                     </div>
                     <div class="footer-content__center"><a class="header-logo" href="#"><img
                                 src="../svg/header_logo.svg" alt=""></a></div>
@@ -889,6 +895,30 @@
             </div>
         </footer>
     </div>
+
+
+    <!-- ------------ -->
+    <div class="tooltip_templates">
+        <div id="tooltip_content" class="white-popup">
+            <div class="add-favorites">
+                <div class="add-favorites__img">
+                    <img src="dummy/catalog/c1.jpg" alt="">
+                </div>
+                <div class="add-favorites__text">
+                    <div class="add-favorites__title">
+                        Вы набрали максимальное количество товаров на складе.
+                    </div>
+                    <div>
+                        <a href="favorites.html" class="link link--black_border">
+                            Перейти в избранное
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a class="tooltip__close" href="#"><img src="../svg/close.svg" alt=""></a>
+        </div>
+    </div>
+    <!-- ------------ -->
 
     <div id="card-popup" class="card-popup page-popup mfp-hide">
         <div class="card-popup-media">

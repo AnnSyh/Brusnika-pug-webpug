@@ -4,7 +4,7 @@
 
 .gallery__item {
     width: 100%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .gallery__item img {
@@ -45,3 +45,4 @@
         grid-template-columns: repeat(4, calc(100% / 4 - 12px));
     }
 }
+

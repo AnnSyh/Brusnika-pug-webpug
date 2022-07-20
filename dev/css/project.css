@@ -1106,7 +1106,7 @@ span.form-item--error {
   padding: 16px 35px 16px 15px;
   border: 1px solid #e1e1e1;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 0px;
   font-size: 16px;
   line-height: 1;
   color: #1d1d1d;
