@@ -1764,6 +1764,7 @@ span.form-item--error {
   -ms-filter: none;
   filter: none;
 }
+
 .catalog-item .catalog-item-like:before,
 .product-like:before,
 .catalog-item .catalog-item-like:after,

@@ -25,7 +25,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/project-ann.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/project.responsive.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/project.responsive-ann.css">
-    
+
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="test-popup.css"> -->
     <style>
         body {
@@ -38,22 +38,20 @@
 
 <body>
     <div class="page">
-        <html>
 
         <head></head>
 
-        <body>
-            <div class="page-note">
-                <div class="page-inner page-inner--w1">
-                    <div class="page-note-inner">
-                        <div class="page-note-text">Бесплатная доставка по РФ от 3 000 P</div>
-                        <div class="page-note-close"></div>
-                    </div>
+        <div class="page-note">
+            <div class="page-inner page-inner--w1">
+                <div class="page-note-inner">
+                    <div class="page-note-text">Бесплатная доставка по РФ от 3 000 P</div>
+                    <div class="page-note-close"></div>
                 </div>
             </div>
-        </body>
+        </div>
 
-        </html>
+
+
         <header class="page-header" itemscope="" itemtype="http://schema.org/WPHeader">
             <div class="page-inner page-inner--w1 desktop">
                 <div class="header-menu">
@@ -602,9 +600,11 @@
         </header>
         <main class="page-content">
 
+
             <div class="page-inner page-inner--w1">
 
                 <section class="page-section">
+
 
                     <div class="product">
                         <div class="product-info">
@@ -685,10 +685,35 @@
                                 <!-- <img src="dummy/catalog/c7.jpg"> -->
                             </div>
                         </div>
-                        <!-- -------------------------------- -->
+                        <!-- ------------ -->
+                        <div class="tooltip_templates">
+                            <div id="tooltip_content" class="white-popup">
+                                <div class="add-favorites">
+                                    <div class="add-favorites__img">
+                                        <img src="dummy/catalog/c1.jpg" alt="">
+                                    </div>
+                                    <div class="add-favorites__text">
+                                        <div class="add-favorites__title">
+                                            Вы набрали максимальное количество товаров на складе.
+                                        </div>
+                                        <div>
+                                            <a href="#" class="link link--black_border add-favorites__link">
+                                                Перейти в избранное
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="../svg/close.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- ------------ -->
                         <div class="product-to-basket">
 
+                            
+                            <span class="tooltip product-add-favorites" data-tooltip-content="#tooltip_content"></span>
+                            
                             <div class="product-to-basket__content">
+                                
 
                                 <div class="product-title-holder">
                                     <div class="product-title">Жакет</div>
@@ -867,13 +892,13 @@
 
     <div id="card-popup" class="card-popup page-popup mfp-hide">
         <div class="card-popup-media">
-          <div class="card-popup-photos">
-            <div class="card-popup-photo-item">
-                <img src="dummy/catalog/c1.jpg" class="contain">
+            <div class="card-popup-photos">
+                <div class="card-popup-photo-item">
+                    <img src="dummy/catalog/c1.jpg" class="contain">
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     <div class="page-popup mfp-hide" id="auth-form">
         <div class="page-popup-inner">

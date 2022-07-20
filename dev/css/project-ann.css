@@ -321,7 +321,7 @@ body,
   color: #dcdcdc;
 }
 
-/* //----------------------- */
+/* //---------tooltip-------------- */
 #open-popup {
   padding: 20px
 }
@@ -330,7 +330,6 @@ body,
   position: relative;
   background: #FFF;
   width: auto;
-  /* max-width: 300px; */
   border-radius: 20px;
 
   display: flex;
@@ -342,14 +341,42 @@ body,
 }
 
 .tooltipster-white {
-  max-width: 255px;
-  right: 0px;
+  min-width: 400px;
+  right: 15px;
   left: auto !important;
+  height: auto !important;
 }
 
-.tooltipster-white .tooltipster-box {
-  border-radius: 20px;
+.tooltipster-sidetip .tooltipster-content {
+  max-width: 100%;
 }
+
+/* --------add-favorites----- */
+.add-favorites {
+  display: flex;
+  gap: 20px;
+}
+.add-favorites__img {
+  width: 40px;
+  height: 60px;
+  display: flex;
+}
+.add-favorites__text {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.add-favorites__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+.add-favorites__link:hover {
+  color: red;
+}
+
+/* --------/add-favorites----- */
+
 
 /* заголовки */
 
