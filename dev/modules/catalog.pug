@@ -1,16 +1,35 @@
+- 
+    const items = [
+        {image: 'c1.jpg', price: '1999', name: 'Жакет 1', label: 'Хит'},
+        {image: 'c22.jpg', price: '345', name: 'Жакет 2', label: 'Хит'},
+        {image: 'c23.jpg', price: '2329', name: 'Жакет 3', label: 'Хит'},
+        {image: 'c24.jpg', price: '2329', name: 'Жакет 4', label: 'Хит'}
+        ]
+
+    const tovars = [
+        {image: 'c1.jpg', price: '1999', name: 'Жакет 1', label: 'Хит'},
+        {image: 'c22.jpg', price: '345', name: 'Жакет 2', label: 'Хит'},
+        {image: 'c23.jpg', price: '2329', name: 'Жакет 3', label: 'Хит'},
+        {image: 'c24.jpg', price: '2329', name: 'Жакет 4', label: 'Хит'},
+        {image: 'c1.jpg', price: '1999', name: 'Жакет 1', label: 'Хит'},
+        {image: 'c22.jpg', price: '345', name: 'Жакет 2', label: 'Хит'},
+        {image: 'c23.jpg', price: '2329', name: 'Жакет 3', label: 'Хит'},
+        {image: 'c24.jpg', price: '2329', name: 'Жакет 4', label: 'Хит'}
+        ]
+
 #catalog-items
     .catalog-items.row(data-params='')
 
-        - for (var x = 0; x < 4; x++)
+
+        each item in items
             .col-6.col-lg-3
                 .catalog-item.w2
                     .catalog-item-photo-holder
-                        img.cover(src='../dummy/catalog/c1.jpg')
-                    .catalog-item-title
-                        | КОМБИНЕЗОН
+                        img.cover(src=`../dummy/catalog/${item.image}`)
+                    .catalog-item-title= item.name
                         .catalog-item-color +2 цвета
                     .catalog-item-price
-                        b 11 300 РУБ.
+                        b= item.price + ' РУБ'
                     a.catalog-item-link(href='#')
                     button.catalog-item-like(type='button')  
 
@@ -24,16 +43,15 @@
                     | в которую вошли новые модели актуальных оттенков
                 a.link-more(href='#') Подробнее
 
-        - for (var x = 0; x < 8; x++)
+        each tovar in tovars
             .col-6.col-lg-3
                 .catalog-item.w2
                     .catalog-item-photo-holder
-                        img.cover(src='../dummy/catalog/c1.jpg')
-                    .catalog-item-title
-                        | КОМБИНЕЗОН
+                        img.cover(src=`../dummy/catalog/${tovar.image}`)
+                    .catalog-item-title= tovar.name
                         .catalog-item-color +2 цвета
                     .catalog-item-price
-                        b 11 300 РУБ.
+                        b= tovar.price + ' РУБ'
                     a.catalog-item-link(href='#')
                     button.catalog-item-like(type='button')    
 

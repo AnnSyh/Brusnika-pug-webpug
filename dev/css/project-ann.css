@@ -27,6 +27,10 @@
   border-radius: 0px;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .w100 {
   width: 100%;
 }

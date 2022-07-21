@@ -1,0 +1,25 @@
+- 
+    const items = [
+        {image: 'c21.jpg', price: '1999', name: 'Жакет 1', label: 'Хит'},
+        {image: 'c22.jpg', price: '345', name: 'Жакет 2', label: 'Хит'},
+        {image: 'c23.jpg', price: '2329', name: 'Жакет 3', label: 'Хит'},
+        {image: 'c24.jpg', price: '2329', name: 'Жакет 4', label: 'Хит'}
+        ]
+
+section.page-section
+  .title-block Вам также может понравиться
+  .catalog-items.row(data-params='')
+
+    each item in items
+      .col-6.col-lg-3
+        .catalog-item.w2
+          .catalog-item-photo-holder
+            img.cover(src=`../dummy/catalog/${item.image}`)
+          .catalog-item-title= item.name
+            .catalog-item-color +2 цвета
+          .catalog-item-price
+            b= item.price + ' РУБ'
+          .product-labels
+            span.black= item.label
+          a.catalog-item-link(href='#')
+          button.catalog-item-like(type='button')   

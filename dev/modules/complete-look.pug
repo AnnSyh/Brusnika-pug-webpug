@@ -1,18 +1,30 @@
+- const looks = [{image: 'c2.jpg', price: '6 500', name: 'Брюки'},{image: 'c9.jpg', price: '14 800', name: 'Топ'},{image: 'c25.jpg', price: '12 500', name: 'Жакет'}]
+
 section
   .title-block Завершите свой образ
   .gallery.content__gallery
     .gallery__item.gallery__item__2x
       img(src='../dummy/catalog/c3.jpg' alt='')
 
-    - for (var x = 0; x < 3; x++)
+    each look in looks
       .gallery__item
         .catalog-item.w2
           .catalog-item-photo-holder
-            img.cover(src='../dummy/catalog/c2.jpg' alt='')
-          .catalog-item-title
-            | КОМБИНЕЗОН
+            img.cover(src=`../dummy/catalog/${look.image}` alt='')
+          .catalog-item-title= look.name
             .catalog-item-color +2 цвета
           .catalog-item-price
-            b 11 300 РУБ.
+            b= look.price + ' РУБ'
           a.catalog-item-link(href='#')
-          button.catalog-item-like(type='button')  
+          button.catalog-item-like(type='button') 
+
+  .complite-look__info
+    .complite-look__text
+      span.nowrap Товары в образе: 
+      span.nowrap Брюки 6 500 P,
+      span.nowrap Топ 14 800 P,
+      span.nowrap Жакет 12 500 P.
+    .complite-look__by-all
+      | Купить все за 29 800 P
+    a.btn.btn--black.btn--medium.btn--fullwidth.product-buy(href='#')
+      | ДОБАВИТЬ В КОРЗИНУ 

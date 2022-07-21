@@ -1,3 +1,15 @@
+- 
+  const cards = [
+    {image: 'c21.jpg', price: '1999', name: 'Жакет 1', label: 'Хит'},
+    {image: 'c22.jpg', price: '345', name: 'Жакет 2', label: 'Хит'},
+    {image: 'c23.jpg', price: '2329', name: 'Жакет 3', label: 'Хит'},
+    {image: 'c24.jpg', price: '2329', name: 'Жакет 4', label: 'Хит'},
+    {image: 'c21.jpg', price: '1999', name: 'Жакет 1', label: 'Хит'},
+    {image: 'c22.jpg', price: '345', name: 'Жакет 2', label: 'Хит'},
+    {image: 'c23.jpg', price: '2329', name: 'Жакет 3', label: 'Хит'},
+    {image: 'c24.jpg', price: '2329', name: 'Жакет 4', label: 'Хит'}
+  ]
+
 .row.justify-content-between.align-items-center
   .col-auto
     .title-block Ранее вы смотрели
@@ -16,18 +28,12 @@
 .catalog-items.row.catalog-items--slider(data-params='{"slidesToShow": 6, "slidesToScroll": 5}')
 
 
- - for (var x = 0; x < 10; x++)
+ each card in cards
   .col-md-2
     .catalog-item.w1
       .catalog-item-photo-holder
-        img.cover(src='../dummy/catalog/c1.jpg')
-      .catalog-item-title ПЛАТЬЕ
-      .catalog-item-price 15 900 Р
+        img.cover(src=`../dummy/catalog/${card.image}`)
+      .catalog-item-title= card.name
+      .catalog-item-price= card.price
       a.catalog-item-link(href='#')
       button.catalog-item-like(type='button') 
-
-//- -
-//-   var list = ["Uno", "Dos", "Tres",
-//-           "Cuatro", "Cinco", "Seis"]
-//- each item in list
-//-   li= item       

@@ -1687,9 +1687,10 @@ span.form-item--error {
   display: inline-block;
   padding: 0 6px;
   min-width: 40px;
-  border-radius: 5px;
+  border-radius: 0;
   font-size: 14px;
   line-height: 24px;
+  font-weight: 200;
   text-align: center;
 }
 .catalog-item .catalog-item-labels .catalog-item-label.yellow,
