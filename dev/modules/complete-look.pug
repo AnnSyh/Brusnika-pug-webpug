@@ -1,17 +1,18 @@
-h2 Завершите свой образ
-section.gallery.content__gallery
-  .gallery__item.gallery__item__2x
-    img(src='../dummy/catalog/c1.jpg' alt='')
+section
+  .title-block Завершите свой образ
+  .gallery.content__gallery
+    .gallery__item.gallery__item__2x
+      img(src='../dummy/catalog/c3.jpg' alt='')
 
-  - for (var x = 0; x < 3; x++)
-    .gallery__item
-      .catalog-item.w2
-        .catalog-item-photo-holder
-          img.cover(src='../dummy/catalog/c5.jpg' alt='')
-        .catalog-item-title
-          | КОМБИНЕЗОН
-          .catalog-item-color +2 цвета
-        .catalog-item-price
-          b 11 300 РУБ.
-        a.catalog-item-link(href='#')
-        button.catalog-item-like(type='button')  
+    - for (var x = 0; x < 3; x++)
+      .gallery__item
+        .catalog-item.w2
+          .catalog-item-photo-holder
+            img.cover(src='../dummy/catalog/c2.jpg' alt='')
+          .catalog-item-title
+            | КОМБИНЕЗОН
+            .catalog-item-color +2 цвета
+          .catalog-item-price
+            b 11 300 РУБ.
+          a.catalog-item-link(href='#')
+          button.catalog-item-like(type='button')  

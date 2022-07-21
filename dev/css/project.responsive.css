@@ -789,6 +789,8 @@ body .mobile-nav-menu-item-holder.open:before {
 .mobile-search .mobile-search-suggestions a {
   margin: 0 30px 20px 0;
 }
+
+.size-open,
 .search-open {
   overflow: hidden;
 }
@@ -1207,11 +1209,11 @@ body .mobile-nav-menu-item-holder.open:before {
   .order-block .h3 {
     font-size: 20px;
   }
-  .tabs-heading {
+  /* .tabs-heading {
     display: block;
     overflow: auto;
     white-space: nowrap;
-  }
+  } */
   .tabs-heading .tab-heading-item {
     vertical-align: bottom;
     display: inline-block;

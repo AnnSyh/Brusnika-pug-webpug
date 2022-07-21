@@ -27,10 +27,7 @@
       <link rel="stylesheet" type="text/css" media="screen" href="../css/project.responsive-ann.css?v=724611">
     </head>
     <style>
-       body {
-  border: 1px solid red;
-}/*# sourceMappingURL=style.css.map */
-    </style>
+       /*# sourceMappingURL=style.css.map */</style>
   </head>
   <body>
     <div class="page">
@@ -363,18 +360,20 @@
           </div>
           <div class="footer-content">
             <div class="footer-content__left">
-              <ul class="footer-content__list">
-                <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">Гарантия и возврат</a></li>
-                <li><a href="#">Руководство по покупке</a></li>
-                <li><a href="#">Система лояльности</a></li>
-              </ul>
-              <ul class="footer-content__list">
-                <li><a href="#">Магазины</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Работа у нас</a></li>
-              </ul>
+              <div class="d-none d-lg-flex w-100">
+                <ul class="footer-content__list">
+                  <li><a href="#">Доставка и оплата</a></li>
+                  <li><a href="#">Гарантия и возврат</a></li>
+                  <li><a href="#">Руководство по покупке</a></li>
+                  <li><a href="#">Система лояльности</a></li>
+                </ul>
+                <ul class="footer-content__list">
+                  <li><a href="#">Магазины</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Работа у нас</a></li>
+                </ul>
+              </div>
             </div>
             <div class="footer-content__center"><a class="header-logo" href="#"><img src="../svg/header_logo.svg" alt=""></a></div>
             <div class="footer-content__right">
@@ -951,12 +950,12 @@
     <div class="tooltip_templates">
       <div class="white-popup" id="tooltip_content">
         <div class="add-favorites">
-          <div class="add-favorites__img"><img src="dummy/catalog/c1.jpg" alt=""></div>
+          <div class="add-favorites__img"><img src="../dummy/catalog/c1.jpg" alt=""></div>
           <div class="add-favorites__text">
             <div class="add-favorites__title">Вы набрали максимальное количество товаров на складе.</div>
-            <div><a class="link link--black_border add-favorites__link" href="#">Перейти в избранное</a></div>
+            <div><a class="link link--black_border add-favorites__link" href="favorites.html">Перейти в избранное</a></div>
           </div>
-        </div><img src="../svg/close.svg" alt="">
+        </div><a class="tooltip__close" href="#"><img src="../svg/close.svg" alt=""></a>
       </div>
     </div>
     <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=6f387da6-ba3c-46bf-96a7-261df17d04f7&amp;lang=ru_RU"></script>

@@ -445,6 +445,8 @@ body.basket-open {
   overflow-y: hidden;
 }
 
+
+
 .size-open .page:after,
 .basket-open .page:after,
 .show-filter .page:after,
@@ -1169,6 +1171,7 @@ span.form-item--error {
   left: -1px;
   top: 100%;
 }
+
 .jcf-select-drop {
   z-index: 100;
   margin-top: -3px;
@@ -2231,6 +2234,12 @@ span.form-item--error {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+.product-size-select_top .jcf-select .jcf-select-drop {
+  border-radius: 0;
+  bottom: 100%;
+  top: auto;
+}
+
 .product-info .product-buy {
   margin-bottom: 30px;
 }

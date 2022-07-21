@@ -1,3 +1,5 @@
+//- - var windowWidth = screen.width
+
 footer.page-footer(itemscope='', itemtype='http://schema.org/WPFooter')
   .page-inner.page-inner--w2
     .footer-top
@@ -7,25 +9,55 @@ footer.page-footer(itemscope='', itemtype='http://schema.org/WPFooter')
         li.footer-top__item
           a(href='#') Вконтакте
     .footer-content
+
       .footer-content__left
-        ul.footer-content__list
-          li
-            a(href='#') Доставка и оплата
-          li
-            a(href='#') Гарантия и возврат
-          li
-            a(href='#') Руководство по покупке
-          li
-            a(href='#') Система лояльности
-        ul.footer-content__list
-          li
-            a(href='#') Магазины
-          li
-            a(href='#') О нас
-          li
-            a(href='#') Контакты
-          li
-            a(href='#') Работа у нас
+        if (false)
+          .accordion.d-block.d-lg-none.w-100
+            .accordion-item
+              .accordion-item-heading Покупателю
+              .accordion-item-content
+                ul.footer-content__list
+                  li
+                    a(href='#') Доставка и оплата
+                  li
+                    a(href='#') Гарантия и возврат
+                  li
+                    a(href='#') Руководство по покупке
+                  li
+                    a(href='#') Система лояльности
+            .accordion-item
+              .accordion-item-heading Компания
+              .accordion-item-content
+                ul.footer-content__list
+                  li
+                    a(href='#') Магазины
+                  li
+                    a(href='#') О нас
+                  li
+                    a(href='#') Контакты
+                  li
+                    a(href='#') Работа у нас
+        else   
+          .d-none.d-lg-flex.w-100
+            ul.footer-content__list
+              li
+                a(href='#') Доставка и оплата
+              li
+                a(href='#') Гарантия и возврат
+              li
+                a(href='#') Руководство по покупке
+              li
+                a(href='#') Система лояльности
+            ul.footer-content__list
+              li
+                a(href='#') Магазины
+              li
+                a(href='#') О нас
+              li
+                a(href='#') Контакты
+              li
+                a(href='#') Работа у нас
+
       .footer-content__center
         a.header-logo(href='#')
           img(src='../svg/header_logo.svg', alt='')
