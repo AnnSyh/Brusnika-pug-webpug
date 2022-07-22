@@ -22,6 +22,8 @@
 @import url(../css/blocks/tables.css);
 @import url(../css/blocks/card-popup.css);
 
+@import url(../css/blocks/card-zoom.css);
+
 
 .jcf-number {
   border-radius: 0px;

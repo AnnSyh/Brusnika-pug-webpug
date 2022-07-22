@@ -904,10 +904,12 @@
 						theme: 'tooltipster-white',
 						trigger: 'click',
 						side: 'right',
-						timer: 5000,
+						// timer: 5000,
 						repositionOnScroll: true,
 						selfDestruction: true,
-						arrow: false
+						arrow: false,
+						interactive: true
+						// minWidth: 400
 					});
 
 					// window.addEventListener('scroll', function(e) {
@@ -937,6 +939,78 @@
 							productSizeTooltip.click();//открываю tooltip о макс кол-ве товаров
 						}
 					});
+
+// ------------tooltip----------------------					
+					$('.product-like').on("click", function (e) { //раскрытие меню при клике
+						console.log('product-like');
+						const productSizeTooltip = document.querySelector('.product-add-favorites');
+						productSizeTooltip.click();//открываю tooltip о добавлении в избранное
+						$('.product-like').toggleClass('active-like');//добавляю акт класс сердечку
+						$('.product-to-basket__content .product-buy').innerHTML = 'В КОРЗИНЕ';//меняю иконку и надпись на кнопке 'в корзину'
+					});
+
+					$('.tooltipster-white .tooltip__close').on("click", function (e) {
+						e.preventDefault();
+						console.log('!!!! = ', e);
+						$('.product-add-favorites').tooltipster('close');
+					});
+
+					$(window).keypress(function() {
+						$('.product-add-favorites').tooltipster('close');
+						$('.product-like').toggleClass('active-like');//добавляю акт класс сердечку
+					 });
+// ----------------------------------	
+$('.product-photos .slick-slide.slick-current.slick-active').on("click", function (e) {
+	const images = document.querySelectorAll("[data-zoom-src]");
+	const imgSrcZoom = e.target.getAttribute('data-zoom-src');
+	const imgSrc = e.target.getAttribute('src');
+	const hasClassTzoom = $sel.body.hasClass('t-zoom');
+	const img = e.target
+	// img.src = imgSrcZoom; 
+
+	console.log('imgSrcZoom = ', imgSrcZoom);
+	console.log('imgSrc = ', imgSrc);
+
+	if(hasClassTzoom){
+		console.log('Есть .t-zoom  !!!!');
+		// img.src = imgSrc; 
+
+		$sel.body.removeClass('scroll-disabled t-zoom');
+
+		$sel.body.removeClass('scroll-disabled t-zoom');
+		img.classList.remove('card-zoom__image');
+		productsPhotos.classList.remove('card-zoom');
+		
+		slickTrack.classList.remove('card-zoom__holder');
+		// slickTrack.classList.add('111111');
+		img.src.style('width: 100%;border: 1px solid red;');
+
+	} else if (imgSrcZoom) { 
+		// img.src = imgSrcZoom; 
+		productsPhotos = document.querySelector(".products-photos__wrapper .product-photos");
+		slickTrack = document.querySelector(".products-photos__wrapper > div");
+
+		$sel.body.addClass('scroll-disabled t-zoom');
+		img.classList.add('card-zoom__image');
+		productsPhotos.classList.add('card-zoom');
+		
+		slickTrack.classList.add('card-zoom__holder');
+
+		
+	}
+
+	// images.forEach(image => {
+	// 	console.log('[data-zoom-src] = ', imgSrcZoom);
+	// 	e.target.addClass('card-zoom__image');
+
+	// })
+
+ });
+
+
+ 
+
+// ----------------------------------					
 
 
 					$(".form-item--calendar", $container).each(function () {
@@ -974,6 +1048,15 @@
 						fakeDropInBody: false
 					});
 					$(".form-item--select", $container).each(function () {
+						var $select = $(this);
+
+						if ($select.attr("placeholder")) {
+							$select.prepend('<option class="hideme" selected>' + $select.attr("placeholder") + '</option>');
+						}
+						jcf.replace($select);
+					});
+
+					$(".form-item--select-top", $container).each(function () {
 						var $select = $(this);
 
 						if ($select.attr("placeholder")) {
