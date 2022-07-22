@@ -1,115 +1,130 @@
 .catalog {
-    position: relative;
+  position: relative;
 }
 .catalog .slider-arrows-wrap {
-    position: absolute;
-    max-width: calc(100% + 100px);
-    top: calc(50% - 20px);
-    z-index: 1;
-    left: -50px;
-    right: -50px;
+  position: absolute;
+  max-width: calc(100% + 100px);
+  top: calc(50% - 20px);
+  z-index: 1;
+  left: -50px;
+  right: -50px;
 }
 
-
 .catalog-item-title {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-item-price {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 20px;
-
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .catalog-item .catalog-item-title {
-    margin-top: 15px;
+  margin-top: 15px;
 }
-
 .catalog-item .catalog-item-price {
-    margin-top: 5px;
+  margin-top: 5px;
+}
+.catalog-item .catalog-item-labels .catalog-item-label {
+  border-radius: 0px;
 }
 
 .catalog-item.w2 .catalog-item-photo-holder {
-    padding-top: 154%;
-}
-
-.catalog-item .catalog-item-labels .catalog-item-label {
-    border-radius: 0px;
+  padding-top: 154%;
 }
 
 .catalog-item-price .old {
-    color: #A4A1A1;
-    margin-left: 10px;
+  color: #A4A1A1;
+  margin-left: 10px;
 }
 
 .catalog-item-text {
-    max-width: 760px;
-    text-align: center;
-    margin: -10px auto 70px auto;
+  max-width: 760px;
+  text-align: center;
+  margin: -10px auto 70px auto;
 }
 
 .catalog-item-text__title {
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 46px;
-    margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 15px;
 }
 
 .catalog-item-text__lid {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    max-width: 525px;
-    margin: auto;
-    margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 525px;
+  margin: auto;
+  margin-bottom: 15px;
 }
 
 .link-more {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    text-decoration: underline;
-    color: #1d1d1d
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: underline;
+  color: #1d1d1d;
 }
 
 .catalog-item.w1 .catalog-item-photo-holder {
-    padding-top: 150%;
+  padding-top: 150%;
 }
 
 .catalog-items--slider .catalog-item-title,
 .catalog-items--slider .catalog-item-price {
-    /* margin-top: 15px; */
-    justify-content: center;
+  /* margin-top: 15px; */
+  justify-content: center;
 }
+
 .page-toolbar {
-    margin-top: 45px;
+  margin-top: 45px;
 }
 
-
-@media screen and (max-width: 768px){
-
-    .catalog-item-text__title {
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 5px;
-    }
-    .catalog-item-text__lid {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 20px;
-        margin-bottom: 15px;
-    }
-    .link-more {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 20px;
-    }
+.catalog-item.w2 {
+  position: relative;
 }
+.catalog-item.w2 .slider-arrows {
+  position: absolute;
+  top: calc(50% - 16px);
+  width: 100%;
+}
+.catalog-item.w2:hover .slider-arrows .slick-arrow {
+  z-index: 11;
+  cursor: pointer;
+}
+.catalog-item.w2 .catalog-item-photo-holder .slick-list.draggable {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 25px);
+}
+
+@media screen and (max-width: 768px) {
+  .catalog-item-text__title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+  .catalog-item-text__lid {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .link-more {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}/*# sourceMappingURL=catalog.css.map */
