@@ -464,6 +464,26 @@
 				},
 
 				slider: function () {
+					$(".catalog-item-slider", $sel.body).each(function () {
+						var $s = $(this),
+							params = $s.data("params"),
+							$h = $s.closest(".catalog-item"),
+							$prevArr = $h.find(".catalog-item-slider-arrow.prev"),
+							$nextArr = $h.find(".catalog-item-slider-arrow.next");
+						$s.on("init", function (e, s) {
+
+						}).slick($.extend({}, {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							dots: false,
+							arrows: true,
+							infinite: false,
+							autoplay: false,
+							speed: 500,
+							prevArrow: $prevArr,
+							nextArrow: $nextArr,
+						}, params));
+					});
 					$(".catalog-items--slider", $sel.body).each(function () {
 						var $s = $(this),
 							params = $s.data("params"),
