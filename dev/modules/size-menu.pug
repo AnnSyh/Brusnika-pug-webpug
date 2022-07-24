@@ -1,13 +1,31 @@
+-
+  const oneRows = [{name:'Российский размер', size:'40 – 42'},{name:'Обхват груди, см', size:'80 – 86'},{name:'Обхват талии, см', size:'58 – 84'},{name:'Обхват бёдер, см', size:'86 – 92'}]
+  const twoRows = [{name:'Российский размер', size:'42 – 44'},{name:'Обхват груди, см', size:'80 – 86'},{name:'Обхват талии, см', size:'58 – 84'},{name:'Обхват бёдер, см', size:'86 – 92'}]
+  const threeRows = [{name:'Российский размер', size:'44 – 46'},{name:'Обхват груди, см', size:'80 – 86'},{name:'Обхват талии, см', size:'58 – 84'},{name:'Обхват бёдер, см', size:'86 – 92'}]
+  const fourRows = [{name:'Российский размер', size:'46 – 48'},{name:'Обхват груди, см', size:'80 – 86'},{name:'Обхват талии, см', size:'58 – 84'},{name:'Обхват бёдер, см', size:'86 – 92'}]
+  const fiveRows = [{name:'Российский размер', size:'48 – 50'},{name:'Обхват груди, см', size:'80 – 86'},{name:'Обхват талии, см', size:'58 – 84'},{name:'Обхват бёдер, см', size:'86 – 92'}]
+  const sixRows = [{name:'Российский размер', size:'50 – 52'},{name:'Обхват груди, см', size:'80 – 86'},{name:'Обхват талии, см', size:'58 – 84'},{name:'Обхват бёдер, см', size:'86 – 92'}]
+  const sevenRows = [{name:'Российский размер', size:'52 – 54'},{name:'Обхват груди, см', size:'80 – 86'},{name:'Обхват талии, см', size:'58 – 84'},{name:'Обхват бёдер, см', size:'86 – 92'}]
+  
+
 #catalog-size.size-menu.size-menu_visible1
   .size-inner
     .size-open.size-menu__close1.size-menu__close
     .size-menu-sections
-      .size-menu__title Таблица размеров
+      .size-menu__title 111Таблица размеров
       .size-menu__text
         | Этот справочник по размерам носит ориентировочный характер.
         | Если у вас уже есть похожая модель нашего бренда, размер
         | которой вам подходит, рекомендуем выбрать тот же размер.
       //- // ----size table------------------------------------------
+      //- +listSocial('list1','vk','fb','tw','inst')
+      //- ul.main-nav
+      //-   +nav('','Ссылка 1')
+      //-   +nav('','Ссылка 2')
+      //-   +nav('','Ссылка 3')
+      //-   +nav('','Ссылка 4')
+      //- +tabList('size-table','one','two','three','four')
+      //- +table('table-size','one','two','three','four')
       .size-table(id='#tabNav')
         .size-items.tabs-heading
           label.active(data-tab='#size-tabs_one' data-tabs='.size-tab')
@@ -32,104 +50,51 @@
             .size-item-content
               .size-item-title Рост H2
         .tabs-content
+
           #size-tabs_one.tab-content-item.size-tab.active
             .table-size
-              .table-size__row
-                div Российский размер
-                div 40 – 42
-              .table-size__row
-                div Обхват груди, см
-                div 80 – 86
-              .table-size__row
-                div Обхват талии, см
-                div 58 – 84
-              .table-size__row
-                div Обхват бёдер, см
-                div 86 – 92
+              each row in oneRows
+                .table-size__row
+                  div= row.name
+                  div= row.size
           #size-tabs_two.tab-content-item.size-tab
-            .table-size
-              .table-size__row
-                div Российский размер
-                div 42 – 44
-              .table-size__row
-                div Обхват груди, см
-                div 80 – 86
-              .table-size__row
-                div Обхват талии, см
-                div 58 – 84
-              .table-size__row
-                div Обхват бёдер, см
-                div 86 – 92
+            .table-size 
+              each row in twoRows
+                .table-size__row
+                  div= row.name
+                  div= row.size
           #size-tabs_three.tab-content-item.size-tab
-            .table-size
-              .table-size__row
-                div Российский размер
-                div 44 – 46
-              .table-size__row
-                div Обхват груди, см
-                div 80 – 86
-              .table-size__row
-                div Обхват талии, см
-                div 58 – 84
-              .table-size__row
-                div Обхват бёдер, см
-                div 86 – 92
+            .table-size 
+              each row in threeRows
+                .table-size__row
+                  div= row.name
+                  div= row.size
           #size-tabs_four.tab-content-item.size-tab
-            .table-size
-              .table-size__row
-                div Российский размер
-                div 46 – 48
-              .table-size__row
-                div Обхват груди, см
-                div 80 – 86
-              .table-size__row
-                div Обхват талии, см
-                div 58 – 84
-              .table-size__row
-                div Обхват бёдер, см
-                div 86 – 92
+            .table-size 
+              each row in fourRows
+                .table-size__row
+                  div= row.name
+                  div= row.size
           #size-tabs_five.tab-content-item.size-tab
-            .table-size
-              .table-size__row
-                div Российский размер
-                div 48 – 50
-              .table-size__row
-                div Обхват груди, см
-                div 80 – 86
-              .table-size__row
-                div Обхват талии, см
-                div 58 – 84
-              .table-size__row
-                div Обхват бёдер, см
-                div 86 – 92
+            .table-size 
+              each row in fiveRows
+                .table-size__row
+                  div= row.name
+                  div= row.size
+
           #size-tabs_six.tab-content-item.size-tab
-            .table-size
-              .table-size__row
-                div Российский размер
-                div 50 – 52
-              .table-size__row
-                div Обхват груди, см
-                div 80 – 86
-              .table-size__row
-                div Обхват талии, см
-                div 58 – 84
-              .table-size__row
-                div Обхват бёдер, см
-                div 86 – 92
+            .table-size 
+              each row in sixRows
+                .table-size__row
+                  div= row.name
+                  div= row.size
           #size-tabs_seven.tab-content-item.size-tab
-            .table-size
-              .table-size__row
-                div Российский размер
-                div 52 – 54
-              .table-size__row
-                div Обхват груди, см
-                div 80 – 86
-              .table-size__row
-                div Обхват талии, см
-                div 58 – 84
-              .table-size__row
-                div Обхват бёдер, см
-                div 86 – 92
+            .table-size 
+              each row in sevenRows
+                .table-size__row
+                  div= row.name
+                  div= row.size
+
       //- // ----/size table------------------------------------------
       .size-menu__title.size-menu__title_left Как снять мерки для себя
       .size-img
