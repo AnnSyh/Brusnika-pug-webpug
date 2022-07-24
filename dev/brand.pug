@@ -1,26 +1,20 @@
-- var pageTitle = 'Брусника каталог'
 
-doctype html
-html.no-js(lang='ru', prefix='og:http://ogp.me/ns#')
-  head
-    include modules/head  
-    style 
-      include css/style.css    
-  body
-    .page
-      include modules/page-note
-      include modules/header
-      main.page-content
-        .page-section.page-section--brand
-          .page-inner.page-inner--w1.page-inner--mobile_empty
-            include modules/filter
-            include modules/filter-rezult-not-found
-          .page-inner.page-inner--w2 
-            include modules/catalog 
-          .page-inner--w1.page-inner.hidden-x
-            .page-inner.page-inner--w2
-              .catalog
-                include modules/slider-prev-watched 
-        include modules/footer
-      include modules/footer-popups
-      include modules/footer-scripts
+extends layout/main
+
+block variables
+  - var title = 'Брусника/brand'
+  - var mainPage = false
+
+
+block content
+  main.page-content
+    .page-section.page-section--brand
+      .page-inner.page-inner--w1.page-inner--mobile_empty
+        include modules/filter
+        include modules/filter-rezult-not-found
+      .page-inner.page-inner--w2 
+        include modules/catalog 
+      .page-inner--w1.page-inner.hidden-x
+        .page-inner.page-inner--w2
+          .catalog
+            include modules/slider-prev-watched

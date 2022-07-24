@@ -1,16 +1,17 @@
-- var pageTitle = 'Брусника'
+extends main
 
-doctype html
-html.no-js(lang='ru', prefix='og:http://ogp.me/ns#')
-  head
-    include modules/head 
-    style 
-      include css/style.css    
-  body
-    .page
-      include modules/page-note
-      include modules/header
-      h1 Pug - node template engine
-      include modules/footer
-    include modules/footer-popups
-    include modules/footer-scripts
+block variables
+  - var title = 'Брусника index'
+  - var mainPage = false
+
+
+block content
+  .page
+    include modules/page-note
+    include modules/header
+
+    block page-inner
+
+    include modules/footer
+  include modules/footer-popups
+  include modules/footer-scripts

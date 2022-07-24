@@ -1,30 +1,23 @@
-- var pageTitle = 'Брусника поиск'
+extends layout/main
 
-doctype html
-html.no-js(lang='ru', prefix='og:http://ogp.me/ns#')
-  head
-    include modules/head  
-    style 
-      include css/style.css   
-  body
-    .page
-      include modules/page-note
-      include modules/header
-      main.page-content
-        .page-inner.page-inner--w3
-          .page-heading
-            .page-heading-description
-              form.search-form__form(action="search-page.html")
-                include modules/search-form
-                include modules/search-rezult
-        .page-section.page-section--search
-          .page-inner.page-inner--w1.page-inner--mobile_empty
-          .page-inner.page-inner--w2 
-            include modules/catalog 
-          .page-inner--w1.page-inner.hidden-x
-            .page-inner.page-inner--w2
-              .catalog
-                include modules/slider-prev-watched 
-      include modules/footer
-    include modules/footer-popups
-    include modules/footer-scripts
+block variables
+  - var title = 'Брусника/search'
+  - var mainPage = false
+
+
+block content
+    main.page-content
+      .page-inner.page-inner--w3
+        .page-heading
+          .page-heading-description
+            form.search-form__form(action="search-page.html")
+              include modules/search-form
+              include modules/search-rezult
+      .page-section.page-section--search
+        .page-inner.page-inner--w1.page-inner--mobile_empty
+        .page-inner.page-inner--w2 
+          include modules/catalog 
+        .page-inner--w1.page-inner.hidden-x
+          .page-inner.page-inner--w2
+            .catalog
+              include modules/slider-prev-watched 
