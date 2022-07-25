@@ -32,6 +32,7 @@
 .catalog-item {
     .catalog-item-title {
         margin-top: 15px;
+        line-height: 22px;
     }
 
     .catalog-item-price {
@@ -107,6 +108,18 @@
 .catalog-item.w2 {
     position: relative;
 
+    .order-table__color {
+        display: none;
+    }
+
+    .slider-size {
+        z-index: -2;
+        position: absolute;
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        bottom: 75px;
+    }
+
     .slider-arrows {
         position: absolute;
         top: calc(50% - 16px);
@@ -115,10 +128,29 @@
     }
 
     &:hover {
+
+        .catalog-item-color {
+            display: none;
+        }
+
+        .order-table__color {
+            display: flex;
+            margin: 0;
+            flex-wrap: wrap;
+            position: absolute;
+            width: 90px;
+            right: 0;
+        }
+
+        .slider-size,
         .slider-arrows .slick-arrow {
             z-index: 11;
             cursor: pointer;
         }
+
+
+
+
     }
 
     .catalog-item-photo-holder .slick-list.draggable {
@@ -130,6 +162,31 @@
     }
 
 }
+
+
+.slider-size {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &__list ul {
+        display: flex;
+        justify-content: space-around;
+        max-width: 63%;
+        margin: auto;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+
 
 
 @media screen and (max-width: 768px) {

@@ -15,8 +15,22 @@ section.page-section
         .catalog-item.w2
           .catalog-item-photo-holder
             img.cover(src=`../dummy/catalog/${likedItem.image}`)
+          .slider-size 
+            .slider-size__title Добавить в корзину
+            .slider-size__list 
+              ul 
+                li 
+                  a(href='#') XS
+                li 
+                  a(href='#') S
+                li 
+                  a(href='#') M
+                li 
+                  a(href='#') L
+                li 
+                  a(href='#') XL          
           .catalog-item-title= likedItem.name
-            .catalog-item-color +2 цвета
+            .catalog-item-color +3 цвета
           .catalog-item-price
             b= likedItem.price + ' РУБ'
           .product-labels

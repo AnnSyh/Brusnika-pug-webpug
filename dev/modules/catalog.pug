@@ -42,8 +42,41 @@
                     img(src='../dummy/catalog/c23.jpg')
                     img(src='../dummy/catalog/c24.jpg')
                     img(src='../dummy/catalog/c25.jpg')
+                  .slider-size 
+                    .slider-size__title Добавить в корзину
+                    .slider-size__list 
+                      ul 
+                        li 
+                          a(href='#') XS
+                        li 
+                          a(href='#') S
+                        li 
+                          a(href='#') M
+                        li 
+                          a(href='#') L
+                        li 
+                          a(href='#') XL                    
                   .catalog-item-title= item.name
-                    .catalog-item-color +2 цвета
+                    div
+                      .order-table__color
+                        a.order-table__color-link(href="#")
+                          span.color-beg
+                        a.order-table__color-link.color-active(href="#")
+                          span.color-black
+                        a.order-table__color-link(href="#")
+                          span.color-beg
+                        a.order-table__color-link(href="#")
+                          span.color-black
+                        a.order-table__color-link(href="#")
+                          span.color-beg
+                        a.order-table__color-link(href="#")
+                          span.color-black
+                        a.order-table__color-link(href="#")
+                          span.color-beg
+                        a.order-table__color-link(href="#")
+                          span.color-black
+                      .catalog-item-color +4 цвета
+
                   .catalog-item-price
                     b= item.price + ' РУБ'
                   a.catalog-item-link(href='card.html')
@@ -89,8 +122,8 @@
                     img(src='../dummy/catalog/c23.jpg')
                     img(src='../dummy/catalog/c24.jpg')
                     img(src='../dummy/catalog/c25.jpg')
-                  .catalog-item-title= tovar.name
-                    .catalog-item-color +2 цвета
+                  include card-size-color
+
                   .catalog-item-price
                     b= tovar.price + ' РУБ'
                   a.catalog-item-link(href='card.html')

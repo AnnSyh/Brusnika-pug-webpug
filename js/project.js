@@ -966,16 +966,21 @@
 						const productSizeTooltip = document.querySelector('.product-add-favorites');
 						productSizeTooltip.click();//открываю tooltip о добавлении в избранное
 						$('.product-like').toggleClass('active-like');//добавляю акт класс сердечку
-						$('.product-to-basket__content .product-buy').innerHTML = 'В КОРЗИНЕ';//меняю иконку и надпись на кнопке 'в корзину'
+						$('.btn.basket-open').innerHTML = 'В КОРЗИНЕ';//меняю иконку и надпись на кнопке 'в корзину'
 					});
 
-					$('.tooltipster-white .tooltip__close').on("click", function (e) {
-						e.preventDefault();
-						console.log('!!!! = ', e);
-						$('.product-add-favorites').tooltipster('close');
+					const tooltipCloses = document.querySelectorAll('.tooltip__close');
+
+					tooltipCloses.forEach((item) => {
+						console.log('forEach');
+						item.addEventListener('click', (e) => {
+								console.log('addEventListener click');
+							});
 					});
 
 					$(window).keypress(function () {
+						// $('.tooltip__close').tooltipster('close');
+
 						$('.product-add-favorites').tooltipster('close');
 						$('.product-like').toggleClass('active-like');//добавляю акт класс сердечку
 					});

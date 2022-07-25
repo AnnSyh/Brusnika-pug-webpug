@@ -1,0 +1,20 @@
+extends layout/main
+
+block variables
+  - var title = 'Брусника корзина пуста'
+  - var mainPage = false
+
+
+block content
+  main.page-content
+    .page-inner.page-inner--w2
+      .page-heading
+        .page-heading-title.center.h2 КОРЗИНА ПУСТА
+        .page-heading-description.center
+          | Добавьте товары в корзину, 
+          br
+          | или 
+          a.link.link--black_border(href='#') авторизуйтесь
+          | , чтобы увидеть выбранные товары.
+      .row.justify-content-center
+        a.btn.btn--black.btn--medium(href='section.html') ПРОДОЛЖИТЬ ПОКУПКИ
