@@ -253,7 +253,7 @@ header.page-header(itemscope='' itemtype='http://schema.org/WPHeader')
       .basket-menu-sections
         .basket-mobile-menu__header
           a.basket__title-link(href='basket.html') Товары в корзине(3)
-          a.basket__title-link-clean-basket(href='#') 3Очистить корзину
+          a.basket__title-link-clean-basket(href='#') Очистить корзину
         .basket-mobile-menu__body
           .order-table.basket
             .order-table__row
@@ -321,15 +321,21 @@ header.page-header(itemscope='' itemtype='http://schema.org/WPHeader')
                     .order-photo-holder
                       img.cover(src='../dummy/orders/2.jpg')
                   .order-table__info
-                    .order-table__name БРЮКИ 
+                    div.order-table__row
+                      .order-table__name БРЮКИ
+                      a.order-table-heart(href='#') 
+                      //- button(class="catalog-item-like" type="button")
                     .order-table__price 118 990 Р
-                    .order-table__color Цвет: коричневый
-                    select.order-table__select(name='select')
-                      option(value='value1' selected='') Выберите размер
-                      option(value='value2') размер 1
-                      option(value='value3') размер 2
-                div
-                  a.order-table-delete(href='#')  
+                    .order-table__color
+                      a.order-table__color-link.color-active(href="#")
+                        span.color-beg
+                      a.order-table__color-link(href="#")
+                        span.color-black
+                    .product-size-select.product-size-select_top
+                      select.form-item.form-item--select.w100.jcf-hidden
+                        option(value='42') 4122А (H-43см. D-180 мм) 
+                        option(value='43') 4122А (H-43см. D-180 мм) 
+                        option(value='44') 4122А (H-43см. D-180 мм) 
       .basket-mobile-menu__footer
         .basket-mobile-menu__footer-links
           .basket__title-link 4 Товара на сумму
