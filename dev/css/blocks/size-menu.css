@@ -87,6 +87,10 @@
     margin-bottom: 20px;
 }
 
+.tabs-heading label {
+    cursor: pointer;
+}
+
 .tabs-heading .active {
     text-decoration: underline;
 }
@@ -99,4 +103,6 @@
     height: 100%;
     overflow-y: auto;
 }
+
+
 
