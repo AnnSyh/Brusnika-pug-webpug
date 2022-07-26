@@ -1,0 +1,14 @@
+- 
+  const priсes = [
+    {name: 'Цена по убыванию'},
+    {name: 'Цена по возврастанию'},
+    {name: 'Сначала новые'},
+    {name: 'Сначала хиты продаж'}
+    ]
+
+.mobile-filter-item-content
+  each priсe in priсes
+    .filter-row
+      label.form-radio
+        input.form-item.form-item--radio(type='radio' name='product')
+        span.form-radio-title= priсe.name
