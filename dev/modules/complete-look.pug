@@ -34,22 +34,11 @@ section
             img(src='../dummy/catalog/c25.jpg')
           //- .catalog-item-photo-holder
           //-   img.cover(src=`../dummy/catalog/${look.image}` alt='')
-          .slider-size 
-            .slider-size__title Добавить в корзину
-            .slider-size__list 
-              ul 
-                li 
-                  a(href='#') XS
-                li 
-                  a(href='#') S
-                li 
-                  a(href='#') M
-                li 
-                  a(href='#') L
-                li 
-                  a(href='#') XL
+          include card-sizes-block
+          
           .catalog-item-title= look.name
-            .catalog-item-color +2 цвета
+            include card-colors-block
+
           .catalog-item-price
             b= look.price + ' РУБ'
           a.catalog-item-link(href='card.html')

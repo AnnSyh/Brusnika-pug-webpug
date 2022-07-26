@@ -1,6 +1,6 @@
 - 
   const items = [
-    {image: 'c11.jpg', price: '1999', name: 'Жакет 54321', label: 'Хит'},
+    {image: 'c11.jpg', price: '1999', name: 'Жакет 4321', label: 'Хит'},
     {image: 'c22.jpg', price: '345', name: 'Жакет 2', label: 'Хит'},
     {image: 'c23.jpg', price: '2329', name: 'Жакет 3', label: 'Хит'},
     {image: 'c24.jpg', price: '2329', name: 'Жакет 4', label: 'Хит'}
@@ -15,7 +15,7 @@
         {image: 'c1.jpg', price: '1999', name: 'Жакет 1', label: 'Хит'},
         {image: 'c22.jpg', price: '345', name: 'Жакет 2', label: 'Хит'},
         {image: 'c23.jpg', price: '2329', name: 'Жакет 3', label: 'Хит'},
-        {image: 'c24.jpg', price: '2329', name: 'Жакет 4', label: 'Хит'}
+        {image: 'c24.jpg', price: '2329', name: 'Жакет 44', label: 'Хит'}
         ]
 
 #catalog-items
@@ -42,40 +42,10 @@
                     img(src='../dummy/catalog/c23.jpg')
                     img(src='../dummy/catalog/c24.jpg')
                     img(src='../dummy/catalog/c25.jpg')
-                  .slider-size 
-                    .slider-size__title Добавить в корзину
-                    .slider-size__list 
-                      ul 
-                        li 
-                          a(href='#') XS
-                        li 
-                          a(href='#') S
-                        li 
-                          a(href='#') M
-                        li 
-                          a(href='#') L
-                        li 
-                          a(href='#') XL                    
+                  include card-sizes-block
                   .catalog-item-title= item.name
-                    div
-                      .order-table__color
-                        a.order-table__color-link(href="#")
-                          span.color-beg
-                        a.order-table__color-link.color-active(href="#")
-                          span.color-black
-                        a.order-table__color-link(href="#")
-                          span.color-beg
-                        a.order-table__color-link(href="#")
-                          span.color-black
-                        a.order-table__color-link(href="#")
-                          span.color-beg
-                        a.order-table__color-link(href="#")
-                          span.color-black
-                        a.order-table__color-link(href="#")
-                          span.color-beg
-                        a.order-table__color-link(href="#")
-                          span.color-black
-                      .catalog-item-color +4 цвета
+                    .catalog-item-color +3 цвета
+                  include card-colors-block
 
                   .catalog-item-price
                     b= item.price + ' РУБ'
@@ -122,7 +92,10 @@
                     img(src='../dummy/catalog/c23.jpg')
                     img(src='../dummy/catalog/c24.jpg')
                     img(src='../dummy/catalog/c25.jpg')
-                  include card-size-color
+
+                  include card-sizes-block
+                  .catalog-item-title= tovar.name
+                    include card-colors-block
 
                   .catalog-item-price
                     b= tovar.price + ' РУБ'

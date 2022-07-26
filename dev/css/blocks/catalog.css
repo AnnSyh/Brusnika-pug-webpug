@@ -117,8 +117,9 @@
   margin: 0;
   flex-wrap: wrap;
   position: absolute;
-  width: 90px;
+  width: 75px;
   right: 0;
+  bottom: 10px;
 }
 .catalog-item.w2:hover .slider-size,
 .catalog-item.w2:hover .slider-arrows .slick-arrow {
