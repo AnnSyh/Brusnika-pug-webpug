@@ -1,3 +1,17 @@
+- 
+    const data = [
+        {name: 'NEW', href: '#'},
+        {name: 'LOOKBOOK', href: '#'},
+        {name: 'SS`22', href: '#', submenu: [
+                                              {name: 'Summer City Wibe', href: '#'},
+                                              {name: 'East way', href: '#'},
+                                              {name: 'With Nature', href: '#'},
+                                              {name: 'Textile', href: '#'},
+                                              {name: 'TProd Dress', href: '#'},
+                                            ]},
+        {name: 'OFFICE', href: '#'},
+        ]
+
 header.page-header(itemscope='' itemtype='http://schema.org/WPHeader')
   .page-inner.page-inner--w1.desktop
     .header-menu
@@ -30,7 +44,7 @@ header.page-header(itemscope='' itemtype='http://schema.org/WPHeader')
               img(src='../svg/basket.svg')
               span
   #catalog-buyer-menu.catalog-buyer-menu
-    .page-inner(style1='position: relative;')
+    .page-inner
       .menu-sections
         ul.buyer-menu__list
           li
@@ -137,13 +151,13 @@ header.page-header(itemscope='' itemtype='http://schema.org/WPHeader')
         .catalog-open.catalog-menu__close
         ul.catalog-menu__list.accordion.accordion_catalog-menu
           li
-            a.catalog-menu__link.submenu.active(href='#cm1') NEW 111
+            a.catalog-menu__link.submenu.bold.active(href='#cm1') NEW
           li
-            a.catalog-menu__link(href='#cm2') LOOKBOOK
-          li.accordion-item
+            a.catalog-menu__link.bold(href='#cm2') LOOKBOOK
+          li.accordion-item.opened
             .accordion-item-heading
               a.catalog-menu__link(href='#cm3') SS`22
-            ul.accordion-item-content
+            ul.accordion-item-content.show(style="display: block;")
               li
                 a.catalog-menu__sublink(href='#') Summer City Wibe
               li
@@ -154,6 +168,7 @@ header.page-header(itemscope='' itemtype='http://schema.org/WPHeader')
                 a.catalog-menu__sublink(href='#') Textile
               li
                 a.catalog-menu__sublink(href='#') Prod Dress
+                
           li
             a.catalog-menu__link(href='#cm4') OFFICE
           li

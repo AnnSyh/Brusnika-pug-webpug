@@ -1,8 +1,5 @@
-.complite-look {
-  border: 1px solid red;
-}
 .complite-look__info {
-  width: 345px;
+  max-width: 345px;
   margin: 45px auto 0 auto;
   display: flex;
   flex-direction: column;
@@ -14,6 +11,8 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 .complite-look__by-all {
   margin-top: 15px;

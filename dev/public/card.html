@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="catalog-buyer-menu" id="catalog-buyer-menu">
-          <div class="page-inner" style1="position: relative;">
+          <div class="page-inner">
             <div class="menu-sections">
               <ul class="buyer-menu__list">
                 <li><a class="buyer-menu__link active" href="#cm1">Подарочные сертификаты</a></li>
@@ -165,11 +165,11 @@
             <div class="catalog-menu-sections">
               <div class="catalog-open catalog-menu__close"></div>
               <ul class="catalog-menu__list accordion accordion_catalog-menu">
-                <li><a class="catalog-menu__link submenu active" href="#cm1">NEW 111</a></li>
-                <li><a class="catalog-menu__link" href="#cm2">LOOKBOOK</a></li>
-                <li class="accordion-item">
+                <li><a class="catalog-menu__link submenu bold active" href="#cm1">NEW</a></li>
+                <li><a class="catalog-menu__link bold" href="#cm2">LOOKBOOK</a></li>
+                <li class="accordion-item opened">
                   <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm3">SS`22</a></div>
-                  <ul class="accordion-item-content">
+                  <ul class="accordion-item-content show" style="display: block;">
                     <li><a class="catalog-menu__sublink" href="#">Summer City Wibe</a></li>
                     <li><a class="catalog-menu__sublink" href="#">East way</a></li>
                     <li><a class="catalog-menu__sublink" href="#">With Nature</a></li>
@@ -742,7 +742,7 @@
               </div>
             </div>
             <div class="complite-look__info">
-              <div class="complite-look__text"><span class="nowrap">Товары в образе: </span><span class="nowrap">Брюки 6 500 P,</span><span class="nowrap">Топ 14 800 P,</span><span class="nowrap">Жакет 12 500 P.</span></div>
+              <div class="complite-look__text"><span class="nowrap">Товары в образе:</span><span class="nowrap">Брюки 6 500 P,</span><span class="nowrap">Топ 14 800 P,</span><span class="nowrap">Жакет 12 500 P.</span></div>
               <div class="complite-look__by-all">Купить все за 29 800 P</div><a class="btn btn--black btn--medium btn--fullwidth basket-open" href="#">ДОБАВИТЬ В КОРЗИНУ </a>
             </div>
           </section>
@@ -1229,7 +1229,7 @@
           <form class="mobile-filter">
             <div class="mobile-filter-close"></div>
             <div class="mobile-filter-heading">
-              <div class="mobile-filter-heading-title">Фильтры(4)</div>
+              <div class="mobile-filter-heading-title">Фильтры(3)</div>
             </div>
             <div class="mobile-filter-items">
               <div class="mobile-filter-item">
@@ -1239,49 +1239,125 @@
                 </div>
                 <div class="mobile-filter-item-content">
                   <div class="row">
-                    <div class="col-6">
-                      <div class="filter-row">
-                        <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox bg-green" type="checkbox"><span class="form-checkbox-title">Бежевый</span>
-                        </label>
-                      </div>
-                      <div class="filter-row">
-                        <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox bg-red" type="checkbox"><span class="form-checkbox-title">Белый</span>
-                        </label>
-                      </div>
-                      <div class="filter-row">
-                        <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Бирюзовый</span>
-                        </label>
-                      </div>
-                      <div class="filter-row">
-                        <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Бордовый</span>
-                        </label>
-                      </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-beige" type="checkbox"><span class="form-checkbox-title">Бежевый</span>
+                      </label>
                     </div>
-                    <div class="col-6">
-                      <div class="filter-row">
-                        <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Бежевый</span>
-                        </label>
-                      </div>
-                      <div class="filter-row">
-                        <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Белый</span>
-                        </label>
-                      </div>
-                      <div class="filter-row">
-                        <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Бирюзовый</span>
-                        </label>
-                      </div>
-                      <div class="filter-row">
-                        <label class="form-checkbox">
-                          <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Бордовый</span>
-                        </label>
-                      </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-red" type="checkbox"><span class="form-checkbox-title">Красный</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-" type="checkbox"><span class="form-checkbox-title">Белый</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-menthol" type="checkbox"><span class="form-checkbox-title">Ментол</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-turquoise" type="checkbox"><span class="form-checkbox-title">Бирюзовый</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-orange" type="checkbox"><span class="form-checkbox-title">Оранжевый</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-burgundy" type="checkbox"><span class="form-checkbox-title">Бордовый</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-pink" type="checkbox"><span class="form-checkbox-title">Розовый</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-blue" type="checkbox"><span class="form-checkbox-title">Голубой</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-silver" type="checkbox"><span class="form-checkbox-title">Серебро</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-denim" type="checkbox"><span class="form-checkbox-title">Деним</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-grey" type="checkbox"><span class="form-checkbox-title">Серый</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-yellow" type="checkbox"><span class="form-checkbox-title">Желтый</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-blue" type="checkbox"><span class="form-checkbox-title">Синий</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-green" type="checkbox"><span class="form-checkbox-title">Зеленый</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-lilac" type="checkbox"><span class="form-checkbox-title">Сиреневый</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-gold" type="checkbox"><span class="form-checkbox-title">Золото</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-violet" type="checkbox"><span class="form-checkbox-title">Фиолетовый</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-emerald" type="checkbox"><span class="form-checkbox-title">Изумрудный</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-fuchsia" type="checkbox"><span class="form-checkbox-title">Фуксия</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-brown" type="checkbox"><span class="form-checkbox-title">Коричневый</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-khaki" type="checkbox"><span class="form-checkbox-title">Хаки</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-lactic" type="checkbox"><span class="form-checkbox-title">Молочный</span>
+                      </label>
+                    </div>
+                    <div class="filter-row col-6">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox filter-checkbox-bg bg-black" type="checkbox"><span class="form-checkbox-title">Черный</span>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -1292,57 +1368,60 @@
                   <div class="mobile-filter-item-heading-toggler"></div>
                 </div>
                 <div class="mobile-filter-item-content">
-                  <div class="filter-row">
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Вискоза</span>
-                    </label>
-                  </div>
-                  <div class="filter-row">
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Кашемир</span>
-                    </label>
-                  </div>
-                  <div class="filter-row">
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Лен</span>
-                    </label>
-                  </div>
-                  <div class="filter-row">
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Мохер</span>
-                    </label>
-                  </div>
-                  <div class="filter-row">
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Полиэстер</span>
-                    </label>
-                  </div>
-                  <div class="filter-row">
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Хлопок</span>
-                    </label>
-                  </div>
-                  <div class="filter-row">
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Шерсть</span>
-                    </label>
-                  </div>
-                  <div class="filter-row">
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Шифон</span>
-                    </label>
-                  </div>
-                  <div class="filter-row">
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Эко-кожа</span>
-                    </label>
-                  </div>
-                  <div class="filter-row">
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Эко-мех</span>
-                    </label>
+                  <div class="row">
+                    <div class="filter-row">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Вискоза</span>
+                      </label>
+                    </div>
+                    <div class="filter-row">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Кашемир</span>
+                      </label>
+                    </div>
+                    <div class="filter-row">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Лен</span>
+                      </label>
+                    </div>
+                    <div class="filter-row">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Мохер</span>
+                      </label>
+                    </div>
+                    <div class="filter-row">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Полиэстер</span>
+                      </label>
+                    </div>
+                    <div class="filter-row">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Хлопок</span>
+                      </label>
+                    </div>
+                    <div class="filter-row">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Шерсть</span>
+                      </label>
+                    </div>
+                    <div class="filter-row">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Шифон</span>
+                      </label>
+                    </div>
+                    <div class="filter-row">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Эко-кожа</span>
+                      </label>
+                    </div>
+                    <div class="filter-row">
+                      <label class="form-checkbox">
+                        <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Эко-мех</span>
+                      </label>
+                    </div>
                   </div>
                 </div>
+                <div class="mobile-filter-item-content"></div>
               </div>
               <div class="mobile-filter-item">
                 <div class="mobile-filter-item-heading">
@@ -1355,67 +1434,49 @@
                       <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">One size</span>
                     </label>
                     <label class="form-checkbox"><span class="form-checkbox-title">Рост H1</span></label>
-                    <label class="form-checkbox"><span class="form-checkbox-title">РОСТ H2</span></label>
+                    <label class="form-checkbox"><span class="form-checkbox-title">Рост H1</span></label>
                   </div>
                   <div class="filter-row filter-row__size">
                     <label class="form-checkbox">
                       <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">XS(RU36-38)</span>
                     </label>
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">XS(RU36-38)</span>
-                    </label>
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">XS(RU36-38)</span>
-                    </label>
+                    <label class="form-checkbox"><span class="form-checkbox-title">XS(RU36-38)</span></label>
+                    <label class="form-checkbox"><span class="form-checkbox-title">XS(RU36-38)</span></label>
                   </div>
                   <div class="filter-row filter-row__size">
                     <label class="form-checkbox">
                       <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">S(RU40-42)</span>
                     </label>
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">S(RU40-42)</span>
-                    </label>
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">S(RU40-42)</span>
-                    </label>
+                    <label class="form-checkbox"><span class="form-checkbox-title">S(RU40-42)</span></label>
+                    <label class="form-checkbox"><span class="form-checkbox-title">S(RU40-42)</span></label>
                   </div>
                   <div class="filter-row filter-row__size">
                     <label class="form-checkbox">
                       <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">M(RU44-46)</span>
                     </label>
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">M(RU44-46)</span>
-                    </label>
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">M(RU44-46)</span>
-                    </label>
+                    <label class="form-checkbox"><span class="form-checkbox-title">M(RU44-46)</span></label>
+                    <label class="form-checkbox"><span class="form-checkbox-title">M(RU44-46)</span></label>
                   </div>
                   <div class="filter-row filter-row__size">
                     <label class="form-checkbox">
                       <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">L(RU48-50)</span>
                     </label>
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">L(RU48-50)</span>
-                    </label>
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">L(RU48-50)</span>
-                    </label>
+                    <label class="form-checkbox"><span class="form-checkbox-title">L(RU48-50)</span></label>
+                    <label class="form-checkbox"><span class="form-checkbox-title">L(RU48-50)</span></label>
                   </div>
                   <div class="filter-row filter-row__size">
                     <label class="form-checkbox">
                       <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">XL(RU52-54)</span>
                     </label>
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">XL(RU52-54)</span>
-                    </label>
-                    <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">XL(RU52-54)</span>
-                    </label>
+                    <label class="form-checkbox"><span class="form-checkbox-title">XL(RU52-54)</span></label>
+                    <label class="form-checkbox"><span class="form-checkbox-title">XL(RU52-54)</span></label>
                   </div>
                   <div class="filter-row filter-row__size">
                     <label class="form-checkbox">
                       <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">XL(RU56-58)</span>
                     </label>
+                    <label class="form-checkbox"><span class="form-checkbox-title"></span></label>
+                    <label class="form-checkbox"><span class="form-checkbox-title"></span></label>
                   </div>
                 </div>
               </div>
