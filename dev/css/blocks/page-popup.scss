@@ -1,0 +1,47 @@
+.page-popup {
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 430px;
+    padding: 55px 45px;
+
+    &-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &-title--small {
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .form-label {
+        color: #666666;
+    }
+
+    .form {
+        .link {
+            text-decoration: underline;
+        }
+    }
+
+    .tabs-heading {
+        .tab-heading-item {
+            min-width: auto;
+            white-space: nowrap;
+        }
+    }
+
+    .check-dimensions-list {
+        border: 1px solid red;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+}

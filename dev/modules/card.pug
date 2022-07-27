@@ -4,8 +4,9 @@
       a.link.link--gray(href='#') Назад
     .product-info__content
       .product-razdel Жакеты
-      .product-title
+      .product-info__title
         | Классический двубортный жакет из 100% льна,
+        br
         | застежка на пуговицы.
       .product-properties
         | Цвет: Коричневый
@@ -17,51 +18,46 @@
         .accordion-item
           .accordion-item-heading Наличие в магазинах
           .accordion-item-content
-            .page-text Наличие в магазинах
+            include card/card-accordion-block-availability
         .accordion-item
           .accordion-item-heading УХОД ЗА ИЗДЕЛИЕМ
           .accordion-item-content
-            .page-text УХОД ЗА ИЗДЕЛИЕМ
+            include card/card-accordion-block-product-care
         .accordion-item
           .accordion-item-heading ОБМЕРЫ 
           .accordion-item-content
-            .page-text
-              | Легкий возврат за 14 дней
-              br
-              | Доставка бесплатна от 5 000Р
-              br
-              | Гарантия на товар от производителя 
-              br
-              | Официальный представитель брендов
+            include card/card-accordion-block-measurement
   .products-photos__wrapper
-    .product-photos
-      img(src='../dummy/catalog/c1.jpg' data-zoom-src='../dummy/catalog/c1.jpg')
-      img(src='../dummy/catalog/c1.jpg' data-zoom-src='../dummy/catalog/c1.jpg')
-      img(src='../dummy/catalog/c1.jpg' data-zoom-src='../dummy/catalog/c1.jpg')
-      img(src='../dummy/catalog/c1.jpg' data-zoom-src='../dummy/catalog/c1.jpg')
-      img(src='../dummy/catalog/c1.jpg' data-zoom-src='../dummy/catalog/c1.jpg')
-      img(src='../dummy/catalog/c1.jpg' data-zoom-src='../dummy/catalog/c1.jpg')
-    .product-photos-nav
-      img(src='../dummy/catalog/c1.jpg')
-      img(src='../dummy/catalog/c1.jpg')
-      img(src='../dummy/catalog/c1.jpg')
-      img(src='../dummy/catalog/c1.jpg')
-      img(src='../dummy/catalog/c1.jpg')
-      img(src='../dummy/catalog/c1.jpg')
+    .product-photos__inner
+      .product-photos
+        img(src='../dummy/slider/c1.png' data-zoom-src='../dummy/slider/c1.png')
+        img(src='../dummy/slider/c2.png' data-zoom-src='../dummy/slider/c2.png')
+        img(src='../dummy/slider/c3.png' data-zoom-src='../dummy/slider/c3.png')
+        img(src='../dummy/slider/c4.png' data-zoom-src='../dummy/slider/c4.png')
+        img(src='../dummy/slider/c5.png' data-zoom-src='../dummy/slider/c5.png')
+        img(src='../dummy/slider/c6.png' data-zoom-src='../dummy/slider/c6.png')
+      .product-photos-nav
+        img(src='../dummy/slider/c1.png')
+        img(src='../dummy/slider/c2.png')
+        img(src='../dummy/slider/c3.png')
+        img(src='../dummy/slider/c4.png')
+        img(src='../dummy/slider/c5.png')
+        img(src='../dummy/slider/c6.png')
   .product-to-basket
    span.tooltip.product-add-favorites(data-tooltip-content='#tooltip_content')
    .product-to-basket__content
      .product-title-holder
       .product-title Жакет
-       button.product-like(type='button')
+        //-  button.product-like(type='button')
+        .product-like(type='button')
       .product-price 12 500 P
       ul.product-list 
        li.product-list-item
         a.product-list-link(href="#")
-         img.product-list-img(src='../dummy/catalog/c1.jpg' alt='красный цвет')
+         img.product-list-img(src='../dummy/slider/c1-small.png' alt='красный цвет')
        li.product-list-item
         a.product-list-link(href="#")
-         img.product-list-img(src='../dummy/catalog/c1.jpg' alt='зеленый цвет')
+         img.product-list-img(src='../dummy/slider/c2-small.png' alt='зеленый цвет')
      .product-size
        .product-size__link
          a.link.link--black_border.size-open(href='#')

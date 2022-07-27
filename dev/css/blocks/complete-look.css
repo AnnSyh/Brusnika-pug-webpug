@@ -13,6 +13,7 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .complite-look__by-all {
   margin-top: 15px;
@@ -24,13 +25,10 @@
 
 .gallery__item {
   width: 100%;
-  /* border: 1px solid green; */
 }
-
 .gallery__item img {
   width: 100%;
 }
-
 .gallery__item .catalog-item {
   margin-bottom: 0px;
 }
@@ -42,7 +40,7 @@
 
 .gallery {
   display: grid;
-  gap: 12px;
+  gap: 20px;
 }
 
 .catalog-item.w2 .catalog-item-photo-holder {
@@ -57,11 +55,11 @@
 }
 @media screen and (min-width: 1024px) {
   .gallery {
-    grid-template-columns: repeat(3, calc(33.3333333333% - 12px));
+    grid-template-columns: repeat(3, calc(33.3333333333% - 20px));
   }
 }
 @media screen and (min-width: 1280px) {
   .gallery {
-    grid-template-columns: repeat(4, calc(25% - 12px));
+    grid-template-columns: repeat(4, calc(25% - 20px));
   }
 }/*# sourceMappingURL=complete-look.css.map */

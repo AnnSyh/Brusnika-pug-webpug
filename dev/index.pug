@@ -1,4 +1,4 @@
-extends main
+extends layout/main
 
 block variables
   - var title = 'Брусника index'
@@ -8,10 +8,10 @@ block variables
 block content
   .page
     include modules/page-note
-    include modules/header
+    //- include modules/header
 
     block page-inner
 
     include modules/footer
-  include modules/footer-popups
+  //- include modules/footer-popups
   include modules/footer-scripts

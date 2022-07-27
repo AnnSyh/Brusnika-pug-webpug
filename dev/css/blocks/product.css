@@ -1,8 +1,17 @@
 .product {
   display: grid;
   /* grid-template-columns: 1fr minmax(auto, max-content) 1fr; */
-  grid-template-columns: 1fr 735px 1fr;
-  gap: 70px;
+  grid-template-columns: 4fr 6fr 4fr;
+  gap: 15px;
+}
+
+.product__accordion-availability {
+  display: flex;
+  flex-direction: column;
+}
+.product__availability {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1230px) {
@@ -12,6 +21,14 @@
 }
 .product-info {
   position: relative;
+}
+.product-info__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1D1D1D;
+  margin-bottom: 20px;
 }
 
 .product-to-basket__content,
@@ -36,6 +53,12 @@
   justify-content: center;
 }
 
+.product-photos__inner {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+
 /* -------------------------- */
 .product-photos {
   max-width: 650px;
@@ -47,9 +70,15 @@
 }
 
 .product-photos-nav {
-  max-width: 50px;
-  max-height: 80px;
-  margin-bottom: 10px;
+  max-width: 70px;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  background: #fff;
+}
+.product-photos-nav.slick-list.draggable {
+  height: 100vh !important;
+  background: #fff;
 }
 
 /* -------------------------- */
@@ -70,8 +99,34 @@
   display: flex;
 }
 
+.card-nav,
 .product-to-basket .product-size {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+.card-nav .jcf-select.jcf-drop-active,
+.product-to-basket .product-size .jcf-select.jcf-drop-active {
+  border-bottom-color: #a7a7a7;
+}
+.card-nav .jcf-select-drop,
+.product-to-basket .product-size .jcf-select-drop {
+  border-top: 1px solid #a7a7a7;
+}
+.card-nav .jcf-select .jcf-select-drop,
+.product-to-basket .product-size .jcf-select .jcf-select-drop {
+  position: absolute;
+  left: -1px;
+  top: 130%;
+}
+.card-nav .jcf-list-content li,
+.product-to-basket .product-size .jcf-list-content li {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.card-nav .jcf-select-drop .jcf-option,
+.product-to-basket .product-size .jcf-select-drop .jcf-option {
+  padding: 15px;
 }
 
 .product-to-basket .product-list {
@@ -104,6 +159,7 @@
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .product-price {
@@ -119,7 +175,8 @@
 
 .product-photos-nav .slick-slide {
   cursor: pointer;
-  /* margin-bottom: 10px; */
+  width: 53px !important;
+  height: 80px;
 }
 
 .product-photos img {

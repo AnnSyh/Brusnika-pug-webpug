@@ -47,16 +47,16 @@
               <ul class="header-menu__list">
                 <li class="header-menu__item"><a class="header-menu__item-catalog catalog-open" href="#"><span>Каталог</span></a></li>
                 <li class="header-menu__item header-menu__item-dropdown catalog-dropdown"><a href="#">Покупателям</a></li>
-                <li class="header-menu__item shops"><a href="#">Магазины</a></li>
-                <li class="header-menu__item blog"><a href="#">Блог</a></li>
+                <li class="header-menu__item"><a href="#">Магазины</a></li>
+                <li class="header-menu__item"><a href="#">Блог</a></li>
               </ul>
             </div>
             <div class="header-menu__center"><a class="header-logo" href="#"><img src="../svg/header_logo.svg" alt=""></a></div>
             <div class="header-menu__right">
               <ul class="header-menu__list">
                 <li class="header-menu__item header-menu__item_search catalog-search-open"><a href="#"><span>Поиск</span></a></li>
-                <li class="header-menu__item enter"><a class="header-toolbar-item" href="#auth-form" data-popup="{&quot;type&quot;:&quot;inline&quot;}">Вход</a></li>
-                <li class="header-menu__item favorites"><a href="favorites.html">Избранное</a></li>
+                <li class="header-menu__item"><a class="header-toolbar-item" href="#auth-form" data-popup="{&quot;type&quot;:&quot;inline&quot;}">Вход</a></li>
+                <li class="header-menu__item"><a href="favorites.html">Избранное</a></li>
                 <li class="header-menu__item"><a class="header-toolbar-item basket-open" href="#"><img src="../svg/basket.svg"><span></span></a></li>
               </ul>
             </div>
@@ -168,10 +168,10 @@
                 <li class="accordion-item opened">
                   <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm3">SS`22</a></div>
                           <ul class="accordion-item-content show" style="display: block;">
-                            <li><a class="catalog-menu__sublink" href="#">1Summer City Wibe</a></li>
-                            <li><a class="catalog-menu__sublink" href="#">East way</a></li>
-                            <li><a class="catalog-menu__sublink" href="#">With Nature</a></li>
-                            <li><a class="catalog-menu__sublink" href="#">Prod Dress</a></li>
+                            <li><a class="catalog-menu__sublink" href="#cm1">1Summer City Wibe</a></li>
+                            <li><a class="catalog-menu__sublink" href="#cm2">East way</a></li>
+                            <li><a class="catalog-menu__sublink" href="#cm3">With Nature</a></li>
+                            <li><a class="catalog-menu__sublink" href="#cm4">Prod Dress</a></li>
                           </ul>
                 </li>
                 <li><a class="catalog-menu__link" href="#cm4">OFFICE</a></li>
@@ -182,11 +182,10 @@
                 <li class="accordion-item">
                   <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm9">ПЛАТЬЯ | КОМБИНЕЗОНЫ</a></div>
                           <ul class="accordion-item-content">
-                            <li><a class="catalog-menu__sublink" href="#">Эко-кожа</a></li>
-                            <li><a class="catalog-menu__sublink" href="#">Вискоза / Хлопок</a></li>
-                            <li><a class="catalog-menu__sublink" href="#">Шерсть / Кашемир</a></li>
-                            <li><a class="catalog-menu__sublink" href="#">Комбинезоны</a></li>
-                            <li><a class="catalog-menu__sublink" href="#">Лен</a></li>
+                            <li><a class="catalog-menu__sublink" href="#cm21">Плиссирвоанные</a></li>
+                            <li><a class="catalog-menu__sublink" href="#cm22">Прямые</a></li>
+                            <li><a class="catalog-menu__sublink" href="#cm23">Юбка-брюки</a></li>
+                            <li><a class="catalog-menu__sublink" href="#cm24">Трапецевидные</a></li>
                           </ul>
                 </li>
                 <li><a class="catalog-menu__link" href="#cm10">джемперы</a></li>
@@ -199,10 +198,10 @@
                 <li class="accordion-item">
                   <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm17">ЮБКИ</a></div>
                           <ul class="accordion-item-content">
-                            <li><a class="catalog-menu__sublink" href="#">Плиссирвоанные</a></li>
-                            <li><a class="catalog-menu__sublink" href="#">Прямые</a></li>
-                            <li><a class="catalog-menu__sublink" href="#">Юбка-брюки</a></li>
-                            <li><a class="catalog-menu__sublink" href="#">Трапецевидные</a></li>
+                            <li><a class="catalog-menu__sublink" href="#cm31">Плиссирвоанные</a></li>
+                            <li><a class="catalog-menu__sublink" href="#cm32">Прямые</a></li>
+                            <li><a class="catalog-menu__sublink" href="#cm33">Юбка-брюки</a></li>
+                            <li><a class="catalog-menu__sublink" href="#cm34">Трапецевидные</a></li>
                           </ul>
                 </li>
                 <li><a class="catalog-menu__link" href="#cm18">ШОРТЫ</a></li>
@@ -550,47 +549,104 @@
                 <div class="breadcrumbs"><a class="link link--gray" href="#">Назад</a></div>
                 <div class="product-info__content">
                   <div class="product-razdel">Жакеты</div>
-                  <div class="product-title">
-                    Классический двубортный жакет из 100% льна,
-                    застежка на пуговицы.
-                  </div>
+                  <div class="product-info__title">Классический двубортный жакет из 100% льна,<br>застежка на пуговицы.</div>
                   <div class="product-properties">Цвет: Коричневый<br>Артикул: 005-Жа3500-15<br>Состав: 100% Лён</div>
                   <div class="accordion">
                     <div class="accordion-item">
                       <div class="accordion-item-heading">Наличие в магазинах</div>
                       <div class="accordion-item-content">
-                        <div class="page-text">Наличие в магазинах</div>
+                                                <ul class="product__accordion-availability">
+                                                  <li>
+                                                    <dl class="product__availability">
+                                                      <dt>Vnukovo Premium Outlet</dt><span>1</span>
+                                                    </dl>
+                                                  </li>
+                                                  <li>
+                                                    <dl class="product__availability">
+                                                      <dt>Лесная, Москва</dt><span>1</span>
+                                                    </dl>
+                                                  </li>
+                                                  <li>
+                                                    <dl class="product__availability">
+                                                      <dt>ТРК &quot;Европолис&quot; СПб</dt><span>1</span>
+                                                    </dl>
+                                                  </li>
+                                                  <li>
+                                                    <dl class="product__availability">
+                                                      <dt>ТРК &quot;Тандем&quot;, Казань</dt><span>1</span>
+                                                    </dl>
+                                                  </li>
+                                                  <li>
+                                                    <dl class="product__availability">
+                                                      <dt>Хохрякова, Екатеринбург</dt><span>2</span>
+                                                    </dl>
+                                                  </li>
+                                                </ul>
                       </div>
                     </div>
                     <div class="accordion-item">
                       <div class="accordion-item-heading">УХОД ЗА ИЗДЕЛИЕМ</div>
                       <div class="accordion-item-content">
-                        <div class="page-text">УХОД ЗА ИЗДЕЛИЕМ</div>
+                                                <ul class="classList">
+                                                  <li>- Ручная стирка с жидким порошком в прохладной воде до 30°С</li>
+                                                  <li>- Не отбеливать</li>
+                                                  <li>- Не использовать машинную сушку</li>
+                                                  <li>- Гладить с изнаночной стороны утюгом до 110°С, либо отпаривателем</li>
+                                                  <li>- Химчистка с использованием тетрахлорэтилена в щадящем режиме</li>
+                                                </ul>
                       </div>
                     </div>
                     <div class="accordion-item">
                       <div class="accordion-item-heading">ОБМЕРЫ </div>
                       <div class="accordion-item-content">
-                        <div class="page-text">Легкий возврат за 14 дней<br>Доставка бесплатна от 5 000Р<br>Гарантия на товар от производителя <br>Официальный представитель брендов</div>
+                                                <ul class="product__accordion-availability">
+                                                  <li>
+                                                    <dl class="product__availability">
+                                                      <dt>Ширина по талии</dt><span>33</span>
+                                                    </dl>
+                                                  </li>
+                                                  <li>
+                                                    <dl class="product__availability">
+                                                      <dt>Длина изделия</dt><span>84</span>
+                                                    </dl>
+                                                  </li>
+                                                  <li>
+                                                    <dl class="product__availability">
+                                                      <dt>Ширина по бедрам</dt><span>40</span>
+                                                    </dl>
+                                                  </li>
+                                                  <li>
+                                                    <dl class="product__availability">
+                                                      <dt>Длина рукава с плечом</dt><span>27</span>
+                                                    </dl>
+                                                  </li>
+                                                  <li>
+                                                    <dl class="product__availability">
+                                                      <dt>Ширина по груди</dt><span>38</span>
+                                                    </dl>
+                                                  </li>
+                                                </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="products-photos__wrapper">
-                <div class="product-photos"><img src="../dummy/catalog/c1.jpg" data-zoom-src="../dummy/catalog/c1.jpg"><img src="../dummy/catalog/c1.jpg" data-zoom-src="../dummy/catalog/c1.jpg"><img src="../dummy/catalog/c1.jpg" data-zoom-src="../dummy/catalog/c1.jpg"><img src="../dummy/catalog/c1.jpg" data-zoom-src="../dummy/catalog/c1.jpg"><img src="../dummy/catalog/c1.jpg" data-zoom-src="../dummy/catalog/c1.jpg"><img src="../dummy/catalog/c1.jpg" data-zoom-src="../dummy/catalog/c1.jpg"></div>
-                <div class="product-photos-nav"><img src="../dummy/catalog/c1.jpg"><img src="../dummy/catalog/c1.jpg"><img src="../dummy/catalog/c1.jpg"><img src="../dummy/catalog/c1.jpg"><img src="../dummy/catalog/c1.jpg"><img src="../dummy/catalog/c1.jpg"></div>
+                <div class="product-photos__inner">
+                  <div class="product-photos"><img src="../dummy/slider/c1.png" data-zoom-src="../dummy/slider/c1.png"><img src="../dummy/slider/c2.png" data-zoom-src="../dummy/slider/c2.png"><img src="../dummy/slider/c3.png" data-zoom-src="../dummy/slider/c3.png"><img src="../dummy/slider/c4.png" data-zoom-src="../dummy/slider/c4.png"><img src="../dummy/slider/c5.png" data-zoom-src="../dummy/slider/c5.png"><img src="../dummy/slider/c6.png" data-zoom-src="../dummy/slider/c6.png"></div>
+                  <div class="product-photos-nav"><img src="../dummy/slider/c1.png"><img src="../dummy/slider/c2.png"><img src="../dummy/slider/c3.png"><img src="../dummy/slider/c4.png"><img src="../dummy/slider/c5.png"><img src="../dummy/slider/c6.png"></div>
+                </div>
               </div>
               <div class="product-to-basket"><span class="tooltip product-add-favorites" data-tooltip-content="#tooltip_content"></span>
                 <div class="product-to-basket__content">
                   <div class="product-title-holder">
                     <div class="product-title">Жакет
-                      <button class="product-like" type="button"></button>
+                      <div class="product-like" type="button"></div>
                     </div>
                     <div class="product-price">12 500 P</div>
                     <ul class="product-list"> 
-                      <li class="product-list-item"><a class="product-list-link" href="#"><img class="product-list-img" src="../dummy/catalog/c1.jpg" alt="красный цвет"></a></li>
-                      <li class="product-list-item"><a class="product-list-link" href="#"><img class="product-list-img" src="../dummy/catalog/c1.jpg" alt="зеленый цвет"></a></li>
+                      <li class="product-list-item"><a class="product-list-link" href="#"><img class="product-list-img" src="../dummy/slider/c1-small.png" alt="красный цвет"></a></li>
+                      <li class="product-list-item"><a class="product-list-link" href="#"><img class="product-list-img" src="../dummy/slider/c2-small.png" alt="зеленый цвет"></a></li>
                     </ul>
                   </div>
                   <div class="product-size">
@@ -627,6 +683,8 @@
               </div><a class="btn btn--black btn--medium btn--fullwidth basket-open" href="#">ДОБАВИТЬ В КОРЗИНУ</a>
             </div>
           </div>
+        </div>
+        <div class="page-inner page-inner--w2"> 
           <section>
             <div class="title-block">Завершите свой образ</div>
             <div class="gallery content__gallery">
@@ -739,7 +797,7 @@
             </div>
             <div class="complite-look__info">
               <div class="complite-look__text"><span class="nowrap">Товары в образе:</span><span class="nowrap">Брюки 6 500 P,</span><span class="nowrap">Топ 14 800 P,</span><span class="nowrap">Жакет 12 500 P.</span></div>
-              <div class="complite-look__by-all">Купить все за 29 800 P</div><a class="btn btn--black btn--medium btn--fullwidth basket-open" href="#">ДОБАВИТЬ В КОРЗИНУ </a>
+              <div class="complite-look__by-all">Купить все за 29 800 P</div><a class="btn btn--black btn--medium btn--fullwidth basket-open" href="#size-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">ДОБАВИТЬ В КОРЗИНУ </a>
             </div>
           </section>
           <section class="page-section">
@@ -854,7 +912,7 @@
         </div>
       </main>
       <footer class="page-footer" itemscope="" itemtype="http://schema.org/WPFooter">
-        <div class="page-inner page-inner--w2">
+        <div class="page-inner page-inner--w1">
           <div class="footer-top">
             <ul class="footer-top__list">
               <li class="footer-top__item"><a href="#">Telegram</a></li>
@@ -1051,6 +1109,156 @@
         </div>
       </form>
     </div>
+    <div class="page-popup mfp-hide" id="size-popup">
+      <div class="page-popup-heading">
+        <div class="page-popup-heading-title h1 uppercase"><b>Уточните необходимые размеры</b></div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">Жакет</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">XS</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">S</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">M</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">L</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">XL</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">Брюки</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">XS</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">S</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">M</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">L</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">XL</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">Топ</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">XS</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">S</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">M</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">L</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="check-dimensions-list">
+              <div class="col">Жакет</div>
+              <div class="col">
+                <ul>
+                  <li><a href="#">XL</a></li>
+                </ul>
+              </div>
+            </div>
+        <button class="btn btn--black btn--medium btn--fullwidth" type="submit">Выберите размеры</button>
+      </div>
+    </div>
     <div class="page-popup mfp-hide" id="mail-popup">
       <div class="page-popup-heading">
         <div class="page-popup-heading-title h1 uppercase"><b>Задать вопрос</b></div>
@@ -1080,143 +1288,6 @@
           </div>
         </div>
       </form>
-    </div>
-    <div class="page-popup buy mfp-hide" id="buy-popup">
-      <div class="page-popup-heading">
-        <div class="page-popup-heading-title h1 uppercase">ТОВАР ДОБАВЛЕН В КОРЗИНУ</div>
-      </div>
-      <div class="row mb-4 mt-4">
-        <div class="col-12 col-lg-5 mb-4 mb-lg-0">
-          <div class="buy-popup-photo"><img class="cover" src="../dummy/product/popup.jpg"></div>
-        </div>
-        <div class="col-12 col-lg-7">
-          <div class="h2 mb-2">Nike Phantom GT Elite FG</div>
-          <div class="gray mb-4">Мужские</div>
-          <div class="lg-4 mb-lg-5"><b class="mr-20">5 290 Р</b><span class="old">7 368 Р</span></div>
-          <div class="mb-2">Цвет: чёрный</div>
-          <div class="mb-2">Размер: 42</div>
-          <div class="mb-2">Артикул: JHVF6O9VJU</div>
-        </div>
-      </div>
-      <div class="row justify-content-center align-items-center mb-5">
-        <div class="col-12 mb-3 mb-lg-0 col-lg-auto"><a class="btn btn--black btn--medium" href="make_order.html">
-            Оформить
-            заказ</a></div>
-        <div class="col-12 col-lg-auto"><a class="link link--black_border popup-close" href="#">Продолжить покупки</a></div>
-      </div>
-      <div class="catalog">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-auto">
-            <div class="h1">С этим товаром покупают</div>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <div class="slider-arrows"><span class="slider-arrow prev">
-                <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M34.8888 40.4277L23.3359 28.8771L34.8888 17.3264" stroke="#1D1D1D" stroke-width="3"></path>
-                </svg></span><span class="slider-arrow next">
-                <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M23.8182 17.3242L35.3711 28.8749L23.8182 40.4256" stroke="#1D1D1D" stroke-width="3"></path>
-                </svg></span></div>
-          </div>
-        </div>
-        <div class="catalog-items row catalog-items--slider" data-params="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 3}">
-          <div class="col-md-2">
-            <div class="catalog-item w1 popup">
-              <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/product/p1.jpg"></div>
-              <div class="catalog-item-title">Детский футбольный комплект Nike Белый</div>
-              <div class="catalog-item-price"><b>4 949 Р</b></div><a class="catalog-item-link" href="#"></a>
-              <button class="catalog-item-like" type="button"> </button>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="catalog-item w1 popup">
-              <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/product/p2.jpg"></div>
-              <div class="catalog-item-title">Шиповки Joma Top Flex 902.TF 2019</div>
-              <div class="catalog-item-price"><b>4 949 Р</b></div><a class="catalog-item-link" href="#"></a>
-              <button class="catalog-item-like" type="button"> </button>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <div class="catalog-item w1 popup">
-              <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/product/p3.jpg"></div>
-              <div class="catalog-item-title">Мяч футбольный Nike Strike Premier </div>
-              <div class="catalog-item-price"><b>4 949 Р</b></div><a class="catalog-item-link" href="#"></a>
-              <button class="catalog-item-like" type="button"> </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mobile-nav-holder">
-      <div class="mobile-nav-scroll-holder">
-        <div class="mobile-close">
-          <div class="mobile-close-btn"> </div>
-        </div>
-        <div class="mobile-nav-scroll-inner">
-          <div class="mobile-nav-scroll">
-            <div class="mobile-nav">
-              <div class="mobile-blocks" id="mobile">
-                <div class="mobile-block" id="mobile-block_products" data-prev="#mobile-block_default">
-                  <div class="mobile-nav-title">Обувь</div>
-                  <nav class="mobile-nav-menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-                    <ul class="mobile-nav-menu-inner">
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Футбол</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Кроссовки</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Баскетбол</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Воллейбол</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Кроссовки</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Единоборства</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Детские</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Легкая атлетика</span></a></li>
-                    </ul>
-                  </nav>
-                  <div class="mobile-nav-inner"><a class="btn btn--black_border btn--small btn--fullwidth" href="#">СМОТРЕТЬ ВСЮ ОБУВЬ</a></div>
-                </div>
-                <div class="mobile-block show" id="mobile-block_default">
-                  <nav class="mobile-nav-menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-                    <ul class="mobile-nav-menu-inner">
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Обувь</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Эпикировка</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Аксессуары</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Командные виды спорта</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Фитнес, спортзал</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Активный отдых</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Самокаты, Ролики</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Теннис</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Плавание</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Туризм</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Тренировочный инвентарь</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Наградная продукция</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Спортивное оборудование</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black mobile-open-block" href="#mobile-block_products" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Сумки и рюкзаки</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Бренды</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Акции</span></a></li>
-                      <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Виды спорта</span></a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-              <div class="mobile-nav-contacts">
-                <div class="mobile-nav-inner">
-                  <div class="mobile-nav-contacts-items">
-                    <div class="mobile-nav-contact-item"><a href="tel:+78632273135">+7 (863) 227-31-35</a></div>
-                    <div class="mobile-nav-contact-item"><a class="link link--black" href="#callback-popup" data-popup="{&quot;type&quot;: &quot;inline&quot;}">Заказать звонок </a></div>
-                  </div>
-                </div>
-              </div>
-              <nav class="mobile-nav-menu mobile-nav-menu--gray" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-                <ul class="mobile-nav-menu-inner">
-                  <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="dashboard.html" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Личный кабинет</span></a></li>
-                  <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="favorites.html" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Избранное</span></a></li>
-                  <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Контакты</span></a></li>
-                  <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Instagram</span></a></li>
-                  <li class="mobile-nav-menu-item-holder"><a class="mobile-nav-menu-item link link--black" href="#" data-menu="" itemprop="url" target=""><span class="mobile-nav-menu-item-name" itemprop="name">Facebook</span></a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="mobile-filter-holder">
       <div class="mobile-filter-scroll-holder">
