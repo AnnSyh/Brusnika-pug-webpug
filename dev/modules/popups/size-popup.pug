@@ -1,22 +1,22 @@
 - 
-  const dataSizes = [{'XS', 'S', 'M','L','XL'}]
-  const dataClozes = [{'Жакет','Брюки','Топ'}]
+  const dataClozes = [
+    {name: 'Жакет'},
+    {name: 'Брюки'},
+    {name: 'Топ'},
+    ]
 
-mixin listOne(classname)
+mixin listLinks(classname,...items)
   ul(class= ""+classname)
-    each item in dataSizes
+    each item in items
       li
-        a(href="#")= item          
+        a(href='#')= item         
 
-#size-popup.page-popup.mfp-hide
+#size-popup.page-popup.page-popup-w565.mfp-hide
   .page-popup-heading
-    .page-popup-heading-title.h1.uppercase
-      b Уточните необходимые размеры
-
-      each item in dataClozes
+    .page-popup-heading-title.center.h1 Уточните необходимые размеры
+    each item in dataClozes
         .check-dimensions-list
-          .col= item
-          .col
-            +listOne('test')  
-
+            .col= item.name
+            .col
+                +listLinks('size-list', 'XS', 'S', 'M','L','XL')
     button.btn.btn--black.btn--medium.btn--fullwidth(type='submit') Выберите размеры    

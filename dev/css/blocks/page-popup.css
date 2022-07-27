@@ -4,6 +4,9 @@
   max-width: 430px;
   padding: 55px 45px;
 }
+.page-popup-w565 {
+  max-width: 565px;
+}
 .page-popup-title {
   font-style: normal;
   font-weight: 600;
@@ -29,8 +32,20 @@
   white-space: nowrap;
 }
 .page-popup .check-dimensions-list {
-  border: 1px solid red;
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.page-popup .size-list {
+  display: flex;
+  justify-content: space-between;
+}
+.page-popup .size-list a {
+  color: #1d1d1d;
+  text-decoration: none;
+}
+.page-popup .size-list a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=page-popup.css.map */

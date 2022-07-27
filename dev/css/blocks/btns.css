@@ -1,19 +1,26 @@
 .btn--black,
-.btn--black_border.btn--medium, 
+.btn--black_border.btn--medium,
 .btn--black_border.btn--small {
-    border-radius: 0;
+  border-radius: 0;
 }
-.btn--black_border {
-    border: 1px solid #1d1d1d;
-    color: #1d1d1d;
-}
-.btn--medium {
-    min-width: 180px;
-    max-width: 280px;
-    height: 55px;
-    padding: 0 35px;
 
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
+.btn--black_border {
+  border: 1px solid #1d1d1d;
+  color: #1d1d1d;
 }
+
+.btn--medium {
+  min-width: 180px;
+  max-width: 280px;
+  height: 55px;
+  padding: 0 35px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.btn--fullwidth {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}/*# sourceMappingURL=btns.css.map */

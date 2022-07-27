@@ -4,6 +4,10 @@
     max-width: 430px;
     padding: 55px 45px;
 
+    &-w565 {
+        max-width: 565px;
+    }
+
     &-title {
         font-style: normal;
         font-weight: 600;
@@ -38,10 +42,24 @@
     }
 
     .check-dimensions-list {
-        border: 1px solid red;
         display: flex;
         width: 100%;
         justify-content: space-between;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+    .size-list {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: #1d1d1d;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
 }
