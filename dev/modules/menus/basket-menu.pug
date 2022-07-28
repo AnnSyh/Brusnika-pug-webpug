@@ -1,109 +1,16 @@
-//- - 
-//-   const headerLinks1 = [
-//-     {img: 'c1.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', href: '#'},
-//-     {img: 'c2.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', href: '#'},
-//-     {img: 'c3.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', href: '#'},
-//-     {img: 'c4.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', href: '#'},
-//-     ]
-
-//- mixin listLinks(classname,titlename,...items)
-//-   ul(class= ""+classname)
-//-     li.search-history__title= titlename
-//-       each item in items
-//-         li
-//-           a.search-history__link(href='#')= item   
-
 #catalog-basket.basket-menu.basket-menu_visible1
-  .basket-inner.page-inner--w2
-    .basket-open.basket-menu__close
-    .basket-menu-sections
-      .basket-mobile-menu__header
-        a.basket__title-link(href='basket.html') Товары в корзине(3)
-        a.basket__title-link-clean-basket(href='#') Очистить корзину
-      .basket-mobile-menu__body
-        .order-table.basket
-          .order-table__row
-            .order-table__item
-              .order-table__img
-                .order-photo-holder
-                  img.cover(src='../dummy/orders/2.jpg')
-              .order-table__info
-                .order-table__name БРЮКИ 
-                .order-table__price 118 990 Р
-                .order-table__size Размер: 41 RU
-                .order-table__color Цвет: коричневый
-                .order-table__counter
-                  input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-            .col-md-2
-              a.order-table-delete(href='#')  
-          .order-table__row
-            .order-table__item
-              .order-table__img
-                .order-photo-holder
-                  img.cover(src='../dummy/orders/2.jpg')
-              .order-table__info
-                .order-table__name БРЮКИ 
-                .order-table__price 118 990 Р
-                .order-table__size Размер: 41 RU
-                .order-table__color Цвет: коричневый
-                .order-table__counter
-                  input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-            .col-md-2
-              a.order-table-delete(href='#')  
-          .order-table__row
-            .order-table__item
-              .order-table__img
-                .order-photo-holder
-                  img.cover(src='../dummy/orders/2.jpg')
-              .order-table__info
-                .order-table__name БРЮКИ 
-                .order-table__price 118 990 Р
-                .order-table__size Размер: 41 RU
-                .order-table__color Цвет: коричневый
-                .order-table__counter
-                  input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-            .col-md-2
-              a.order-table-delete(href='#')  
-          .order-table__row
-            .order-table__item
-              .order-table__img
-                .order-photo-holder
-                  img.cover(src='../dummy/orders/2.jpg')
-              .order-table__info
-                .order-table__name БРЮКИ 
-                .order-table__price 118 990 Р
-                .order-table__size Размер: 41 RU
-                .order-table__color Цвет: коричневый
-                .order-table__counter
-                  input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-            .col-md-2
-              a.order-table-delete(href='#')  
-        .order-table__block
-          .order-table__title С этим товаром смотрят
-          .order-table.basket
-            .order-table__row
-              .order-table__item
-                .order-table__img
-                  .order-photo-holder
-                    img.cover(src='../dummy/orders/2.jpg')
-                .order-table__info
-                  div.order-table__row
-                    .order-table__name БРЮКИ
-                    a.order-table-heart(href='#') 
-                    //- button(class="catalog-item-like" type="button")
-                  .order-table__price 118 990 Р
-                  .order-table__color
-                    a.order-table__color-link.color-active(href="#")
-                      span.color-beg
-                    a.order-table__color-link(href="#")
-                      span.color-black
-                  .product-size-select.product-size-select_top
-                    select.form-item.form-item--select.w100.jcf-hidden
-                      option(value='42') 4122А (H-43см. D-180 мм) 
-                      option(value='43') 4122А (H-43см. D-180 мм) 
-                      option(value='44') 4122А (H-43см. D-180 мм) 
-    .basket-mobile-menu__footer
-      .basket-mobile-menu__footer-links
-        .basket__title-link 4 Товара на сумму
-        .basket__title-link 6 900 РУБ.
-      button.btn.btn--black.btn--medium.w100.max-w100(type='submit') Оформить заказ
+
+    .basket-inner.page-inner--w2
+      .basket-open.basket-menu__close
+      .basket-menu-sections
+        .basket-mobile-menu__header
+          a.basket__title-link(href='basket.html') Товары в корзине(1)
+          a.basket__title-link-clean-basket(href='#') Очистить корзину
+        .basket-mobile-menu__body
+          include ../basket/items-in-cart
+          include ../basket/watching-with
+      .basket-mobile-menu__footer
+        .basket-mobile-menu__footer-links
+          .basket__title-link 4 Товара на сумму
+          .basket__title-link 6 900 РУБ.
+        button.btn.btn--black.btn--medium.w100.max-w100(type='submit') Оформить заказ

@@ -1,0 +1,24 @@
+- 
+  const BasketProducts = [
+    {img: '2.jpg', title: 'БРЮКИ', price: '15 900', size: '41', color: 'коричневый'},
+    //- {img: 'c2.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', size: '41', color: 'коричневый'},
+    //- {img: 'c3.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', size: '41', color: 'коричневый'},
+    //- {img: 'c4.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', size: '41', color: 'коричневый'},
+    ]
+
+.order-table
+  each item in BasketProducts
+    .order-table__row
+      .order-table__item
+        .order-table__img
+          .order-photo-holder
+            img.cover(src=`../dummy/orders/${item.img}`)
+        .order-table__info
+          .order-table__name= item.title 
+          .order-table__price= item.price + ' Р'
+          .order-table__size= `Размер: ${item.size} RU`
+          .order-table__color= `Цвет: ${item.color}` 
+          .order-table__counter
+            input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
+      .col-md-2
+        a.order-table-delete(href='#')  
