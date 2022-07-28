@@ -1,14 +1,14 @@
-console.log('scroll');
 
-// $(document).on("scroll", window, function () {
-//     if ($(window).scrollTop() > 200) {
-//         $(".scroll").show();
-//     }
-//     else {
-//         $(".scroll").hide();
-//     }
-// });
+window.addEventListener('scroll', function () {
+ const cardNav = $('.card-nav');
+ cardNav.hide(); // убрать меню при загрузке стр
 
-window.addEventListener('scroll', function() {
-    console.log('scroll');
-  });
+ if ($(window).scrollTop() > 400) {
+    cardNav.show();
+    // console.log('scrollTop() > 400');
+  }
+  else {
+    cardNav.hide();
+    // console.log('scrollTop() <= 400');
+  }
+});

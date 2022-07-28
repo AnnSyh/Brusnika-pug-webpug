@@ -87,7 +87,7 @@
 					});
 
 					self.$basketOpenBtn.on("click", function (e) { //раскрытие меню при клике
-
+						console.log('$basketOpenBtn');
 						e.preventDefault();
 						e.stopPropagation();
 						self.openedBasketMenu ? self.closeBasketMenu() : self.openBasketMenu();

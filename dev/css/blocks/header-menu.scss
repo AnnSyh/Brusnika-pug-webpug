@@ -10,6 +10,13 @@
 .header-menu__list {
     display: flex;
 }
+
+.header-menu__right {
+    min-width: 318px; //длина левого меню
+    display: flex;
+    justify-content: flex-end;
+}
+
 .header-toolbar-item span {
     position: absolute;
     right: -4px;

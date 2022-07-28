@@ -11,6 +11,12 @@
   display: flex;
 }
 
+.header-menu__right {
+  min-width: 318px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .header-toolbar-item span {
   position: absolute;
   right: -4px;
