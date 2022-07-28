@@ -1,5 +1,5 @@
 (function ($) {
-	var ATLANT = (function () {
+	var PROJECT = (function () {
 
 		var $sel = {};
 		$sel.window = $(window);
@@ -385,6 +385,15 @@
 				product: function () {
 					console.log('product slider');
 					// ------------------------------
+
+					// const lightbox = new PhotoSwipeLightbox({
+					// 	gallery: '#my-gallery',
+					// 	children: 'a',
+					// 	pswpModule: () => import('photoswipe')
+					//   });
+					//   lightbox.init();
+
+					// --------------------------------
 
 					$(".product-photos-nav").on("init", function (e, s) {
 						s.$slides.on("click", function () {
@@ -1227,13 +1236,13 @@
 							$(".mobile-nav-holder .mobile-close", $sel.body).trigger("click");
 						},
 						ajaxContentAdded: function () {
-							ATLANT.forms.customize($(this.container));
-							ATLANT.forms.validation($(this.container));
+							PROJECT.forms.customize($(this.container));
+							PROJECT.forms.validation($(this.container));
 							$(".catalog-items--slider").slick("setPosition");
 						},
 						open: function () {
-							ATLANT.forms.customize($(this.container));
-							ATLANT.forms.validation($(this.container));
+							PROJECT.forms.customize($(this.container));
+							PROJECT.forms.validation($(this.container));
 							$(".catalog-items--slider").slick("setPosition");
 						},
 						change: function () {
@@ -1484,7 +1493,7 @@
 
 	})();
 
-	window.ATLANT = ATLANT;
-	ATLANT.init();
+	window.PROJECT = PROJECT;
+	PROJECT.init();
 
 })(jQuery);
