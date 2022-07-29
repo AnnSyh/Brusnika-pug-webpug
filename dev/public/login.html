@@ -530,7 +530,7 @@
                     <button class="btn btn--black btn--medium w100 max-w100" type="submit">ВЫСЛАТЬ КОД</button>
                   </div>
                   <div class="form-row">
-                    <div class="form-group-inner forgot-password"><a class="link link--black_simple" href="#change-password-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><span>Я забыл пароль  </span></a><a class="link link--black_simple" href="#"><span>Регистрация</span></a></div>
+                    <div class="form-group-inner forgot-password"><a class="link link--black_simple" href="#change-password-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><span>Я забыл пароль  </span></a><a class="link link--black_simple" href="#registration-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><span>Регистрация</span></a></div>
                   </div>
                 </div>
                 <div class="tab-content-item auth-tab active form-tab-content-item" id="auth-form_email">
@@ -551,7 +551,7 @@
                     <button class="btn btn--black btn--medium w100 max-w100" type="submit">Войти</button>
                   </div>
                   <div class="form-row">
-                    <div class="form-group-inner forgot-password"><a class="link link--black_simple" href="#change-password-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><span>Я забыл пароль  </span></a><a class="link link--black_simple" href="#"><span>Регистрация               </span></a></div>
+                    <div class="form-group-inner forgot-password"><a class="link link--black_simple" href="#change-password-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><span>Я забыл пароль  </span></a><a class="link link--black_simple" href="#registration-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><span>Регистрация               </span></a></div>
                   </div>
                 </div>
               </div>
@@ -1244,6 +1244,43 @@
           </div>
         </div>
       </form>
+    </div>
+    <div class="page-popup mfp-hide" id="registration-popup">
+      <div class="page-popup-heading">
+        <div class="page-popup-heading-title h1 uppercase"><b>registration</b></div>
+        <form class="form">
+          <div class="form-row">
+            <label class="form-item-label" for="f1">Имя</label>
+            <input class="form-item form-item--text" id="f1" type="text" name="f1" data-validation="{&quot;message&quot;: &quot;Обязательное поле&quot;}" required="" value="Максим">
+          </div>
+          <div class="form-row">
+            <label class="form-item-label" for="f3">E-mail</label>
+            <input class="form-item form-item--text" id="f3" type="email" name="f3" required="" data-validation="{&quot;message&quot;: &quot;Укажите корретный адрес почты&quot;}" value="petrov@gmail.com">
+          </div>
+          <div class="form-row">
+            <label class="form-item-label" for="f4">Телефон</label>
+            <input class="form-item form-item--text" id="f4" type="text" name="f4" data-validation="{&quot;message&quot;: &quot;Укажите корректный номер телефона&quot;, &quot;pattern&quot;: &quot;phoneRU&quot;, &quot;mask&quot;: &quot;+7 (999) 999-99-99&quot;}" required="" value="+7 556 666-66-6">
+          </div>
+          <div class="form-row">
+            <label class="form-item-label" for="reg_pass1">Новый пароль</label>
+            <input class="form-item form-item--password" id="reg_pass1" type="password" name="reg_pass1" required="" data-validation="{&quot;minlength&quot;: &quot;6&quot;, &quot;message&quot;: {&quot;required&quot;: &quot;&quot;, &quot;minlength&quot;: &quot;Минимальная длина пароля – 6 символов&quot;}}"><span class="password-show"> </span>
+          </div>
+          <div class="form-row">
+            <label class="form-item-label" for="reg_pass2">Новый пароль еще раз</label>
+            <input class="form-item form-item--password" id="reg_pass2" type="password" name="reg_pass2" required="" data-validation="{&quot;minlength&quot;: &quot;6&quot;, &quot;equalTo&quot;: &quot;#reg_pass1&quot;, &quot;message&quot;: {&quot;equalTo&quot;: &quot;Пароли не совпадают&quot;, &quot;required&quot;: &quot;&quot;, &quot;minlength&quot;: &quot;Минимальная длина пароля – 6 символов&quot;}}"><span class="password-show"></span>
+          </div>
+          <div class="form-row form-row--checkbox">
+            <input class="form-item form-item--checkbox catalog-item-checkbox" id="saile" type="checkbox" checked="checked">
+            <label for="saile">Получать новости об акциях и скидках</label>
+            <p></p>
+          </div>
+          <div class="form-row">
+            <button class="btn btn--black btn--medium" type="submit">Зарегистрироваться</button>
+            <div class="page-heading-text mt-4"></div>Нажимая на кнопку «Зарегестрироваться»
+            вы соглашаетесь на обработку персональных данных
+          </div>
+        </form>
+      </div>
     </div>
     <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=6f387da6-ba3c-46bf-96a7-261df17d04f7&amp;lang=ru_RU"></script>
     <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
