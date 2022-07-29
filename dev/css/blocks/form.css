@@ -1,4 +1,12 @@
 .mobile-filter label,
 .mobile-filter input { /* label */
-    font-weight: lighter;
+  font-weight: lighter;
 }
+
+#auth-form {
+  padding-top: 130px;
+}
+
+.forgot-password {
+  padding: 0 45px;
+}/*# sourceMappingURL=form.css.map */

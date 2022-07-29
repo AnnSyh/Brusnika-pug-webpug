@@ -11,11 +11,7 @@
     display: flex;
 }
 
-.header-menu__right {
-    min-width: 318px; //длина левого меню
-    display: flex;
-    justify-content: flex-end;
-}
+
 
 .header-toolbar-item span {
     position: absolute;
@@ -113,6 +109,32 @@
 .page-heading .page-heading-description {
     margin: 67px auto 0 auto;
 }
+
+@media screen and (max-width: 640px){
+
+    .header-menu__item{
+        display: none;
+    }
+
+    .header-menu__right .header-menu__item:last-child,
+    .header-menu__right .header-menu__item:first-child{
+        display: flex;
+    }
+
+    .header-menu__left .header-menu__item:first-child{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 980px){
+
+    .header-menu__right {
+        min-width: 318px; //длина левого меню
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
 
 @media screen and (max-width: 980px){
 

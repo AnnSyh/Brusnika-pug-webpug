@@ -55,7 +55,7 @@
             <div class="header-menu__right">
               <ul class="header-menu__list">
                 <li class="header-menu__item header-menu__item_search catalog-search-open"><a href="#"><span>Поиск</span></a></li>
-                <li class="header-menu__item"><a class="header-toolbar-item" href="#auth-form" data-popup="{&quot;type&quot;:&quot;inline&quot;}">Вход</a></li>
+                <li class="header-menu__item"><a class="header-toolbar-item" href="login.html">Вход</a></li>
                 <li class="header-menu__item"><a href="favorites.html">Избранное</a></li>
                 <li class="header-menu__item"><a class="header-toolbar-item basket-open" href="#"><img src="../svg/basket.svg"><span></span></a></li>
               </ul>
@@ -507,7 +507,7 @@
         <div class="page-section page-section--brand">
           <div class="page-inner page-inner--w2"> 
             <div class="favorites__share">
-              <div class="favorites__count-title">Избранное (8)</div><a href="#">поделиться</a>
+              <div class="favorites__count-title">Избранное (8)</div><a class="favorites__link" href="#message-log-in" data-popup="{&quot;type&quot;:&quot;inline&quot;}">Поделиться</a>
             </div>
             <div id="catalog-items">
               <div class="catalog-items row" data-params="">
@@ -1513,6 +1513,16 @@
             <div><a class="link link--black_border add-favorites__link" href="favorites.html">Перейти в избранное</a></div>
           </div>
         </div><a class="tooltip__close" href="#"><img src="../svg/close.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="page-popup mfp-hide" id="message-log-in">
+      <div class="page-popup-inner">
+        <div class="page-popup-title">Поделиться</div>
+        <div class="page-popup-title--small">
+           Создайте учетную запись или войдите в нее, 
+          чтобы сохранить понравившиеся товары на всех ваших 
+          устройствах
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=6f387da6-ba3c-46bf-96a7-261df17d04f7&amp;lang=ru_RU"></script>

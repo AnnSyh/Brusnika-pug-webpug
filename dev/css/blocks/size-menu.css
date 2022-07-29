@@ -91,7 +91,7 @@
     cursor: pointer;
 }
 
-.tabs-heading .active {
+.size-menu .tabs-heading .active {
     text-decoration: underline;
 }
 

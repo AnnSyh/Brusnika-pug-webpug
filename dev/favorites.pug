@@ -5,6 +5,11 @@ block variables
   - var title = 'Брусника/favorites'
   - var mainPage = false
 
+  //- <a class="header-toolbar-item" 
+  //- href="#auth-form" 
+  //- data-popup="{&quot;type&quot;:&quot;inline&quot;}">
+  //- Вход</a>
+
 
 block content
   main.page-content
@@ -12,7 +17,7 @@ block content
       .page-inner.page-inner--w2 
         .favorites__share
           .favorites__count-title Избранное (8)
-          a(href='#') поделиться
+          a.favorites__link(href='#message-log-in' data-popup='{"type":"inline"}') Поделиться
         include modules/favorites 
         section.page-inner.hidden-x(style='margin-top: 100px;')
           .page-inner.page-inner--w2
