@@ -2,42 +2,19 @@ doctype html
 
 block variables
 
+//- общие данные 
+include ../utils/data   
+
+//- общие миксины
+include ../utils/mixins 
+
+
 html.no-js(lang='ru' prefix='og:http://ogp.me/ns#')
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title #{title}
-    meta(name='robots', content='index, follow')
-    //- Open graph
-    meta(property='og:type', content='website')
-    meta(property='og:title', content='Брусника')
-    meta(property='og:site_name', content='Брусника')
-    meta(property='og:image', content='/i/og.jpg')
-    //- Open graph
-    //- Icons
-    link(href='/i/favicon.ico', rel='shortcut icon', type='image/x-icon')
-    link(href='/i/favicon.ico', rel='icon', type='image/x-icon')
-    link(href='../i/icons/apple-touch-icon.jpg', rel='apple-touch-icon')
-    link(href='../i/icons/apple-touch-icon-76.jpg', rel='apple-touch-icon', sizes='76x76')
-    link(href='../i/icons/apple-touch-icon-140.jpg', rel='apple-touch-icon', sizes='140x140')
-    link(href='../i/icons/apple-touch-icon-152.jpg', rel='apple-touch-icon', sizes='152x152')
-    //- Icons
-    //- CSS
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/plugins/bootstrap-grid.min.css')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/plugins/tooltipster.bundle.min.css')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/plugins/slick.css')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/plugins/magnific-popup.css')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/plugins/datepicker.min.css')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/project.css?v=11312')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/project-ann.css?v=797191')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/project.responsive.css?v=724611')
-    link(rel='stylesheet', type='text/css', media='screen', href='../css/project.responsive-ann.css?v=724611')
-    //- CSS
+  include ../modules/head
   body(class={'body-main':mainPage,
 				'body-inner':innerPage})
 
     .page
-      include ../mixins/util
       include ../modules/page-note
       include ../modules/header
 

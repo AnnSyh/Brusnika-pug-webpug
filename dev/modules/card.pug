@@ -19,15 +19,15 @@ link(rel='stylesheet', type='text/css', media='screen', href='../css/photoswipe.
         .accordion-item
           .accordion-item-heading Наличие в магазинах
           .accordion-item-content
-            include card/card-accordion-block-availability
+            +listTwo('product__accordion-availability', dataList)
         .accordion-item
           .accordion-item-heading УХОД ЗА ИЗДЕЛИЕМ
           .accordion-item-content
-            include card/card-accordion-block-product-care
+            +listOne('classList', dataListProductCare)
         .accordion-item
           .accordion-item-heading ОБМЕРЫ 
           .accordion-item-content
-            include card/card-accordion-block-measurement
+            +listTwo('product__accordion-availability', dataListMeasurements)
   .products-photos__wrapper
     .product-photos__inner
       #my-gallery.product-photos.pswp-gallery

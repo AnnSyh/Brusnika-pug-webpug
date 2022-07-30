@@ -1,16 +1,3 @@
-- 
-  const BasketProductsWatchWith = [
-    {img: 'c1.jpg', title: 'БРЮКИ', price: '15 900', size: '41', color: 'коричневый'},
-    {img: 'c1.jpg', title: 'БРЮКИ', price: '15 900', size: '41', color: 'коричневый'},
-    ]
-
-//- mixin listLinks(classname,titlename,...items)
-//-   ul(class= ""+classname)
-//-     li.search-history__title= titlename
-//-       each item in items
-//-         li
-//-           a.search-history__link(href='#')= item   
-
 .order-table__title С этим товаром смотрят
 each item in BasketProductsWatchWith
   .order-table__block
@@ -29,26 +16,3 @@ each item in BasketProductsWatchWith
               a(href='#') +2 цвета
             .order-table__link
               a(href='#') Добавить к заказу
-
-//- .order-table.basket.test
-//-   .order-table__row
-//-     .order-table__item
-//-       .order-table__img
-//-         .order-photo-holder
-//-           img.cover(src='../dummy/catalog/c9.jpg')
-//-       .order-table__info
-//-         div.order-table__row
-//-           .order-table__name БРЮКИ
-//-           a.order-table-heart(href='#') 
-//-           //- button(class="catalog-item-like" type="button")
-//-         .order-table__price 118 990 Р
-//-         .order-table__color
-//-           a.order-table__color-link.color-active(href="#")
-//-             span.color-beg
-//-           a.order-table__color-link(href="#")
-//-             span.color-black
-//-         .product-size-select.product-size-select_top
-//-           select.form-item.form-item--select.w100.jcf-hidden
-//-             option(value='42') 4122А (H-43см. D-180 мм) 
-//-             option(value='43') 4122А (H-43см. D-180 мм) 
-//-             option(value='44') 4122А (H-43см. D-180 мм) 
