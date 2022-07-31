@@ -18,9 +18,6 @@ jcf.addModule(function($) {
 
 	for (var i = 0; i < bgColorCheckbox.length; i++) {
 		const selectorClass = bgColorCheckbox[i].className;
-		console.log('i = ', i);
-		console.log('selectorClass = ', selectorClass);
-
 	}
 
 	return {
