@@ -49,10 +49,11 @@
 				init: function () {
 					var self = this;
 
-					self.$basketOpenBtn = $(".basket-open", $sel.page);
 					self.$sizeOpenBtn = $(".size-open", $sel.page);
 					self.$sizeMenu = $("#catalog-size", $sel.page);
 
+					self.$basketOpenBtn = $(".basket-open", $sel.page);
+					self.$basketMenu = $("#catalog-basket", $sel.page);
 
 					self.$popupBasketOpenBtn = $("button.basket-open", $sel.page);
 					self.$popupBasketMenu = $("#catalog-basket", $sel.page);

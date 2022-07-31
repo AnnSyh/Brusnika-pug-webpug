@@ -1,13 +1,16 @@
 .order {
-    border: 1px solid red;
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
-
 }
 
 .order-table .order-photo-holder {
     padding-top: 154%;
+}
+
+.order-table__mr {
+    margin-right: 30px;
+    width: 460px; // для simplebar scrollbar
 }
 
 .order-table__title {

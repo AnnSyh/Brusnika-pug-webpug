@@ -1,9 +1,9 @@
 
 window.addEventListener('scroll', function () {
- const cardNav = $('.card-nav');
- cardNav.hide(); // убрать меню при загрузке стр
+  const cardNav = $('.card-nav');
+  cardNav.hide(); // убрать меню при загрузке стр
 
- if ($(window).scrollTop() > 400) {
+  if ($(window).scrollTop() > 400) {
     cardNav.show();
     // console.log('scrollTop() > 400');
   }
@@ -23,13 +23,13 @@ $(".order-table-delete").on("click", function (e) {
 $(".search-form__clear").on("click", function (e) {
   e.preventDefault();
   const parent = e.target.parentNode
-  console.log('search-form__clear ',parent);
+  console.log('search-form__clear ', parent);
   // parent.classList.toggle('d-none');
 });
 
-const dimensionsList =document.querySelectorAll('.check-dimensions-list a');
+const dimensionsList = document.querySelectorAll('.check-dimensions-list a');
 
-dimensionsList.forEach((item)=> {
+dimensionsList.forEach((item) => {
   console.log('dimensionsList');
   item.addEventListener('click', (e) => {
     console.log('click');
@@ -45,3 +45,19 @@ dimensionsList.forEach((item)=> {
 //   const item = e.target
 //   item.classList.toggle('active');
 // });
+
+$('#catalog-basket').on("click", function (e) {
+  e.preventDefault();
+  const item = e.target
+  item.classList.toggle('active');
+});
+
+
+const simplebarsList = document.querySelectorAll('.simplebar');
+console.log('simplebarsList = ', simplebarsList);
+
+simplebarsList.forEach((item) => {
+  new SimpleBar(item,{
+    autoHide:false,
+  });
+})

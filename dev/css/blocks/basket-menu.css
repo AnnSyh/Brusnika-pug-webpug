@@ -14,7 +14,6 @@
   transition: right 0.3s;
   background: #fff;
   padding: 10px 0;
-  overflow-y: hidden;
 }
 
 .basket-menu_visible {

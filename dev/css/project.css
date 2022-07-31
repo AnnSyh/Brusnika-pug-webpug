@@ -460,6 +460,8 @@ body {
   margin-right: 0;
 }
 
+body.catalog-open,
+body.size-open,
 body.basket-open {
   overflow-y: hidden;
 }
@@ -624,7 +626,7 @@ body.basket-open {
 }
 
 .btn--white {
-  pading: 0 20px;
+  padding: 0 20px;
   background-color: #fff;
   color: #1d1d1d;
 }
@@ -1529,69 +1531,6 @@ span.form-item--error {
 
 .jcf-range .jcf-range-track .jcf-range-handle:hover {
   transform: scale(1.4);
-}
-
-.simplebar-track {
-  cursor: pointer;
-}
-
-.simplebar-track.simplebar-horizontal {
-  bottom: 0;
-  height: 5px;
-}
-
-.simplebar-track.simplebar-horizontal:after {
-  content: "";
-  position: absolute;
-  z-index: 10;
-  left: 0;
-  top: 2px;
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #e1e1e1;
-}
-
-.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
-  top: 0;
-  z-index: 20;
-  height: 5px;
-  background-color: #1d1d1d;
-  cursor: pointer;
-  transition: 0.3s background-color cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.simplebar-track.simplebar-horizontal .simplebar-scrollbar.simplebar-hover {
-  background-color: rgba(18, 18, 18, 0.5);
-}
-
-.simplebar-track.simplebar-vertical {
-  right: 0;
-  width: 5px;
-}
-
-.simplebar-track.simplebar-vertical:after {
-  content: "";
-  position: absolute;
-  z-index: 10;
-  left: 2px;
-  display: block;
-  width: 1px;
-  height: 100%;
-  background-color: #e1e1e1;
-}
-
-.simplebar-track.simplebar-vertical .simplebar-scrollbar {
-  right: 0;
-  z-index: 20;
-  width: 5px;
-  background-color: #1d1d1d;
-  cursor: pointer;
-  transition: 0.3s background-color cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.simplebar-track.simplebar-vertical .simplebar-scrollbar.simplebar-hover {
-  background-color: rgba(18, 18, 18, 0.7);
 }
 
 /*** //Forms ***/
