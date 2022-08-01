@@ -1,0 +1,35 @@
+.basket {
+    border: 1px solid red;
+
+    &__header {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    &__body {
+        display: flex;
+        gap: 117px;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .order-aside {
+            padding: 40px;
+            background: #F7F5F5;
+            border-radius: 0;
+            min-width: 526px;
+        }
+    }
+
+    &__body-left {
+        flex: 3;
+    }
+
+    &__body-right {
+        flex: 1;
+    }
+
+}
+
+.basket-inner {
+    padding: 40px;
+}

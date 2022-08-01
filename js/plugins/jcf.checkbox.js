@@ -30,7 +30,7 @@ jcf.addModule(function($) {
 			uncheckedClass: 'jcf-unchecked',
 			labelActiveClass: 'jcf-label-active',
 			// fakeStructure: '<span class="jcf-checkbox 111 ' + selectorClass + ' 111 "><span></span></span>'
-			fakeStructure: '<span class="jcf-checkbox 111 "><span></span></span>'
+			fakeStructure: '<span class="jcf-checkbox "><span></span></span>'
 		},
 		matchElement: function(element) {
 			return element.is(':checkbox');

@@ -171,17 +171,26 @@
 //- - данные для списка 'Товары в корзине' -выезжает с права
 //- стр: card.html        
 - 
-  const BasketProducts = [
+  const BasketProductsMenu = [
     {img: '2.jpg', title: 'БРЮКИ', price: '15 900', size: '41', color: 'коричневый'},
     //- {img: 'c2.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', size: '41', color: 'коричневый'},
     //- {img: 'c3.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', size: '41', color: 'коричневый'},
     //- {img: 'c4.jpg', title: 'ПЛАТЬЕ', price: '15 900 Р', size: '41', color: 'коричневый'},
     ]
+//- - данные для списка 'Товары в корзине' 
+//- стр: basket.html        
+- 
+  const BasketProducts = [
+    {img: '1.jpg', title: 'БРЮКИ', price: '15 900', size: '41', color: 'коричневый'},
+    {img: '2.jpg', title: 'БРЮКИ', price: '16 900', size: '42', color: 'синий'},
+    {img: '3.jpg', title: 'БРЮКИ', price: '17 900', size: '43', color: 'белый'},
+    {img: '4.jpg', title: 'БРЮКИ', price: '18 900', size: '44', color: 'зеленый'},
+    ]
 
 //- - данные для списка 'С этим товаром смотрят' -выезжает с права
 //- стр: card.html      
 - 
-  const BasketProductsWatchWith = [
+  const BasketProductsMenuWatchWith = [
     {img: 'c1.jpg', title: 'БРЮКИ', price: '15 900', size: '41', color: 'коричневый'},
     {img: 'c1.jpg', title: 'БРЮКИ', price: '15 900', size: '41', color: 'коричневый'},
     ]
@@ -228,3 +237,11 @@
         {name: 'Магазины', href: '#'}, 
         {name: 'Мои заказы', href: '#'},
         ]
+
+//- - данные для Самовывоза
+//-  стр: basket.html
+- 
+    const pickupItems = [
+        {address: 'м. Тульская, ТРЦ «Ереван Плаза» г. Москва, м. Войковская, м. Тульская, ул. Большая Тульская, д. 13, ТРЦ "Ереван Плаза", 2 этаж (с 10:00 до 22:00)', take:'Можно забрать 1 июня, в субботу'},
+        ]
+

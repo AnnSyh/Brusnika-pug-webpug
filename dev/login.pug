@@ -13,8 +13,10 @@ block content
         .tabs.form-tabs
           .tabs-heading.form-tabs-heading
             .form-tabs-heading-items
-              .tab-heading-item.active.form-tab-heading-item(data-tab='#auth-form_email' data-tabs='.auth-tab') Войдите по E-mail
-              .tab-heading-item.form-tab-heading-item(data-tab='#auth-form_phone' data-tabs='.auth-tab') Войдите через смс
+              .tab-heading-item.active.form-tab-heading-item.sign-with(data-tab='#auth-form_email' data-tabs='.auth-tab') 
+                | Войдите по E-mail
+              .tab-heading-item.form-tab-heading-item.sign-with(data-tab='#auth-form_phone' data-tabs='.auth-tab') 
+                | Войдите через смс
           .tabs-content.form-tabs-content
 
             #auth-form_phone.tab-content-item.auth-tab.show.form-tab-content-item
@@ -26,7 +28,7 @@ block content
                 .form-item-holder
                   input#auth_sms.form-item.form-item--text(type='tel' name='auth_sms' required='' placeholder='+7-___-___-___' data-validation='{"message": "Укажите номер телефона", "mask": "+7 999-999-999"}')
               .form-row
-                button.btn.btn--black.btn--medium.w100.max-w100(type='submit') ВЫСЛАТЬ КОД
+                a.btn.btn--black.btn--medium.w100.max-w100(href='sms-cod.html') ВЫСЛАТЬ КОД
               .form-row
                 .form-group-inner.forgot-password
                   a.link.link--black_simple(href='#change-password-popup' data-popup='{"type":"inline"}')
@@ -54,5 +56,5 @@ block content
                 .form-group-inner.forgot-password
                   a.link.link--black_simple(href='#change-password-popup' data-popup='{"type":"inline"}')
                     span Я забыл пароль  
-                  a.link.link--black_simple(href='#registration-popup' data-popup='{"type":"inline"}')
+                  a.link.link--black_simple(href='registration.html')
                     span Регистрация               

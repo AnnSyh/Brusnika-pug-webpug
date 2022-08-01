@@ -61,3 +61,16 @@ simplebarsList.forEach((item) => {
     autoHide:false,
   });
 })
+
+$('.sms-not-coming').on("click", function (e) {
+  console.log('sms-not-coming');
+  e.preventDefault();
+  window.location='login.html';
+  const tabs = document.querySelectorAll('.sign-with');
+
+  tabs.forEach((item)=>{
+    console.log('111item.classList = ', item.classList);
+    // (data-tab="#auth-form_phone") 
+  });
+   
+});

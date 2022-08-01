@@ -600,7 +600,7 @@ body.basket-open {
 .btn--large {
   width: 370px;
   max-width: 100%;
-  height: 80px;
+  height: 70px;
   font-size: 16px;
 }
 
@@ -2800,7 +2800,7 @@ span.form-item--error {
 /*** //Personal ***/
 /*** Basket ***/
 .order-content {
-  padding: 40px 0;
+  padding: 0;
 }
 
 .order-content .order-table {

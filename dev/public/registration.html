@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Брусника авторизация</title>
+    <title>Брусника регистрация</title>
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Брусника">
@@ -509,57 +509,51 @@
         </div>
       </header>
       <main>
-        <div class="page-popup page-popup_login" id="auth-form">
-          <div class="page-popup-title">ВХОД</div>
+        <div class="reg-form__width" id="auth-form">
+          <div class="page-popup-title">РЕГИСТРАЦИЯ</div>
+          <div class="reg-form__under-form-text">
+            После регистрации на сайте вам будет доступно отслеживание состояния заказов, личный кабинет и другие новые возможности.</div>
           <form class="form">
-            <div class="tabs form-tabs">
-              <div class="tabs-heading form-tabs-heading">
-                <div class="form-tabs-heading-items">
-                  <div class="tab-heading-item active form-tab-heading-item sign-with" data-tab="#auth-form_email" data-tabs=".auth-tab">
-                     Войдите по E-mail</div>
-                  <div class="tab-heading-item form-tab-heading-item sign-with" data-tab="#auth-form_phone" data-tabs=".auth-tab">
-                     Войдите через смс</div>
-                </div>
-              </div>
-              <div class="tabs-content form-tabs-content">
-                <div class="tab-content-item auth-tab show form-tab-content-item" id="auth-form_phone">
-                  <div class="form-row">               
-                    <div class="page-popup-title--small">
-                      Введите свой номер телефона, чтобы войти. На указанный телефон придёт смс для авторизации.</div>
-                  </div>
-                  <div class="form-row">
-                    <label class="form-label" for="auth_sms">Контактный телефон</label>
-                    <div class="form-item-holder">
-                      <input class="form-item form-item--text" id="auth_sms" type="tel" name="auth_sms" required="" placeholder="+7-___-___-___" data-validation="{&quot;message&quot;: &quot;Укажите номер телефона&quot;, &quot;mask&quot;: &quot;+7 999-999-999&quot;}">
-                    </div>
-                  </div>
-                  <div class="form-row"><a class="btn btn--black btn--medium w100 max-w100" href="sms-cod.html">ВЫСЛАТЬ КОД</a></div>
-                  <div class="form-row">
-                    <div class="form-group-inner forgot-password"><a class="link link--black_simple" href="#change-password-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><span>Я забыл пароль  </span></a><a class="link link--black_simple" href="#registration-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><span>Регистрация</span></a></div>
-                  </div>
-                </div>
-                <div class="tab-content-item auth-tab active form-tab-content-item" id="auth-form_email">
-                  <div class="form-row">
-                    <div class="page-popup-title--small">Введите свою почту и пароль, чтобы войти.</div>
-                  </div>
-                  <div class="form-row">
-                    <label class="form-label" for="auth_email">Ваш E-mail</label>
-                    <div class="form-item-holder">
-                      <input class="form-item form-item--text" id="auth_email" type="email" name="auth_email" required="" data-validation="{&quot;message&quot;: &quot;Укажите корректный e-mail&quot;}">
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <label class="form-label" for="reg_pass1">Пароль</label>
-                    <input class="form-item form-item--password" id="reg_pass1" type="password" name="reg_pass1" required="" data-validation="{&quot;minlength&quot;: &quot;6&quot;, &quot;message&quot;: {&quot;required&quot;: &quot;&quot;, &quot;minlength&quot;: &quot;Длина пароля не меньше 6 символов&quot;}}"><span class="password-show"></span>
-                  </div>
-                  <div class="form-row">
-                    <button class="btn btn--black btn--medium w100 max-w100" type="submit">Войти</button>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group-inner forgot-password"><a class="link link--black_simple" href="#change-password-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}"><span>Я забыл пароль  </span></a><a class="link link--black_simple" href="registration.html"><span>Регистрация               </span></a></div>
-                  </div>
-                </div>
-              </div>
+            <div class="form-row">
+              <label class="form-item-label" for="f1">Имя</label>
+              <input class="form-item form-item--text" id="f1" type="text" name="f1" data-validation="{&quot;message&quot;: &quot;Обязательное поле&quot;}" required="" value="Максим">
+            </div>
+            <div class="form-row">
+              <label class="form-item-label" for="f12">Отчество</label>
+              <input class="form-item form-item--text" id="f12" type="text" name="f12" data-validation="{&quot;message&quot;: &quot;Обязательное поле&quot;}" required="" value="Отчество">
+            </div>
+            <div class="form-row">
+              <label class="form-item-label" for="f13">Фамилия</label>
+              <input class="form-item form-item--text" id="f13" type="text" name="f13" data-validation="{&quot;message&quot;: &quot;Обязательное поле&quot;}" required="" value="Фамилия">
+            </div>
+            <div class="form-row">
+              <label class="form-item-label" for="f14">Дата рождения</label>
+              <input class="form-item--calendar" id="f14" type="text" name="f14" data-validation="{&quot;message&quot;: &quot;Укажите корректную дату рождения&quot;, &quot;mask&quot;: &quot;99.99.9999&quot;}" required="">
+            </div>
+            <div class="form-row">
+              <label class="form-item-label" for="f3">E-mail</label>
+              <input class="form-item form-item--text" id="f3" type="email" name="f3" required="" data-validation="{&quot;message&quot;: &quot;Укажите корретный адрес почты&quot;}" value="petrov@gmail.com">
+            </div>
+            <div class="form-row form-row--checkbox">
+              <input class="form-item form-item--checkbox catalog-item-checkbox" id="news" type="checkbox">
+              <label for="news">Уведомлять меня о новинках и акциях</label>
+            </div>
+            <div class="form-row">
+              <label class="form-item-label" for="f4">Телефон</label>
+              <input class="form-item form-item--text" id="f4" type="text" name="f4" data-validation="{&quot;message&quot;: &quot;Укажите корректный номер телефона&quot;, &quot;pattern&quot;: &quot;phoneRU&quot;, &quot;mask&quot;: &quot;+7 (999) 999-99-99&quot;}" required="" value="+7 556 666-66-6"><span>Нужен для уточнения деталей заказа</span>
+            </div>
+            <div class="form-row">
+              <label class="form-item-label" for="reg_pass1">Новый пароль</label>
+              <input class="form-item form-item--password" id="reg_pass1" type="password" name="reg_pass1" required="" data-validation="{&quot;minlength&quot;: &quot;6&quot;, &quot;message&quot;: {&quot;required&quot;: &quot;&quot;, &quot;minlength&quot;: &quot;Минимальная длина пароля – 6 символов&quot;}}"><span class="password-show"> </span>
+            </div>
+            <div class="form-row">
+              <label class="form-item-label" for="reg_pass2">Новый пароль еще раз</label>
+              <input class="form-item form-item--password" id="reg_pass2" type="password" name="reg_pass2" required="" data-validation="{&quot;minlength&quot;: &quot;6&quot;, &quot;equalTo&quot;: &quot;#reg_pass1&quot;, &quot;message&quot;: {&quot;equalTo&quot;: &quot;Пароли не совпадают&quot;, &quot;required&quot;: &quot;&quot;, &quot;minlength&quot;: &quot;Минимальная длина пароля – 6 символов&quot;}}"><span class="password-show"></span>
+            </div>
+            <div class="form-row">я не робот</div>
+            <div class="form-row">
+              <button class="btn btn--black btn--medium w100 max-w100" type="submit" style="text-align: left;">Зарегистрироваться</button>
+              <div class="reg-form__under-form-text">Нажимая на кнопку «Зарегестрироваться»<br>вы соглашаетесь на <a class="link link--black_border" href="#">обработку персональных данных </a></div>
             </div>
           </form>
         </div>

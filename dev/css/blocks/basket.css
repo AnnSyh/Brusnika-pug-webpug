@@ -1,0 +1,29 @@
+.basket {
+  border: 1px solid red;
+}
+.basket__header {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.basket__body {
+  display: flex;
+  gap: 117px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.basket__body .order-aside {
+  padding: 40px;
+  background: #F7F5F5;
+  border-radius: 0;
+  min-width: 526px;
+}
+.basket__body-left {
+  flex: 3;
+}
+.basket__body-right {
+  flex: 1;
+}
+
+.basket-inner {
+  padding: 40px;
+}/*# sourceMappingURL=basket.css.map */

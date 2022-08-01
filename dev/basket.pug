@@ -6,228 +6,70 @@ block variables
 
 
 block content
-    main.page-content
-      .page-inner.page-inner--w2
-        .page-heading
-          .row.align-items-end.justify-content-between
-            .col-md-6
-              .d-md-none.mb-3
-                a.link.link--gray_border(href='section.html') Назад к покупкам
-              h1.h1 КОРЗИНА
-              p.mt-2.fs16
-                | Обработка заказов ежедневно
-                nobr 09:00 — 21:00
-            .col-auto.d-none.d-md-block
-              a.link.link--black(href='section.html')
-                | Назад к
-                | покупкам
-      .page-inner.page-inner--w2
-        .order.row.justify-content-between
-          .col-12.col-xl-7
-            .order-content
-              .h3.d-none.d-md-block Товары
-              .order-table.basket
-                .row.justify-content-between
-                  .col-md-7
-                    .row
-                      .col-4.col-md-3
-                        .order-photo-holder
-                          img.cover(src='../dummy/orders/1.jpg')
-                      .col-8.col-md-9
-                        .d-md-none
-                          a.order-table-delete(href='#')  
-                        .mb-3.mb-md-1.basket-name-holder
-                          b Бутсы Nike Vapor 13 Pro FG AT7901-414
-                        .mb-2.d-none.d-md-block Размер: 41 RU
-                        .d-none.d-md-block
-                          b 118 990 Р
-                        .d-md-none
-                          .row.justify-content-between.align-items-center
-                            .col-auto
-                              b 1118 990 Р
-                            .col-auto
-                              input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-                          | 1
-                  .col-md-4.d-none.d-md-block
-                    .row.justify-content-between
-                      .col-md-5
-                        input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-                      .col-md-5
-                        b 8 990 Р
-                      .col-md-2
-                        a.order-table-delete(href='#')  
-                .row.justify-content-between
-                  .col-md-7
-                    .row
-                      .col-4.col-md-3
-                        .order-photo-holder
-                          img.cover(src='../dummy/orders/2.jpg')
-                      .col-8.col-md-9
-                        .d-md-none
-                          a.order-table-delete(href='#')  
-                        .mb-3.mb-md-1.basket-name-holder
-                          b Мяч футбольный Select Diamond
-                        .mb-2.d-none.d-md-block Размер: 5
-                        .d-none.d-md-block
-                          b 2 390 Р
-                        .d-md-none
-                          .row.justify-content-between.align-items-center
-                            .col-auto
-                              b 2 390 Р
-                            .col-auto
-                              input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-                  .col-md-4.d-none.d-md-block
-                    .row.justify-content-between
-                      .col-md-5
-                        input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-                      .col-md-5
-                        b 2 390 Р
-                      .col-md-2
-                        a.order-table-delete(href='#')  
-                .row.justify-content-between
-                  .col-md-7
-                    .row
-                      .col-4.col-md-3
-                        .order-photo-holder
-                          img.cover(src='../dummy/orders/1.jpg')
-                      .col-8.col-md-9
-                        .d-md-none
-                          a.order-table-delete(href='#')  
-                        .mb-3.mb-md-1.basket-name-holder
-                          b Бутсы Nike Vapor 13 Pro FG AT7901-414
-                        .mb-2.d-none.d-md-block Размер: 41 RU
-                        .d-none.d-md-block
-                          b 118 990 Р
-                        .d-md-none
-                          .row.justify-content-between.align-items-center
-                            .col-auto
-                              b 1118 990 Р
-                            .col-auto
-                              input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-                          | 1
-                  .col-md-4.d-none.d-md-block
-                    .row.justify-content-between
-                      .col-md-5
-                        input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-                      .col-md-5
-                        b 8 990 Р
-                      .col-md-2
-                        a.order-table-delete(href='#')  
-                .row.justify-content-between
-                  .col-md-7
-                    .row
-                      .col-4.col-md-3
-                        .order-photo-holder
-                          img.cover(src='../dummy/orders/2.jpg')
-                      .col-8.col-md-9
-                        .d-md-none
-                          a.order-table-delete(href='#')  
-                        .mb-3.mb-md-1.basket-name-holder
-                          b Мяч футбольный Select Diamond
-                        .mb-2.d-none.d-md-block Размер: 5
-                        .d-none.d-md-block
-                          b 2 390 Р
-                        .d-md-none
-                          .row.justify-content-between.align-items-center
-                            .col-auto
-                              b 2 390 Р
-                            .col-auto
-                              input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-                  .col-md-4.d-none.d-md-block
-                    .row.justify-content-between
-                      .col-md-5
-                        input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-                      .col-md-5
-                        b 2 390 Р
-                      .col-md-2
-                        a.order-table-delete(href='#')  
-                .row.justify-content-between
-                  .col-md-7
-                    .row
-                      .col-4.col-md-3
-                        .order-photo-holder
-                          img.cover(src='../dummy/orders/3.jpg')
-                      .col-8.col-md-9
-                        .d-md-none
-                          a.order-table-delete(href='#')  
-                        .mb-3.mb-md-1.basket-name-holder
-                          b
-                            | Перчатки вратаря Torres Pro
-                            | черно-желто-серебристые
-                        .mb-2.d-none.d-md-block Размер: 11
-                        .d-none.d-md-block
-                          b 1 320 Р
-                        .d-md-none
-                          .row.justify-content-between.align-items-center
-                            .col-auto
-                              b 1 320 Р
-                            .col-auto
-                              input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-                  .col-md-4.d-none.d-md-block
-                    .row.justify-content-between
-                      .col-md-5
-                        input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-                      .col-md-5
-                        b 1 320 Р
-                      .col-md-2
-                        a.order-table-delete(href='#')  
-                .row.justify-content-between
-                  .col-md-7
-                    .row
-                      .col-4.col-md-3
-                        .order-photo-holder
-                          img.cover(src='../dummy/orders/3.jpg')
-                      .col-8.col-md-9
-                        .d-md-none
-                          a.order-table-delete(href='#')  
-                        .mb-3.mb-md-1.basket-name-holder
-                          b Суппорт колена Indigo IN207 Черный
-                        .mb-2.d-none.d-md-block Размер: универсальный
-                        .d-none.d-md-block
-                          b.red.mr-20 1 030 Р
-                          span.old
-                            | 2 500
-                            | Р
-                        .d-md-none
-                          .row.justify-content-between.align-items-center
-                            .col-auto
-                              div
-                                b.red 1 030 Р
-                              span.old 2 500 Р
-                            .col-auto
-                              input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-                  .col-md-4.d-none.d-md-block
-                    .row.justify-content-between
-                      .col-md-5
-                        input.form-item.form-item--number(type='number' min='1' max='100' step='1' value='1')
-                      .col-md-5
-                        b 1 030 Р
-                      .col-md-2
-                        a.order-table-delete(href='#')  
-              .d-md-none.mobile-table-summary.center
-                b К оплате: 14 760 Р
-              .d-none.d-md-block
-                a.link.link--gray_border.small(href='basket_empty.html')
-                  | Очистить
-                  | корзину
-          .col-12.col-md-12.col-xl-4.justify-content-center
-            .order-aside.order-aside-sticky
-              .h3.mb-20 Общая стоимость 14 760 Р
-              .mb-30 Вы получаете бесплатную доставку курьером
-              .mb-20
-                .mb-1 Товары на сумму — 11 792 Р
-                .mb-1 Доставка — Бесплатно
-                .mb-1 Скидка — 2 940 Р
-              .row.justify-content-between.mb-30
-                .col-12.col-xxl-6
-                  .h3 К оплате: 14 760 Р
-                .col-12.col-xxl-auto.mt-1.mt-xxl-0
-                  a.link.link--black_border.open-promocode(href='#') Есть промо-код
-              #promocode-block.mb-40
-                label.form-item-label(for='promocode') Промо-код
-                .row
-                  .col-12.col-xxl-7
-                    input#promocode.form-item.form-item--text(type='text')
-                  .col-12.col-xxl-5.mt-2.mt-xxl-0
-                    button.btn.btn--medium.btn--black_border.mx-auto(type='button') Применить
-              a.btn.btn--large.btn--black.btn--fullwidth(href='make_order.html') ОФОРМИТЬ ЗАКАЗ          
+  main
+    .page-inner.page-inner--w2
+      .basket__header
+
+        .row.align-items-end.justify-content-between
+          .col-md-6
+            .d-md-none.mb-3
+              a.link.link--gray_border(href='section.html') Вернуться в корзину
+            h1.h1 Оформление заказа
+            p.mt-2.fs16
+              | Обработка заказов ежедневно
+              nobr 09:00 — 21:00
+          .col-auto.d-none.d-md-block
+            a.link.link--black(href='section.html')
+              | Вернуться в корзину
+
+      .basket__body
+        .basket__body-left
+          .order-content
+            .order__title Товары в заказе
+            .order-table.order-table_basket
+
+              include modules/basket/items-in-basket
+
+
+            .d-md-none.mobile-table-summary.center
+              b К оплате: 14 760 Р
+            .d-none.d-md-block
+              a.link.link--gray_border.small(href='basket_empty.html')
+                | Очистить
+                | корзину
+        .basket__body-right
+          .order-aside.order-aside-sticky
+            .order-aside__title Общая стоимость 14 760 Р
+            .order-aside__text Вы получаете бесплатную доставку курьером
+            .order-aside__list
+              p Товары на сумму — 11 792 Р
+              p Доставка — Бесплатно
+              p Скидка — 2 940 Р
+            .order-aside__to-pay
+              .order-aside__price К оплате: 14 760 Р
+              //- .order-aside__promocode
+              a.link.link--black_border.open-promocode(href='#') Есть промо-код
+            #promocode-block.mb-40
+              label.form-item-label(for='promocode') Промо-код
+              .row
+                .col-12.col-xxl-7
+                  input#promocode.form-item.form-item--text(type='text')
+                .col-12.col-xxl-5.mt-2.mt-xxl-0
+                  button.btn.btn--medium.btn--black_border.mx-auto(type='button') Применить
+            a.btn.btn--large.btn--black.btn--fullwidth(href='#change-password-popup' data-popup='{"type":"inline"}') ОФОРМИТЬ ЗАКАЗ
+
+      form.form.basket-form 
+        .basket-form__title 1.Доставка
+        .form-row
+          label.form-item-label(for='city') Ваш город
+          input#city.form-item.form-item--text(type='text' name='city' data-validation='{"message": "Обязательное поле"}' required='' value='Ростов-на-Дону')
+        .basket__pickup 
+          each item in pickupItems
+            .filter-row
+              label.form-radio
+                input.form-item.form-item--radio(type='radio' name='product')
+                .form-radio__item= item.address
+                  .form-radio__item-text= item.take
+
+
+
