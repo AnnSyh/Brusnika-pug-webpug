@@ -1182,7 +1182,7 @@ body .mobile-nav-menu-item-holder.open:before {
     position: relative;
     padding: 25px 0;
   }
-  .order-content .order-table .order-table-delete {
+  /* .order-content .order-table .order-table-delete {
     position: absolute;
     right: 5px;
     top: 17px;
@@ -1192,7 +1192,7 @@ body .mobile-nav-menu-item-holder.open:before {
     -webkit-background-size: 14px 14px;
     -moz-background-size: 14px 14px;
     background-size: 14px 14px;
-  }
+  } */
   .order-content .order-table .basket-name-holder {
     padding-right: 20px;
   }

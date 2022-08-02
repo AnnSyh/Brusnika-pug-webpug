@@ -45,6 +45,11 @@
 .order-table__info .order-table__row {
   margin-bottom: 0;
 }
+@media screen and (min-width: 480px) {
+  .order-table__info .order-table__counter {
+    display: none;
+  }
+}
 
 .order-table__color,
 .order-table__size,
@@ -62,6 +67,15 @@
   margin-bottom: 10px;
 }
 
+.order-table__count {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .order-table__count {
+    display: block;
+  }
+}
 .order-table__color {
   margin-bottom: 10px;
   display: flex;
@@ -120,6 +134,11 @@
   line-height: 50px;
   white-space: nowrap;
 }
+@media screen and (max-width: 670px) {
+  .order-table__item > .order-table__price {
+    display: none;
+  }
+}
 
 .order-table__item > .order-table__img {
   width: 175px;
@@ -127,6 +146,13 @@
 
 .order-table__item > .order-table__item-delete {
   width: 100px;
+}
+@media screen and (max-width: 670px) {
+  .order-table__item > .order-table__item-delete {
+    border: 1px solid red;
+    width: auto;
+    position: relative;
+  }
 }
 
 .order-table__item .jcf-number {
@@ -180,4 +206,24 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
+}
+
+.promocode-block {
+  margin-bottom: 40px;
+}
+.promocode-block__row {
+  display: flex;
+  gap: 16px;
+}
+@media screen and (max-width: 480px) {
+  .promocode-block__row {
+    flex-direction: column;
+  }
+}
+.promocode-block__col {
+  flex: 1;
+  display: flex;
+}
+.promocode-block__col:first-child {
+  flex: 10;
 }/*# sourceMappingURL=order.css.map */

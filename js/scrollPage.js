@@ -74,3 +74,21 @@ $('.sms-not-coming').on("click", function (e) {
   });
    
 });
+
+
+// сделать при клике окрашивание границы в черный и появление подсписка
+
+const radiosList = document.querySelectorAll('.basket-form .form-item--radio');
+console.log('radiosList = ', radiosList);
+
+radiosList.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    const row = e.target.parentNode.parentNode.parentNode.parentNode;
+
+    // очистить от класса .black-border   все эл-ты списка
+
+    console.log('item3 = ', row.classList.add('black-border'));
+    // console.log('item3 = ', row.classList.toggle('black-border'));
+  });
+})
+

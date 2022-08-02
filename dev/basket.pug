@@ -1,6 +1,7 @@
 extends layout/main
 
 block variables
+
   - var title = 'Брусника корзина'
   - var mainPage = false
 
@@ -13,63 +14,21 @@ block content
         .row.align-items-end.justify-content-between
           .col-md-6
             .d-md-none.mb-3
-              a.link.link--gray_border(href='section.html') Вернуться в корзину
+              a.link.link--black(href='#') Вернуться в корзину
             h1.h1 Оформление заказа
-            p.mt-2.fs16
-              | Обработка заказов ежедневно
+            p.mt-2.fs16  Обработка заказов ежедневно
               nobr 09:00 — 21:00
           .col-auto.d-none.d-md-block
-            a.link.link--black(href='section.html')
-              | Вернуться в корзину
+            span 
+              a.link.link--black(href='#') Вернуться в корзину
 
       .basket__body
         .basket__body-left
-          .order-content
-            .order__title Товары в заказе
-            .order-table.order-table_basket
-
-              include modules/basket/items-in-basket
-
-
-            .d-md-none.mobile-table-summary.center
-              b К оплате: 14 760 Р
-            .d-none.d-md-block
-              a.link.link--gray_border.small(href='basket_empty.html')
-                | Очистить
-                | корзину
+          include modules/basket/items-in-order
+          include modules/basket/basket-form
+        
         .basket__body-right
-          .order-aside.order-aside-sticky
-            .order-aside__title Общая стоимость 14 760 Р
-            .order-aside__text Вы получаете бесплатную доставку курьером
-            .order-aside__list
-              p Товары на сумму — 11 792 Р
-              p Доставка — Бесплатно
-              p Скидка — 2 940 Р
-            .order-aside__to-pay
-              .order-aside__price К оплате: 14 760 Р
-              //- .order-aside__promocode
-              a.link.link--black_border.open-promocode(href='#') Есть промо-код
-            #promocode-block.mb-40
-              label.form-item-label(for='promocode') Промо-код
-              .row
-                .col-12.col-xxl-7
-                  input#promocode.form-item.form-item--text(type='text')
-                .col-12.col-xxl-5.mt-2.mt-xxl-0
-                  button.btn.btn--medium.btn--black_border.mx-auto(type='button') Применить
-            a.btn.btn--large.btn--black.btn--fullwidth(href='#change-password-popup' data-popup='{"type":"inline"}') ОФОРМИТЬ ЗАКАЗ
+          include modules/basket/total-cost
 
-      form.form.basket-form 
-        .basket-form__title 1.Доставка
-        .form-row
-          label.form-item-label(for='city') Ваш город
-          input#city.form-item.form-item--text(type='text' name='city' data-validation='{"message": "Обязательное поле"}' required='' value='Ростов-на-Дону')
-        .basket__pickup 
-          each item in pickupItems
-            .filter-row
-              label.form-radio
-                input.form-item.form-item--radio(type='radio' name='product')
-                .form-radio__item= item.address
-                  .form-radio__item-text= item.take
-
-
-
+block footer-popups
+  include modules/popups/show-on-map-popup        
