@@ -10,18 +10,43 @@ block content
     .page-section
       .page-inner.page-inner--w2
         .page-heading
-          .row
-            .col-12.col-md-8.offset-md-2.col-lg-12.offset-lg-0
-              .mb-4.d-lg-none
-                a.link.link--gray_border(href="dashboard.html") Личный кабинет
-              .page-heading-title.h1 ЛИЧНЫЕ ДАННЫЕ
+          .page-heading-title.h1
+            span.d-none.d-lg-block ЛИЧНЫЙ КАБИНЕТ
+            span.d-lg-none.uppercase Максим Петров
+          .page-heading-description.d-lg-none
+            .h3 Здравствуйте, Максим
+      .page-inner.page-inner--w2
+        .d-none.d-lg-block
+          .row.mb-4.align-items-baseline
+            .col-auto
+              .h3.uppercase Здравствуйте, Максим
+            .col-auto
+              a.link.link--black_border(href='#') ВЫЙТИ
+        .row.personal-blocks
+          .col-lg-3.mb-lg-4
+            a.personal-block(href='orders.html')
+              span.h3.uppercase ТЕКУЩИЕ ЗАКАЗЫ
+              ins 1
+          .col-lg-3.mb-lg-4
+            a.personal-block(href='history.html')
+              span.h3.uppercase ИСТОРИЯ ЗАКАЗОВ
+          .col-lg-3.mb-lg-4
+            a.personal-block(href='basket.html')
+              span.h3.uppercase КОРЗИНА
+              ins 2
+          .col-lg-3.mb-lg-4
+            a.personal-block(href='favorites.html')
+              span.h3.uppercase ИЗБРАННОЕ
+              ins 4
+          .col-lg-3.mb-lg-4
+            a.personal-block(href='profiles.html')
+              span.h3.uppercase ПРОФИЛИ ЗАКАЗОВ
+              ins 2
+          .col-lg-3.mb-lg-4
+            a.personal-block(href='personal.html')
+              span.h3 ЛИЧНЫЕ ДАННЫЕ
+          .col-lg-3.mb-lg-4
+            a.personal-block(href='#')
+              span.h3.uppercase Выйти
 
-        .row
-           .col-md-3.d-none.d-lg-block 
-                include modules/menus/dashboard-menu
-           .col-lg-1
-           .col-12.col-md-8.offset-md-2.offset-lg-0.col-lg-5.col-xl-4
-               include modules/personal/content  
 
-          //- .personal__link 
-          //-     a.link.link--black_border.loyalty-card(href="#") Есть карта лояльности?

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Брусника/Личный кабинет</title>
+    <title>Брусника/ПРОФИЛИ заказов</title>
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Брусника">
@@ -512,29 +512,64 @@
         <div class="page-section">
           <div class="page-inner page-inner--w2">
             <div class="page-heading">
-              <div class="page-heading-title h1"><span class="d-none d-lg-block">ЛИЧНЫЙ КАБИНЕТ</span><span class="d-lg-none uppercase">Максим Петров</span></div>
-              <div class="page-heading-description d-lg-none">
-                <div class="h3">Здравствуйте, Максим</div>
-              </div>
-            </div>
-          </div>
-          <div class="page-inner page-inner--w2">
-            <div class="d-none d-lg-block">
-              <div class="row mb-4 align-items-baseline">
-                <div class="col-auto">
-                  <div class="h3 uppercase">Здравствуйте, Максим</div>
+              <div class="row">
+                <div class="col-12 col-md-8 offset-md-2 col-lg-12 offset-lg-0">
+                  <div class="mb-4 d-lg-none"><a class="link link--gray_border" href="dashboard.html">Личный кабинет</a></div>
+                  <div class="page-heading-title h1">ПРОФИЛИ ЗАКАЗОВ</div>
                 </div>
-                <div class="col-auto"><a class="link link--black_border" href="#">ВЫЙТИ</a></div>
               </div>
             </div>
-            <div class="row personal-blocks">
-              <div class="col-lg-3 mb-lg-4"><a class="personal-block" href="orders.html"><span class="h3 uppercase">ТЕКУЩИЕ ЗАКАЗЫ</span><ins>1</ins></a></div>
-              <div class="col-lg-3 mb-lg-4"><a class="personal-block" href="history.html"><span class="h3 uppercase">ИСТОРИЯ ЗАКАЗОВ</span></a></div>
-              <div class="col-lg-3 mb-lg-4"><a class="personal-block" href="basket.html"><span class="h3 uppercase">КОРЗИНА</span><ins>2</ins></a></div>
-              <div class="col-lg-3 mb-lg-4"><a class="personal-block" href="favorites.html"><span class="h3 uppercase">ИЗБРАННОЕ</span><ins>4</ins></a></div>
-              <div class="col-lg-3 mb-lg-4"><a class="personal-block" href="profiles.html"><span class="h3 uppercase">ПРОФИЛИ ЗАКАЗОВ</span><ins>2</ins></a></div>
-              <div class="col-lg-3 mb-lg-4"><a class="personal-block" href="personal.html"><span class="h3">ЛИЧНЫЕ ДАННЫЕ</span></a></div>
-              <div class="col-lg-3 mb-lg-4"><a class="personal-block" href="#"><span class="h3 uppercase">Выйти</span></a></div>
+            <div class="row">
+              <div class="col-md-3 d-none d-lg-block"> 
+                                <div class="personal-menu">
+                                  <div class="personal-menu-item"><a class="link link--black active" href="#cm1">Текущие заказы (1)</a></div>
+                                  <div class="personal-menu-item"><a class="link link--black undefined" href="history.html">История заказов</a></div>
+                                  <div class="personal-menu-item"><a class="link link--black undefined" href="basket.html">Корзина (2)</a></div>
+                                  <div class="personal-menu-item"><a class="link link--black undefined" href="favorites.html">Избранное (2)</a></div>
+                                  <div class="personal-menu-item"><a class="link link--black undefined" href="dashboard.html">Личные данные</a></div>
+                                  <div class="personal-menu-item"><a class="link link--black undefined" href="#cm4">Выйти</a></div>
+                                </div>
+              </div>
+              <div class="col-lg-1"></div>
+              <div class="col-12 col-md-8 offset-md-2 offset-lg-0 col-lg-5 col-xl-4">
+                <div class="mb-5 d-none d-lg-block"><a class="link link--black_border" href="profiles.html">В профили заказов</a></div>
+                <form class="form" novalidate="novalidate">
+                  <div class="form-row">
+                    <label class="form-item-label" for="f1">Имя</label>
+                    <input class="form-item form-item--text" id="f1" type="text" name="f1" data-validation="{&quot;message&quot;: &quot;Обязательное поле&quot;}" required="" value="Максим">
+                  </div>
+                  <div class="form-row">
+                    <label class="form-item-label" for="f2">Фамилия</label>
+                    <input class="form-item form-item--text" id="f2" type="text" name="f2" data-validation="{&quot;message&quot;: &quot;Обязательное поле&quot;}" required="" value="Петров">
+                  </div>
+                  <div class="form-row">
+                    <label class="form-item-label" for="f3">Тип плательщика</label>
+                    <input class="form-item form-item--text" id="f3" type="text" name="f3" value="Физическое лицо">
+                  </div>
+                  <div class="form-row">
+                    <label class="form-item-label" for="f4">Телефон</label>
+                    <input class="form-item form-item--text" id="f4" type="text" name="f4" data-validation="{&quot;message&quot;: &quot;Укажите корректный номер телефона&quot;, &quot;pattern&quot;: &quot;phoneRU&quot;, &quot;mask&quot;: &quot;+7 (999) 999-99-99&quot;}" required="" value="+7 556 666-66-6">
+                  </div>
+                  <div class="form-row">
+                    <label class="form-item-label" for="f22">Город</label>
+                    <input class="form-item form-item--text" id="f22" type="text" name="f22" value="">
+                  </div>
+                  <div class="form-row">
+                    <label class="form-item-label" for="f23">Адрес</label>
+                    <input class="form-item form-item--text" id="f23" type="text" name="f23" value="">
+                    <label class="form-checkbox mt-3"><span class="jcf-checkbox jcf-unchecked"><span></span>
+                        <input class="form-item--checkbox" type="checkbox" name="save_address" value="1" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;"></span>
+                      <div class="form-checkbox-title">Сохранить как адрес доставки по умолчанию</div>
+                    </label>
+                  </div>
+                  <button class="btn btn--black btn--large" type="submit">Сохранить</button>
+                  <div class="form-policy">
+                    <div class="page-text">
+                      <div class="small">Нажимая на кнопку Сохранить <br>вы соглашаетесь на <a href="#">обработку персональных данных</a></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>

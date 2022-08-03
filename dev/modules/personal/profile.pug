@@ -1,0 +1,34 @@
+.mb-5.d-none.d-lg-block
+    a.link.link--black_border(href='profiles.html') В профили заказов
+form.form(novalidate='novalidate')
+    .form-row
+      label.form-item-label(for='f1') Имя
+      input#f1.form-item.form-item--text(type='text' name='f1' data-validation='{"message": "Обязательное поле"}' required='' value='Максим')
+    .form-row
+      label.form-item-label(for='f2') Фамилия
+      input#f2.form-item.form-item--text(type='text' name='f2' data-validation='{"message": "Обязательное поле"}' required='' value='Петров')
+    .form-row
+      label.form-item-label(for='f3') Тип плательщика
+      input#f3.form-item.form-item--text(type='text' name='f3' value='Физическое лицо')
+    .form-row
+      label.form-item-label(for='f4') Телефон
+      input#f4.form-item.form-item--text(type='text' name='f4' data-validation='{"message": "Укажите корректный номер телефона", "pattern": "phoneRU", "mask": "+7 (999) 999-99-99"}' required='' value='+7 556 666-66-6')
+    .form-row
+      label.form-item-label(for='f22') Город
+      input#f22.form-item.form-item--text(type='text' name='f22' value='')
+    .form-row
+      label.form-item-label(for='f23') Адрес
+      input#f23.form-item.form-item--text(type='text' name='f23' value='')
+      label.form-checkbox.mt-3
+        span.jcf-checkbox.jcf-unchecked
+          span
+          input.form-item--checkbox(type='checkbox' name='save_address' value='1' style='position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;')
+        .form-checkbox-title Сохранить как адрес доставки по умолчанию
+    button.btn.btn--black.btn--large(type='submit') Сохранить
+    .form-policy
+      .page-text
+        .small
+          | Нажимая на кнопку Сохранить 
+          br
+          | вы соглашаетесь на 
+          a(href='#') обработку персональных данных

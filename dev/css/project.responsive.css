@@ -1124,12 +1124,14 @@ body .mobile-nav-menu-item-holder.open:before {
   .personal-blocks {
     position: relative;
     padding: 40px 0;
+    margin-left: -20px;
+    margin-right: -20px;
   }
   .personal-blocks:before {
     content: "";
     position: absolute;
-    left: -10px;
-    right: -10px;
+    left: 0px;
+    right: 0px;
     top: 0;
     display: block;
     height: 100%;
