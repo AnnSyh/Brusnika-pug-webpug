@@ -176,6 +176,10 @@
 
 }
 
+.order-content {
+    margin-bottom: 50px;
+}
+
 .order-content .order-table {
     margin-top: 0px;
     margin-bottom: 20px;
@@ -233,6 +237,7 @@
     &__row {
         display: flex;
         gap: 16px;
+        margin-bottom: 35px;
 
         @media screen and (max-width:480px) {
             flex-direction: column;

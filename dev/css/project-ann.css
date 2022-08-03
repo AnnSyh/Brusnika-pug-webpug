@@ -25,6 +25,7 @@
 @import url(../css/blocks/card-zoom.css);
 @import url(../css/blocks/favorites.css);
 @import url(../css/blocks/basket.css);
+@import url(../css/blocks/message.css); /* стили сообщ типа 'СПАСИБО ЗА ЗАКАЗ!' */
 
 
 .jcf-number {

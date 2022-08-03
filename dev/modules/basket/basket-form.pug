@@ -22,8 +22,9 @@ form.form.basket-form
                     .basket__pickup-metro= item.metro
                     .basket__pickup-address= item.address
                     .basket__pickup-data= item.data
-    .filter-row(style='border: none;')
-        a.link.link--gray_border.small.ml-30px(href='#show-on-map-popup' data-popup='{"type":"inline"}') Показать на карте
+          a.link.link--gray_border.small.ml-30px(href='#show-on-map-popup' data-popup='{"type":"inline"}') Показать на карте
+
+          //- include ../map
 
     each item in dostavkaItems
       .filter-row

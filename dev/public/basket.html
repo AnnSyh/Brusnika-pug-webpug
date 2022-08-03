@@ -699,11 +699,10 @@
                               </div>
                             </label>
                           </li>
-                        </ul>
+                        </ul><a class="link link--gray_border small ml-30px" href="#show-on-map-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">Показать на карте</a>
                       </div>
                     </div>
                   </div>
-                  <div class="filter-row" style="border: none;"><a class="link link--gray_border small ml-30px" href="#show-on-map-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">Показать на карте</a></div>
                   <div class="filter-row">
                     <div class="filter-row__inner">
                       <label class="filter-row__form-radio">
@@ -794,7 +793,16 @@
                       <button class="btn btn--medium btn--black_border mx-auto" type="button">Применить</button>
                     </div>
                   </div>
-                </div><a class="btn btn--large btn--black btn--fullwidth" href="#change-password-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">ОФОРМИТЬ ЗАКАЗ</a>
+                  <label class="form-item-label" for="card">Карта лояльности</label>
+                  <div class="promocode-block__row">
+                    <div class="promocode-block__col">
+                      <input class="form-item form-item--text" id="card" type="text">
+                    </div>
+                    <div class="promocode-block__col">
+                      <button class="btn btn--medium btn--black_border mx-auto" type="button">Применить</button>
+                    </div>
+                  </div>
+                </div><a class="btn btn--large btn--black btn--fullwidth" href="#checkout-popup" data-popup="{&quot;type&quot;:&quot;inline&quot;}">ОФОРМИТЬ ЗАКАЗ</a>
               </div>
             </div>
           </div>
@@ -1533,6 +1541,23 @@
         </form>
       </div>
     </div>
+    <div class="page-popup mfp-hide" id="show-on-map-popup">
+      <div class="page-popup-heading">
+        <div class="page-popup-title uppercase">Выбор магазина BRUSNIKA</div>
+      </div>
+      <div class="delivery-map">
+        <div class="delivery-map-title">
+          отложила на по позже
+          1111111
+        </div>
+        <div class="delivery-map-selected"><strong>Выбран: </strong><span class="delivery-map-selected-value"> </span></div>
+      </div>
+    </div>
+    <div class="page-popup mfp-hide" id="checkout-popup">
+      <div class="page-popup-heading">
+        <div class="page-popup-title uppercase">ОФОРМИТЬ ЗАКАЗ</div>
+      </div>
+    </div>
     <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=6f387da6-ba3c-46bf-96a7-261df17d04f7&amp;lang=ru_RU"></script>
     <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../../js/plugins/jcf.js"></script>
@@ -1559,9 +1584,3 @@
     <script type="text/javascript" src="../../js/scrollPage.js"></script>
   </body>
 </html>
-<div class="page-popup mfp-hide" id="show-on-map-popup">
-  <div class="page-popup-heading">
-    <div class="page-popup-title uppercase">Выбор магазина BRUSNIKA</div>
-  </div>
-  <form class="form" novalidate="novalidate" submit=""></form>
-</div>

@@ -8,6 +8,11 @@
   border: 1px solid #1d1d1d;
   color: #1d1d1d;
 }
+.btn--black_border:hover {
+  border-color: #1d1d1d;
+  background-color: #1d1d1d;
+  color: #fff;
+}
 
 .btn--medium {
   min-width: 180px;
