@@ -26,6 +26,7 @@
 @import url(../css/blocks/favorites.css);
 @import url(../css/blocks/basket.css);
 @import url(../css/blocks/message.css); /* стили сообщ типа 'СПАСИБО ЗА ЗАКАЗ!' */
+@import url(../css/blocks/personal.css); /* Личный кабинет */
 
 
 .jcf-number {

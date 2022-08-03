@@ -1,0 +1,19 @@
+- 
+    //- Пункты меню
+    const personalMenuData = [
+        {name: 'Текущие заказы (1)',    url: '#cm1',  active:'active'},
+        {name: 'История заказов',       url: '#cm2'},
+        {name: 'Корзина (2)',           url: 'basket.html'}, 
+        {name: 'Избранное (2)',         url: 'favorites.html'},
+        {name: 'Личные данные',         url: 'dashboard.html'},
+        {name: 'Выйти',                 url: '#cm4'},
+        ]
+
+mixin menu(classname, data)
+  div(class= ""+classname)
+    each item in data
+      div(class='personal-menu-item')
+        a(href=`${item.url}` class=`link link--black ${item.active}`)= item.name   
+
+
++menu('personal-menu', personalMenuData)
