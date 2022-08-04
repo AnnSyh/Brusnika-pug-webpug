@@ -1,0 +1,47 @@
+
+ .dasboard-page {
+    // font-family: 'SFProDisplay', 'Arial', sans-serif;
+
+     .page-text h1,
+     .h1 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+     }
+     .page-text h2,
+     .h2 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+     }
+     .page-text h3,
+     .h3 {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px
+     }
+    
+    
+     @media screen and (min-width: 768px) {
+        .page-text h1,
+        .h1 {
+           font-weight: 600;
+           font-size: 20px;
+           line-height: 30px;
+        }
+        .page-text h2,
+        .h2 {
+           font-weight: 600;
+           font-size: 18px;
+           line-height: 25px;
+        }
+        .page-text h3,
+        .h3 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        
+     }
+ }
+

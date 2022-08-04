@@ -1,9 +1,9 @@
-@font-face {
+/* @font-face {
   font-family: 'SFProDisplay';
   font-style: normal;
   font-weight: 200;
   src: url('../fonts/SFProDisplay-Regular.woff') format('woff');
-}
+} */
 @font-face {
   font-family: 'SFProDisplay';
   font-style: normal;
@@ -12,6 +12,7 @@
   src: url('../fonts/SFProDisplay-Regular.ttf') format('ttf');
 }
 @font-face {
+  border: 1px solid red;
   font-family: 'SFProDisplay';
   font-style: normal;
   font-weight: 600;

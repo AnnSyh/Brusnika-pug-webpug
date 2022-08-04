@@ -1,52 +1,30 @@
 extends layout/main
 
 block variables
-  - var title = 'Брусника/Личный кабинет'
+  - var title = 'Личный кабинет'
   - var mainPage = false
 
 
 block content
   main.page-content
-    .page-section
+    .page-section.dasboard-page
       .page-inner.page-inner--w2
         .page-heading
-          .page-heading-title.h1
-            span.d-none.d-lg-block ЛИЧНЫЙ КАБИНЕТ
-            span.d-lg-none.uppercase Максим Петров
+          .page-heading-title
+            span.d-none.d-lg-block.h1= title
+            span.d-lg-none.uppercase.h1 Максим Петров
           .page-heading-description.d-lg-none
-            .h3 Здравствуйте, Максим
+            .h1 Здравствуйте, Максим
       .page-inner.page-inner--w2
         .d-none.d-lg-block
           .row.mb-4.align-items-baseline
             .col-auto
-              .h3.uppercase Здравствуйте, Максим
+              .h2 Здравствуйте, Максим
             .col-auto
               a.link.link--black_border(href='#') ВЫЙТИ
         .row.personal-blocks
-          .col-lg-3.mb-lg-4
-            a.personal-block(href='orders.html')
-              span.h3.uppercase ТЕКУЩИЕ ЗАКАЗЫ
-              ins 1
-          .col-lg-3.mb-lg-4
-            a.personal-block(href='history.html')
-              span.h3.uppercase ИСТОРИЯ ЗАКАЗОВ
-          .col-lg-3.mb-lg-4
-            a.personal-block(href='basket.html')
-              span.h3.uppercase КОРЗИНА
-              ins 2
-          .col-lg-3.mb-lg-4
-            a.personal-block(href='favorites.html')
-              span.h3.uppercase ИЗБРАННОЕ
-              ins 4
-          .col-lg-3.mb-lg-4
-            a.personal-block(href='profiles.html')
-              span.h3.uppercase ПРОФИЛИ ЗАКАЗОВ
-              ins 2
-          .col-lg-3.mb-lg-4
-            a.personal-block(href='personal.html')
-              span.h3 ЛИЧНЫЕ ДАННЫЕ
-          .col-lg-3.mb-lg-4
-            a.personal-block(href='#')
-              span.h3.uppercase Выйти
 
-
+         each item in personalMenuData
+          .col-lg-3.mb-lg-4
+            a.personal-block(href=`${item.url}`)
+              span.h3.uppercase= item.name 

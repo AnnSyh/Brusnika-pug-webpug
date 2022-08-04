@@ -1,4 +1,6 @@
 @import url(../fonts/fonts.css);
+@import url(../css/variables.css);
+
 @import url(../css/blocks/header-menu.css);
 @import url(../css/blocks/catalog-menu.css);
 @import url(../css/blocks/basket-menu.css);
@@ -27,6 +29,8 @@
 @import url(../css/blocks/basket.css);
 @import url(../css/blocks/message.css); /* стили сообщ типа 'СПАСИБО ЗА ЗАКАЗ!' */
 @import url(../css/blocks/personal.css); /* Личный кабинет */
+
+
 
 
 .jcf-number {

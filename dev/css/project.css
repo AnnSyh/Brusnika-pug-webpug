@@ -883,16 +883,16 @@ hr {
 
 .page-text h1,
 .h1 {
-  font-size: 36px;
-  line-height: 46px;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .page-text h2,
 .h2 {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .page-text h2 {
@@ -901,9 +901,9 @@ hr {
 
 .page-text h3,
 .h3 {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .page-text h4,
@@ -2659,8 +2659,7 @@ span.form-item--error {
   position: relative;
   display: block;
   padding-top: 64%;
-  background-color: #f7f5f5;
-  border-radius: 20px;
+  background-color: #F6F5F5;
   text-decoration: none;
   text-align: center;
   color: #1d1d1d;
@@ -2730,7 +2729,6 @@ span.form-item--error {
 .order-item {
   margin-bottom: 50px;
   padding-bottom: 50px;
-  border-bottom: 1px solid #1d1d1d;
 }
 
 .order-item.noborder {

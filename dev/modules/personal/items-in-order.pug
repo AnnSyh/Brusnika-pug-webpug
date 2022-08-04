@@ -1,0 +1,73 @@
+.order-table
+  .row.align-items-end.d-none.d-lg-flex.mlr-0
+    .col-lg-6
+      span.order-item-title Товары в заказе
+    .col-lg-6
+      .row
+        .col-md-3
+          b Стоимость
+        .col-md-6
+          b Количество
+        .col-md-3
+          b Итого
+  .h2.mb-3.mt-5.d-lg-none Товары в заказе
+  .row.mlr-0.order-table__row
+    .col-4.col-lg-6
+      .row
+        .col-12.col-lg-3
+          .order-photo-holder
+            img.cover(src='../dummy/orders/1.jpg')
+        .col-9.d-none.d-lg-block
+          .order-table__info
+            .order-table__name Брюки
+            .order-table__size Размер: 41 RU
+            .order-table__color Цвет: коричневый
+    .col-8.col-lg-6
+      .row
+        .col-12.d-lg-none
+          .order-table__info
+            .order-table__name Брюки
+            .order-table__size Размер: 41 RU
+            .order-table__color Цвет: коричневый
+        .col-lg-3.d-none.d-lg-block 6 500 РУБ.
+        .col-lg-6.d-none.d-lg-block 1
+        .col-lg-3.d-none.d-lg-block 6 500 РУБ.
+  .row.mlr-0.order-table__row.last
+    .col-4.col-lg-6
+      .row
+        .col-12.col-lg-3
+          .order-photo-holder
+            img.cover(src='../dummy/orders/2.jpg')
+        .col-9.d-none.d-lg-block
+          .order-table__info
+            .order-table__name Жакет
+            .order-table__size Размер: S
+            .order-table__color Цвет: коричневый
+    .col-8.col-lg-6
+      .row
+        .col-12.d-lg-none
+
+          .order-table__info
+            .order-table__name Жакет
+            .order-table__size Размер: S
+            .order-table__color Цвет: коричневый
+
+        .col-lg-3.d-none.d-lg-block 12 500 РУБ.
+        .col-lg-6.d-none.d-lg-block 1
+        .col-lg-3.d-none.d-lg-block 12 500 РУБ.
+  .d-none.d-lg-block
+    .row.mt-3.justify-content-between
+      .col-auto
+        a.link.link--black_border(href='#') Отменить заказ
+      .col-md-4
+        .row
+          .col-md-8.right
+            b Всего: 
+          .col-md-4 19 000 РУБ.
+  .d-lg-none.mobile-table-summary
+    .center
+      .mb-4
+        b
+          span.mr-20 Всего:
+          | 19 000 РУБ.
+      a.link.link--black_border(href='#') Отменить заказ
