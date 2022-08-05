@@ -4,6 +4,17 @@ mixin listOne(classname, data)
 		each item in data
 			li= item.name
 
+//- список (для desktop карточки магазинов стр shops.html)
+mixin listShopFiltersDesktop(classname, data)
+	ul(class= ""+classname)
+		each item in data
+			li 
+				a(href=`${item.href}`)=item.name
+//- список (для mobile карточки магазинов стр shops.html)
+mixin listShopFiltersMobile(data)
+		each item in data
+			a(href=`${item.href}`)=item.name
+
 //- двухуровневый список(для карточки товара)
 mixin listTwo(classname, data)
 	ul(class= ""+classname)
@@ -18,6 +29,12 @@ mixin listSocial(classname,...items)
 	ul(class= ""+classname)
 		each item in items
 			li(class="social-link social-link__" +item)= item
+
+//-  список sitemap
+mixin listSitemapLinks(classLink, data)
+	each item in data
+		a(class= ""+classLink href=`${item.href}`)= item.name
+		br
 
 mixin nav(link,title)
 	if(title === 'Ссылка 1')

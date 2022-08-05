@@ -1,0 +1,109 @@
+
+extends layout/main
+
+block variables
+  - var title = 'Карта сайта'
+  - var mainPage = false
+
+block content
+  main.page-content
+    .page-section
+      .page-inner.page-inner--w3
+        .page-heading
+          .page-heading-title.center= title 
+        .sitemap.page-text
+          .row.mb-5
+            .col-md-6.col-lg-4.mb-5.mb-lg-0
+              h2.uppercase Покупателю
+              +listSitemapLinks('link link--black', sitemapBuyer)
+
+            .col-md-6.col-lg-4.mb-5.mb-lg-0
+              h2.uppercase О компании
+              +listSitemapLinks('link link--black', sitemapAboutCompany)
+
+            .col-md-6.col-lg-4
+              h2.uppercase
+                a.link.link--black(href='#') LOOKBOOK
+              h2.uppercase
+                a.link.link--black(href='#') PROM DRESS
+
+          .row.mb-3
+            .col-md-6.col-lg-4.mb-5.mb-lg-0
+              h4.uppercase
+                a.link.link--black(href='#') SS'22
+              +listSitemapLinks('link link--black', sitemapSS22)
+
+              h4.uppercase
+                a.link.link--black(href='#') OFFICE               
+              h4.uppercase
+                a.link.link--black(href='#') ЛЕН               
+              h4.uppercase
+                a.link.link--black(href='#') СПОРТ               
+              h4.uppercase
+                a.link.link--black(href='#') EVENING               
+              h4.uppercase
+                a.link.link--black(href='#') РУБАШКИ               
+              h4.uppercase
+                a.link.link--black(href='#') ВОДОЛАЗКИ               
+              h4.uppercase
+                a.link.link--black(href='#') БРЮКИ               
+              h4.uppercase
+                a.link.link--black(href='#') ЮБКИ               
+              h4.uppercase
+                a.link.link--black(href='#') ШОРТЫ               
+
+            .col-md-6.col-lg-4.mb-5.mb-lg-0
+              h4.uppercase
+                a.link.link--black(href='#') ВЕРХНЯЯ ОДЕЖДА
+              +listSitemapLinks('link link--black', sitemapOuterWear)
+
+              h4.uppercase
+                a.link.link--black(href='#') ПЛАТЬЯ, КОМБИНЕЗОНЫ
+              +listSitemapLinks('link link--black', sitemapDressesOveralls)
+           
+
+              h4.uppercase
+                a.link.link--black(href='#') ФУТБОЛКИ                
+              h4.uppercase
+                a.link.link--black(href='#') ТОПЫ                
+              h4.uppercase
+                a.link.link--black(href='#') БОДИ              
+              h4.uppercase
+                a.link.link--black(href='#') КОМПЛЕКТЫ              
+
+            .col-md-6.col-lg-4.mb-5.mb-lg-0
+              h4.uppercase
+                a.link.link--black(href='#') ДЖЕМПЕРЫ
+              +listSitemapLinks('link link--black', sitemapOveralls)
+
+              h4.uppercase
+                a.link.link--black(href='#') АКСЕССУАРЫ                    
+              h4.uppercase
+                a.link.link--black(href='#') ЖАКЕТЫ                    
+              h4.uppercase
+                a.link.link--black(href='#') ЖИЛЕТЫ                    
+              h4.uppercase
+                a.link.link--black(href='#') БОМБЕРЫ                    
+              h4.uppercase
+                a.link.link--black(href='#') ДЕТИ                    
+              h4.uppercase
+                a.link.link--black(href='#') THE MOUNTAINS                    
+              h4.uppercase
+                a.link.link--black(href='#') КАШЕМИР                    
+              h4.uppercase
+                a.link.link--black(href='#') SALE                    
+
+          .row.mb-5
+            .col-md-6.col-lg-4.mb-5.mb-lg-0
+              h4.uppercase
+                a.link.link--black(href='#') Блог
+              +listSitemapLinks('link link--black', sitemapBlog)
+
+            .col-md-6.col-lg-4
+              h4.uppercase
+                a.link.link--black(href='#') Личный КАБИНЕТ            
+              h4.uppercase
+                a.link.link--black(href='#') КОРЗИНА            
+              h4.uppercase
+                a.link.link--black(href='#') ПРОФИЛЬ           
+

@@ -1,6 +1,6 @@
-@charset "UTF-8";
 @import url(../fonts/fonts.css);
 @import url(../css/variables.css);
+
 @import url(../css/blocks/header-menu.css);
 @import url(../css/blocks/catalog-menu.css);
 @import url(../css/blocks/basket-menu.css);
@@ -17,16 +17,23 @@
 @import url(../css/blocks/page-popup.css);
 @import url(../css/blocks/order.css);
 @import url(../css/blocks/product.css);
+
 @import url(../css/blocks/complete-look.css);
 @import url(../css/blocks/look.css);
+
 @import url(../css/blocks/tables.css);
 @import url(../css/blocks/card-popup.css);
+
 @import url(../css/blocks/card-zoom.css);
 @import url(../css/blocks/favorites.css);
 @import url(../css/blocks/basket.css);
 @import url(../css/blocks/message.css); /* стили сообщ типа 'СПАСИБО ЗА ЗАКАЗ!' */
 @import url(../css/blocks/personal.css); /* Личный кабинет */
 @import url(../css/blocks/shop.css); /* Личный кабинет */
+
+
+
+
 .jcf-number {
   border-radius: 0px;
 }
@@ -117,14 +124,15 @@
   display: none;
 }
 
+
+
 .order-aside-sticky {
   top: 20px;
-  position: -webkit-sticky;
   position: sticky;
 }
 
 .sport-delivery--title-big {
-  font-family: "DrunkWideCyr", "Arial", sans-serif;
+  font-family: 'DrunkWideCyr', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -136,30 +144,35 @@
     line-height: 32px;
   }
 }
+
 @media screen and (min-width: 576px) {
   .sport-delivery--title-big {
     font-size: 33px;
     line-height: 32px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .sport-delivery--title-big {
     font-size: 40px;
     line-height: 72px;
   }
 }
+
 @media screen and (min-width: 990px) {
   .sport-delivery--title-big {
     font-size: 56px;
     line-height: 72px;
   }
 }
+
 .sport-delivery--img-row .col-12 {
   padding: 0px;
 }
 
 .sport-delivery--img-row .col-lg-6 {
   margin-bottom: 50px;
+
 }
 
 .sport-delivery--img {
@@ -184,13 +197,15 @@
   text-align: left;
 }
 
+
 .big-logo {
-  font-family: "DrunkWideCyr", "Arial", sans-serif;
+  font-family: 'DrunkWideCyr', 'Arial', sans-serif;
   font-weight: 400;
   /* font-size: 134px; */
   line-height: 122px;
   text-transform: uppercase;
   text-align: center;
+
 }
 
 @media screen and (max-width: 320px) {
@@ -198,36 +213,43 @@
     font-size: 25px;
   }
 }
+
 @media screen and (min-width: 480px) {
   .big-logo {
     font-size: 38px;
   }
 }
+
 @media screen and (min-width: 576px) {
   .big-logo {
     font-size: 46px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .big-logo {
     font-size: 64px;
   }
 }
+
 @media screen and (min-width: 992px) {
   .big-logo {
     font-size: 82px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .big-logo {
     font-size: 100px;
   }
 }
+
 @media screen and (min-width: 1570px) {
   .big-logo {
     font-size: 134px;
   }
 }
+
 .news__title {
   font-size: 16px;
   line-height: 24px;
@@ -257,10 +279,11 @@
 }
 
 /* //шрифты  */
+
 body,
 .form-item,
 .jcf-number input {
-  font-family: "SFProDisplay", "Arial", sans-serif;
+  font-family: 'SFProDisplay', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -278,13 +301,16 @@ body,
   width: 130px;
 }
 
+
 /*-----------правки ------------------*/
+
 /* Страница поиска */
 .page-section--search {
   padding: 0;
 }
 
 /* Страница бренда */
+
 .page-section--brand {
   /* padding: 55px 0 15px 0; */
   padding: 81px 0 15px 0;
@@ -311,7 +337,7 @@ body,
 
 /* //---------tooltip-------------- */
 #open-popup {
-  padding: 20px;
+  padding: 20px
 }
 
 .white-popup {
@@ -319,6 +345,7 @@ body,
   background: #FFF;
   width: auto;
   border-radius: 20px;
+
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -335,7 +362,6 @@ body,
   height: auto !important;
   box-shadow: 2px 0px 14px rgba(96, 96, 96, 0.2);
 }
-
 .tooltipster-white .tooltipster-box {
   padding: 15px;
 }
@@ -349,19 +375,16 @@ body,
   display: flex;
   gap: 20px;
 }
-
 .add-favorites__img {
   width: 40px;
   height: 60px;
   display: flex;
 }
-
 .add-favorites__text {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
 .add-favorites__title {
   font-weight: 600;
   font-size: 14px;
@@ -369,17 +392,24 @@ body,
 }
 
 /* --------/add-favorites----- */
+
+
 /* заголовки */
+
 .page-heading-title {
+
   font-weight: 600;
   font-size: 36px;
   line-height: 46px;
+  
+  &_personal {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
-.page-heading-title_personal {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-}
+
+
 
 /* .page-heading-title {
   color: #1d1d1d;
@@ -399,9 +429,10 @@ body,
     line-height: 20px;
   }
 } */
+
 .page-text h1,
 .h1 {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
-}/*# sourceMappingURL=project-ann.css.map */
+}

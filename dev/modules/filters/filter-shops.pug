@@ -1,0 +1,18 @@
+block variables
+  - var title = 'Карта сайта'
+  - var mainPage = false
+
+.filters-block
+  .filters-row.d-block.d-lg-none
+    .filter-items.filters-list(data-params='{"slidesToShow": 10}')
+        +listShopFiltersMobile(shopsFilters)
+          
+  .filters-row
+    .d-none.d-lg-block
+      +listShopFiltersDesktop('filters-list', shopsFilters)
+
+    ul.filters-list-small
+        li
+          a(href='#') Крупно
+        li
+          a(href='#') Мелко

@@ -1,0 +1,13 @@
+#catalog-shop-items
+  .catalog-items.row
+
+    each item in shops
+      .col-6
+        .item-shop 
+          .item-shop-title= item.name        
+          .item-shop-address= item.address        
+          .item-shop-time= item.time        
+          .item-shop-phone= item.phone 
+          a.link.link--black_border.show-on--map(href="#") Показать на карте       
+
+

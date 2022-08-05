@@ -10,18 +10,19 @@ block content
   main.page-content
     .page-section
       .page-inner.page-inner--w2
-        .row
-           .col-md-4 
+        .page-heading
+          .row
+            .col-md-4 
               .mb-4.d-lg-none
                 a.link.link--gray_border(href="dashboard.html") Личный кабинет
-              .page-heading-title= title           
+              .page-heading-title.page-heading-title_personal.uppercase= title            
 
-           .col-md-8
-            .page-heading-title.border-top-gray.only-desktop &nbsp;
+            .col-md-8
+              .page-heading-title.border-top-gray.only-desktop &nbsp;
 
         .row
-           .col-md-3.d-none.d-lg-block 
-                +menu('personal-menu', personalMenuData, title)
-           .col-lg-1
-           .col-12.col-md-8.offset-md-2.col-lg-9.offset-lg-0.col-xl-8
-               include modules/personal/history  
+          .col-md-3.d-none.d-lg-block 
+            +menu('personal-menu', personalMenuData, title)
+          .col-lg-1
+          .col-12.col-md-8.offset-md-2.col-lg-9.offset-lg-0.col-xl-8
+            include modules/personal/history  

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Брусника/ПРОФИЛИ заказов</title>
+    <title>Текущие заказы</title>
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Брусника">
@@ -511,70 +511,54 @@
       <main class="page-content">
         <div class="page-section">
           <div class="page-inner page-inner--w2">
-            <div class="page-heading">
-              <div class="row">
-                <div class="col-12 col-md-8 offset-md-2 col-lg-12 offset-lg-0">
-                  <div class="mb-4 d-lg-none"><a class="link link--gray_border" href="dashboard.html">Личный кабинет</a></div>
-                  <div class="page-heading-title h1">ПРОФИЛИ ЗАКАЗОВ</div>
-                </div>
+            <div class="row">
+              <div class="col-md-4"> 
+                <div class="mb-4 d-lg-none"><a class="link link--gray_border" href="dashboard.html">Личный кабинет</a></div>
+                <div class="page-heading-title">отмена заказа</div>
+              </div>
+              <div class="col-md-8">
+                <div class="page-heading-title border-top-gray only-desktop">&nbsp;</div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-3 d-none d-lg-block"> 
-                                <div class="personal-menu">
-                                  <div class="personal-menu-item"><a class="link link--black" href="orders.html">Текущие заказы (1)</a>
-                                  </div>
-                                  <div class="personal-menu-item"><a class="link link--black active" href="history.html">История заказов</a>
-                                  </div>
-                                  <div class="personal-menu-item"><a class="link link--black" href="basket.html">Корзина (2)</a>
-                                  </div>
-                                  <div class="personal-menu-item"><a class="link link--black" href="favorites.html">Избранное (2)</a>
-                                  </div>
-                                  <div class="personal-menu-item"><a class="link link--black" href="personal.html">Личные данные</a>
-                                  </div>
-                                  <div class="personal-menu-item"><a class="link link--black" href="#">Выйти</a>
-                                  </div>
-                                </div>
+                <div class="personal-menu">
+                  <div class="personal-menu-item"><a class="link link--black active" href="orders.html">Текущие заказы</a>
+                  </div>
+                  <div class="personal-menu-item"><a class="link link--black" href="history.html">История заказов</a>
+                  </div>
+                  <div class="personal-menu-item"><a class="link link--black" href="basket.html">Корзина</a>
+                  </div>
+                  <div class="personal-menu-item"><a class="link link--black" href="favorites.html">Избранное</a>
+                  </div>
+                  <div class="personal-menu-item"><a class="link link--black" href="personal.html">Личные данные</a>
+                  </div>
+                  <div class="personal-menu-item"><a class="link link--black" href="#">Выйти</a>
+                  </div>
+                </div>
               </div>
               <div class="col-lg-1"></div>
-              <div class="col-12 col-md-8 offset-md-2 offset-lg-0 col-lg-5 col-xl-4">
-                <div class="mb-5 d-none d-lg-block"><a class="link link--black_border" href="profiles.html">В профили заказов</a></div>
-                <form class="form" novalidate="novalidate">
-                  <div class="form-row">
-                    <label class="form-item-label" for="f1">Имя</label>
-                    <input class="form-item form-item--text" id="f1" type="text" name="f1" data-validation="{&quot;message&quot;: &quot;Обязательное поле&quot;}" required="" value="Максим">
-                  </div>
-                  <div class="form-row">
-                    <label class="form-item-label" for="f2">Фамилия</label>
-                    <input class="form-item form-item--text" id="f2" type="text" name="f2" data-validation="{&quot;message&quot;: &quot;Обязательное поле&quot;}" required="" value="Петров">
-                  </div>
-                  <div class="form-row">
-                    <label class="form-item-label" for="f3">Тип плательщика</label>
-                    <input class="form-item form-item--text" id="f3" type="text" name="f3" value="Физическое лицо">
-                  </div>
-                  <div class="form-row">
-                    <label class="form-item-label" for="f4">Телефон</label>
-                    <input class="form-item form-item--text" id="f4" type="text" name="f4" data-validation="{&quot;message&quot;: &quot;Укажите корректный номер телефона&quot;, &quot;pattern&quot;: &quot;phoneRU&quot;, &quot;mask&quot;: &quot;+7 (999) 999-99-99&quot;}" required="" value="+7 556 666-66-6">
-                  </div>
-                  <div class="form-row">
-                    <label class="form-item-label" for="f22">Город</label>
-                    <input class="form-item form-item--text" id="f22" type="text" name="f22" value="">
-                  </div>
-                  <div class="form-row">
-                    <label class="form-item-label" for="f23">Адрес</label>
-                    <input class="form-item form-item--text" id="f23" type="text" name="f23" value="">
-                    <label class="form-checkbox mt-3"><span class="jcf-checkbox jcf-unchecked"><span></span>
-                        <input class="form-item--checkbox" type="checkbox" name="save_address" value="1" style="position: absolute; height: 100%; width: 100%; opacity: 0; margin: 0px;"></span>
-                      <div class="form-checkbox-title">Сохранить как адрес доставки по умолчанию</div>
-                    </label>
-                  </div>
-                  <button class="btn btn--black btn--large" type="submit">Сохранить</button>
-                  <div class="form-policy">
-                    <div class="page-text">
-                      <div class="small">Нажимая на кнопку Сохранить <br>вы соглашаетесь на <a href="#">обработку персональных данных</a></div>
+              <div class="col-12 col-md-8 offset-md-2 col-lg-9 offset-lg-0 col-xl-8">
+                <div class="order-items">
+                  <div class="order-item noborder">
+                    <div class="mb-5 d-none d-lg-block"><a class="link link--black_border" href="orders.html">Вернуться в текущие заказы</a></div>
+                    <div class="order-item-title h2">Вы уверены, что хотите отменить Заказ № 21112 от 03.02.2021?</div>
+                    <div class="mb-4"><span class="badge red m-0">Отмена заказа необратима</span></div>
+                    <div class="mb4"> 
+                      <form class="form">
+                        <div class="form-row">
+                          <label class="form-label" for="reason_canceling_order">Укажите, прожалуйста, причину отмены заказа</label>
+                          <textarea class="form-item form-item--textarea mw-600" id="reason_canceling_order" placeholder=""></textarea>
+                        </div>
+                        <div class="form-row">
+                          <div class="row-btns">
+                            <button class="btn btn--black btn--medium" type="submit">Отменить заказ</button><span class="m-4"><a class="link link--black_border" href="orders.html">Вернуться в текущие заказы</a></span>
+                          </div>
+                        </div>
+                      </form>
                     </div>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>

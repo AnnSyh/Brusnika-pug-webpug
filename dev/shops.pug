@@ -1,0 +1,15 @@
+
+extends layout/main
+
+block variables
+  - var title = 'Mагазины'
+  - var mainPage = false
+
+
+block content
+  main.page-content
+    .page-section.page-section--brand
+      .page-inner.page-inner--w1.page-inner--mobile_empty
+        include modules/filters/filter-shops
+      .page-inner.page-inner--w2 
+        include modules/catalog-shops
