@@ -1,21 +1,19 @@
-/* @font-face {
-  font-family: 'SFProDisplay';
-  font-style: normal;
-  font-weight: 200;
-  src: url('../fonts/SFProDisplay-Regular.woff') format('woff');
-} */
 @font-face {
+  src:
+    url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+    url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
   font-family: 'SFProDisplay';
   font-style: normal;
   font-weight: 400;
-  /* src: url('../fonts/SFProDisplay-Bold.woff') format('woff'); */
-  src: url('../fonts/SFProDisplay-Regular.ttf') format('ttf');
 }
+
 @font-face {
-  border: 1px solid red;
+  src:
+    url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+    url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
+    url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
   font-family: 'SFProDisplay';
   font-style: normal;
   font-weight: 600;
-  /* src: url('../fonts/SFProDisplay-Semibold.woff') format('woff'); */
-  src: url('../fonts/SFProDisplay-Semibold.ttf') format('ttf');
 }

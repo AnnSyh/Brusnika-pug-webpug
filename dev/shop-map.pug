@@ -2,7 +2,7 @@
 extends layout/main
 
 block variables
-  - var title = 'Mагазины'
+  - var title = 'Mагазин-карта'
   - var mainPage = false
 
 
@@ -12,5 +12,5 @@ block content
       .page-inner.page-inner--w1.page-inner--mobile_empty
         .page-shop-title.uppercase МАГАЗИНЫ
         include modules/filters/filter-shops
-      .page-inner.page-inner--w2.page-inner--shops
-        include modules/catalog-shops
+      .page-inner.page-inner--w2.page-inner--shop-map
+        include modules/shop-map

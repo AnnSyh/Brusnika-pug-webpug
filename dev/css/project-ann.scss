@@ -32,7 +32,9 @@
 @import url(../css/blocks/shop.css); /* Личный кабинет */
 
 
-
+.overflow-x {
+  overflow-x: hidden;
+}
 
 .jcf-number {
   border-radius: 0px;
