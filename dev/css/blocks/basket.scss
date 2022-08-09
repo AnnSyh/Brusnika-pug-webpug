@@ -1,5 +1,6 @@
+@import '../variables.scss';
+
 .basket {
-    border: 1px solid red;
 
     &__header {
         margin-top: 100px;
@@ -94,8 +95,7 @@
     }
 
     .filter-row {
-        // border: 1px solid #1D1D1D;
-        border: 1px solid #e1e1e1;
+        border: 1px solid $color-gray-two;
         margin-bottom: 10px;
     }
 
@@ -109,7 +109,7 @@
 }
 
 .basket-form .filter-row.black-border {
-    border: 1px solid #1d1d1d;
+    border: 1px solid $color-black;
 }
 
 .filter-row {

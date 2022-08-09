@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .basket-mobile-menu__body {
   position: relative;
   flex-direction: column;
@@ -142,7 +144,8 @@
   .simplebar-scrollbar:before {
     position: absolute;
     content: '';
-    background: red;
+    // background: red;
+    background: $color-black;
     border-radius: 7px;
     left: 2px;
     right: 2px;

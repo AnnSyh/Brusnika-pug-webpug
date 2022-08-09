@@ -1,12 +1,21 @@
-ymaps.ready(init);
+// import { Points } from "./utils";
+// include utils/mixins 
+// include utils/mixins 
+
+var map;
+
+ymaps.ready(init)
 
 function init() {
     var myMap = new ymaps.Map('map', {
         center: [55.757131068980215, 37.61711450000001],
         zoom: 11,
-    }, {
-        searchControlProvider: 'yandex#search'
     });
+
+    // Создание стиля для значка метки
+    // var baseStyle = new ymaps.Style();
+    // baseStyle.iconStyle = new ymaps.IconStyle();
+    // baseStyle.iconStyle.href = "../dummy/shops/placemark.png";
 
     //-  данные для каталога магазинов стр shops.html
     const shops = [
@@ -80,9 +89,13 @@ function init() {
     const placemarks = [];
     const lengthShops = Object.keys(shops).length;
     console.log('lengthShops = ', lengthShops);
+
     for (let i = 0; i < lengthShops; i++) {
         console.log('shops [' + i + '] = ', shops[i].coords);
 
+
+
+        // placemarks[i] = new ymaps.Placemark(shops[i].coords, { style: baseStyle }, {
         placemarks[i] = new ymaps.Placemark(shops[i].coords, {
             balloonContentHeader: `<img src="../dummy/shops/${shops[i].img}" width="100%">`,
             balloonContentBody: ` <div class="item-shop-title">${shops[i].name}</div>` +
@@ -91,8 +104,17 @@ function init() {
             balloonContentFooter: ` <div class="item-shop-phone"> <a href="tel:${shops[i].phone}">${shops[i].phone}</a></div>`,
             hintContent: `${shops[i].name}`
         });
+
+        // placemarks[i].events.add('click', function (e) {
+        //     console.log('Клик по метке карты!!!');
+        // });
+
         // Добавим метку на карту.
         myMap.geoObjects.add(placemarks[i]);
+
+
+        // // открыть балун
+        // myMap.balloon.open([55.757131068980215, 37.61711450000001],'Содержимое балуна');
     };
 
 

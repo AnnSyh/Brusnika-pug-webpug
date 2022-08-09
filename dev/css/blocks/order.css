@@ -14,7 +14,7 @@
 }
 
 .order-item-title {
-  color: #1d1d1d;
+  color: #1D1D1D;
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
@@ -32,7 +32,7 @@
 }
 
 .page-heading-title {
-  color: #1d1d1d;
+  color: #1D1D1D;
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;
@@ -110,7 +110,7 @@
 }
 
 .order-table__link a {
-  color: #1d1d1d;
+  color: #1D1D1D;
   text-decoration: underline;
   font-weight: 200;
   display: block;
@@ -305,6 +305,7 @@
 @media screen and (min-width: 960px) {
   .order-table__row {
     border-top: 1px solid #E1E1E1;
+    padding: 15px 0;
   }
   .order-table__row.last {
     border-bottom: 1px solid #E1E1E1;

@@ -26,7 +26,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/project.responsive-ann.css?v=724611">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/plugins/simplebar.css">
   </head>
-  <body>
+  <body class="overflow-x">
     <div class="page">
       <html>
         <head></head>
@@ -48,7 +48,7 @@
               <ul class="header-menu__list">
                 <li class="header-menu__item"><a class="header-menu__item-catalog catalog-open" href="#"><span>Каталог</span></a></li>
                 <li class="header-menu__item header-menu__item-dropdown catalog-dropdown"><a href="#">Покупателям</a></li>
-                <li class="header-menu__item"><a href="#">Магазины</a></li>
+                <li class="header-menu__item"><a href="shops.html">Магазины</a></li>
                 <li class="header-menu__item"><a href="#">Блог</a></li>
               </ul>
             </div>
@@ -83,7 +83,7 @@
               <ul class="buyer-menu__list">
                 <li><a class="buyer-menu__link active" href="#cm1">О компании</a></li>
                 <li><a class="buyer-menu__link active" href="#cm2">Контакты</a></li>
-                <li><a class="buyer-menu__link active" href="#">Магазины</a></li>
+                <li><a class="buyer-menu__link active" href="shops.html">Магазины</a></li>
                 <li><a class="buyer-menu__link active" href="#">Мои заказы</a></li>
               </ul>
             </div>
@@ -219,7 +219,7 @@
                   <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Мои заказы</a></li>
                   <li><a class="catalog-menu__link catalog-menu__link_lowercase mb-20px" href="#cm19">Личный кабинет</a></li>
                   <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">О компании</a></li>
-                  <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Магазины</a></li>
+                  <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="shops.html">Магазины</a></li>
                   <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Подарочные сертификаты</a></li>
                   <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Доставка и оплата</a></li>
                   <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Гарантия и возврат</a></li>
@@ -511,13 +511,15 @@
       <main class="page-content">
         <div class="page-section">
           <div class="page-inner page-inner--w2">
-            <div class="row">
-              <div class="col-md-4"> 
-                <div class="mb-4 d-lg-none"><a class="link link--gray_border" href="dashboard.html">Личный кабинет</a></div>
-                <div class="page-heading-title">отмена заказа</div>
-              </div>
-              <div class="col-md-8">
-                <div class="page-heading-title border-top-gray only-desktop">&nbsp;</div>
+            <div class="page-heading">
+              <div class="row">
+                <div class="col-md-4"> 
+                  <div class="mb-4 d-lg-none"><a class="link link--gray_border" href="dashboard.html">Личный кабинет</a></div>
+                  <div class="page-heading-title page-heading-title_personal uppercase">отмена заказа</div>
+                </div>
+                <div class="col-md-8">
+                  <div class="page-heading-title border-top-gray only-desktop">&nbsp;</div>
+                </div>
               </div>
             </div>
             <div class="row">
@@ -593,7 +595,7 @@
                   <div class="accordion-item-heading">Компания</div>
                   <div class="accordion-item-content">
                     <ul class="footer-content__list">
-                      <li><a href="#">Магазины</a></li>
+                      <li><a href="shops.html">Магазины</a></li>
                       <li><a href="#">О нас</a></li>
                       <li><a href="#">Контакты</a></li>
                       <li><a href="#">Работа у нас</a></li>
@@ -609,7 +611,7 @@
                   <li><a href="#">Система лояльности</a></li>
                 </ul>
                 <ul class="footer-content__list">
-                  <li><a href="#">Магазины</a></li>
+                  <li><a href="shops.html">Магазины</a></li>
                   <li><a href="#">О нас</a></li>
                   <li><a href="#">Контакты</a></li>
                   <li><a href="#">Работа у нас</a></li>
@@ -1314,7 +1316,6 @@
         <div class="page-popup-title uppercase">ОФОРМИТЬ ЗАКАЗ</div>
       </div>
     </div>
-    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=6f387da6-ba3c-46bf-96a7-261df17d04f7&amp;lang=ru_RU"></script>
     <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../../js/plugins/jcf.js"></script>
     <script type="text/javascript" src="../../js/plugins/jcf.checkbox.js"></script>
@@ -1337,5 +1338,6 @@
     <script type="text/javascript" src="../../js/project.js?v=31-01-22"></script>
     <script type="module" src="../../js/plugins/swipe.js"></script>
     <script type="text/javascript" src="../../js/scrollPage.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?load=package.standard&amp;lang=ru-RU&amp;apikey=3493f917-bc4d-4df0-aaaf-2d994fa3f731" type="text/javascript"></script>
   </body>
 </html>

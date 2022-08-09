@@ -137,8 +137,8 @@
 
 /* ------filter ----jcf---------------- */
 .jcf-checkbox.jcf-checked {
-  background-color: #1d1d1d;
-  border-color: #1d1d1d;
+  background-color: #1D1D1D;
+  border-color: #1D1D1D;
 }
 .jcf-checkbox.jcf-checked input {
   z-index: -1;

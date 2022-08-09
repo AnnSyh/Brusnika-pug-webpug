@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .order {
     font-weight: 400;
     font-size: 12px;
@@ -14,7 +16,7 @@
 }
 
 .order-item-title {
-    color: #1d1d1d;
+    color: $color-black;
     text-decoration: none;
     font-weight: 600;
     font-size: 18px;
@@ -31,7 +33,7 @@
 }
 
 .page-heading-title {
-    color: #1d1d1d;
+    color: $color-black;
     text-decoration: none;
     font-weight: 600;
     font-size: 20px;
@@ -116,7 +118,7 @@
 }
 
 .order-table__link a {
-    color: #1d1d1d;
+    color: $color-black;
     text-decoration: underline;
     font-weight: 200;
     display: block;
@@ -316,7 +318,7 @@
 
 
 .border-top-gray {
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 1px solid $color-gray-two;
 }
 
 
@@ -325,21 +327,23 @@
 
     .order-table:not(.basket)>.row::before {
         content: "";
-        background-color: #E1E1E1 !important;
+        background-color: $color-gray-two !important;
     }
 
     .mobile-table-summary {
         padding-top: 30px;
-        border-top: 1px solid #E1E1E1 !important;
+        border-top: 1px solid $color-gray-two !important;
     }
 }
 
+// basket.html
 @media screen and (min-width: 960px) {
     .order-table__row {
-        border-top: 1px solid #E1E1E1;
+        border-top: 1px solid $color-gray-two;
+        padding: 15px 0;
     }
 
     .order-table__row.last {
-        border-bottom: 1px solid #E1E1E1;
+        border-bottom: 1px solid $color-gray-two;
     }
 }

@@ -1,6 +1,3 @@
-.basket {
-  border: 1px solid red;
-}
 .basket__header {
   margin-top: 100px;
   margin-bottom: 50px;
@@ -79,7 +76,7 @@
   width: 100%;
 }
 .basket-form .filter-row {
-  border: 1px solid #e1e1e1;
+  border: 1px solid #E1E1E1;
   margin-bottom: 10px;
 }
 .basket-form .form-row-payment {
@@ -90,7 +87,7 @@
 }
 
 .basket-form .filter-row.black-border {
-  border: 1px solid #1d1d1d;
+  border: 1px solid #1D1D1D;
 }
 
 .filter-row__form-radio {

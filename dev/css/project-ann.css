@@ -386,7 +386,7 @@ body,
 }
 
 /* .page-heading-title {
-  color: #1d1d1d;
+  color: $color-black;
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;

@@ -131,7 +131,7 @@
 .basket-mobile-menu__body .simplebar-scrollbar:before {
   position: absolute;
   content: "";
-  background: red;
+  background: #1D1D1D;
   border-radius: 7px;
   left: 2px;
   right: 2px;
