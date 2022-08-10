@@ -73,13 +73,6 @@
     .order-table__row {
         margin-bottom: 0;
     }
-
-    // @media screen and (min-width:480px) {
-    //     .order-table__counter {
-    //         display: none;
-    //     }
-    // }
-
 }
 
 
@@ -183,7 +176,6 @@
     width: 100px;
 
     @media screen and (max-width: 670px) {
-        border: 1px solid red;
         width: auto;
         position: relative;
     }

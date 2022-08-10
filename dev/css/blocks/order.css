@@ -168,7 +168,6 @@
 }
 @media screen and (max-width: 670px) {
   .order-table__item > .order-table__item-delete {
-    border: 1px solid red;
     width: auto;
     position: relative;
   }

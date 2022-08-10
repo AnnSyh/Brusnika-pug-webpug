@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Брусника/search-empty</title>
+    <title>поиск ничего не найдено</title>
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Брусника">
@@ -24,8 +24,10 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/project-ann.css?v=797191">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/project.responsive.css?v=724611">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/project.responsive-ann.css?v=724611">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/plugins/simplebar.css">
+    <script src="https://api-maps.yandex.ru/2.1/?load=package.standard&amp;lang=ru-RU&amp;apikey=3493f917-bc4d-4df0-aaaf-2d994fa3f731" type="text/javascript"></script>
   </head>
-  <body>
+  <body class="overflow-x">
     <div class="page">
       <html>
         <head></head>
@@ -47,7 +49,7 @@
               <ul class="header-menu__list">
                 <li class="header-menu__item"><a class="header-menu__item-catalog catalog-open" href="#"><span>Каталог</span></a></li>
                 <li class="header-menu__item header-menu__item-dropdown catalog-dropdown"><a href="#">Покупателям</a></li>
-                <li class="header-menu__item"><a href="#">Магазины</a></li>
+                <li class="header-menu__item"><a href="shops.html">Магазины</a></li>
                 <li class="header-menu__item"><a href="#">Блог</a></li>
               </ul>
             </div>
@@ -82,7 +84,7 @@
               <ul class="buyer-menu__list">
                 <li><a class="buyer-menu__link active" href="#cm1">О компании</a></li>
                 <li><a class="buyer-menu__link active" href="#cm2">Контакты</a></li>
-                <li><a class="buyer-menu__link active" href="#">Магазины</a></li>
+                <li><a class="buyer-menu__link active" href="shops.html">Магазины</a></li>
                 <li><a class="buyer-menu__link active" href="#">Мои заказы</a></li>
               </ul>
             </div>
@@ -159,73 +161,75 @@
           </div>
         </div>
         <div class="catalog-menu catalog-menu_visible1" id="catalog-menu">
-          <div class="page-inner page-inner--w2">
-            <div class="catalog-menu-sections">
-              <div class="catalog-open catalog-menu__close"></div>
-              <ul class="catalog-menu__list accordion accordion_catalog-menu">
-                <li><a class="catalog-menu__link submenu bold active" href="#cm1">NEW</a></li>
-                <li><a class="catalog-menu__link bold" href="#cm2">LOOKBOOK</a></li>
-                <li class="accordion-item opened">
-                  <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm3">SS`22</a></div>
-                          <ul class="accordion-item-content show" style="display: block;">
-                            <li><a class="catalog-menu__sublink" href="#cm1">1Summer City Wibe</a></li>
-                            <li><a class="catalog-menu__sublink" href="#cm2">East way</a></li>
-                            <li><a class="catalog-menu__sublink" href="#cm3">With Nature</a></li>
-                            <li><a class="catalog-menu__sublink" href="#cm4">Prod Dress</a></li>
-                          </ul>
-                </li>
-                <li><a class="catalog-menu__link" href="#cm4">OFFICE</a></li>
-                <li><a class="catalog-menu__link" href="#cm5">ЛЕН</a></li>
-                <li><a class="catalog-menu__link" href="#cm7">EVENING</a></li>
-                <li><a class="catalog-menu__link" href="#cm8">Верхняя одежда</a></li>
-                <li><a class="catalog-menu__link" href="#cm6">СПОРТ</a></li>
-                <li class="accordion-item">
-                  <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm9">ПЛАТЬЯ | КОМБИНЕЗОНЫ</a></div>
-                          <ul class="accordion-item-content">
-                            <li><a class="catalog-menu__sublink" href="#cm21">Плиссирвоанные</a></li>
-                            <li><a class="catalog-menu__sublink" href="#cm22">Прямые</a></li>
-                            <li><a class="catalog-menu__sublink" href="#cm23">Юбка-брюки</a></li>
-                            <li><a class="catalog-menu__sublink" href="#cm24">Трапецевидные</a></li>
-                          </ul>
-                </li>
-                <li><a class="catalog-menu__link" href="#cm10">джемперы</a></li>
-                <li><a class="catalog-menu__link" href="#cm11">КАРДИГАНЫ</a></li>
-                <li><a class="catalog-menu__link" href="#cm12">ЖАКЕТЫ</a></li>
-                <li><a class="catalog-menu__link" href="#cm13">ЖИЛЕТЫ</a></li>
-                <li><a class="catalog-menu__link" href="#cm14">РУБАШКИ</a></li>
-                <li><a class="catalog-menu__link" href="#cm15">ВОДОЛАЗКИ</a></li>
-                <li><a class="catalog-menu__link" href="#cm16">БРЮКИ</a></li>
-                <li class="accordion-item">
-                  <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm17">ЮБКИ</a></div>
-                          <ul class="accordion-item-content">
-                            <li><a class="catalog-menu__sublink" href="#cm31">Плиссирвоанные</a></li>
-                            <li><a class="catalog-menu__sublink" href="#cm32">Прямые</a></li>
-                            <li><a class="catalog-menu__sublink" href="#cm33">Юбка-брюки</a></li>
-                            <li><a class="catalog-menu__sublink" href="#cm34">Трапецевидные</a></li>
-                          </ul>
-                </li>
-                <li><a class="catalog-menu__link" href="#cm18">ШОРТЫ</a></li>
-                <li><a class="catalog-menu__link" href="#cm19">ФУТБОЛКИ</a></li>
-                <li><a class="catalog-menu__link" href="#cm19">ТОПЫ</a></li>
-                <li><a class="catalog-menu__link" href="#cm19">БОДИ</a></li>
-                <li><a class="catalog-menu__link" href="#cm19">КОМПЛЕКТЫ</a></li>
-                <li><a class="catalog-menu__link" href="#cm19">АКСЕССУАРЫ</a></li>
-                <li><a class="catalog-menu__link" href="#cm19">ДЕТИ</a></li>
-                <li><a class="catalog-menu__link" href="#cm19">THE MOUNTAINS</a></li>
-                <li><a class="catalog-menu__link" href="#cm19">КАШЕМИР</a></li>
-                <li><a class="catalog-menu__link catalog-menu__separator catalog-menu__link-red" href="#cm19">SALE</a></li>
-                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Мои заказы</a></li>
-                <li><a class="catalog-menu__link catalog-menu__link_lowercase mb-20px" href="#cm19">Личный кабинет</a></li>
-                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">О компании</a></li>
-                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Магазины</a></li>
-                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Подарочные сертификаты</a></li>
-                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Доставка и оплата</a></li>
-                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Гарантия и возврат</a></li>
-                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Система лояльности</a></li>
-                <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Блог</a></li>
-                <li class="catalog-menu-footer"><a href="favorites.html">Избранное (2)</a><a href="#">Вход</a></li>
-                <li> </li>
-              </ul>
+          <div class="basket-inner page-inner--w2">
+            <div class="catalog-open catalog-menu__close"></div>
+            <div class="basket-menu-sections simplebar__wrapper">
+              <div class="basket-mobile-menu__body simplebar">
+                <ul class="catalog-menu__list accordion accordion_catalog-menu simplebar__width">
+                  <li><a class="catalog-menu__link submenu bold active" href="#cm1">NEW</a></li>
+                  <li><a class="catalog-menu__link bold" href="#cm2">LOOKBOOK</a></li>
+                  <li class="accordion-item opened">
+                    <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm3">SS`22</a></div>
+                            <ul class="accordion-item-content show" style="display: block;">
+                              <li><a class="catalog-menu__sublink" href="#cm1">1Summer City Wibe</a></li>
+                              <li><a class="catalog-menu__sublink" href="#cm2">East way</a></li>
+                              <li><a class="catalog-menu__sublink" href="#cm3">With Nature</a></li>
+                              <li><a class="catalog-menu__sublink" href="#cm4">Prod Dress</a></li>
+                            </ul>
+                  </li>
+                  <li><a class="catalog-menu__link" href="#cm4">OFFICE</a></li>
+                  <li><a class="catalog-menu__link" href="#cm5">ЛЕН</a></li>
+                  <li><a class="catalog-menu__link" href="#cm7">EVENING</a></li>
+                  <li><a class="catalog-menu__link" href="#cm8">Верхняя одежда</a></li>
+                  <li><a class="catalog-menu__link" href="#cm6">СПОРТ</a></li>
+                  <li class="accordion-item">
+                    <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm9">ПЛАТЬЯ | КОМБИНЕЗОНЫ</a></div>
+                            <ul class="accordion-item-content">
+                              <li><a class="catalog-menu__sublink" href="#cm21">Плиссирвоанные</a></li>
+                              <li><a class="catalog-menu__sublink" href="#cm22">Прямые</a></li>
+                              <li><a class="catalog-menu__sublink" href="#cm23">Юбка-брюки</a></li>
+                              <li><a class="catalog-menu__sublink" href="#cm24">Трапецевидные</a></li>
+                            </ul>
+                  </li>
+                  <li><a class="catalog-menu__link" href="#cm10">джемперы</a></li>
+                  <li><a class="catalog-menu__link" href="#cm11">КАРДИГАНЫ</a></li>
+                  <li><a class="catalog-menu__link" href="#cm12">ЖАКЕТЫ</a></li>
+                  <li><a class="catalog-menu__link" href="#cm13">ЖИЛЕТЫ</a></li>
+                  <li><a class="catalog-menu__link" href="#cm14">РУБАШКИ</a></li>
+                  <li><a class="catalog-menu__link" href="#cm15">ВОДОЛАЗКИ</a></li>
+                  <li><a class="catalog-menu__link" href="#cm16">БРЮКИ</a></li>
+                  <li class="accordion-item">
+                    <div class="accordion-item-heading"><a class="catalog-menu__link" href="#cm17">ЮБКИ</a></div>
+                            <ul class="accordion-item-content">
+                              <li><a class="catalog-menu__sublink" href="#cm31">Плиссирвоанные</a></li>
+                              <li><a class="catalog-menu__sublink" href="#cm32">Прямые</a></li>
+                              <li><a class="catalog-menu__sublink" href="#cm33">Юбка-брюки</a></li>
+                              <li><a class="catalog-menu__sublink" href="#cm34">Трапецевидные</a></li>
+                            </ul>
+                  </li>
+                  <li><a class="catalog-menu__link" href="#cm18">ШОРТЫ</a></li>
+                  <li><a class="catalog-menu__link" href="#cm19">ФУТБОЛКИ</a></li>
+                  <li><a class="catalog-menu__link" href="#cm19">ТОПЫ</a></li>
+                  <li><a class="catalog-menu__link" href="#cm19">БОДИ</a></li>
+                  <li><a class="catalog-menu__link" href="#cm19">КОМПЛЕКТЫ</a></li>
+                  <li><a class="catalog-menu__link" href="#cm19">АКСЕССУАРЫ</a></li>
+                  <li><a class="catalog-menu__link" href="#cm19">ДЕТИ</a></li>
+                  <li><a class="catalog-menu__link" href="#cm19">THE MOUNTAINS</a></li>
+                  <li><a class="catalog-menu__link" href="#cm19">КАШЕМИР</a></li>
+                  <li><a class="catalog-menu__link catalog-menu__separator catalog-menu__link-red" href="#cm19">SALE</a></li>
+                  <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Мои заказы</a></li>
+                  <li><a class="catalog-menu__link catalog-menu__link_lowercase mb-20px" href="#cm19">Личный кабинет</a></li>
+                  <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">О компании</a></li>
+                  <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="shops.html">Магазины</a></li>
+                  <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Подарочные сертификаты</a></li>
+                  <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Доставка и оплата</a></li>
+                  <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Гарантия и возврат</a></li>
+                  <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Система лояльности</a></li>
+                  <li><a class="catalog-menu__link catalog-menu__link_lowercase" href="#cm19">Блог</a></li>
+                  <li class="catalog-menu-footer"><a href="favorites.html">Избранное (2)</a><a href="#">Вход</a></li>
+                  <li> </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -234,8 +238,8 @@
             <div class="basket-open basket-menu__close"></div>
             <div class="basket-menu-sections">
               <div class="basket-mobile-menu__header"><a class="basket__title-link" href="basket.html">Товары в корзине(1)</a><a class="basket__title-link-clean-basket" href="#">Очистить корзину</a></div>
-              <div class="basket-mobile-menu__body">
-                <div class="order-table">
+              <div class="basket-mobile-menu__body simplebar">
+                <div class="order-table order-table__mr">
                   <div class="order-table__row">
                     <div class="order-table__item">
                       <div class="order-table__img">
@@ -244,7 +248,7 @@
                       <div class="order-table__info">
                         <div class="order-table__name">БРЮКИ</div>
                         <div class="order-table__price">15 900 Р</div>
-                        <div class="order-table__size">Размер: 41 RU</div>
+                        <div class="order-table__size">1Размер: 41 RU</div>
                         <div class="order-table__color">Цвет: коричневый</div>
                         <div class="order-table__counter">
                           <input class="form-item form-item--number" type="number" min="1" max="100" step="1" value="1">
@@ -254,8 +258,8 @@
                     <div class="col-md-2"><a class="order-table-delete" href="#"> </a></div>
                   </div>
                 </div>
-                <div class="order-table__title">С этим товаром смотрят</div>
-                <div class="order-table__block">
+                <div class="order-table__title order-table__mr">С этим товаром смотрят</div>
+                <div class="order-table__block order-table__mr">
                   <div class="order-table basket">
                     <div class="order-table__row">
                       <div class="order-table__item">
@@ -274,7 +278,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="order-table__block">
+                <div class="order-table__block order-table__mr">
                   <div class="order-table basket">
                     <div class="order-table__row">
                       <div class="order-table__item">
@@ -305,17 +309,19 @@
           </div>
         </div>
         <div class="size-menu size-menu_visible1" id="catalog-size">
-          <div class="size-inner page-inner--w2">
+          <div class="basket-inner page-inner--w2">
             <div class="size-open size-menu__close1 size-menu__close"></div>
-            <div class="size-menu-sections">
-              <div class="size-menu__title">Таблица размеров</div>
-              <div class="size-menu__body">
-                <div class="size-menu__text">
+            <div class="basket-menu-sections simplebar__wrapper">
+              <div class="basket-mobile-menu__header">
+                <div class="size-menu__title">Таблица размеров</div>
+              </div>
+              <div class="basket-mobile-menu__body simplebar">
+                <div class="size-menu__text simplebar__width">
                   Этот справочник по размерам носит ориентировочный характер.
                   Если у вас уже есть похожая модель нашего бренда, размер
                   которой вам подходит, рекомендуем выбрать тот же размер.
                 </div>
-                <div class="size-table" id="#tabNav">
+                <div class="size-table simplebar__width" id="#tabNav">
                   <div class="size-items tabs-heading">
                     <label class="active" data-tab="#size-tabs_one" data-tabs=".size-tab">
                       <div class="size-item-content">
@@ -496,8 +502,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="size-menu__title size-menu__title_left">Как снять мерки для себя</div>
-                <div class="size-img"><img src="../dummy/SizeGuide.jpg" alt="Как снять мерки для себя"></div>
+                <div class="size-menu__title size-menu__title_left simplebar__width">Как снять мерки для себя</div>
+                <div class="size-img simplebar__width"><img src="../dummy/SizeGuide.jpg" alt="Как снять мерки для себя"></div>
               </div>
             </div>
           </div>
@@ -509,12 +515,12 @@
             <div class="page-heading-description">
               <form class="search-form__form" action="search-page.html">
                 <div class="search-form">
-                  <input class="search-form__input" type="text" placeholder="">
-                  <button class="search-form__clear" type="button"></button>
+                  <input class="search-form__input form-item form-item--text" type="text" placeholder="">
+                  <button class="search-form__clear btn btn--medium" type="button"></button>
                   <button class="search-form__submit btn btn--black btn--medium" type="submit">Найти</button>
                 </div>
                 <div class="search-form__products-found">
-                  <div class="categories-most-viewed__text">По запросу «жабо» ничего не найдено.<br>                Попробуйте сократить запрос или сформулировать его иначе.</div>
+                  <div class="categories-most-viewed__text">По запросу «жабо» ничего не найдено.<br>Попробуйте сократить запрос или сформулировать его иначе.</div>
                   <div class="categories-most-viewed__title">Часто просматриваемые категории</div>
                   <ul class="categories-most-viewed__list">
                     <li><a href="#">ПЛАТЬЯ</a></li>
@@ -560,13 +566,13 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">Жакет 4321
+                    <div class="catalog-item-title">1Жакет 4321
                       <div class="catalog-item-color">+3 цвета</div>
                     </div>
                     <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
                       <div class="catalog-item-color">+4 цвета</div>
                     </div>
-                    <div class="catalog-item-price"><b>1999 РУБ</b></div><a class="catalog-item-link" href="card.html"></a>
+                    <div class="catalog-item-price"><b>3000 РУБ</b></div><a class="catalog-item-link" href="card.html"></a>
                     <button class="catalog-item-like" type="button">  </button>
                   </div>
                 </div>
@@ -596,7 +602,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">Жакет 2
+                    <div class="catalog-item-title">1Жакет 2
                       <div class="catalog-item-color">+3 цвета</div>
                     </div>
                     <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
@@ -632,7 +638,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">Жакет 3
+                    <div class="catalog-item-title">1Жакет 3
                       <div class="catalog-item-color">+3 цвета</div>
                     </div>
                     <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
@@ -668,7 +674,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">Жакет 4
+                    <div class="catalog-item-title">1Жакет 4
                       <div class="catalog-item-color">+3 цвета</div>
                     </div>
                     <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
@@ -716,7 +722,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">Жакет 1
+                    <div class="catalog-item-title">2Жакет 3331
                       <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
@@ -751,7 +757,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">Жакет 2
+                    <div class="catalog-item-title">2Жакет 2
                       <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
@@ -786,7 +792,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">Жакет 3
+                    <div class="catalog-item-title">2Жакет 3
                       <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
@@ -821,7 +827,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">Жакет 4
+                    <div class="catalog-item-title">2Жакет 4
                       <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
@@ -856,7 +862,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">Жакет 1
+                    <div class="catalog-item-title">2Жакет 1
                       <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
@@ -891,7 +897,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">Жакет 2
+                    <div class="catalog-item-title">2Жакет 2
                       <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
@@ -926,7 +932,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">Жакет 3
+                    <div class="catalog-item-title">2Жакет 3
                       <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
@@ -961,7 +967,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">Жакет 44
+                    <div class="catalog-item-title">2Жакет 44
                       <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
@@ -979,87 +985,89 @@
           <div class="page-inner--w1 page-inner hidden-x">
             <div class="page-inner page-inner--w2">
               <div class="catalog">
-                <div class="row justify-content-between align-items-center">
-                  <div class="col-auto">
-                    <div class="title-block">Ранее вы смотрели</div>
-                  </div>
-                  <div class="slider-arrows-wrap col-auto d-none d-lg-block">
-                    <div class="slider-arrows"><span class="slider-arrow prev">
-                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M4.66797 12C4.39183 12 4.16797 12.2239 4.16797 12.5C4.16797 12.7761 4.39183 13 4.66797 13L4.66797 12ZM21.3346 13C21.6108 13 21.8346 12.7761 21.8346 12.5C21.8346 12.2239 21.6108 12 21.3346 12L21.3346 13ZM4.66797 13L21.3346 13L21.3346 12L4.66797 12L4.66797 13Z" fill="#1D1D1D"></path>
-                          <path d="M5.02152 12.1477C4.82626 11.9525 4.50968 11.9525 4.31442 12.1477C4.11915 12.343 4.11915 12.6596 4.31442 12.8549L5.02152 12.1477ZM11.6061 20.1465C11.8013 20.3418 12.1179 20.3418 12.3132 20.1465C12.5085 19.9513 12.5085 19.6347 12.3132 19.4394L11.6061 20.1465ZM4.31442 12.8549L11.6061 20.1465L12.3132 19.4394L5.02152 12.1477L4.31442 12.8549Z" fill="#1D1D1D"></path>
-                          <path d="M5.02152 12.8562C4.82626 13.0514 4.50968 13.0514 4.31442 12.8562C4.11915 12.6609 4.11915 12.3443 4.31442 12.1491L5.02152 12.8562ZM11.6061 4.85738C11.8013 4.66212 12.1179 4.66212 12.3132 4.85738C12.5085 5.05265 12.5085 5.36923 12.3132 5.56449L11.6061 4.85738ZM4.31442 12.1491L11.6061 4.85738L12.3132 5.56449L5.02152 12.8562L4.31442 12.1491Z" fill="#1D1D1D"></path>
-                        </svg></span><span class="slider-arrow next">
-                        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M21.332 13C21.6082 13 21.832 12.7761 21.832 12.5C21.832 12.2239 21.6082 12 21.332 12L21.332 13ZM4.66537 12C4.38923 12 4.16537 12.2239 4.16537 12.5C4.16537 12.7761 4.38922 13 4.66537 13L4.66537 12ZM21.332 12L4.66537 12L4.66537 13L21.332 13L21.332 12Z" fill="#1D1D1D"></path>
-                          <path d="M20.9785 12.8523C21.1737 13.0475 21.4903 13.0475 21.6856 12.8523C21.8808 12.657 21.8808 12.3404 21.6856 12.1451L20.9785 12.8523ZM14.3939 4.85348C14.1987 4.65822 13.8821 4.65822 13.6868 4.85348C13.4915 5.04874 13.4915 5.36532 13.6868 5.56058L14.3939 4.85348ZM21.6856 12.1451L14.3939 4.85348L13.6868 5.56058L20.9785 12.8523L21.6856 12.1451Z" fill="#1D1D1D"></path>
-                          <path d="M20.9785 12.1438C21.1737 11.9486 21.4903 11.9486 21.6856 12.1438C21.8808 12.3391 21.8808 12.6557 21.6856 12.8509L20.9785 12.1438ZM14.3939 20.1426C14.1987 20.3379 13.8821 20.3379 13.6868 20.1426C13.4915 19.9474 13.4915 19.6308 13.6868 19.4355L14.3939 20.1426ZM21.6856 12.8509L14.3939 20.1426L13.6868 19.4355L20.9785 12.1438L21.6856 12.8509Z" fill="#1D1D1D"></path>
-                        </svg></span></div>
-                  </div>
-                </div>
-                <div class="catalog-items row catalog-items--slider" data-params="{&quot;slidesToShow&quot;: 6, &quot;slidesToScroll&quot;: 5}">
-                  <div class="col-md-2">
-                    <div class="catalog-item w1">
-                      <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c21.jpg"></div>
-                      <div class="catalog-item-title">Жакет 1</div>
-                      <div class="catalog-item-price">1999</div><a class="catalog-item-link" href="card.html"></a>
-                      <button class="catalog-item-like" type="button"> </button>
+                <div class="catalog">
+                  <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                      <div class="title-block">Ранее вы смотрели</div>
+                    </div>
+                    <div class="slider-arrows-wrap col-auto d-none d-lg-block">
+                      <div class="slider-arrows"><span class="slider-arrow prev">
+                          <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66797 12C4.39183 12 4.16797 12.2239 4.16797 12.5C4.16797 12.7761 4.39183 13 4.66797 13L4.66797 12ZM21.3346 13C21.6108 13 21.8346 12.7761 21.8346 12.5C21.8346 12.2239 21.6108 12 21.3346 12L21.3346 13ZM4.66797 13L21.3346 13L21.3346 12L4.66797 12L4.66797 13Z" fill="#1D1D1D"></path>
+                            <path d="M5.02152 12.1477C4.82626 11.9525 4.50968 11.9525 4.31442 12.1477C4.11915 12.343 4.11915 12.6596 4.31442 12.8549L5.02152 12.1477ZM11.6061 20.1465C11.8013 20.3418 12.1179 20.3418 12.3132 20.1465C12.5085 19.9513 12.5085 19.6347 12.3132 19.4394L11.6061 20.1465ZM4.31442 12.8549L11.6061 20.1465L12.3132 19.4394L5.02152 12.1477L4.31442 12.8549Z" fill="#1D1D1D"></path>
+                            <path d="M5.02152 12.8562C4.82626 13.0514 4.50968 13.0514 4.31442 12.8562C4.11915 12.6609 4.11915 12.3443 4.31442 12.1491L5.02152 12.8562ZM11.6061 4.85738C11.8013 4.66212 12.1179 4.66212 12.3132 4.85738C12.5085 5.05265 12.5085 5.36923 12.3132 5.56449L11.6061 4.85738ZM4.31442 12.1491L11.6061 4.85738L12.3132 5.56449L5.02152 12.8562L4.31442 12.1491Z" fill="#1D1D1D"></path>
+                          </svg></span><span class="slider-arrow next">
+                          <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.332 13C21.6082 13 21.832 12.7761 21.832 12.5C21.832 12.2239 21.6082 12 21.332 12L21.332 13ZM4.66537 12C4.38923 12 4.16537 12.2239 4.16537 12.5C4.16537 12.7761 4.38922 13 4.66537 13L4.66537 12ZM21.332 12L4.66537 12L4.66537 13L21.332 13L21.332 12Z" fill="#1D1D1D"></path>
+                            <path d="M20.9785 12.8523C21.1737 13.0475 21.4903 13.0475 21.6856 12.8523C21.8808 12.657 21.8808 12.3404 21.6856 12.1451L20.9785 12.8523ZM14.3939 4.85348C14.1987 4.65822 13.8821 4.65822 13.6868 4.85348C13.4915 5.04874 13.4915 5.36532 13.6868 5.56058L14.3939 4.85348ZM21.6856 12.1451L14.3939 4.85348L13.6868 5.56058L20.9785 12.8523L21.6856 12.1451Z" fill="#1D1D1D"></path>
+                            <path d="M20.9785 12.1438C21.1737 11.9486 21.4903 11.9486 21.6856 12.1438C21.8808 12.3391 21.8808 12.6557 21.6856 12.8509L20.9785 12.1438ZM14.3939 20.1426C14.1987 20.3379 13.8821 20.3379 13.6868 20.1426C13.4915 19.9474 13.4915 19.6308 13.6868 19.4355L14.3939 20.1426ZM21.6856 12.8509L14.3939 20.1426L13.6868 19.4355L20.9785 12.1438L21.6856 12.8509Z" fill="#1D1D1D"></path>
+                          </svg></span></div>
                     </div>
                   </div>
-                  <div class="col-md-2">
-                    <div class="catalog-item w1">
-                      <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c22.jpg"></div>
-                      <div class="catalog-item-title">Жакет 2</div>
-                      <div class="catalog-item-price">345</div><a class="catalog-item-link" href="card.html"></a>
-                      <button class="catalog-item-like" type="button"> </button>
+                  <div class="catalog-items row catalog-items--slider" data-params="{&quot;slidesToShow&quot;: 6, &quot;slidesToScroll&quot;: 5}">
+                    <div class="col-md-2">
+                      <div class="catalog-item w1">
+                        <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c21.jpg"></div>
+                        <div class="catalog-item-title">Жакет 1</div>
+                        <div class="catalog-item-price">1999</div><a class="catalog-item-link" href="card.html"></a>
+                        <button class="catalog-item-like" type="button"> </button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-md-2">
-                    <div class="catalog-item w1">
-                      <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c23.jpg"></div>
-                      <div class="catalog-item-title">Жакет 3</div>
-                      <div class="catalog-item-price">2329</div><a class="catalog-item-link" href="card.html"></a>
-                      <button class="catalog-item-like" type="button"> </button>
+                    <div class="col-md-2">
+                      <div class="catalog-item w1">
+                        <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c22.jpg"></div>
+                        <div class="catalog-item-title">Жакет 2</div>
+                        <div class="catalog-item-price">345</div><a class="catalog-item-link" href="card.html"></a>
+                        <button class="catalog-item-like" type="button"> </button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-md-2">
-                    <div class="catalog-item w1">
-                      <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c24.jpg"></div>
-                      <div class="catalog-item-title">Жакет 4</div>
-                      <div class="catalog-item-price">2329</div><a class="catalog-item-link" href="card.html"></a>
-                      <button class="catalog-item-like" type="button"> </button>
+                    <div class="col-md-2">
+                      <div class="catalog-item w1">
+                        <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c23.jpg"></div>
+                        <div class="catalog-item-title">Жакет 3</div>
+                        <div class="catalog-item-price">2329</div><a class="catalog-item-link" href="card.html"></a>
+                        <button class="catalog-item-like" type="button"> </button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-md-2">
-                    <div class="catalog-item w1">
-                      <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c21.jpg"></div>
-                      <div class="catalog-item-title">Жакет 1</div>
-                      <div class="catalog-item-price">1999</div><a class="catalog-item-link" href="card.html"></a>
-                      <button class="catalog-item-like" type="button"> </button>
+                    <div class="col-md-2">
+                      <div class="catalog-item w1">
+                        <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c24.jpg"></div>
+                        <div class="catalog-item-title">Жакет 4</div>
+                        <div class="catalog-item-price">2329</div><a class="catalog-item-link" href="card.html"></a>
+                        <button class="catalog-item-like" type="button"> </button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-md-2">
-                    <div class="catalog-item w1">
-                      <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c22.jpg"></div>
-                      <div class="catalog-item-title">Жакет 2</div>
-                      <div class="catalog-item-price">345</div><a class="catalog-item-link" href="card.html"></a>
-                      <button class="catalog-item-like" type="button"> </button>
+                    <div class="col-md-2">
+                      <div class="catalog-item w1">
+                        <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c21.jpg"></div>
+                        <div class="catalog-item-title">Жакет 1</div>
+                        <div class="catalog-item-price">1999</div><a class="catalog-item-link" href="card.html"></a>
+                        <button class="catalog-item-like" type="button"> </button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-md-2">
-                    <div class="catalog-item w1">
-                      <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c23.jpg"></div>
-                      <div class="catalog-item-title">Жакет 3</div>
-                      <div class="catalog-item-price">2329</div><a class="catalog-item-link" href="card.html"></a>
-                      <button class="catalog-item-like" type="button"> </button>
+                    <div class="col-md-2">
+                      <div class="catalog-item w1">
+                        <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c22.jpg"></div>
+                        <div class="catalog-item-title">Жакет 2</div>
+                        <div class="catalog-item-price">345</div><a class="catalog-item-link" href="card.html"></a>
+                        <button class="catalog-item-like" type="button"> </button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-md-2">
-                    <div class="catalog-item w1">
-                      <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c24.jpg"></div>
-                      <div class="catalog-item-title">Жакет 4</div>
-                      <div class="catalog-item-price">2329</div><a class="catalog-item-link" href="card.html"></a>
-                      <button class="catalog-item-like" type="button"> </button>
+                    <div class="col-md-2">
+                      <div class="catalog-item w1">
+                        <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c23.jpg"></div>
+                        <div class="catalog-item-title">Жакет 3</div>
+                        <div class="catalog-item-price">2329</div><a class="catalog-item-link" href="card.html"></a>
+                        <button class="catalog-item-like" type="button"> </button>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="catalog-item w1">
+                        <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c24.jpg"></div>
+                        <div class="catalog-item-title">Жакет 4</div>
+                        <div class="catalog-item-price">2329</div><a class="catalog-item-link" href="card.html"></a>
+                        <button class="catalog-item-like" type="button"> </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1097,7 +1105,7 @@
                   <div class="accordion-item-heading">Компания</div>
                   <div class="accordion-item-content">
                     <ul class="footer-content__list">
-                      <li><a href="#">Магазины</a></li>
+                      <li><a href="shops.html">Магазины</a></li>
                       <li><a href="#">О нас</a></li>
                       <li><a href="#">Контакты</a></li>
                       <li><a href="#">Работа у нас</a></li>
@@ -1113,7 +1121,7 @@
                   <li><a href="#">Система лояльности</a></li>
                 </ul>
                 <ul class="footer-content__list">
-                  <li><a href="#">Магазины</a></li>
+                  <li><a href="shops.html">Магазины</a></li>
                   <li><a href="#">О нас</a></li>
                   <li><a href="#">Контакты</a></li>
                   <li><a href="#">Работа у нас</a></li>
@@ -1273,11 +1281,11 @@
           <div class="col">Жакет</div>
           <div class="col">
                 <ul class="size-list">
-                  <li><a class="basket-open" href="#">XS</a></li>
-                  <li><a class="basket-open" href="#">S</a></li>
-                  <li><a class="basket-open" href="#">M</a></li>
-                  <li><a class="basket-open" href="#">L</a></li>
-                  <li><a class="basket-open" href="#">XL</a></li>
+                  <li><a href="#">XS</a></li>
+                  <li><a href="#">S</a></li>
+                  <li><a href="#">M</a></li>
+                  <li><a href="#">L</a></li>
+                  <li><a href="#">XL</a></li>
                 </ul>
           </div>
         </div>
@@ -1285,11 +1293,11 @@
           <div class="col">Брюки</div>
           <div class="col">
                 <ul class="size-list">
-                  <li><a class="basket-open" href="#">XS</a></li>
-                  <li><a class="basket-open" href="#">S</a></li>
-                  <li><a class="basket-open" href="#">M</a></li>
-                  <li><a class="basket-open" href="#">L</a></li>
-                  <li><a class="basket-open" href="#">XL</a></li>
+                  <li><a href="#">XS</a></li>
+                  <li><a href="#">S</a></li>
+                  <li><a href="#">M</a></li>
+                  <li><a href="#">L</a></li>
+                  <li><a href="#">XL</a></li>
                 </ul>
           </div>
         </div>
@@ -1297,15 +1305,15 @@
           <div class="col">Топ</div>
           <div class="col">
                 <ul class="size-list">
-                  <li><a class="basket-open" href="#">XS</a></li>
-                  <li><a class="basket-open" href="#">S</a></li>
-                  <li><a class="basket-open" href="#">M</a></li>
-                  <li><a class="basket-open" href="#">L</a></li>
-                  <li><a class="basket-open" href="#">XL</a></li>
+                  <li><a href="#">XS</a></li>
+                  <li><a href="#">S</a></li>
+                  <li><a href="#">M</a></li>
+                  <li><a href="#">L</a></li>
+                  <li><a href="#">XL</a></li>
                 </ul>
           </div>
         </div>
-        <button class="btn btn--black btn--medium btn--fullwidth" type="submit">Выберите размеры    </button>
+        <button class="btn btn--black btn--medium btn--fullwidth basket-open" type="submit">Выберите размеры    </button>
       </div>
     </div>
     <div class="page-popup mfp-hide" id="mail-popup">
@@ -1550,7 +1558,7 @@
                 <div class="mobile-filter-item-content"><a class="mobile-filter__link" href="#">Руководство по размерам</a>
                   <div class="filter-row filter-row__size">
                     <label class="form-checkbox">
-                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">One size</span>
+                      <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">1One size</span>
                     </label>
                     <label class="form-checkbox">
                       <input class="form-item form-item--checkbox" type="checkbox"><span class="form-checkbox-title">Рост H1</span>
@@ -1756,11 +1764,21 @@
     </div>
     <div class="page-popup mfp-hide" id="registration-popup">
       <div class="page-popup-heading">
-        <div class="page-popup-heading-title h1 uppercase"><b>registration</b></div>
+        <div class="page-popup-title">РЕГИСТРАЦИЯ
+          <div class="page-popup-title--small">После регистрации на сайте вам будет доступно отслеживание </div>состояния заказов, личный кабинет и другие новые возможности.
+        </div>
         <form class="form">
           <div class="form-row">
             <label class="form-item-label" for="f1">Имя</label>
             <input class="form-item form-item--text" id="f1" type="text" name="f1" data-validation="{&quot;message&quot;: &quot;Обязательное поле&quot;}" required="" value="Максим">
+          </div>
+          <div class="form-row">
+            <label class="form-item-label" for="f12">Отчество</label>
+            <input class="form-item form-item--text" id="f1" type="text" name="f12" data-validation="{&quot;message&quot;: &quot;Обязательное поле&quot;}" required="" value="Отчество">
+          </div>
+          <div class="form-row">
+            <label class="form-item-label" for="f13">Фамилия</label>
+            <input class="form-item form-item--text" id="f1" type="text" name="f13" data-validation="{&quot;message&quot;: &quot;Обязательное поле&quot;}" required="" value="Фамилия">
           </div>
           <div class="form-row">
             <label class="form-item-label" for="f3">E-mail</label>
@@ -1791,7 +1809,23 @@
         </form>
       </div>
     </div>
-    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=6f387da6-ba3c-46bf-96a7-261df17d04f7&amp;lang=ru_RU"></script>
+    <div class="page-popup mfp-hide" id="show-on-map-popup">
+      <div class="page-popup-heading">
+        <div class="page-popup-title uppercase">Выбор магазина BRUSNIKA</div>
+      </div>
+      <div class="delivery-map">
+        <div class="delivery-map-title">
+          отложила на по позже
+          1111111
+        </div>
+        <div class="delivery-map-selected"><strong>Выбран: </strong><span class="delivery-map-selected-value"> </span></div>
+      </div>
+    </div>
+    <div class="page-popup mfp-hide" id="checkout-popup">
+      <div class="page-popup-heading">
+        <div class="page-popup-title uppercase">ОФОРМИТЬ ЗАКАЗ</div>
+      </div>
+    </div>
     <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../../js/plugins/jcf.js"></script>
     <script type="text/javascript" src="../../js/plugins/jcf.checkbox.js"></script>
@@ -1812,7 +1846,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <script type="text/javascript" src="../../js/plugins/js.cookie.min.js"></script>
     <script type="text/javascript" src="../../js/project.js?v=31-01-22"></script>
-    <script type="text/javascript" src="../../js/plugins/scrollPage.js"></script>
     <script type="module" src="../../js/plugins/swipe.js"></script>
+    <script type="text/javascript" src="../../js/scrollPage.js"></script>
   </body>
 </html>

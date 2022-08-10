@@ -423,11 +423,7 @@
 						responsive: [
 							{
 								breakpoint: 960,
-								settings: {
-									slidesToShow: 6,
-									slidesToScroll: 1,
-									swipe: true
-								}
+								settings: 'unslick',
 							}
 						]
 					});
@@ -445,6 +441,16 @@
 						arrows: false,
 						infinite: false,
 						vertical: true,
+						// responsive: [
+						// 	{
+						// 		breakpoint: 960,
+						// 		settings: {
+						// 			dots: true,
+						// 			arrows: true,
+						// 		}
+						// 	}
+						// ]
+
 					});
 
 
@@ -1061,8 +1067,7 @@
 					const placemarks = [];
 					const shopsCoords = [];
 					
-					ymaps.ready(init)
-
+					// ymaps.ready(init)
 					function init() {
 						var myMap = new ymaps.Map('map', {
 							center: [55.757131068980215, 37.61711450000001],
