@@ -987,11 +987,6 @@
 							zoom: 11,
 						});
 					
-						// Создание стиля для значка метки
-						// var baseStyle = new ymaps.Style();
-						// baseStyle.iconStyle = new ymaps.IconStyle();
-						// baseStyle.iconStyle.href = "../dummy/shops/placemark.png";
-					
 						//-  данные для каталога магазинов стр shops.html
 						const shops = [
 							{
@@ -1068,17 +1063,29 @@
 						for (let i = 0; i < lengthShops; i++) {
 							console.log('shops [' + i + '] = ', shops[i].coords);
 					
-					
-					
-							// placemarks[i] = new ymaps.Placemark(shops[i].coords, { style: baseStyle }, {
-							placemarks[i] = new ymaps.Placemark(shops[i].coords, {
+							placemarks[i] = new ymaps.Placemark(shops[i].coords,
+							{
 								balloonContentHeader: `<img src="../dummy/shops/${shops[i].img}" width="100%">`,
 								balloonContentBody: ` <div class="item-shop-title">${shops[i].name}</div>` +
 									`<div class="item-shop-address">${shops[i].address}</div>` +
 									`<div class="item-shop-time">${shops[i].time}</div>`,
 								balloonContentFooter: ` <div class="item-shop-phone"> <a href="tel:${shops[i].phone}">${shops[i].phone}</a></div>`,
 								hintContent: `${shops[i].name}`
-							});
+							},
+							{
+								// Опции.
+								// Необходимо указать данный тип макета.
+								iconLayout: 'default#image',
+								// Своё изображение иконки метки.
+								iconImageHref: '../dummy/shops/placemark.png',
+								// Размеры метки.
+								iconImageSize: [30, 30],
+								// Смещение левого верхнего угла иконки относительно
+								// её "ножки" (точки привязки).
+								iconImageOffset: [-5, -38]
+							}, 
+							
+							);
 					
 							// placemarks[i].events.add('click', function (e) {
 							//     console.log('Клик по метке карты!!!');
