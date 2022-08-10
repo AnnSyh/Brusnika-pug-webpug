@@ -53,7 +53,7 @@
 .basket-menu__sublink,
 .basket-menu__link {
   text-decoration: none;
-  color: #1d1d1d;
+  color: #1D1D1D;
 }
 
 a.basket-menu__link {
@@ -101,7 +101,7 @@ a.basket-menu__link_lowercase {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  color: #1d1d1d;
+  color: #1D1D1D;
 }
 
 .accordion_basket-menu .accordion-item-heading {
@@ -203,11 +203,11 @@ a.basket-menu__link_lowercase {
 
 /* ---------------- */
 .basket__title-link {
-  color: #1d1d1d;
+  color: #1D1D1D;
   text-decoration: none;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .basket__title-link-clean-basket {
@@ -223,6 +223,14 @@ a.basket-menu__link_lowercase {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+}
+.basket-menu-sections .order-table__mr:first-child {
+  border: 1px solid transparent;
+  margin-bottom: 20px;
+}
+.basket-menu-sections .order-table__row {
+  border-top: none;
+  padding: 0px;
 }
 
 .basket-mobile-menu__header {

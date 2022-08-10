@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .basket-menu {
     height: 100vh;
 }
@@ -57,7 +59,7 @@
 .basket-menu__sublink,
 .basket-menu__link {
     text-decoration: none;
-    color: #1d1d1d;
+    color: $color-black;
 }
 
 a.basket-menu__link {
@@ -106,7 +108,7 @@ a.basket-menu__link_lowercase {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    color: #1d1d1d;
+    color: $color-black;
 }
 
 .accordion_basket-menu .accordion-item-heading {
@@ -213,26 +215,36 @@ a.basket-menu__link_lowercase {
 /* ---------------- */
 
 .basket__title-link {
-    color: #1d1d1d;
+    color: $color-black;
     text-decoration: none;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .basket__title-link-clean-basket {
-    color: #828282;
+    color: $color-link;
     text-decoration: underline;
     font-weight: 200;
 }
 
-.basket-menu-sections {
+.basket-menu-sections { 
     height: calc(100vh - 159px);
     padding-top: 25px;
     position: relative;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+
+    .order-table__mr:first-child {
+        border: 1px solid transparent;
+        margin-bottom: 20px;
+    }
+
+    .order-table__row {
+        border-top: none;
+        padding: 0px;
+    }
 }
 
 .basket-mobile-menu__header {

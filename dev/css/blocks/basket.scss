@@ -2,6 +2,8 @@
 
 .basket {
 
+    // border: 1px solid red !important;
+
     &__header {
         margin-top: 100px;
         margin-bottom: 50px;
@@ -35,7 +37,18 @@
         flex: 1;
     }
 
+
 }
+
+.order-table__title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-black;
+    margin-bottom: 10px;
+}
+
+
 
 .basket-inner {
     padding: 40px;
@@ -78,7 +91,7 @@
 }
 
 .basket-form {
-    
+
 
     &__title {
         font-weight: 600;

@@ -28,6 +28,14 @@
   flex: 1;
 }
 
+.order-table__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1D1D1D;
+  margin-bottom: 10px;
+}
+
 .basket-inner {
   padding: 40px;
 }

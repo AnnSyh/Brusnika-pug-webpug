@@ -1123,7 +1123,7 @@
 								const shopsCoords = shops[dataShop].coords
 								console.log(' shopsCoords = ', shopsCoords);
 								//  открыть балун в точке с найдеными коорд-ми
-								myMap.balloon.open(shopsCoords,'Содержимое балуна');
+								// myMap.balloon.open(shopsCoords,'Содержимое балуна');
 							}
 						});
 

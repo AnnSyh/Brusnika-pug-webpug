@@ -69,11 +69,6 @@
 .order-table__info .order-table__row {
   margin-bottom: 0;
 }
-@media screen and (min-width: 480px) {
-  .order-table__info .order-table__counter {
-    display: none;
-  }
-}
 
 .order-table__color,
 .order-table__size,
