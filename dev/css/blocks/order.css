@@ -31,6 +31,10 @@
   }
 }
 
+.order-item-text {
+  margin-bottom: 30px;
+}
+
 .page-heading-title {
   color: #1D1D1D;
   text-decoration: none;

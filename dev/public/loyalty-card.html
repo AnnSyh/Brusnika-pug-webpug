@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Личные данные</title>
+    <title>Карта лояльности</title>
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Брусника">
@@ -515,12 +515,10 @@
             <div class="page-heading">
               <div class="row">
                 <div class="col-md-4"> 
-                  <div class="d-lg-none"><a class="link link--gray_border" href="dashboard.html">Личный кабинет</a></div>
-                  <div class="page-heading-title page-heading-title_personal uppercase">Личные данные</div>
+                  <div class="mb-4 d-lg-none"><a class="link link--gray_border" href="dashboard.html">Личный кабинет</a></div>
+                  <div class="page-heading-title page-heading-title_personal uppercase">Карта лояльности</div>
                 </div>
-                <div class="col-md-8">
-                  <div class="page-heading-title border-top-gray only-desktop">&nbsp;</div>
-                </div>
+                <div class="col-md-8"></div>
               </div>
             </div>
             <div class="row">
@@ -534,54 +532,44 @@
                   </div>
                   <div class="personal-menu-item"><a class="link link--black" href="favorites.html">Избранное</a>
                   </div>
-                  <div class="personal-menu-item"><a class="link link--black active" href="personal.html">Личные данные</a>
+                  <div class="personal-menu-item"><a class="link link--black" href="personal.html">Личные данные</a>
+                  </div>
+                  <div class="personal-menu-item"><a class="link link--black active" href="loyalty-card.html">Карта лояльности</a>
                   </div>
                   <div class="personal-menu-item"><a class="link link--black" href="#">Выйти</a>
                   </div>
                 </div>
               </div>
               <div class="col-lg-1"></div>
-              <div class="col-12 col-md-5 offset-md-2 offset-lg-0 col-lg-5 col-xl-4">
-                <form class="form">
-                  <div class="form-row">
-                    <label class="form-item-label" for="f1">Имя</label>
-                    <input class="form-item form-item--text" id="f1" type="text" name="f1" data-validation="{&quot;message&quot;: &quot;Обязательное поле&quot;}" required="" value="Максим">
+              <div class="col-12 col-md-8 offset-md-2 col-lg-9 offset-lg-0 col-xl-8">
+                <div class="order-items">
+                  <div class="order-item">
+                    <div class="order-item-title mt-0">Номер вашей карты 2016614<br>5 % — скидка по карте</div>
+                    <div class="order-item-text">Вы совершили покупки на сумму 32 000 РУБ.<br>До 7% скидки осталось <b>68 000 РУБ. </b></div>
+                    <div class="order-item-title mt-0">Система накоплений</div>
+                    <div class="row loyalty-blocks">
+                      <div class="col-lg-4 mb-lg-4">
+                        <div class="loyalty-block"><span>
+                            <div class="h3">Скидка - 5%</div>
+                            <div>При покупке от 30 000 руб.</div></span></div>
+                      </div>
+                      <div class="col-lg-4 mb-lg-4">
+                        <div class="loyalty-block"><span>
+                            <div class="h3">Скидка - 7%</div>
+                            <div>При покупке от 100 000 руб.</div></span></div>
+                      </div>
+                      <div class="col-lg-4 mb-lg-4">
+                        <div class="loyalty-block"><span>
+                            <div class="h3">Скидка - 10%</div>
+                            <div>При покупке от 200 000 руб.</div></span></div>
+                      </div>
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col-auto"><a class="link link--black_border" href="last-order.html">Подробнее о заказе</a></div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-row">
-                    <label class="form-item-label" for="f12">Отчество</label>
-                    <input class="form-item form-item--text" id="f12" type="text" name="f12" data-validation="{&quot;message&quot;: &quot;Обязательное поле&quot;}" required="" value="Отчество">
-                  </div>
-                  <div class="form-row">
-                    <label class="form-item-label" for="f13">Фамилия</label>
-                    <input class="form-item form-item--text" id="f13" type="text" name="f13" data-validation="{&quot;message&quot;: &quot;Обязательное поле&quot;}" required="" value="Фамилия">
-                  </div>
-                  <div class="form-row">
-                    <label class="form-item-label" for="f14">Дата рождения</label>
-                    <input class="form-item--calendar" id="f14" type="text" name="f14" data-validation="{&quot;message&quot;: &quot;Укажите корректную дату рождения&quot;, &quot;mask&quot;: &quot;99.99.9999&quot;}" required="">
-                  </div>
-                  <div class="form-row">
-                    <label class="form-item-label" for="f3">E-mail</label>
-                    <input class="form-item form-item--text" id="f3" type="email" name="f3" required="" data-validation="{&quot;message&quot;: &quot;Укажите корретный адрес почты&quot;}" value="petrov@gmail.com">
-                  </div>
-                  <div class="form-row">
-                    <label class="form-item-label" for="f4">Телефон</label>
-                    <input class="form-item form-item--text" id="f4" type="text" name="f4" data-validation="{&quot;message&quot;: &quot;Укажите корректный номер телефона&quot;, &quot;pattern&quot;: &quot;phoneRU&quot;, &quot;mask&quot;: &quot;+7 (999) 999-99-99&quot;}" required="" value="+7 556 666-66-6">
-                    <div class="form-item-note">Нужен для уточнения деталей заказа</div>
-                  </div>
-                  <div class="form-row">
-                    <label class="form-item-label" for="reg_pass1">Новый пароль</label>
-                    <input class="form-item form-item--password" id="reg_pass1" type="password" name="reg_pass1" required="" data-validation="{&quot;minlength&quot;: &quot;6&quot;, &quot;message&quot;: {&quot;required&quot;: &quot;&quot;, &quot;minlength&quot;: &quot;Минимальная длина пароля – 6 символов&quot;}}"><span class="password-show"> </span>
-                  </div>
-                  <div class="form-row">
-                    <label class="form-item-label" for="reg_pass2">Новый пароль еще раз</label>
-                    <input class="form-item form-item--password" id="reg_pass2" type="password" name="reg_pass2" required="" data-validation="{&quot;minlength&quot;: &quot;6&quot;, &quot;equalTo&quot;: &quot;#reg_pass1&quot;, &quot;message&quot;: {&quot;equalTo&quot;: &quot;Пароли не совпадают&quot;, &quot;required&quot;: &quot;&quot;, &quot;minlength&quot;: &quot;Минимальная длина пароля – 6 символов&quot;}}"><span class="password-show"></span>
-                  </div>
-                  <div class="form-row">
-                    <button class="btn btn--black btn--medium w100 max-w100" type="submit" style="text-align: left;">Сохранить изменения</button>
-                  </div>
-                </form>
+                </div>
               </div>
-              <div class="col-12 col-md-3 col-xl-4"><a class="link link--black_border" href="#">Есть карта лояльности?</a></div>
             </div>
           </div>
         </div>

@@ -1,0 +1,28 @@
+/*** loyalty ***/
+.loyalty-blocks .loyalty-block {
+  position: relative;
+  display: block;
+  padding-top: 45%;
+  background-color: #F6F5F5;
+  text-decoration: none;
+  text-align: center;
+  color: #1D1D1D;
+  transition: 0.3s background-color cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.loyalty-blocks .loyalty-block span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .loyalty-block {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=loyalty-card.css.map */
