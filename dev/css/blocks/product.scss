@@ -63,13 +63,20 @@
 
 /* -------------------------- */
 .product-photos {
-    max-width: 650px;
-    max-height: 967px;
-    overflow: hidden;
+    // max-width: 650px;
+    // max-height: 967px;
+    // overflow: hidden;
 
-    img {
-        width: 100% !important;
-    }
+    // img {
+    //     width: 100% !important;
+    // }
+
+    // @media screen and (max-width: 768px) {
+    //     border: 1px solid red;
+    //     max-width: 320px;
+    //     max-height: 480px;
+        
+    // }
 }
 
 .product-photos-nav {
@@ -155,6 +162,11 @@
     justify-content: flex-end;
     margin-bottom: 10px;
     color: #1d1d1d;
+
+    @media screen and (max-width:830px) {
+       justify-content: flex-start;
+    }
+
 }
 
 .product-size__link a {
@@ -193,6 +205,16 @@
 
 .product-photos img {
     cursor: url(/dev/dummy/svg/zoom-in.svg), zoom-in;
+
+    @media screen and (max-width: 768px) { border: 1px solid red;
+        
+        width: 100px;
+        max-width: 100px;
+        height: 100px;
+        max-height: 100px;
+        // margin: auto;
+    }
+
 }
 
 .card-photo-item {
@@ -226,6 +248,10 @@
 
 .card-nav .product-list {
     display: flex;
+
+    @media screen and (max-width:830px) {
+        display: none;
+    }
 }
 
 .card-nav .product-list-item {
@@ -253,6 +279,10 @@
 .card-nav__col1,
 .card-nav__col2 {
     flex: 1;
+
+    @media screen and (max-width:830px) {
+        display: none;
+    }
 }
 
 .card-nav__col1 .product-title {
@@ -270,6 +300,10 @@
     min-width: 256px;
     white-space: nowrap;
     margin-right: 20px;
+
+    @media screen and (max-width:830px) {
+        display: none;
+    }
 }
 
 .active-like:after {
@@ -284,6 +318,10 @@
     .card-nav {
         flex-direction: column;
         gap: 15px;
+
+        margin-left: -20px;
+        margin-right: -20px;
+        width: calc(100% + 0px);
     }
 
     .card-nav .product-size {
@@ -309,3 +347,21 @@
     }
 
 }
+
+.card-nav-only-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 830px) {
+
+    .card-nav-only-mobile {
+        display: flex;
+        width: 100%;
+    }
+
+    .card-nav .btn {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+

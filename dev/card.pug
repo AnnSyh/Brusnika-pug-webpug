@@ -10,8 +10,12 @@ block content
       .page-inner.page-inner--w1
         section.page-section
           include modules/card
-        include modules/card-nav
+          include modules/card-nav
 
       .page-inner.page-inner--w2  
         include modules/complete-look
-        include modules/slider-you-also-like
+        
+        section.page-inner.hidden-x(style='margin-top: 100px;')
+          .page-inner.page-inner--w2
+            .catalog
+              include modules/slider-you-also-like

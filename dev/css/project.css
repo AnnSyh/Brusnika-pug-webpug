@@ -1707,6 +1707,8 @@ span.form-item--error {
   filter: none;
 }
 
+.order-table .order-table-heart:before,
+.order-table .order-table-heart:after,
 .catalog-item .catalog-item-like:before,
 .product-like:before,
 .catalog-item .catalog-item-like:after,
@@ -1724,34 +1726,29 @@ span.form-item--error {
   transition: 0.3s opacity cubic-bezier(0.25, 0.46, 0.45, 0.94), 0.3s transform cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+.order-table .order-table-heart:before,
 .catalog-item .catalog-item-like:before,
 .product-like:before {
   opacity: 1;
-  -ms-filter: none;
-  filter: none;
-  transform: translateY(0);
   background-image: url("../svg/icon_heart.svg");
 }
 
+.order-table .order-table-heart:after,
 .catalog-item .catalog-item-like:after,
 .product-like:after {
   opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  transform: translateY(50%);
   background-image: url("../svg/icon_heart_filled.svg");
 }
 
+.order-table .order-table-heart:hover:before,
 .catalog-item .catalog-item-like.filled:before,
 .product-like.filled:before,
 .catalog-item .catalog-item-like:hover:before,
 .product-like:hover:before {
   opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  transform: translateY(-50%);
 }
 
+.order-table .order-table-heart:hover:after,
 .catalog-item .catalog-item-like.filled:after,
 .product-like.filled:after,
 .catalog-item .catalog-item-like:hover:after,

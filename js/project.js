@@ -441,15 +441,16 @@
 						arrows: false,
 						infinite: false,
 						vertical: true,
-						// responsive: [
-						// 	{
-						// 		breakpoint: 960,
-						// 		settings: {
-						// 			dots: true,
-						// 			arrows: true,
-						// 		}
-						// 	}
-						// ]
+
+						responsive: [
+							{
+								breakpoint: 1230,
+								settings: {
+									dots: true,
+									vertical: false,
+								}
+							}
+						]
 
 					});
 

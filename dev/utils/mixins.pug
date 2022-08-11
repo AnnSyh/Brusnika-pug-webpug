@@ -12,8 +12,8 @@ mixin listShopFiltersDesktop(classname, data)
 				a(href=`${item.href}`)=item.name
 //- список (для mobile карточки магазинов стр shops.html)
 mixin listShopFiltersMobile(data)
-		each item in data
-			a(href=`${item.href}`)=item.name
+	each item in data
+		a(href=`${item.href}`)=item.name
 
 //- двухуровневый список(для карточки товара)
 mixin listTwo(classname, data)

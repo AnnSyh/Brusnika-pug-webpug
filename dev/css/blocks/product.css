@@ -55,15 +55,6 @@
 }
 
 /* -------------------------- */
-.product-photos {
-  max-width: 650px;
-  max-height: 967px;
-  overflow: hidden;
-}
-.product-photos img {
-  width: 100% !important;
-}
-
 .product-photos-nav {
   max-width: 70px;
   position: absolute;
@@ -139,6 +130,11 @@
   margin-bottom: 10px;
   color: #1d1d1d;
 }
+@media screen and (max-width: 830px) {
+  .product-size__link {
+    justify-content: flex-start;
+  }
+}
 
 .product-size__link a {
   color: #1d1d1d;
@@ -177,6 +173,15 @@
 .product-photos img {
   cursor: url(/dev/dummy/svg/zoom-in.svg), zoom-in;
 }
+@media screen and (max-width: 768px) {
+  .product-photos img {
+    border: 1px solid red;
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+    max-height: 100px;
+  }
+}
 
 .card-photo-item {
   position: relative;
@@ -208,6 +213,11 @@
 .card-nav .product-list {
   display: flex;
 }
+@media screen and (max-width: 830px) {
+  .card-nav .product-list {
+    display: none;
+  }
+}
 
 .card-nav .product-list-item {
   margin-right: 20px;
@@ -233,6 +243,12 @@
 .card-nav__col2 {
   flex: 1;
 }
+@media screen and (max-width: 830px) {
+  .card-nav__col1,
+.card-nav__col2 {
+    display: none;
+  }
+}
 
 .card-nav__col1 .product-title {
   margin-right: 10px;
@@ -250,6 +266,11 @@
   white-space: nowrap;
   margin-right: 20px;
 }
+@media screen and (max-width: 830px) {
+  .card-nav .product-size {
+    display: none;
+  }
+}
 
 .active-like:after {
   opacity: 1;
@@ -262,6 +283,9 @@
 .card-nav {
     flex-direction: column;
     gap: 15px;
+    margin-left: -20px;
+    margin-right: -20px;
+    width: calc(100% + 0px);
   }
   .card-nav .product-size {
     margin: 15px 0;
@@ -282,5 +306,19 @@
   }
   .product-to-basket__content, .product-info__content {
     margin-top: 0;
+  }
+}
+.card-nav-only-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 830px) {
+  .card-nav-only-mobile {
+    display: flex;
+    width: 100%;
+  }
+  .card-nav .btn {
+    width: 100%;
+    max-width: 100%;
   }
 }/*# sourceMappingURL=product.css.map */

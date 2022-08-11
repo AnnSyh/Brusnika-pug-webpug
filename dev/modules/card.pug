@@ -1,8 +1,9 @@
+
 link(rel='stylesheet', type='text/css', media='screen', href='../css/photoswipe.css?v=724611')
+.breadcrumbs
+  a.link.link--gray(href='#') Назад
 .product
   .product-info
-    .breadcrumbs
-      a.link.link--gray(href='#') Назад
     .product-info__content
       .product-razdel Жакеты
       .product-info__title
@@ -30,7 +31,7 @@ link(rel='stylesheet', type='text/css', media='screen', href='../css/photoswipe.
             +listTwo('product__accordion-availability', dataListMeasurements)
   .products-photos__wrapper
     .product-photos__inner
-      #my-gallery.product-photos.pswp-gallery
+      .product-photos.pswp-gallery
         a(href='../dummy/slider/c1.png' data-pswp-width='2500' data-pswp-height='3688' target='_blank')
           img(src='../dummy/slider/c1.png' )
         a(href='../dummy/slider/c2.png' data-pswp-width='2500' data-pswp-height='3688' target='_blank')

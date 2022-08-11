@@ -260,14 +260,8 @@ a.basket-menu__link_lowercase {
 
 .order-table .order-table-heart {
   position: relative;
-  top: 0;
-  margin: 0 0 0 auto;
-  display: block;
   width: 25px;
   height: 25px;
-  background: url(../../svg/icon_heart.svg) no-repeat center center;
-  background-size: contain;
-  transition: 0.3s opacity cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .order-table__row {
