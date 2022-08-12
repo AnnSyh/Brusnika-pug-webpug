@@ -17,6 +17,7 @@
 @import url(../css/blocks/page-popup.css);
 @import url(../css/blocks/order.css);
 @import url(../css/blocks/product.css);
+@import url(../css/blocks/product-photos.css);
 
 @import url(../css/blocks/complete-look.css);
 @import url(../css/blocks/look.css);
@@ -24,7 +25,6 @@
 @import url(../css/blocks/tables.css);
 @import url(../css/blocks/card-popup.css);
 
-@import url(../css/blocks/card-zoom.css);
 @import url(../css/blocks/favorites.css);
 @import url(../css/blocks/basket.css);
 @import url(../css/blocks/message.css); /* стили сообщ типа 'СПАСИБО ЗА ЗАКАЗ!' */
@@ -313,10 +313,10 @@ body,
 
 /* Страница бренда */
 
-.page-section--brand {
-  /* padding: 55px 0 15px 0; */
-  padding: 81px 0 15px 0;
-}
+// .page-section--brand {
+//   /* padding: 55px 0 15px 0; */
+//   // padding: 81px 0 15px 0;
+// }
 
 .product-basket {
   display: flex;

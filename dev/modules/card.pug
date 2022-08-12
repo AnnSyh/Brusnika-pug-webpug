@@ -1,5 +1,5 @@
 
-link(rel='stylesheet', type='text/css', media='screen', href='../css/photoswipe.css?v=724611')
+link(rel='stylesheet' type='text/css' media='screen' href='../css/photoswipe.css?v=724611')
 .breadcrumbs
   a.link.link--gray(href='#') Назад
 .product
@@ -30,8 +30,8 @@ link(rel='stylesheet', type='text/css', media='screen', href='../css/photoswipe.
           .accordion-item-content
             +listTwo('product__accordion-availability', dataListMeasurements)
   .products-photos__wrapper
-    .product-photos__inner
-      .product-photos.pswp-gallery
+    .product-photos__inner.products-photos-only-desktop
+      #my-gallery.product-photos.pswp-gallery
         a(href='../dummy/slider/c1.png' data-pswp-width='2500' data-pswp-height='3688' target='_blank')
           img(src='../dummy/slider/c1.png' )
         a(href='../dummy/slider/c2.png' data-pswp-width='2500' data-pswp-height='3688' target='_blank')
@@ -51,31 +51,49 @@ link(rel='stylesheet', type='text/css', media='screen', href='../css/photoswipe.
         img(src='../dummy/slider/c4.png')
         img(src='../dummy/slider/c5.png')
         img(src='../dummy/slider/c6.png')
+
+    .product-photos__inner.products-photos-only-mobile
+
+      .product-photos-gallery__wrapper(style='position: relative;')
+        .product-photos-gallery
+          div
+            a(href='../dummy/slider/c1.png')
+              img(src='../dummy/slider/c1.png' )
+          div
+            a(href='../dummy/slider/c2.png')
+              img(src='../dummy/slider/c2.png' )
+          div
+            a(href='../dummy/slider/c3.png')
+              img(src='../dummy/slider/c3.png' )
+          div
+            a(href='../dummy/slider/c4.png')
+              img(src='../dummy/slider/c4.png' )
+
   .product-to-basket
-   span.tooltip.product-add-favorites(data-tooltip-content='#tooltip_content')
-   .product-to-basket__content
-     .product-title-holder
-      .product-title Жакет
-        //-  button.product-like(type='button')
-        .product-like(type='button')
-      .product-price 12 500 P
-      ul.product-list 
-       li.product-list-item
-        a.product-list-link(href="#")
-         img.product-list-img(src='../dummy/slider/c1-small.png' alt='красный цвет')
-       li.product-list-item
-        a.product-list-link(href="#")
-         img.product-list-img(src='../dummy/slider/c2-small.png' alt='зеленый цвет')
-     .product-size
-       .product-size__link
-         a.link.link--black_border.size-open(href='#')
-           | Как подобрать размер
-       .product-size-select
-         select.form-item.form-item--select.w100
-           option(value='' selected='') Выберите размер 
-           option(value='42') 4122А (H-43см. D-180 мм) 
-           option(value='43') 4122А (H-43см. D-180 мм) 
-           option(value='44') 4122А (H-43см. D-180 мм) 
-     a.btn.btn--black.btn--medium.basket-open(href='#')
-       | ДОБАВИТЬ В КОРЗИНУ
+    span.tooltip.product-add-favorites(data-tooltip-content='#tooltip_content')
+    .product-to-basket__content
+      .product-title-holder
+        .product-title Жакет
+          //-  button.product-like(type='button')
+          .product-like(type='button')
+        .product-price 12 500 P
+        ul.product-list 
+          li.product-list-item
+            a.product-list-link(href="#")
+              img.product-list-img(src='../dummy/slider/c1-small.png' alt='красный цвет')
+          li.product-list-item
+            a.product-list-link(href="#")
+              img.product-list-img(src='../dummy/slider/c2-small.png' alt='зеленый цвет')
+      .product-size
+        .product-size__link
+          a.link.link--black_border.size-open(href='#')
+            | Как подобрать размер
+        .product-size-select
+          select.form-item.form-item--select.w100
+            option(value='' selected='') Выберите размер 
+            option(value='42') 4122А (H-43см. D-180 мм) 
+            option(value='43') 4122А (H-43см. D-180 мм) 
+            option(value='44') 4122А (H-43см. D-180 мм) 
+      a.btn.btn--black.btn--medium.basket-open(href='#')
+        | ДОБАВИТЬ В КОРЗИНУ
 

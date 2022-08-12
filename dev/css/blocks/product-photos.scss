@@ -1,0 +1,66 @@
+@import '../variables.scss';
+
+
+/* ===============.product-photos======================= */
+
+.products-photos-only-mobile {
+    display: none !important;
+}
+.products-photos-only-desktop {
+    display: block !important;
+}
+
+@media screen and (max-width: 1230px) {
+
+    .products-photos-only-mobile {
+        display: flex !important;
+    }
+    .products-photos-only-desktop { 
+        display: none !important;
+    }
+
+
+}
+// -----------навигация-------------
+.product-photos-nav {
+    @media screen and (max-width: 1230px) {
+        display: none;
+    }
+    @media screen and (min-width: 1230px) {
+        max-width: 70px;
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        background: #fff;
+    
+        &.slick-list.draggable {
+            height: 100vh !important;
+            background: #fff;
+        }
+    }
+}
+// -----------сам слайдер-------------
+.product-photos__inner {
+    @media screen and (max-width: 1230px) {
+        display: block;
+    }
+    @media screen and (min-width: 1230px) {
+        
+            display: flex;
+            flex-direction: column-reverse;
+            position: relative;
+    }
+}
+
+.product-photos-gallery  a {
+        border: 1px solid red;
+
+    
+}
+
+
+
+// .product-photos img {
+//     cursor: url(/dev/dummy/svg/zoom-in.svg), zoom-in;
+// }
+

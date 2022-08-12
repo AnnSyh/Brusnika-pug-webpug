@@ -396,14 +396,16 @@
 					console.log('product slider');
 					// ------------------------------
 
-					// const lightbox = new PhotoSwipeLightbox({
-					// 	gallery: '#my-gallery',
-					// 	children: 'a',
-					// 	pswpModule: () => import('photoswipe')
-					//   });
-					//   lightbox.init();
+					$(".product-photos-gallery").slick( {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							dots: true,
+							centerMode: true,
+							
+						});
+				
 
-					// --------------------------------
+					// -----------------------------
 
 					$(".product-photos-nav").on("init", function (e, s) {
 						s.$slides.on("click", function () {
@@ -422,7 +424,7 @@
 						vertical: true,
 						responsive: [
 							{
-								breakpoint: 960,
+								breakpoint: 1230,
 								settings: 'unslick',
 							}
 						]
@@ -1160,51 +1162,6 @@
 						$('.product-add-favorites').tooltipster('close');
 						$('.product-like').toggleClass('active-like');//добавляю акт класс сердечку
 					});
-
-					// ----------------------------------	
-					const images = document.querySelectorAll("[data-zoom-src]");
-
-					// cделать цикл по всем картинкам с атр [data-zoom-src]
-					images.forEach((item) => {
-
-						item.addEventListener('click', (e) => {
-							console.log('images(item)  !!click ');
-
-							const imgSrcZoom = e.target.getAttribute('data-zoom-src');
-							const imgSrc = e.target.getAttribute('src');
-							const hasClassTzoom = $sel.body.hasClass('t-zoom');
-							const img = e.target
-							// img.src = imgSrcZoom; 
-
-							const productsPhotos = document.querySelector(".products-photos__wrapper .product-photos");
-							const slickTrack = document.querySelector(".products-photos__wrapper > div");
-
-							console.log('imgSrcZoom = ', imgSrcZoom);
-							console.log('imgSrc = ', imgSrc);
-
-
-								if (hasClassTzoom) {
-									console.log('Есть .t-zoom  !!!!');
-									
-									$sel.body.removeClass('scroll-disabled t-zoom');
-									img.classList.remove('card-zoom__image');
-									productsPhotos.classList.remove('card-zoom');
-
-									slickTrack.classList.remove('card-zoom__holder');
-
-								} else {
-									console.log('Нет .t-zoom  !!!!');
-
-									$sel.body.addClass('scroll-disabled t-zoom');
-									img.classList.add('card-zoom__image');
-									productsPhotos.classList.add('card-zoom');
-
-									slickTrack.classList.add('card-zoom__holder');
-								}
-						});
-
-					})
-					// ----------------------------------					
 
 
 					$(".form-item--calendar", $container).each(function () {

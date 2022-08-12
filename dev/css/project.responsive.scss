@@ -1023,6 +1023,10 @@ body .mobile-nav-menu-item-holder.open:before {
   }
   .catalog-item {
     margin-bottom: 50px;
+
+    @media screen and (max-width:480px) {
+      margin-bottom: 30px;
+    }
   }
   .catalog-item .catalog-item-labels {
     left: 10px;
@@ -1034,10 +1038,7 @@ body .mobile-nav-menu-item-holder.open:before {
     font-size: 12px;
     line-height: 16px;
   }
-  .catalog-item .catalog-item-title {
-    margin-top: 10px;
-    font-size: 16px;
-  }
+
   .catalog-item .catalog-item-like {
     display: none;
   }

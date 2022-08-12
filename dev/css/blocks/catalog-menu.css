@@ -16,7 +16,7 @@ a.catalog-menu__link.mb-20px {
   width: 100%;
   z-index: 10;
   transition: left 0.3s;
-  background: #fff;
+  background: #ffffff;
   padding: 10px 0;
   overflow-y: auto;
 }
@@ -57,7 +57,7 @@ a.catalog-menu__link.mb-20px {
 .catalog-menu__sublink,
 .catalog-menu__link {
   text-decoration: none;
-  color: #1d1d1d;
+  color: #1D1D1D;
 }
 
 a.catalog-menu__link {
@@ -105,7 +105,7 @@ a.catalog-menu__link_lowercase {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  color: #1d1d1d;
+  color: #1D1D1D;
 }
 
 .accordion_catalog-menu .accordion-item-heading {
@@ -186,7 +186,7 @@ a.catalog-menu__link_lowercase {
   position: absolute;
   left: 0;
   width: 100%;
-  background: #fff;
+  background: #ffffff;
 }
 
 .menu-sections__inner {
@@ -235,7 +235,7 @@ a.catalog-menu__link_lowercase {
 
 /* /#catalog-buyer-menu */
 .buyer-menu__link {
-  color: #1d1d1d;
+  color: #1D1D1D;
   text-decoration: none;
 }
 
@@ -280,7 +280,7 @@ a.catalog-menu__link_lowercase {
     bottom: 0;
     z-index: 100;
     display: flex;
-    background: #fff;
+    background: #ffffff;
     justify-content: space-between;
     width: calc(90% - 15px - 21px);
     height: 47px;

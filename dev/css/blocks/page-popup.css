@@ -48,17 +48,17 @@
   align-items: center;
   width: 20px;
   height: 20px;
-  color: #1d1d1d;
+  color: #1D1D1D;
   text-decoration: none;
 }
 .page-popup .size-list a .active, .page-popup .size-list a:hover {
-  color: #fff;
-  background-color: #1d1d1d;
+  color: #ffffff;
+  background-color: #1D1D1D;
 }
 
 .page-popup .size-list a.active {
-  color: #fff;
-  background-color: #1d1d1d;
+  color: #ffffff;
+  background-color: #1D1D1D;
 }
 
 button.basket-open {

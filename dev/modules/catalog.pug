@@ -23,17 +23,18 @@
                     img(src='../dummy/catalog/c24.jpg')
                     img(src='../dummy/catalog/c25.jpg')
                   include card-sizes-block
-                  .catalog-item-title= item.name
+                  .catalog-item-title 
+                    span
+                      span= item.name
+                      .catalog-item-price= item.price + ' РУБ'
+
                     .catalog-item-color +3 цвета
                   include card-colors-block
 
-                  .catalog-item-price
-                    b= item.price + ' РУБ'
                   a.catalog-item-link(href='card.html')
                   button.catalog-item-like(type='button')   
                 //- картинка без слайдера         
-                //- .catalog-item.w2
-                //-     .catalog-item-photo-holder
+                //- .catalog-item.wo-holder
                 //-         img.cover(src=`../../dummy/catalog/${item.image}`)
                 //-     .catalog-item-title= item.name
                 //-         .catalog-item-color +2 цвета

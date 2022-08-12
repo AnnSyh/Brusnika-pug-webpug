@@ -11,6 +11,15 @@ window.addEventListener('scroll', function () {
     cardNav.hide();
     // console.log('scrollTop() <= 400');
   }
+
+  const mainNav = $('.page-header');
+
+  if ($(window).scrollTop() > 0) {
+    mainNav.addClass('page-header-fixed');
+  } else {
+    mainNav.removeClass('page-header-fixed');
+  }
+
 });
 
 $(".order-table-delete").on("click", function (e) {

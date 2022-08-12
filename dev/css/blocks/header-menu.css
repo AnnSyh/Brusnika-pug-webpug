@@ -1,3 +1,11 @@
+.page-header-fixed {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+}
+
 .header-logo {
   max-width: 201px;
 }
@@ -99,8 +107,13 @@
 }
 
 .page-header {
-  padding: 15px 0;
-  border-bottom: 1px solid transparent;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-header .page-inner--w1 {
+  width: 100%;
 }
 
 .page-heading .page-heading-description {

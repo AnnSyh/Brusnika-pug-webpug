@@ -1,5 +1,5 @@
 
-header.page-header(itemscope='' itemtype='http://schema.org/WPHeader')
+header.page-header.page-header-fixed1
   //- основное меню
   include menus/header-menu.pug
   //- меню 'Покупателям'
@@ -10,5 +10,7 @@ header.page-header(itemscope='' itemtype='http://schema.org/WPHeader')
   include menus/catalog-menu.pug
   //- меню 'Корзина'
   include menus/basket-menu.pug
+  //- меню 'Корзина' - не авторизирован польз-ль
+  //- include menus/basket-menu-empty
   //- для стр товара
   include menus/size-menu  

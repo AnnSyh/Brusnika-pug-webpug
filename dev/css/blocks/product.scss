@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .product {
     display: grid;
     /* grid-template-columns: 1fr minmax(auto, max-content) 1fr; */
@@ -17,8 +19,6 @@
     }
 }
 
-
-
 .product-info {
     position: relative;
 
@@ -27,7 +27,7 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 20px;
-        color: #1D1D1D;
+        color: $color-black;
         margin-bottom: 20px;
     }
 }
@@ -45,7 +45,6 @@
     white-space: nowrap;
 }
 
-
 .products-photos__wrapper {
     /* border: 1px solid violet; */
     overflow: hidden;
@@ -54,45 +53,6 @@
     gap: 17px;
     justify-content: center;
 }
-
-.product-photos__inner {
-    display: flex;
-    flex-direction: column-reverse;
-    position: relative;
-}
-
-/* -------------------------- */
-.product-photos {
-    // max-width: 650px;
-    // max-height: 967px;
-    // overflow: hidden;
-
-    // img {
-    //     width: 100% !important;
-    // }
-
-    // @media screen and (max-width: 768px) {
-    //     border: 1px solid red;
-    //     max-width: 320px;
-    //     max-height: 480px;
-        
-    // }
-}
-
-.product-photos-nav {
-    max-width: 70px;
-    position: absolute;
-    top: 0px;
-    height: 100%;
-    background: #fff;
-
-    &.slick-list.draggable {
-        height: 100vh !important;
-        background: #fff;
-    }
-}
-
-/* -------------------------- */
 
 .product-to-basket .product-title-holder {
     position: relative;
@@ -111,11 +71,6 @@
     display: flex;
 }
 
-// .product-size-select_top .jcf-select .jcf-select-drop {
-//     border-radius: 0;
-//     bottom: 100%;
-//     top: auto;
-//   }
 
 .card-nav,
 .product-to-basket .product-size {
@@ -148,6 +103,13 @@
 
 }
 
+.product-size-select_top .jcf-select-h50 {
+    padding: 18px 35px 18px 15px;
+}
+.product-size-select_top .jcf-select.jcf-drop-active {
+    height: 55px;
+}
+
 .product-to-basket .product-list {
     display: flex;
     gap: 20px;
@@ -161,7 +123,7 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 10px;
-    color: #1d1d1d;
+    color: $color-black;
 
     @media screen and (max-width:830px) {
        justify-content: flex-start;
@@ -170,11 +132,11 @@
 }
 
 .product-size__link a {
-    color: #1d1d1d;
+    color: $color-black;
 }
 
 .product-razdel {
-    color: #666666;
+    color: $color-gray-four;
     margin-bottom: 10px;
 }
 
@@ -197,35 +159,61 @@
     margin-bottom: 20px;
 }
 
-.product-photos-nav .slick-slide {
-    cursor: pointer;
-    width: 53px !important;
-    height: 80px;
-}
-
-.product-photos img {
-    cursor: url(/dev/dummy/svg/zoom-in.svg), zoom-in;
-
-    @media screen and (max-width: 768px) { border: 1px solid red;
-        
-        width: 100px;
-        max-width: 100px;
-        height: 100px;
-        max-height: 100px;
-        // margin: auto;
-    }
-
-}
-
 .card-photo-item {
     position: relative;
 }
-
 .card-photo-item:before {
     content: "";
     display: block;
     padding-top: 80%;
 }
+
+
+// /* ===============.product-photos======================= */
+
+// .product-photos__inner {
+//     display: flex;
+//     flex-direction: column-reverse;
+//     position: relative;
+// }
+
+// .product-photos-nav {
+
+
+//     @media screen and (min-width: 1230px) {
+//         max-width: 70px;
+//         position: absolute;
+//         top: 0px;
+//         height: 100%;
+//         background: #fff;
+    
+//         &.slick-list.draggable {
+//             height: 100vh !important;
+//             background: #fff;
+//         }
+        
+//     }
+
+//     @media screen and (max-width: 1230px) {
+//         display: none;
+        
+//     }
+// }
+
+// .product-photos  {
+
+//     @media screen and (max-width: 1230px) {
+//         img {
+//             border: 1px solid red;
+//         }
+//     }
+
+// }
+
+// .product-photos img {
+//     cursor: url(/dev/dummy/svg/zoom-in.svg), zoom-in;
+// }
+
 
 
 /* ===============card-nav======================= */
@@ -348,6 +336,8 @@
 
 }
 
+// -------------only styles-----------------------
+
 .card-nav-only-mobile {
     display: none;
 }
@@ -364,4 +354,6 @@
         max-width: 100%;
     }
 }
+
+
 

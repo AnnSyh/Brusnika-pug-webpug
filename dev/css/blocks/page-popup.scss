@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .page-popup {
     font-size: 14px;
     font-weight: 400;
@@ -58,13 +60,13 @@
             align-items: center;
             width:20px;
             height: 20px;
-            color: #1d1d1d;
+            color: $color-black;
             text-decoration: none;
 
             .active,
             &:hover {
-                color: #fff;
-                background-color: #1d1d1d;
+                color: $color-white;
+                background-color: $color-black;
             }
         }
     }
@@ -72,8 +74,8 @@
 }
 
 .page-popup .size-list a.active {
-    color: #fff;
-    background-color: #1d1d1d;
+    color: $color-white;
+    background-color: $color-black;
 }
 
 button.basket-open {

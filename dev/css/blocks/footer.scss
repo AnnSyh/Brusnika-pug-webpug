@@ -1,7 +1,9 @@
+@import '../variables.scss';
+
 .page-footer {
     padding: 80px 0;
     background-color: transparent;
-    color: #1d1d1d;
+    color: $color-black;
     font-size: 14px;
 }
 
@@ -11,7 +13,7 @@
 
 .footer-top a {
     text-decoration: none;
-    color: #666666;
+    color: $color-gray-four;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 12px;
@@ -37,7 +39,7 @@ ul.footer-top__list {
 }
 
 .footer-top__item {
-	border: 1px solid #E1E1E1;
+	border: 1px solid $color-gray-two;
 	display: flex;
 	flex: 1;
 	height: 70px;
@@ -97,7 +99,7 @@ ul.footer-top__list {
 .footer-bottom__list a,
 .footer-content__list a {
     text-decoration: none;
-    color: #666666;
+    color: $color-gray-four;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -117,7 +119,7 @@ ul.footer-top__list {
 }
 
 .footer-content .accordion-item-heading {
-    color: #666666;
+    color: $color-gray-four;
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
@@ -126,7 +128,7 @@ ul.footer-top__list {
 
 .footer-content .accordion-item {
     border: none;
-    border-bottom: 1px solid #F6F5F5;
+    border-bottom: 1px solid $bgcolor-gray;
 }
 
 .footer-content .accordion-item .accordion-item-heading:after {
@@ -138,18 +140,18 @@ ul.footer-top__list {
 }
 
 .footer-text {
-    color: #666666;
+    color: $color-gray-four;
 }
 
 .privacy-policy {
-    color: #666666;
+    color: $color-gray-four;
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
 }
 
 .privacy-policy a {
-    color: #666666;
+    color: $color-gray-four;
 }
 
 .footer-form__form {
@@ -157,7 +159,7 @@ ul.footer-top__list {
     display: flex;
 
     input::placeholder {
-        color: #666666;
+        color: $color-gray-four;
         font-family: 'SFProDisplay', 'Arial', sans-serif;
         font-weight: 400;
         font-size: 14px;
@@ -176,11 +178,11 @@ ul.footer-top__list {
     height: 56px;
     margin-top: 16px;
     margin-bottom: 5px;
-    color: #666666; 
+    color: $color-gray-four; 
 
 }
 .footer-form__form input {
-    border: 1px solid #E1E1E1;
+    border: 1px solid $color-gray-two;
 }
 
 .footer-form__form input {
@@ -227,12 +229,12 @@ ul.footer-top__list {
 
 .btn--white {
     padding: 0 20px;
-    background-color: #fff;
-    color: #1d1d1d;
-    border: 1px solid #E1E1E1;
+    background-color: $color-white;
+    color: $color-black;
+    border: 1px solid $color-gray-two;
     &:hover {
-        background-color: #1d1d1d;
-        color: #fff; 
+        background-color: $color-black;
+        color: $color-white; 
     }
 }
 
