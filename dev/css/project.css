@@ -457,7 +457,6 @@ body.basket-open {
 .catalog-open .page:after,
 .search-open .page:after {
   content: "";
-  z-index: 100;
   position: absolute;
   left: 0;
   top: 0;
@@ -468,6 +467,10 @@ body.basket-open {
   opacity: 0.6;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
   filter: alpha(opacity=60);
+}
+
+.search-open .page:after {
+  top: 130px;
 }
 
 /*** //Header ***/

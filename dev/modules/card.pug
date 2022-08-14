@@ -52,22 +52,16 @@ link(rel='stylesheet' type='text/css' media='screen' href='../css/photoswipe.css
         img(src='../dummy/slider/c5.png')
         img(src='../dummy/slider/c6.png')
 
-    .product-photos__inner.products-photos-only-mobile
+    .product-photos__inner.products-photos-only-mobile(style="min-width:0; border:1px solid red;")
 
-      .product-photos-gallery__wrapper(style='position: relative;')
+      .product-photos-gallery__wrapper(style='min-width:0;')
+
         .product-photos-gallery
-          div
-            a(href='../dummy/slider/c1.png')
-              img(src='../dummy/slider/c1.png' )
-          div
-            a(href='../dummy/slider/c2.png')
-              img(src='../dummy/slider/c2.png' )
-          div
-            a(href='../dummy/slider/c3.png')
-              img(src='../dummy/slider/c3.png' )
-          div
-            a(href='../dummy/slider/c4.png')
-              img(src='../dummy/slider/c4.png' )
+          - for (var x = 0; x < 4; x++)
+            .product-photos-gallery__item
+              a(href='../dummy/slider/c1.png')
+                img.product-photos-gallery__img(src='../dummy/slider/c1.png' )
+
 
   .product-to-basket
     span.tooltip.product-add-favorites(data-tooltip-content='#tooltip_content')

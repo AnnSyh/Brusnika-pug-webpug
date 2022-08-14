@@ -401,7 +401,18 @@
 							slidesToScroll: 1,
 							dots: true,
 							centerMode: true,
-							
+							arrows: false,
+							variableWidth:false,
+
+							responsive: [
+								{
+									breakpoint: 820,
+									settings: {
+										dots: true,
+										vertical: false,
+									}
+								}
+							]							
 						});
 				
 
