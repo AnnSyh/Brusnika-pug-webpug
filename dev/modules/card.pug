@@ -31,7 +31,7 @@ link(rel='stylesheet' type='text/css' media='screen' href='../css/photoswipe.css
             +listTwo('product__accordion-availability', dataListMeasurements)
   .products-photos__wrapper
     .product-photos__inner.products-photos-only-desktop
-      #my-gallery.product-photos.pswp-gallery
+      .my-gallery.product-photos
         a(href='../dummy/slider/c1.png' data-pswp-width='2500' data-pswp-height='3688' target='_blank')
           img(src='../dummy/slider/c1.png' )
         a(href='../dummy/slider/c2.png' data-pswp-width='2500' data-pswp-height='3688' target='_blank')
@@ -52,14 +52,14 @@ link(rel='stylesheet' type='text/css' media='screen' href='../css/photoswipe.css
         img(src='../dummy/slider/c5.png')
         img(src='../dummy/slider/c6.png')
 
-    .product-photos__inner.products-photos-only-mobile(style="min-width:0; border:1px solid red;")
+    .product-photos__inner.products-photos-only-mobile.for-slick-slider
 
-      .product-photos-gallery__wrapper(style='min-width:0;')
+      .product-photos-gallery__wrapper.for-slick-slider
 
-        .product-photos-gallery
+        .my-gallery.product-photos-gallery
           - for (var x = 0; x < 4; x++)
             .product-photos-gallery__item
-              a(href='../dummy/slider/c1.png')
+              a(href='../dummy/slider/c1.png' data-pswp-width='2500' data-pswp-height='3688' target='_blank')
                 img.product-photos-gallery__img(src='../dummy/slider/c1.png' )
 
 
