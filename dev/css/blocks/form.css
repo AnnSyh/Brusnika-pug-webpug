@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mobile-filter label,
 .mobile-filter input {
   /* label */
@@ -33,4 +34,138 @@
   .reg-form__width {
     max-width: calc(100% - 60px);
   }
+}
+
+.jcf-number {
+  position: relative;
+  top: -5px;
+  display: block;
+  width: 106px;
+  height: 55px;
+  padding: 0 28px;
+  border: 1px solid #D6D6D6;
+  border-radius: 5px;
+}
+
+.jcf-number input {
+  font-family: "SFProDisplay", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.jcf-number .jcf-btn-inc,
+.jcf-number .jcf-btn-dec {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.3s background-color cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.jcf-number .jcf-btn-inc:after,
+.jcf-number .jcf-btn-dec:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 30;
+  text-align: center;
+  color: #1D1D1D;
+  transition: 0.3s color cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.jcf-number .jcf-btn-inc:hover:after,
+.jcf-number .jcf-btn-dec:hover:after {
+  color: #666;
+}
+
+.jcf-number .jcf-btn-inc {
+  right: 0;
+}
+
+.jcf-number .jcf-btn-inc:after {
+  content: "+";
+  line-height: 30px;
+}
+
+.jcf-number .jcf-btn-dec {
+  left: 0;
+}
+
+.jcf-number .jcf-btn-dec:after {
+  content: "–";
+  line-height: 30px;
+}
+
+.jcf-number input::-webkit-outer-spin-button,
+.jcf-number input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.jcf-range {
+  position: relative;
+  display: block;
+  padding: 25px 0;
+}
+
+.jcf-range:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #f8f8f8;
+}
+
+.jcf-range .jcf-range-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.jcf-range .jcf-range-display-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.jcf-range .jcf-range-display-wrapper .jcf-range-display {
+  position: absolute;
+  display: block;
+  height: 2px;
+  background-color: #1D1D1D;
+}
+
+.jcf-range .jcf-range-track {
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+
+.jcf-range .jcf-range-track .jcf-range-handle {
+  position: absolute;
+  top: -5.5px;
+  margin-left: -6.5px;
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-color: #1D1D1D;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s transform cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.jcf-range .jcf-range-track .jcf-range-handle:hover {
+  transform: scale(1.4);
 }/*# sourceMappingURL=form.css.map */

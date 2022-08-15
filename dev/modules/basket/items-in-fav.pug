@@ -1,0 +1,10 @@
+
+each item in BasketProductsMenu
+  .order-table__row
+    div.add-fav
+      img.add-fav__img(src=`../dummy/orders/${item.img}`)
+      .div.add-fav__info
+        .order-table__name= item.title
+        .order-table__price= item.price + ' Р'
+        .order-table__size= `Размер: ${item.size} RU`
+        .order-table__color= `Цвет: ${item.color}` 

@@ -33,4 +33,18 @@
   background: url(../../svg/share.svg) no-repeat center center;
   background-size: auto;
   background-size: contain;
+}
+
+.add-fav {
+  display: flex;
+  gap: 10px;
+}
+.add-fav__img {
+  margin: 0;
+  width: 82px;
+  height: 121px;
+  max-width: initial;
+}
+.add-fav__info {
+  text-align: left;
 }/*# sourceMappingURL=favorites.css.map */

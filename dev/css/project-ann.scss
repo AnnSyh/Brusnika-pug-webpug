@@ -8,16 +8,20 @@
 @import url(../css/blocks/catalog.css);
 @import url(../css/blocks/page-note.css);
 @import url(../css/blocks/filter.css);
+
+// переиспользуемые компоненты
 @import url(../css/blocks/btns.css);
 @import url(../css/blocks/form.css);
+@import url(../css/blocks/page-popup.css);
+// /переиспользуемые компоненты
+
 @import url(../css/blocks/footer.css);
 @import url(../css/blocks/search.css);
 @import url(../css/blocks/form-tabs.css);
-@import url(../css/blocks/form.css);
-@import url(../css/blocks/page-popup.css);
 @import url(../css/blocks/order.css);
 @import url(../css/blocks/product.css);
-@import url(../css/blocks/product-photos.css);
+@import url(../css/blocks/product-photos.css);//для слайдера на стр товаров
+@import url(../css/blocks/sliders-style.css);//для слайдеров
 
 @import url(../css/blocks/complete-look.css);
 @import url(../css/blocks/look.css);
@@ -62,6 +66,10 @@
   line-height: 25px;
   margin-top: 15px;
   margin-bottom: 15px;
+
+  @media screen and (max-width:768px) {
+    font-size: 14px;
+  }
 }
 
 .m0 {
@@ -283,13 +291,13 @@
 /* //шрифты  */
 
 body,
-.form-item,
-.jcf-number input {
+.form-item {
   font-family: 'SFProDisplay', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
+
 
 .cards__list .catalog-item-photo-holder {
   padding-top: 137%;
@@ -437,4 +445,14 @@ body,
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
+}
+
+.page-content {
+  border: 1px solid green;
+  margin-bottom: 340px;
+
+  @media screen and (max-width:768px) {
+    border: 1px solid red;
+    margin-bottom: 70px;
+  }
 }

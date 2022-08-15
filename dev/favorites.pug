@@ -13,13 +13,12 @@ block variables
 
 block content
   main.page-content
-    .page-section.page-section--brand
       .page-inner.page-inner--w2 
         .favorites__share
           .favorites__count-title Избранное (8)
           a.favorites__link(href='#message-log-in' data-popup='{"type":"inline"}') Поделиться
         include modules/favorites 
-        section.page-inner.hidden-x(style='margin-top: 100px;')
+        section.page-inner
           .page-inner.page-inner--w2
             .catalog
               include modules/slider-prev-watched

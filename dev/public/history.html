@@ -42,7 +42,7 @@
           </div>
         </body>
       </html>
-      <header class="page-header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <header class="page-header page-header-fixed1">
         <div class="page-inner page-inner--w1 desktop">
           <div class="header-menu">
             <div class="header-menu__left">
@@ -262,7 +262,7 @@
                 <div class="order-table__block order-table__mr">
                   <div class="order-table basket">
                     <div class="order-table__row">
-                      <div class="order-table__item">
+                      <div class="order-table__item catalog-item1">
                         <div class="order-table__img">
                           <div class="order-photo-holder"><img class="cover" src="../dummy/catalog/c2.jpg"></div>
                         </div>
@@ -272,7 +272,7 @@
                           </div>
                           <div class="order-table__price">15 900 Р</div>
                           <div class="order-table__link"><a href="#">+2 цвета</a></div>
-                          <div class="order-table__link"><a href="#">Добавить к заказу</a></div>
+                          <div class="order-table__link"><a href="#">1Добавить к заказу</a></div>
                         </div>
                       </div>
                     </div>
@@ -281,7 +281,7 @@
                 <div class="order-table__block order-table__mr">
                   <div class="order-table basket">
                     <div class="order-table__row">
-                      <div class="order-table__item">
+                      <div class="order-table__item catalog-item1">
                         <div class="order-table__img">
                           <div class="order-photo-holder"><img class="cover" src="../dummy/catalog/c9.jpg"></div>
                         </div>
@@ -291,7 +291,7 @@
                           </div>
                           <div class="order-table__price">15 900 Р</div>
                           <div class="order-table__link"><a href="#">+2 цвета</a></div>
-                          <div class="order-table__link"><a href="#">Добавить к заказу</a></div>
+                          <div class="order-table__link"><a href="#">1Добавить к заказу</a></div>
                         </div>
                       </div>
                     </div>
@@ -510,107 +510,105 @@
         </div>
       </header>
       <main class="page-content">
-        <div class="page-section">
-          <div class="page-inner page-inner--w2">
-            <div class="page-heading">
-              <div class="row">
-                <div class="col-md-4"> 
-                  <div class="mb-4 d-lg-none"><a class="link link--gray_border" href="dashboard.html">Личный кабинет</a></div>
-                  <div class="page-heading-title page-heading-title_personal uppercase">История заказов</div>
+        <div class="page-inner page-inner--w2">
+          <div class="page-heading">
+            <div class="row">
+              <div class="col-md-4"> 
+                <div class="mb-4 d-lg-none"><a class="link link--gray_border" href="dashboard.html">Личный кабинет</a></div>
+                <div class="page-heading-title page-heading-title_personal uppercase">История заказов</div>
+              </div>
+              <div class="col-md-8">
+                <div class="page-heading-title border-top-gray only-desktop">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 d-none d-lg-block"> 
+              <div class="personal-menu">
+                <div class="personal-menu-item"><a class="link link--black" href="orders.html">Текущие заказы (2)</a>
                 </div>
-                <div class="col-md-8">
-                  <div class="page-heading-title border-top-gray only-desktop">&nbsp;</div>
+                <div class="personal-menu-item"><a class="link link--black" href="history.html">История заказов (3)</a>
+                </div>
+                <div class="personal-menu-item"><a class="link link--black" href="basket.html">Корзина</a>
+                </div>
+                <div class="personal-menu-item"><a class="link link--black" href="favorites.html">Избранное</a>
+                </div>
+                <div class="personal-menu-item"><a class="link link--black" href="personal.html">Личные данные</a>
+                </div>
+                <div class="personal-menu-item"><a class="link link--black" href="loyalty-card.html">Карта лояльности</a>
+                </div>
+                <div class="personal-menu-item"><a class="link link--black" href="#">Выйти</a>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-3 d-none d-lg-block"> 
-                <div class="personal-menu">
-                  <div class="personal-menu-item"><a class="link link--black" href="orders.html">Текущие заказы (2)</a>
+            <div class="col-lg-1"></div>
+            <div class="col-12 col-md-8 offset-md-2 col-lg-9 offset-lg-0 col-xl-8">
+              <div class="order-items">
+                <div class="order-item">
+                  <div class="order-item-title">Заказ № 21112 от 03.02.2021</div>
+                  <div class="order-item-info row mb-3">
+                    <div class="col-md-3 mb-4 mb-lg-0">
+                      <p><b>Статус</b></p>
+                      <p>Ожидается доставка</p>
+                    </div>
+                    <div class="col-md-3 mb-4 mb-lg-0">
+                      <p><b>Сумма заказа</b></p>
+                      <p>11 390 Р<br>Cпособ оплаты: Онлайн картой на сайте</p>
+                    </div>
+                    <div class="col-md-3 mb-4 mb-lg-0">
+                      <p><b>Дата доставки</b></p>
+                      <p>07.03.2021</p>
+                    </div>
+                    <div class="col-md-3">
+                      <p><b>Доставка</b></p>
+                      <p>Пункт выдачи посылок СДЭК Ростов-на-Дону, ул. Ленина, 44</p>
+                    </div>
                   </div>
-                  <div class="personal-menu-item"><a class="link link--black" href="history.html">История заказов (3)</a>
+                  <div class="d-none d-lg-block">
+                    <div class="row justify-content-between align-items-center">
+                      <div class="col-auto"><a class="link link--black_border" href="last-order.html">Подробнее о заказе</a></div>
+                      <div class="col-auto"><a class="btn btn--medium btn--black" href="#">ПОВТОРИТЬ ЗАКАЗ</a></div>
+                    </div>
                   </div>
-                  <div class="personal-menu-item"><a class="link link--black" href="basket.html">Корзина</a>
-                  </div>
-                  <div class="personal-menu-item"><a class="link link--black" href="favorites.html">Избранное</a>
-                  </div>
-                  <div class="personal-menu-item"><a class="link link--black" href="personal.html">Личные данные</a>
-                  </div>
-                  <div class="personal-menu-item"><a class="link link--black" href="loyalty-card.html">Карта лояльности</a>
-                  </div>
-                  <div class="personal-menu-item"><a class="link link--black" href="#">Выйти</a>
+                  <div class="d-lg-none">
+                    <div class="row mt-4">
+                      <div class="col-12 mb-4"><a class="btn btn--medium btn--black btn--fullwidth" href="#">ПОВТОРИТЬ ЗАКАЗ</a></div>
+                      <div class="col-12 center"><a class="link link--black_border" href="last-order.html">Подробнее о заказе</a></div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-1"></div>
-              <div class="col-12 col-md-8 offset-md-2 col-lg-9 offset-lg-0 col-xl-8">
-                <div class="order-items">
-                  <div class="order-item">
-                    <div class="order-item-title">Заказ № 21112 от 03.02.2021</div>
-                    <div class="order-item-info row mb-3">
-                      <div class="col-md-3 mb-4 mb-lg-0">
-                        <p><b>Статус</b></p>
-                        <p>Ожидается доставка</p>
-                      </div>
-                      <div class="col-md-3 mb-4 mb-lg-0">
-                        <p><b>Сумма заказа</b></p>
-                        <p>11 390 Р<br>Cпособ оплаты: Онлайн картой на сайте</p>
-                      </div>
-                      <div class="col-md-3 mb-4 mb-lg-0">
-                        <p><b>Дата доставки</b></p>
-                        <p>07.03.2021</p>
-                      </div>
-                      <div class="col-md-3">
-                        <p><b>Доставка</b></p>
-                        <p>Пункт выдачи посылок СДЭК Ростов-на-Дону, ул. Ленина, 44</p>
-                      </div>
+              <div class="order-items">
+                <div class="order-item">
+                  <div class="order-item-title">Заказ № 21112 от 03.02.2021</div>
+                  <div class="order-item-info row mb-3">
+                    <div class="col-md-3 mb-4 mb-lg-0">
+                      <p><b>Статус</b></p>
+                      <p>Ожидается доставка</p>
                     </div>
-                    <div class="d-none d-lg-block">
-                      <div class="row justify-content-between align-items-center">
-                        <div class="col-auto"><a class="link link--black_border" href="last-order.html">Подробнее о заказе</a></div>
-                        <div class="col-auto"><a class="btn btn--medium btn--black" href="#">ПОВТОРИТЬ ЗАКАЗ</a></div>
-                      </div>
+                    <div class="col-md-3 mb-4 mb-lg-0">
+                      <p><b>Сумма заказа</b></p>
+                      <p>11 390 Р<br>Cпособ оплаты: Онлайн картой на сайте</p>
                     </div>
-                    <div class="d-lg-none">
-                      <div class="row mt-4">
-                        <div class="col-12 mb-4"><a class="btn btn--medium btn--black btn--fullwidth" href="#">ПОВТОРИТЬ ЗАКАЗ</a></div>
-                        <div class="col-12 center"><a class="link link--black_border" href="last-order.html">Подробнее о заказе</a></div>
-                      </div>
+                    <div class="col-md-3 mb-4 mb-lg-0">
+                      <p><b>Дата доставки</b></p>
+                      <p>07.03.2021</p>
+                    </div>
+                    <div class="col-md-3">
+                      <p><b>Доставка</b></p>
+                      <p>Пункт выдачи посылок СДЭК Ростов-на-Дону, ул. Ленина, 44</p>
                     </div>
                   </div>
-                </div>
-                <div class="order-items">
-                  <div class="order-item">
-                    <div class="order-item-title">Заказ № 21112 от 03.02.2021</div>
-                    <div class="order-item-info row mb-3">
-                      <div class="col-md-3 mb-4 mb-lg-0">
-                        <p><b>Статус</b></p>
-                        <p>Ожидается доставка</p>
-                      </div>
-                      <div class="col-md-3 mb-4 mb-lg-0">
-                        <p><b>Сумма заказа</b></p>
-                        <p>11 390 Р<br>Cпособ оплаты: Онлайн картой на сайте</p>
-                      </div>
-                      <div class="col-md-3 mb-4 mb-lg-0">
-                        <p><b>Дата доставки</b></p>
-                        <p>07.03.2021</p>
-                      </div>
-                      <div class="col-md-3">
-                        <p><b>Доставка</b></p>
-                        <p>Пункт выдачи посылок СДЭК Ростов-на-Дону, ул. Ленина, 44</p>
-                      </div>
+                  <div class="d-none d-lg-block">
+                    <div class="row justify-content-between align-items-center">
+                      <div class="col-auto"><a class="link link--black_border" href="last-order.html">Подробнее о заказе</a></div>
+                      <div class="col-auto"><a class="btn btn--medium btn--black" href="#">ПОВТОРИТЬ ЗАКАЗ</a></div>
                     </div>
-                    <div class="d-none d-lg-block">
-                      <div class="row justify-content-between align-items-center">
-                        <div class="col-auto"><a class="link link--black_border" href="last-order.html">Подробнее о заказе</a></div>
-                        <div class="col-auto"><a class="btn btn--medium btn--black" href="#">ПОВТОРИТЬ ЗАКАЗ</a></div>
-                      </div>
-                    </div>
-                    <div class="d-lg-none">
-                      <div class="row mt-4">
-                        <div class="col-12 mb-4"><a class="btn btn--medium btn--black btn--fullwidth" href="#">ПОВТОРИТЬ ЗАКАЗ</a></div>
-                        <div class="col-12 center"><a class="link link--black_border" href="last-order.html">Подробнее о заказе</a></div>
-                      </div>
+                  </div>
+                  <div class="d-lg-none">
+                    <div class="row mt-4">
+                      <div class="col-12 mb-4"><a class="btn btn--medium btn--black btn--fullwidth" href="#">ПОВТОРИТЬ ЗАКАЗ</a></div>
+                      <div class="col-12 center"><a class="link link--black_border" href="last-order.html">Подробнее о заказе</a></div>
                     </div>
                   </div>
                 </div>
@@ -816,6 +814,25 @@
           </div>
         </div>
       </form>
+    </div>
+    <div class="page-popup mfp-hide" id="fav-add-popup">
+      <div class="page-popup-heading">
+        <div class="page-popup-heading-title center h1">Добавить товар в избранное?</div>
+      </div>
+      <div class="order-table__row">
+        <div class="add-fav"><img class="add-fav__img" src="../dummy/orders/2.jpg">
+          <div class="div add-fav__info">
+            <div class="order-table__name">БРЮКИ</div>
+            <div class="order-table__price">15 900 Р</div>
+            <div class="order-table__size">Размер: 41 RU</div>
+            <div class="order-table__color">Цвет: коричневый</div>
+          </div>
+        </div>
+      </div>
+      <div class="page-popup-footer">
+        <button class="btn btn--black btn--medium btn--fullwidth basket-open" type="submit">ДОБАВИТЬ В ИЗБРАННОЕ</button>
+        <button class="btn btn--black_border btn--medium btn--fullwidth" type="submit">Удалить</button>
+      </div>
     </div>
     <div class="page-popup page-popup-w565 mfp-hide" id="size-popup">
       <div class="page-popup-heading">

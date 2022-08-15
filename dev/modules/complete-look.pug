@@ -31,10 +31,9 @@ section
           .catalog-item-title= look.name
             include card-colors-block
 
-          .catalog-item-price
-            b= look.price + ' РУБ'
+          .catalog-item-price= look.price + ' РУБ'
           a.catalog-item-link(href='card.html')
-          button.catalog-item-like(type='button') 
+          a.catalog-item-like(href='#fav-add-popup' data-popup='{"type":"inline"}') 
 
   .complite-look__info
     .complite-look__text

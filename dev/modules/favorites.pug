@@ -26,7 +26,6 @@
                   .catalog-item-title= item.name
                     include card-colors-block
 
-                  .catalog-item-price
-                    b= item.price + ' РУБ'
+                  .catalog-item-price= item.price + ' РУБ'
                   a.catalog-item-link(href='card.html')
                   button.catalog-item-like(type='button')             

@@ -6,6 +6,29 @@
     max-width: 430px;
     padding: 55px 45px;
 
+    &-heading {
+        margin-bottom: 20px;
+    }
+
+    &-heading-title {
+        margin-bottom: 20px;
+
+        img {
+            margin-left: 50px;
+            display: inline-block;
+        }
+    }
+
+    &-footer {
+        .btn {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0; 
+            }
+        }
+    }
+
     &-w565 {
         max-width: 565px;
     }
@@ -76,8 +99,4 @@
 .page-popup .size-list a.active {
     color: $color-white;
     background-color: $color-black;
-}
-
-button.basket-open {
-    border: 1px solid red;
 }

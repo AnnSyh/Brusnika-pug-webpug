@@ -81,6 +81,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .order-table__price {
@@ -308,4 +309,21 @@
   .order-table__row.last {
     border-bottom: 1px solid #E1E1E1;
   }
+}
+.order-table .order-table-delete {
+  position: relative;
+  top: 5px;
+  margin: 0 0 0 auto;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url("../../svg/basket_remove.svg") no-repeat center center;
+  background-size: contain;
+  transition: 0.3s opacity cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.order-table .order-table-delete:hover {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
 }/*# sourceMappingURL=order.css.map */
