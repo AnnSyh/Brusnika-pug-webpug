@@ -66,22 +66,22 @@ const simplebarsList = document.querySelectorAll('.simplebar');
 console.log('simplebarsList = ', simplebarsList);
 
 simplebarsList.forEach((item) => {
-  new SimpleBar(item,{
-    autoHide:false,
+  new SimpleBar(item, {
+    autoHide: false,
   });
 })
 
 $('.sms-not-coming').on("click", function (e) {
   console.log('sms-not-coming');
   e.preventDefault();
-  window.location='login.html';
+  window.location = 'login.html';
   const tabs = document.querySelectorAll('.sign-with');
 
-  tabs.forEach((item)=>{
+  tabs.forEach((item) => {
     console.log('111item.classList = ', item.classList);
     // (data-tab="#auth-form_phone") 
   });
-   
+
 });
 
 
@@ -100,4 +100,63 @@ radiosList.forEach((item) => {
     // console.log('item3 = ', row.classList.toggle('black-border'));
   });
 })
+
+//сделать переключение картинки при нажатии на цвета
+// card.html  блок Завершите свой образ
+
+const tovarColorItem = document.querySelectorAll('.catalog-item .order-table__color');
+const allColorLinks = document.querySelectorAll('a.order-table__color-link');
+const productListLinks = document.querySelectorAll('.product-to-basket__content a.product-list-link');
+
+productListLinks.forEach((item) => {
+
+  item.addEventListener('click', (evt) => {
+    evt.preventDefault(); //for click
+
+    const imgSrcNew = evt.target.getAttribute('data-imgsrcnew');
+
+    const changeImg = document.querySelector('.my-gallery .slick-current.slick-active img.product-photos-gallery__img');
+    console.log('changeImg = ',changeImg);
+
+    if (imgSrcNew) { changeImg.src = imgSrcNew }
+
+  });
+
+  // item.addEventListener('mouseout', (evt) => {
+  //   const imgSrc = evt.target.getAttribute('data-imgsrc');
+  //   const changeImg = document.querySelector('.my-gallery img');
+  //   if (imgSrc) { changeImg.src = imgSrc; }
+
+  // });
+
+});
+
+// allColorLinks.forEach((item) => {
+//   console.log('item = ',item);
+//   item.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     console.log('click colors mark!!');
+
+//   });
+
+// });
+
+// tovarColorItem.forEach((item) => {
+//   console.log('tovarColorItem i = ', item);
+
+//     const itemLinks = item.querySelectorAll('a.order-table__color-link');
+
+//     itemLinks.forEach((itemLink) => {
+
+//       // itemLink.addClass('color11111');
+
+//       console.log('itemLink i = ', itemLink);
+
+//       itemLink.addEventListener('click', (e) => {
+//         e.preventDefault();
+//         console.log('click colors mark!!');
+//       });
+//     });
+
+// });
 
