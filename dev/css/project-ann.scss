@@ -447,12 +447,12 @@ body,
   line-height: 30px;
 }
 
+// расстояния от шапки до контента и от контента до футера
 .page-content {
-  border: 1px solid green;
+  margin-top: 45px;
   margin-bottom: 340px;
 
   @media screen and (max-width:768px) {
-    border: 1px solid red;
     margin-bottom: 70px;
   }
 }

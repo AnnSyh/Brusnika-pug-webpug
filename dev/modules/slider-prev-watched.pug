@@ -16,13 +16,12 @@
             path(d='M20.9785 12.1438C21.1737 11.9486 21.4903 11.9486 21.6856 12.1438C21.8808 12.3391 21.8808 12.6557 21.6856 12.8509L20.9785 12.1438ZM14.3939 20.1426C14.1987 20.3379 13.8821 20.3379 13.6868 20.1426C13.4915 19.9474 13.4915 19.6308 13.6868 19.4355L14.3939 20.1426ZM21.6856 12.8509L14.3939 20.1426L13.6868 19.4355L20.9785 12.1438L21.6856 12.8509Z' fill='#1D1D1D')
   .catalog-items.row.catalog-items--slider(data-params='{"slidesToShow": 6, "slidesToScroll": 5}')
 
-
     each card in cards
       .col-md-2
         .catalog-item.w1
           .catalog-item-photo-holder
             img.cover(src=`../dummy/catalog/${card.image}`)
           .catalog-item-title= card.name
-          .catalog-item-price= card.price
+          .catalog-item-price= card.price + ' РУБ.'
           a.catalog-item-link(href='card.html')
           button.catalog-item-like(type='button') 

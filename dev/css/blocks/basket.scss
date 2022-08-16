@@ -1,11 +1,7 @@
 @import '../variables.scss';
 
 .basket {
-
-    // border: 1px solid red !important;
-
     &__header {
-        margin-top: 100px;
         margin-bottom: 50px;
     }
 
@@ -36,8 +32,6 @@
     &__body-right {
         flex: 1;
     }
-
-
 }
 
 .order-table__title {

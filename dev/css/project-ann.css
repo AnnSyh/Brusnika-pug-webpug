@@ -410,12 +410,11 @@ body,
 }
 
 .page-content {
-  border: 1px solid green;
+  margin-top: 45px;
   margin-bottom: 340px;
 }
 @media screen and (max-width: 768px) {
   .page-content {
-    border: 1px solid red;
     margin-bottom: 70px;
   }
 }/*# sourceMappingURL=project-ann.css.map */
