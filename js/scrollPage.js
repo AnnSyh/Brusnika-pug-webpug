@@ -102,61 +102,43 @@ radiosList.forEach((item) => {
 })
 
 //сделать переключение картинки при нажатии на цвета
-// card.html  блок Завершите свой образ
+// card.html  блок под наз/ценой товара
 
 const tovarColorItem = document.querySelectorAll('.catalog-item .order-table__color');
 const allColorLinks = document.querySelectorAll('a.order-table__color-link');
-const productListLinks = document.querySelectorAll('.product-to-basket__content a.product-list-link');
+const productListLinks = document.querySelectorAll('.product-list a.product-list-link');
 
 productListLinks.forEach((item) => {
 
   item.addEventListener('click', (evt) => {
     evt.preventDefault(); //for click
-
     const imgSrcNew = evt.target.getAttribute('data-imgsrcnew');
+    const tovarMiniaturs = document.querySelectorAll('ul.product-list img');
+    const cardNav = document.querySelector('.card-nav ul.product-list');
+    const productHolder = document.querySelector('.product-title-holder ul.product-list');
 
-    const changeImg = document.querySelector('.my-gallery .slick-current.slick-active img.product-photos-gallery__img');
-    console.log('changeImg = ',changeImg);
-
-    if (imgSrcNew) { changeImg.src = imgSrcNew }
+    tovarMiniaturs.forEach((item) => {
+      item.classList.remove('active');
+    });
+    // evt.target.classList.toggle('active');
+    if( evt.target.classList.contains('product-list-img-1')){
+      cardNav.querySelector('.product-list-img-1').classList.toggle('active')
+      productHolder.querySelector('.product-list-img-1').classList.toggle('active')
+    } else {
+      cardNav.querySelector('.product-list-img-2').classList.toggle('active')
+      productHolder.querySelector('.product-list-img-2').classList.toggle('active')
+    }
+// моб версия слайдера
+    const changeImgMobile = document.querySelector('.my-gallery .slick-current.slick-active img.product-photos-gallery__img');
+    if (imgSrcNew) { changeImgMobile.src = imgSrcNew }
+// десктопная версия слайдера
+    const changeImgDesktop = document.querySelector('.my-gallery .slick-current.slick-active img');
+    if (imgSrcNew) { changeImgDesktop.src = imgSrcNew }
 
   });
 
-  // item.addEventListener('mouseout', (evt) => {
-  //   const imgSrc = evt.target.getAttribute('data-imgsrc');
-  //   const changeImg = document.querySelector('.my-gallery img');
-  //   if (imgSrc) { changeImg.src = imgSrc; }
-
-  // });
 
 });
 
-// allColorLinks.forEach((item) => {
-//   console.log('item = ',item);
-//   item.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     console.log('click colors mark!!');
 
-//   });
-
-// });
-
-// tovarColorItem.forEach((item) => {
-//   console.log('tovarColorItem i = ', item);
-
-//     const itemLinks = item.querySelectorAll('a.order-table__color-link');
-
-//     itemLinks.forEach((itemLink) => {
-
-//       // itemLink.addClass('color11111');
-
-//       console.log('itemLink i = ', itemLink);
-
-//       itemLink.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         console.log('click colors mark!!');
-//       });
-//     });
-
-// });
 
