@@ -39,13 +39,7 @@
 }
 
 .search-form__input {
-  border: 1px solid #ccc;
-  display: flex;
-  height: 56px;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 15px 15px 15px 45px;
+  padding-left: 45px !important;
 }
 
 .search-form {
@@ -103,20 +97,23 @@
 }
 
 .search-form__form {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .search-form__products-found {
   text-align: center;
   max-width: 430px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .categories-most-viewed__text {
   font-weight: 200;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 33px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 .categories-most-viewed__title {
@@ -146,4 +143,13 @@
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .search-form__submit {
+    display: none;
+  }
+  .search-form__clear {
+    right: 0;
+  }
 }/*# sourceMappingURL=search.css.map */

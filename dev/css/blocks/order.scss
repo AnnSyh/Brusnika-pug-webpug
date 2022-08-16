@@ -161,7 +161,7 @@
 
 
 
-.order-table__item>.order-table__price {
+.order-table__item > .order-table__price {
     width: 110px;
     height: 50px;
     line-height: 50px;
@@ -172,11 +172,11 @@
     }
 }
 
-.order-table__item>.order-table__img {
+.order-table__item > .order-table__img {
     width: 175px;
 }
 
-.order-table__item>.order-table__item-delete {
+.order-table__item > .order-table__item-delete {
     width: 100px;
 
     @media screen and (max-width: 670px) {
