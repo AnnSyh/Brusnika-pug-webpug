@@ -785,7 +785,7 @@ body .mobile-nav-menu-item-holder.open:before {
 }
 @media screen and (max-width: 960px) {
   .only-desktop {
-    display: none;
+    display: none !important;
   }
   .only-mobile {
     display: block;

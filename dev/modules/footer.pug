@@ -5,9 +5,11 @@ footer.page-footer(itemscope='', itemtype='http://schema.org/WPFooter')
     .footer-top
       ul.footer-top__list
         li.footer-top__item
+          a(href='#') VKONTAKTE
+        li.footer-top__item
           a(href='#') Telegram
         li.footer-top__item
-          a(href='#') Вконтакте
+          a(href='#') WHATSAPP
     .footer-content
 
       .footer-content__left
@@ -25,12 +27,12 @@ footer.page-footer(itemscope='', itemtype='http://schema.org/WPFooter')
                     a(href='#') Руководство по покупке
                   li
                     a(href='#') Система лояльности
-                  li.only-mobile
-                    a(href='#') Политика конфиденциальности
-                  li.only-mobile
-                    a(href='#') Оферта
-                  li.only-mobile
-                    a(href='#') Политика конфиденциальности
+                  //- li.only-mobile
+                  //-   a(href='#') Политика конфиденциальности
+                  //- li.only-mobile
+                  //-   a(href='#') Оферта
+                  //- li.only-mobile
+                  //-   a(href='#') Политика конфиденциальности
             .accordion-item
               .accordion-item-heading Компания
               .accordion-item-content
@@ -69,9 +71,9 @@ footer.page-footer(itemscope='', itemtype='http://schema.org/WPFooter')
           img(src='../svg/header_logo.svg', alt='')
       .footer-content__right
         .footer-content__right-content
-          .footer-text
+          .footer-text.only-desktop
             | Подпишитесь на рассылку с новостями о тенденциях, специальных предложениях и новинках!
-          .footer-form
+          .footer-form.only-desktop
             form(action='')
               .footer-form__form
                 input(type='text', placeholder='Введите свой E-mail')
@@ -82,7 +84,7 @@ footer.page-footer(itemscope='', itemtype='http://schema.org/WPFooter')
                 | с 
                 a(href='#') политикой конфиденциальности
     .footer-bottom
-      .footer-bottom__left
+      .footer-bottom__left.only-desktop
         ul.footer-bottom__list
           li
             a(href='#') Политика конфиденциальности
@@ -90,5 +92,5 @@ footer.page-footer(itemscope='', itemtype='http://schema.org/WPFooter')
             a(href='#') Оферта
       .footer-bottom__center
         a(href='#') RUFORMAT®
-      .footer-bottom__right
+      .footer-bottom__right.only-desktop
         | © 1999-2022 Интернет-магазин «Brusnika»    

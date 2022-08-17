@@ -90,9 +90,13 @@ ul.footer-top__list {
     flex: 1;
 }
 
-.footer-content__list:first-child {
-    margin-right: 100px;
+@media screen and (min-width:990px) {
+    
+    .footer-content__list:first-child {
+        margin-right: 100px;
+    }
 }
+
 
 .footer-bottom__right,
 .footer-bottom__center a,
@@ -107,6 +111,12 @@ ul.footer-top__list {
 
 .footer-content__list li {
     margin-bottom: 10px;
+
+    @media screen and (max-width:990px) {
+        float: left;
+        width: 50%;
+    }
+
 }
 
 .footer-content .footer-content__center {

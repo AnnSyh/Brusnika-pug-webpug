@@ -1,0 +1,18 @@
+.catalog  
+  .catalog-items.row.catalog-items--slider(data-params='{"slidesToShow": 4, "slidesToScroll": 5}')
+
+    each item in cards
+      .col-md-2
+        .catalog-item.w2
+          .catalog-item-photo-holder
+            img.cover(src=`../dummy/catalog/${item.image}`)
+
+          include card-sizes-block
+          .catalog-item-title.justify-content-between= item.name
+            //-     .catalog-item-color +3 цвета
+            //-   include card-colors-block            
+
+          .catalog-item-price= item.price + ' РУБ.'
+
+          a.catalog-item-link(href='card.html')
+          button.catalog-item-like(type='button') 

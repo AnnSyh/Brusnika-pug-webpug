@@ -45,6 +45,12 @@
   height: 50px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  .filters-row {
+    height: 20px;
+    margin-bottom: 10px;
+  }
+}
 @media screen and (max-width: 400px) {
   .filters-row .slick-initialized .slick-slide {
     font-size: 10px;

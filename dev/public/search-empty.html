@@ -42,7 +42,7 @@
           </div>
         </body>
       </html>
-      <header class="page-header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <header class="page-header page-header-fixed1">
         <div class="page-inner page-inner--w1 desktop">
           <div class="header-menu">
             <div class="header-menu__left">
@@ -96,8 +96,8 @@
               <div class="menu-sections__inner page-inner--w2">
                 <form action="search.html">
                   <div class="search-form">
-                    <input class="search-form__input" type="text" placeholder="">
-                    <button class="search-form__clear" type="button"></button>
+                    <input class="search-form__input form-item form-item--text" type="text" placeholder="">
+                    <button class="search-form__clear btn btn--medium" type="button"></button>
                     <button class="search-form__submit btn btn--black btn--medium" type="submit">Найти</button>
                   </div>
                   <div class="search-results">
@@ -118,38 +118,171 @@
                                 </li>
                               </ul>
                     </div>
-                    <div class="search-products">
+                    <div class="search-products for-slick-slider">
                       <div class="row search-products__catalog-items">
-                        <div class="col-md-3 col-sm-6">
-                          <div class="catalog-item w1">
-                            <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c1.jpg"></div>
-                            <div class="catalog-item-title">ПЛАТЬЕ</div>
-                            <div class="catalog-item-price">15 900 Р</div><a class="catalog-item-link" href="#"></a>
-                            <button class="catalog-item-like" type="button"> </button>
-                          </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                          <div class="catalog-item w1">
-                            <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c2.jpg"></div>
-                            <div class="catalog-item-title">ПЛАТЬЕ</div>
-                            <div class="catalog-item-price">15 900 Р</div><a class="catalog-item-link" href="#"></a>
-                            <button class="catalog-item-like" type="button"> </button>
-                          </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                          <div class="catalog-item w1">
-                            <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c3.jpg"></div>
-                            <div class="catalog-item-title">ПЛАТЬЕ</div>
-                            <div class="catalog-item-price">15 900 Р</div><a class="catalog-item-link" href="#"></a>
-                            <button class="catalog-item-like" type="button"> </button>
-                          </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                          <div class="catalog-item w1">
-                            <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c4.jpg"></div>
-                            <div class="catalog-item-title">ПЛАТЬЕ</div>
-                            <div class="catalog-item-price">15 900 Р</div><a class="catalog-item-link" href="#"></a>
-                            <button class="catalog-item-like" type="button"> </button>
+                        <!-- поставить слайдер-->
+                        <div class="catalog"> 
+                          <div class="catalog-items row catalog-items--slider" data-params="{&quot;slidesToShow&quot;: 4, &quot;slidesToScroll&quot;: 5}">
+                            <div class="col-md-2">
+                              <div class="catalog-item w2">
+                                <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c21.jpg"></div>
+                                <div class="slider-size"> 
+                                  <div class="slider-size__title">Добавить в корзину</div>
+                                  <div class="slider-size__list"> 
+                                    <ul> 
+                                      <li> <a href="#">XS</a></li>
+                                      <li> <a href="#">S</a></li>
+                                      <li> <a href="#">M</a></li>
+                                      <li> <a href="#">L</a></li>
+                                      <li> <a href="#">XL</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="catalog-item-title justify-content-between">Жакет 1</div>
+                                <div class="catalog-item-price">1999 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
+                                <button class="catalog-item-like" type="button"> </button>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="catalog-item w2">
+                                <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c22.jpg"></div>
+                                <div class="slider-size"> 
+                                  <div class="slider-size__title">Добавить в корзину</div>
+                                  <div class="slider-size__list"> 
+                                    <ul> 
+                                      <li> <a href="#">XS</a></li>
+                                      <li> <a href="#">S</a></li>
+                                      <li> <a href="#">M</a></li>
+                                      <li> <a href="#">L</a></li>
+                                      <li> <a href="#">XL</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="catalog-item-title justify-content-between">Жакет 2</div>
+                                <div class="catalog-item-price">345 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
+                                <button class="catalog-item-like" type="button"> </button>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="catalog-item w2">
+                                <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c23.jpg"></div>
+                                <div class="slider-size"> 
+                                  <div class="slider-size__title">Добавить в корзину</div>
+                                  <div class="slider-size__list"> 
+                                    <ul> 
+                                      <li> <a href="#">XS</a></li>
+                                      <li> <a href="#">S</a></li>
+                                      <li> <a href="#">M</a></li>
+                                      <li> <a href="#">L</a></li>
+                                      <li> <a href="#">XL</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="catalog-item-title justify-content-between">Жакет 3</div>
+                                <div class="catalog-item-price">2329 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
+                                <button class="catalog-item-like" type="button"> </button>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="catalog-item w2">
+                                <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c24.jpg"></div>
+                                <div class="slider-size"> 
+                                  <div class="slider-size__title">Добавить в корзину</div>
+                                  <div class="slider-size__list"> 
+                                    <ul> 
+                                      <li> <a href="#">XS</a></li>
+                                      <li> <a href="#">S</a></li>
+                                      <li> <a href="#">M</a></li>
+                                      <li> <a href="#">L</a></li>
+                                      <li> <a href="#">XL</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="catalog-item-title justify-content-between">Жакет 4</div>
+                                <div class="catalog-item-price">2329 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
+                                <button class="catalog-item-like" type="button"> </button>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="catalog-item w2">
+                                <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c21.jpg"></div>
+                                <div class="slider-size"> 
+                                  <div class="slider-size__title">Добавить в корзину</div>
+                                  <div class="slider-size__list"> 
+                                    <ul> 
+                                      <li> <a href="#">XS</a></li>
+                                      <li> <a href="#">S</a></li>
+                                      <li> <a href="#">M</a></li>
+                                      <li> <a href="#">L</a></li>
+                                      <li> <a href="#">XL</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="catalog-item-title justify-content-between">Жакет 1</div>
+                                <div class="catalog-item-price">1999 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
+                                <button class="catalog-item-like" type="button"> </button>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="catalog-item w2">
+                                <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c22.jpg"></div>
+                                <div class="slider-size"> 
+                                  <div class="slider-size__title">Добавить в корзину</div>
+                                  <div class="slider-size__list"> 
+                                    <ul> 
+                                      <li> <a href="#">XS</a></li>
+                                      <li> <a href="#">S</a></li>
+                                      <li> <a href="#">M</a></li>
+                                      <li> <a href="#">L</a></li>
+                                      <li> <a href="#">XL</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="catalog-item-title justify-content-between">Жакет 2</div>
+                                <div class="catalog-item-price">345 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
+                                <button class="catalog-item-like" type="button"> </button>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="catalog-item w2">
+                                <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c23.jpg"></div>
+                                <div class="slider-size"> 
+                                  <div class="slider-size__title">Добавить в корзину</div>
+                                  <div class="slider-size__list"> 
+                                    <ul> 
+                                      <li> <a href="#">XS</a></li>
+                                      <li> <a href="#">S</a></li>
+                                      <li> <a href="#">M</a></li>
+                                      <li> <a href="#">L</a></li>
+                                      <li> <a href="#">XL</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="catalog-item-title justify-content-between">Жакет 3</div>
+                                <div class="catalog-item-price">2329 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
+                                <button class="catalog-item-like" type="button"> </button>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="catalog-item w2">
+                                <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c24.jpg"></div>
+                                <div class="slider-size"> 
+                                  <div class="slider-size__title">Добавить в корзину</div>
+                                  <div class="slider-size__list"> 
+                                    <ul> 
+                                      <li> <a href="#">XS</a></li>
+                                      <li> <a href="#">S</a></li>
+                                      <li> <a href="#">M</a></li>
+                                      <li> <a href="#">L</a></li>
+                                      <li> <a href="#">XL</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="catalog-item-title justify-content-between">Жакет 4</div>
+                                <div class="catalog-item-price">2329 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
+                                <button class="catalog-item-like" type="button"> </button>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -237,7 +370,7 @@
           <div class="basket-inner page-inner--w2">
             <div class="basket-open basket-menu__close"></div>
             <div class="basket-menu-sections">
-              <div class="basket-mobile-menu__header"><a class="basket__title-link" href="basket.html">Товары в корзине(1)</a><a class="basket__title-link-clean-basket" href="#">Очистить корзину</a></div>
+              <div class="basket-mobile-menu__header"><a class="basket__title-link" href="basket.html">Товары в корзине(11)</a><a class="basket__title-link-clean-basket" href="#">Очистить корзину</a></div>
               <div class="basket-mobile-menu__body simplebar">
                 <div class="order-table order-table__mr">
                   <div class="order-table__row">
@@ -262,9 +395,9 @@
                 <div class="order-table__block order-table__mr">
                   <div class="order-table basket">
                     <div class="order-table__row">
-                      <div class="order-table__item">
+                      <div class="order-table__item catalog-item1">
                         <div class="order-table__img">
-                          <div class="order-photo-holder"><img class="cover" src="../dummy/catalog/c1.jpg"></div>
+                          <div class="order-photo-holder"><img class="cover" src="../dummy/catalog/c2.jpg"></div>
                         </div>
                         <div class="order-table__info">
                           <div class="order-table__row">
@@ -272,7 +405,7 @@
                           </div>
                           <div class="order-table__price">15 900 Р</div>
                           <div class="order-table__link"><a href="#">+2 цвета</a></div>
-                          <div class="order-table__link"><a href="#">Добавить к заказу</a></div>
+                          <div class="order-table__link"><a href="#">1Добавить к заказу</a></div>
                         </div>
                       </div>
                     </div>
@@ -281,9 +414,9 @@
                 <div class="order-table__block order-table__mr">
                   <div class="order-table basket">
                     <div class="order-table__row">
-                      <div class="order-table__item">
+                      <div class="order-table__item catalog-item1">
                         <div class="order-table__img">
-                          <div class="order-photo-holder"><img class="cover" src="../dummy/catalog/c1.jpg"></div>
+                          <div class="order-photo-holder"><img class="cover" src="../dummy/catalog/c9.jpg"></div>
                         </div>
                         <div class="order-table__info">
                           <div class="order-table__row">
@@ -291,7 +424,7 @@
                           </div>
                           <div class="order-table__price">15 900 Р</div>
                           <div class="order-table__link"><a href="#">+2 цвета</a></div>
-                          <div class="order-table__link"><a href="#">Добавить к заказу</a></div>
+                          <div class="order-table__link"><a href="#">1Добавить к заказу</a></div>
                         </div>
                       </div>
                     </div>
@@ -511,32 +644,28 @@
       </header>
       <main class="page-content">
         <div class="page-inner page-inner--w3">
-          <div class="page-heading">
-            <div class="page-heading-description">
-              <form class="search-form__form" action="search-page.html">
-                <div class="search-form">
-                  <input class="search-form__input form-item form-item--text" type="text" placeholder="">
-                  <button class="search-form__clear btn btn--medium" type="button"></button>
-                  <button class="search-form__submit btn btn--black btn--medium" type="submit">Найти</button>
-                </div>
-                <div class="search-form__products-found">
-                  <div class="categories-most-viewed__text">По запросу «жабо» ничего не найдено.<br>Попробуйте сократить запрос или сформулировать его иначе.</div>
-                  <div class="categories-most-viewed__title">Часто просматриваемые категории</div>
-                  <ul class="categories-most-viewed__list">
-                    <li><a href="#">ПЛАТЬЯ</a></li>
-                    <li><a href="#">ФУТБОЛКИ</a></li>
-                    <li><a href="#">ТОПЫ</a></li>
-                    <li><a href="#">БОМБЕРЫ</a></li>
-                    <li><a href="#">РУБАШКИ</a></li>
-                    <li><a href="#">юбки</a></li>
-                  </ul>
-                </div>
-              </form>
-            </div>
+          <div class="page-heading-description">
+            <form class="search-form__form" action="search-page.html">
+              <div class="search-form">
+                <input class="search-form__input form-item form-item--text" type="text" placeholder="">
+                <button class="search-form__clear btn btn--medium" type="button"></button>
+                <button class="search-form__submit btn btn--black btn--medium" type="submit">Найти</button>
+              </div>
+              <div class="search-form__products-found">
+                <div class="categories-most-viewed__text">По запросу «жабо» ничего не найдено.<br>Попробуйте сократить запрос или сформулировать его иначе.</div>
+                <div class="categories-most-viewed__title">Часто просматриваемые категории</div>
+                <ul class="categories-most-viewed__list">
+                  <li><a href="#">ПЛАТЬЯ</a></li>
+                  <li><a href="#">ФУТБОЛКИ</a></li>
+                  <li><a href="#">ТОПЫ</a></li>
+                  <li><a href="#">БОМБЕРЫ</a></li>
+                  <li><a href="#">РУБАШКИ</a></li>
+                  <li><a href="#">юбки</a></li>
+                </ul>
+              </div>
+              <div class="mb-30"></div>
+            </form>
           </div>
-        </div>
-        <div class="page-section page-section--search">
-          <div class="page-inner page-inner--w1 page-inner--mobile_empty"></div>
           <div class="page-inner page-inner--w2"> 
             <div id="catalog-items">
               <div class="catalog-items row" data-params="">
@@ -566,13 +695,13 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">1Жакет 4321
+                    <div class="catalog-item-title"> <span><span>1Жакет 4321</span>
+                        <div class="catalog-item-price">3000 РУБ</div></span>
                       <div class="catalog-item-color">+3 цвета</div>
                     </div>
                     <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
                       <div class="catalog-item-color">+4 цвета</div>
-                    </div>
-                    <div class="catalog-item-price"><b>3000 РУБ</b></div><a class="catalog-item-link" href="card.html"></a>
+                    </div><a class="catalog-item-link" href="card.html"></a>
                     <button class="catalog-item-like" type="button">  </button>
                   </div>
                 </div>
@@ -602,13 +731,13 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">1Жакет 2
+                    <div class="catalog-item-title"> <span><span>1Жакет 2</span>
+                        <div class="catalog-item-price">345 РУБ</div></span>
                       <div class="catalog-item-color">+3 цвета</div>
                     </div>
                     <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
                       <div class="catalog-item-color">+4 цвета</div>
-                    </div>
-                    <div class="catalog-item-price"><b>345 РУБ</b></div><a class="catalog-item-link" href="card.html"></a>
+                    </div><a class="catalog-item-link" href="card.html"></a>
                     <button class="catalog-item-like" type="button">  </button>
                   </div>
                 </div>
@@ -638,13 +767,13 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">1Жакет 3
+                    <div class="catalog-item-title"> <span><span>1Жакет 3</span>
+                        <div class="catalog-item-price">2329 РУБ</div></span>
                       <div class="catalog-item-color">+3 цвета</div>
                     </div>
                     <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
                       <div class="catalog-item-color">+4 цвета</div>
-                    </div>
-                    <div class="catalog-item-price"><b>2329 РУБ</b></div><a class="catalog-item-link" href="card.html"></a>
+                    </div><a class="catalog-item-link" href="card.html"></a>
                     <button class="catalog-item-like" type="button">  </button>
                   </div>
                 </div>
@@ -674,13 +803,13 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="catalog-item-title">1Жакет 4
+                    <div class="catalog-item-title"> <span><span>1Жакет 4</span>
+                        <div class="catalog-item-price">2329 РУБ</div></span>
                       <div class="catalog-item-color">+3 цвета</div>
                     </div>
                     <div class="order-table__color"><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link color-active" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a><a class="order-table__color-link" href="#"><span class="color-beg"></span></a><a class="order-table__color-link" href="#"><span class="color-black"></span></a>
                       <div class="catalog-item-color">+4 цвета</div>
-                    </div>
-                    <div class="catalog-item-price"><b>2329 РУБ</b></div><a class="catalog-item-link" href="card.html"></a>
+                    </div><a class="catalog-item-link" href="card.html"></a>
                     <button class="catalog-item-like" type="button">  </button>
                   </div>
                 </div>
@@ -689,10 +818,6 @@
                     <div class="catalog-item-text__title">
                       ПЛАТЬЯ И КОМБИНЕЗОНЫ НОВОГО
                       СЕЗОНА ДЛЯ ЖЕНЩИН
-                    </div>
-                    <div class="catalog-item-text__lid">
-                      Подготовьте свой гардероб к первым дням весны с нашей новой подборкой,
-                      в которую вошли новые модели актуальных оттенков
                     </div><a class="link-more" href="#">Подробнее</a>
                   </div>
                 </div>
@@ -727,7 +852,7 @@
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
                     </div>
-                    <div class="catalog-item-price"><b>1999 РУБ</b></div><a class="catalog-item-link" href="card.html"></a>
+                    <div class="catalog-item-price">1999 11РУБ</div><a class="catalog-item-link" href="card.html"></a>
                     <button class="catalog-item-like" type="button">            </button>
                   </div>
                 </div>
@@ -762,7 +887,7 @@
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
                     </div>
-                    <div class="catalog-item-price"><b>345 РУБ</b></div><a class="catalog-item-link" href="card.html"></a>
+                    <div class="catalog-item-price">345 11РУБ</div><a class="catalog-item-link" href="card.html"></a>
                     <button class="catalog-item-like" type="button">            </button>
                   </div>
                 </div>
@@ -797,7 +922,7 @@
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
                     </div>
-                    <div class="catalog-item-price"><b>2329 РУБ</b></div><a class="catalog-item-link" href="card.html"></a>
+                    <div class="catalog-item-price">2329 11РУБ</div><a class="catalog-item-link" href="card.html"></a>
                     <button class="catalog-item-like" type="button">            </button>
                   </div>
                 </div>
@@ -832,7 +957,7 @@
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
                     </div>
-                    <div class="catalog-item-price"><b>2329 РУБ</b></div><a class="catalog-item-link" href="card.html"></a>
+                    <div class="catalog-item-price">2329 11РУБ</div><a class="catalog-item-link" href="card.html"></a>
                     <button class="catalog-item-like" type="button">            </button>
                   </div>
                 </div>
@@ -867,7 +992,7 @@
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
                     </div>
-                    <div class="catalog-item-price"><b>1999 РУБ</b></div><a class="catalog-item-link" href="card.html"></a>
+                    <div class="catalog-item-price">1999 11РУБ</div><a class="catalog-item-link" href="card.html"></a>
                     <button class="catalog-item-like" type="button">            </button>
                   </div>
                 </div>
@@ -902,7 +1027,7 @@
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
                     </div>
-                    <div class="catalog-item-price"><b>345 РУБ</b></div><a class="catalog-item-link" href="card.html"></a>
+                    <div class="catalog-item-price">345 11РУБ</div><a class="catalog-item-link" href="card.html"></a>
                     <button class="catalog-item-like" type="button">            </button>
                   </div>
                 </div>
@@ -937,7 +1062,7 @@
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
                     </div>
-                    <div class="catalog-item-price"><b>2329 РУБ</b></div><a class="catalog-item-link" href="card.html"></a>
+                    <div class="catalog-item-price">2329 11РУБ</div><a class="catalog-item-link" href="card.html"></a>
                     <button class="catalog-item-like" type="button">            </button>
                   </div>
                 </div>
@@ -972,7 +1097,7 @@
                         <div class="catalog-item-color">+4 цвета</div>
                       </div>
                     </div>
-                    <div class="catalog-item-price"><b>2329 РУБ</b></div><a class="catalog-item-link" href="card.html"></a>
+                    <div class="catalog-item-price">2329 11РУБ</div><a class="catalog-item-link" href="card.html"></a>
                     <button class="catalog-item-like" type="button">            </button>
                   </div>
                 </div>
@@ -1009,7 +1134,7 @@
                       <div class="catalog-item w1">
                         <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c21.jpg"></div>
                         <div class="catalog-item-title">Жакет 1</div>
-                        <div class="catalog-item-price">1999</div><a class="catalog-item-link" href="card.html"></a>
+                        <div class="catalog-item-price">1999 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
                         <button class="catalog-item-like" type="button"> </button>
                       </div>
                     </div>
@@ -1017,7 +1142,7 @@
                       <div class="catalog-item w1">
                         <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c22.jpg"></div>
                         <div class="catalog-item-title">Жакет 2</div>
-                        <div class="catalog-item-price">345</div><a class="catalog-item-link" href="card.html"></a>
+                        <div class="catalog-item-price">345 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
                         <button class="catalog-item-like" type="button"> </button>
                       </div>
                     </div>
@@ -1025,7 +1150,7 @@
                       <div class="catalog-item w1">
                         <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c23.jpg"></div>
                         <div class="catalog-item-title">Жакет 3</div>
-                        <div class="catalog-item-price">2329</div><a class="catalog-item-link" href="card.html"></a>
+                        <div class="catalog-item-price">2329 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
                         <button class="catalog-item-like" type="button"> </button>
                       </div>
                     </div>
@@ -1033,7 +1158,7 @@
                       <div class="catalog-item w1">
                         <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c24.jpg"></div>
                         <div class="catalog-item-title">Жакет 4</div>
-                        <div class="catalog-item-price">2329</div><a class="catalog-item-link" href="card.html"></a>
+                        <div class="catalog-item-price">2329 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
                         <button class="catalog-item-like" type="button"> </button>
                       </div>
                     </div>
@@ -1041,7 +1166,7 @@
                       <div class="catalog-item w1">
                         <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c21.jpg"></div>
                         <div class="catalog-item-title">Жакет 1</div>
-                        <div class="catalog-item-price">1999</div><a class="catalog-item-link" href="card.html"></a>
+                        <div class="catalog-item-price">1999 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
                         <button class="catalog-item-like" type="button"> </button>
                       </div>
                     </div>
@@ -1049,7 +1174,7 @@
                       <div class="catalog-item w1">
                         <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c22.jpg"></div>
                         <div class="catalog-item-title">Жакет 2</div>
-                        <div class="catalog-item-price">345</div><a class="catalog-item-link" href="card.html"></a>
+                        <div class="catalog-item-price">345 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
                         <button class="catalog-item-like" type="button"> </button>
                       </div>
                     </div>
@@ -1057,7 +1182,7 @@
                       <div class="catalog-item w1">
                         <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c23.jpg"></div>
                         <div class="catalog-item-title">Жакет 3</div>
-                        <div class="catalog-item-price">2329</div><a class="catalog-item-link" href="card.html"></a>
+                        <div class="catalog-item-price">2329 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
                         <button class="catalog-item-like" type="button"> </button>
                       </div>
                     </div>
@@ -1065,7 +1190,7 @@
                       <div class="catalog-item w1">
                         <div class="catalog-item-photo-holder"><img class="cover" src="../dummy/catalog/c24.jpg"></div>
                         <div class="catalog-item-title">Жакет 4</div>
-                        <div class="catalog-item-price">2329</div><a class="catalog-item-link" href="card.html"></a>
+                        <div class="catalog-item-price">2329 РУБ.</div><a class="catalog-item-link" href="card.html"></a>
                         <button class="catalog-item-like" type="button"> </button>
                       </div>
                     </div>
@@ -1080,8 +1205,9 @@
         <div class="page-inner page-inner--w1">
           <div class="footer-top">
             <ul class="footer-top__list">
+              <li class="footer-top__item"><a href="#">VKONTAKTE</a></li>
               <li class="footer-top__item"><a href="#">Telegram</a></li>
-              <li class="footer-top__item"><a href="#">Вконтакте</a></li>
+              <li class="footer-top__item"><a href="#">WHATSAPP</a></li>
             </ul>
           </div>
           <div class="footer-content">
@@ -1095,9 +1221,6 @@
                       <li><a href="#">Гарантия и возврат</a></li>
                       <li><a href="#">Руководство по покупке</a></li>
                       <li><a href="#">Система лояльности</a></li>
-                      <li class="only-mobile"><a href="#">Политика конфиденциальности</a></li>
-                      <li class="only-mobile"><a href="#">Оферта</a></li>
-                      <li class="only-mobile"><a href="#">Политика конфиденциальности</a></li>
                     </ul>
                   </div>
                 </div>
@@ -1131,8 +1254,8 @@
             <div class="footer-content__center"><a class="header-logo" href="#"><img src="../svg/header_logo.svg" alt=""></a></div>
             <div class="footer-content__right">
               <div class="footer-content__right-content">
-                <div class="footer-text">Подпишитесь на рассылку с новостями о тенденциях, специальных предложениях и новинках!</div>
-                <div class="footer-form">
+                <div class="footer-text only-desktop">Подпишитесь на рассылку с новостями о тенденциях, специальных предложениях и новинках!</div>
+                <div class="footer-form only-desktop">
                   <form action="">
                     <div class="footer-form__form">
                       <input type="text" placeholder="Введите свой E-mail">
@@ -1145,14 +1268,14 @@
             </div>
           </div>
           <div class="footer-bottom">
-            <div class="footer-bottom__left">
+            <div class="footer-bottom__left only-desktop">
               <ul class="footer-bottom__list">
                 <li><a href="#">Политика конфиденциальности</a></li>
                 <li><a href="#">Оферта</a></li>
               </ul>
             </div>
             <div class="footer-bottom__center"><a href="#">RUFORMAT®</a></div>
-            <div class="footer-bottom__right">© 1999-2022 Интернет-магазин «Brusnika»    </div>
+            <div class="footer-bottom__right only-desktop">© 1999-2022 Интернет-магазин «Brusnika»    </div>
           </div>
         </div>
       </footer>
@@ -1273,6 +1396,25 @@
           </div>
         </div>
       </form>
+    </div>
+    <div class="page-popup mfp-hide" id="fav-add-popup">
+      <div class="page-popup-heading">
+        <div class="page-popup-heading-title center h1">Добавить товар в избранное?</div>
+      </div>
+      <div class="order-table__row">
+        <div class="add-fav"><img class="add-fav__img" src="../dummy/orders/2.jpg">
+          <div class="div add-fav__info">
+            <div class="order-table__name">БРЮКИ</div>
+            <div class="order-table__price">15 900 Р</div>
+            <div class="order-table__size">Размер: 41 RU</div>
+            <div class="order-table__color">Цвет: коричневый</div>
+          </div>
+        </div>
+      </div>
+      <div class="page-popup-footer">
+        <button class="btn btn--black btn--medium btn--fullwidth basket-open" type="submit">ДОБАВИТЬ В ИЗБРАННОЕ</button>
+        <button class="btn btn--black_border btn--medium btn--fullwidth" type="submit">Удалить</button>
+      </div>
     </div>
     <div class="page-popup page-popup-w565 mfp-hide" id="size-popup">
       <div class="page-popup-heading">
@@ -1803,8 +1945,13 @@
           </div>
           <div class="form-row">
             <button class="btn btn--black btn--medium" type="submit">Зарегистрироваться</button>
-            <div class="page-heading-text mt-4"></div>Нажимая на кнопку «Зарегестрироваться»
+            <div class="page-heading-text mt-4"></div>1Нажимая на кнопку «Зарегестрироваться»
             вы соглашаетесь на обработку персональных данных
+            <div class="form-policy">
+              <div class="page-text">
+                <div class="small">2Нажимая кнопку «Добавить карту»,<br>вы соглашаетесь с  <a href="#">политикой конфиденциальности       </a></div>
+              </div>
+            </div>
           </div>
         </form>
       </div>
@@ -1848,5 +1995,6 @@
     <script type="text/javascript" src="../../js/project.js?v=31-01-22"></script>
     <script type="module" src="../../js/plugins/swipe.js"></script>
     <script type="text/javascript" src="../../js/scrollPage.js"></script>
+    <script type="text/javascript" src="../../js/shops-map.js"></script>
   </body>
 </html>

@@ -6,18 +6,17 @@ block variables
 
 
 block content
-    main.page-content
-      .page-inner.page-inner--w3
-        .page-heading
-          .page-heading-description
-            form.search-form__form(action="search-page.html")
-              include modules/search-form
-              include modules/messages/search-empty
-      .page-section.page-section--search
-        .page-inner.page-inner--w1.page-inner--mobile_empty
-        .page-inner.page-inner--w2 
-          include modules/catalog 
-        .page-inner--w1.page-inner.hidden-x
-          .page-inner.page-inner--w2
-            .catalog
-              include modules/slider-prev-watched 
+  main.page-content
+    .page-inner.page-inner--w3
+      .page-heading-description
+        form.search-form__form(action="search-page.html")
+          include modules/search-form
+          include modules/messages/search-empty
+          div.mb-30
+
+      .page-inner.page-inner--w2 
+        include modules/catalog 
+      .page-inner--w1.page-inner.hidden-x
+        .page-inner.page-inner--w2
+          .catalog
+            include modules/slider-prev-watched 
