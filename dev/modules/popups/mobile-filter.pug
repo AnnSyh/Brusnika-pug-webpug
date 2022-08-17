@@ -8,7 +8,14 @@
         .mobile-filter-close
         .mobile-filter-heading
           .mobile-filter-heading-title Фильтры(3)
+
         .mobile-filter-items
+          .mobile-filter-item
+            .mobile-filter-item-heading
+              .mobile-filter-item-heading-title Сортировать (Цена по убыванию)
+              .mobile-filter-item-heading-toggler
+            include ../filter-priсes-block
+          
           .mobile-filter-item
             .mobile-filter-item-heading
               .mobile-filter-item-heading-title Цвет(2)
@@ -25,11 +32,7 @@
               .mobile-filter-item-heading-title Размер
               .mobile-filter-item-heading-toggler
             include ../filter-sizes-block
-          .mobile-filter-item
-            .mobile-filter-item-heading
-              .mobile-filter-item-heading-title Сортировать (Цена по убыванию)
-              .mobile-filter-item-heading-toggler
-            include ../filter-priсes-block
+
             //- .mobile-filter-item-content
             //-   .filter-row
             //-     label.form-radio

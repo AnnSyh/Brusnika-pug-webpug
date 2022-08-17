@@ -49,6 +49,8 @@
 				init: function () {
 					var self = this;
 
+					self.$catalogItemSlider = $(".catalog-items--slider", $sel.page);
+					
 					self.$sizeOpenBtn = $(".size-open", $sel.page);
 					self.$sizeMenu = $("#catalog-size", $sel.page);
 
@@ -74,12 +76,31 @@
 
 					self.$searchBtn.on("click", function (e) { //раскрытие меню при клике
 						var $block = $(this);
-						console.log('block = ', $block);
+						console.log('block = ', $block);						
 
 						e.preventDefault();
 						e.stopPropagation();
 						self.openedSearchMenu ? self.closeSearchMenu() : self.openSearchMenu();
 						self.openedSearchMenu ? $block.addClass("open-search") : $block.removeClass("open-search");
+					
+						// реинициализация слайдера 
+						self.$catalogItemSlider.slick('unslick');
+						// self.$catalogItemSlider.remove(); /* Remove current slides elements, in case that you want to show new slides. */
+						// -------------------------- /* Initialize the slick again */
+						self.$catalogItemSlider.slick( {
+								slidesToShow: 4,
+								slidesToScroll: 2,
+								dots: false,
+								arrows: true,
+								infinite: false,
+								autoplay: false,
+								speed: 500,
+								arrows: false,
+							});
+						
+						// --------------------------
+					
+					
 					});
 
 					self.$btn.on("click", function (e) { //раскрытие меню при клике
