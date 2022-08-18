@@ -49,6 +49,8 @@
 				init: function () {
 					var self = this;
 
+					// self.$filterMenu = $(".filter-menu", $sel.page);
+
 					self.$catalogItemSlider = $(".catalog-items--slider", $sel.page);
 					
 					self.$sizeOpenBtn = $(".size-open", $sel.page);
@@ -125,7 +127,7 @@
 					});
 
 					self.$sizeOpenBtn.on("click", function (e) { //раскрытие меню при клике
-						console.log('sizeOpenBtn');
+						console.log('sizeOpenBtn');						
 
 						e.preventDefault();
 						e.stopPropagation();
@@ -157,12 +159,12 @@
 								self.closeSizeMenu();
 							}
 						}
-
-						if (!$(e.target).closest(".mobile-filter-holder").length) {
-							if (self.openedSizeMenu) {
-								self.closeSizeMenu();
-							}
-						}
+						// доделать закрытие мерю при клике вне его области для Фильтров стр brand.html
+						// if (!$(e.target).closest("#self.$filterMenu").length) {
+						// 	if (self.openedSizeMenu) {
+						// 		self.closeSizeMenu();
+						// 	}
+						// }
 					});
 
 					$(self.$dropdown, self.$buyerMenu).on("mouseenter click", function (e) { //наведение на пункт 'Покупателям'
