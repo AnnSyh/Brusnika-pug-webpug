@@ -46,6 +46,18 @@
 
 .basket-inner {
     padding: 40px;
+
+    max-width: 566px;
+    border: 1px solid red;
+
+    .order-table__mr {
+        margin: 0;
+        width: 100%;
+    }
+
+    @media screen and (max-width:768px) {
+        padding: 40px 15px;
+    }
 }
 
 .filter-row__inner {

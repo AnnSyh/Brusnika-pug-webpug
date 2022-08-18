@@ -4,6 +4,9 @@
 /*** Design variables ***/
 /*** //Design variables ***/
 /*** Base ***/
+.only-desktop-flex {
+  display: flex;
+}
 .only-desktop {
   display: block;
 }
@@ -520,11 +523,12 @@ body .mobile-nav-menu-item-holder.open:before {
   }
 }
 @media screen and (max-width: 960px) {
+  .only-desktop-flex,
   .only-desktop {
-    display: none;
+    display: none !important;
   }
   .only-mobile {
-    display: block;
+    display: block !important;
   }
   body {
     font-size: 14px;

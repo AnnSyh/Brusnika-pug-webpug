@@ -7,26 +7,33 @@
           a.header-menu__item-catalog.catalog-open(href='#')
             span Каталог
         li.header-menu__item.header-menu__item-dropdown.catalog-dropdown
-          a(href='#') Покупателям
-        li.header-menu__item
-          a(href='shops.html') Магазины
-        li.header-menu__item
-          a(href='#') Блог
+          a(href='#')
+            span Покупателям
+        li.header-menu__item.header-menu__item_shops
+          span
+            a(href='shops.html') Магазины
+        li.header-menu__item.header-menu__item_blog
+          span
+            a(href='#') Блог
+        li.header-menu__item.header-menu__item_search.catalog-search-open.only-mobile
+          a(href='#')
+            span Поиск
     .header-menu__center
       a.header-logo(href='#')
         img(src='../svg/header_logo.svg' alt='')
     .header-menu__right
       ul.header-menu__list
-        li.header-menu__item.header-menu__item_search.catalog-search-open
+        li.header-menu__item.header-menu__item_search.catalog-search-open.only-desktop-flex
           a(href='#')
             span Поиск
-        li.header-menu__item
+        li.header-menu__item.header-menu__item_enter
           //- a.header-toolbar-item(href='#auth-form' data-popup='{"type":"inline"}')
-          a.header-toolbar-item(href='login.html')
-            | Вход
+          a.header-login-item(href='login.html')
+            span Вход
+        li.header-menu__item.header-menu__item_favorites
+          a(href='favorites.html')
+            span Избранное
         li.header-menu__item
-          a(href='favorites.html') Избранное
-        li.header-menu__item
-          a.header-toolbar-item.basket-open(href='#')
+          a.header-basket-item.basket-open(href='#')
             img(src='../svg/basket.svg')
-            span
+            span.dot

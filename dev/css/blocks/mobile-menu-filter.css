@@ -1,6 +1,7 @@
 @charset "UTF-8";
-.mobile-filter {
-  border: 1px solid red;
+.filter-price-fields {
+  width: 100px;
+  height: 40px;
 }
 
 /*** Filter from project.responsive.scss***/
@@ -43,7 +44,6 @@
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  padding: 25px 0 90px 0;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -53,17 +53,6 @@
 .mobile-filter {
   position: relative;
   background-color: #fff;
-}
-
-.mobile-filter .mobile-filter-close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: url("../../svg/basket_remove.svg") no-repeat center center;
-  background-size: contain;
 }
 
 .mobile-filter-heading {
@@ -175,11 +164,13 @@
 
 .mobile-filter-item .filter-price .filter-price-fields {
   margin-bottom: 15px;
+  width: 100%;
+  display: flex;
 }
 
 .mobile-filter-item .filter-price .filter-price-fields .filter-price-field-item {
-  width: 45%;
-  min-width: 100px;
+  width: 100px;
+  height: 40px;
 }
 
 .mobile-filter-item .brand-search {
@@ -244,17 +235,6 @@
   display: block;
 }
 
-.mobile-filter-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  box-sizing: border-box;
-  padding: 15px 20px;
-  width: 100%;
-  background-color: #fff;
-  position: relative;
-}
-
 .show-filter {
   overflow: hidden;
 }
@@ -283,11 +263,17 @@
 }
 /* показ фильтра */
 .mobile-filter {
-  height: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+}
+
+.mobile-filter-footer {
+  margin-top: auto;
 }
 
 .mobile-filter-items {
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -296,9 +282,9 @@
   display: block;
   position: fixed;
   top: 0;
-  right: -500px;
+  right: -566px;
   left: auto;
-  max-width: 500px;
+  max-width: 566px;
   min-height: 100vh;
   width: 100%;
   z-index: 10;
@@ -325,9 +311,11 @@
 
 /* оформление */
 .mobile-filter-heading-title {
+  color: #1D1D1D;
+  text-decoration: none;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .mobile-filter-item-heading-title {
@@ -519,5 +507,8 @@
   }
   .jcf-number input {
     height: 50px;
+  }
+  .order-table__info .jcf-number input {
+    height: 25px;
   }
 }/*# sourceMappingURL=mobile-menu-filter.css.map */

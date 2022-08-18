@@ -13,47 +13,12 @@
     background: #fff;
     padding: 10px 0;
     height: 100vh;
-
-    /* display: block;
-    position: fixed;
-    top: 0;
-    right: -566px;
-    max-width: 566px;
-    min-height: 100vh;
-    width: 100%;
-    z-index: 1000;
-    transition: right .3s;
-
-    background: #fff;
-    padding: 10px 0;
-
-    overflow-y: hidden; */
-
 }
 
 .size-menu_visible {
     right: 0;
 }
 
-.size-menu__close {
-    position: absolute;
-    right: 35px;
-    top: 35px;
-}
-
-.size-menu__close::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    width: 24px;
-    height: 24px;
-    background: url(../../svg/close.svg) no-repeat center center;
-    background-size: contain;
-    cursor: pointer;
-    transition: 0.3s opacity cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
 
 .size-inner {
     padding: 40px;

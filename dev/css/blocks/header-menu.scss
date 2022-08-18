@@ -23,7 +23,7 @@
 
 
 
-.header-toolbar-item span {
+.header-basket-item span.dot {
     position: absolute;
     right: -4px;
     top: -4px;
@@ -46,6 +46,9 @@
         margin-right: 0;
     }
 }
+
+.header-menu__item_favorites,
+.header-login-item,
 .header-menu__item-catalog,
 .header-menu__item_search {
     display: flex;
@@ -53,8 +56,11 @@
     align-items: center;
     cursor: pointer;
 }
+.header-menu__item_favorites::before,
+.header-login-item::before,
+.header-menu__item-catalog:before,
 .header-menu__item_search.open-search:before,
-.header-menu__item_search:before {
+.header-menu__item_search:before { border: 1px solid red;
     content: "";
     margin-right: 10px;
     display: block;
@@ -71,26 +77,28 @@
     background: url(../../svg/close.svg) no-repeat center center;
 }
 .header-menu__item-catalog:before {
-    content: "";
-    margin-right: 10px;
-    display: block;
-    width: 25px;
-    height: 25px;
     background: url(../../svg/burger.svg) no-repeat center center;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
 }
-.header-menu__item-basket:before {
-    content: "";
-    margin-right: 10px;
-    display: block;
-    width: 25px;
-    height: 25px;
-    background: url(../../svg/basket.svg) no-repeat center center;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
+.header-login-item:before {
+    background: url(../../svg/toolbar.svg) no-repeat center center;
+}
+.header-menu__item_favorites:before {
+    background: url(../../svg/favorite.svg) no-repeat center center;
+}
+
+@media screen and (min-width:991px) {
+    .header-login-item::before,
+    .header-menu__item_favorites::before { 
+        content: none;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .header-login-item span,
+    .header-menu__item_favorites span { border: 1px solid green !important;
+        display: none;
+    }
+  
 }
 
 .header-menu__item a {
@@ -157,7 +165,8 @@
 
     .header-menu__item.favorites,
     .header-menu__item.enter,
-    .header-menu__item_search span {
+    .header-menu__item_search span,
+    .header-menu__item span {
         display: none;
     }
 

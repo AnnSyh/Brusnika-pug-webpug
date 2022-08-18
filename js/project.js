@@ -157,6 +157,12 @@
 								self.closeSizeMenu();
 							}
 						}
+
+						if (!$(e.target).closest(".mobile-filter-holder").length) {
+							if (self.openedSizeMenu) {
+								self.closeSizeMenu();
+							}
+						}
 					});
 
 					$(self.$dropdown, self.$buyerMenu).on("mouseenter click", function (e) { //наведение на пункт 'Покупателям'
@@ -1411,7 +1417,7 @@
 						// bodyScrollLock.disableBodyScroll($(".mobile-filter-scroll-holder", $sel.body)[0]);
 						// bodyScrollLock.disableBodyScroll($(".mobile-filter-scroll-inner", $sel.body)[0]);
 					});
-					$(".mobile-filter .mobile-filter-close", $sel.body).on("click", function () {
+					$(".mobile-filter-close", $sel.body).on("click", function () {
 						$sel.body.removeClass("show-filter");
 						// bodyScrollLock.enableBodyScroll($(".mobile-filter-scroll-holder", $sel.body)[0]);
 						// bodyScrollLock.enableBodyScroll($(".mobile-filter-scroll-inner", $sel.body)[0]);
