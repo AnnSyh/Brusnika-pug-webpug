@@ -19,10 +19,10 @@ mixin listShopFiltersMobile(data)
 mixin listTwo(classname, data)
 	ul(class= ""+classname)
 		each item in data
-			li= item.name
-				//- dl.product__availability
-				//- 	dt= item.name
-				//- 	span= item.balance 
+			li
+				.product__availability
+					span= item.name
+					span= item.balance 
 
 //- список соц сетей
 mixin listSocial(classname,...items)
