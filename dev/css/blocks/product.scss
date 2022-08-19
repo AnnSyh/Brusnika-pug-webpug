@@ -156,7 +156,7 @@
 }
 
 .accordion ul,
-.product-properties {
+.product-properties { border: 1px solid red;
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 20px;
@@ -330,11 +330,19 @@
     .product-to-basket {
         grid-row: 2; 
     }
-    .product-to-basket__content .btn {
-        max-width: 180px;
-    }
+    // .product-to-basket__content .btn {
+    //     max-width: 180px;
+    // }
     .product-to-basket__content, .product-info__content {
         margin-top: 0;
+    }
+
+}
+
+@media screen and (min-width:480px) and (max-width: 1230px) {
+    .product-to-basket__content .btn {
+        border: 1px solid red;
+        max-width: 180px;
     }
 
 }

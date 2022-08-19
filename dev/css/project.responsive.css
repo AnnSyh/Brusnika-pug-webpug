@@ -730,11 +730,6 @@ body .mobile-nav-menu-item-holder.open:before {
   }
 }
 @media screen and (max-width: 960px) {
-  .catalog-item .catalog-item-like {
-    display: none;
-  }
-}
-@media screen and (max-width: 960px) {
   .catalog-item.w3 .catalog-item-photo-holder {
     border-radius: 10px;
   }

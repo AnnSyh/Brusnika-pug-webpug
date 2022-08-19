@@ -3,7 +3,20 @@ window.addEventListener('scroll', function () {
   const cardNav = $('.card-nav');
   cardNav.hide(); // убрать меню при загрузке стр
 
-  if ($(window).scrollTop() > 400) {
+  // найти расстояние до заголовка 'Завершите свой образ'
+  // скрол должен появлятся с порокруткой до этого заголовка
+  const scrollPlace = document.querySelector('.scroll-place');
+  // console.log('scrollPlace = ', scrollPlace)
+  // scrollPlace.scrollIntoView() прокрутка до начала блока scrollPlace
+
+  // ---------------------------
+    // console.log('scrollPlace.offset().top ! = ', scrollPlace.offset().top)
+    // console.log('scrollPlace.position().top ! = ', scrollPlace.position().top)
+    // const offsetFromScreenTop = $(".scroll-place").offset().top + $(window).scrollTop();
+    // console.log('offsetFromScreenTop = ', offsetFromScreenTop)
+  // ---------------------------
+
+  if ($(window).scrollTop() > 700) {
     cardNav.show();
     // console.log('scrollTop() > 400');
   }
@@ -60,6 +73,7 @@ $('#catalog-basket').on("click", function (e) {
   const item = e.target
   item.classList.toggle('active');
 });
+
 
 
 const simplebarsList = document.querySelectorAll('.simplebar');

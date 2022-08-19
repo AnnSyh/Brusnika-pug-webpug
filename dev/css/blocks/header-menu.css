@@ -120,11 +120,21 @@
     position: relative;
     top: 0px;
   }
-  .header-logo {
-    max-width: 93px;
-  }
 }
 @media screen and (max-width: 991px) {
+  .header-logo {
+    max-width: 95px;
+  }
+  .header-basket-item span.dot {
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #000000;
+    border-radius: 50%;
+  }
   .header-menu__item_favorites a:before {
     background: url(../../svg/favorite.svg) no-repeat center center;
   }
