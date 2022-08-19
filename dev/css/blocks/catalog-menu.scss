@@ -1,5 +1,9 @@
 @import '../variables.scss';
 
+#catalog-menu {
+    min-height: 100vh;   
+}
+
 a.catalog-menu__link.mb-20px {
     margin-bottom: 20px;
 }
@@ -322,21 +326,27 @@ a.catalog-menu__link_lowercase {
     height: 100vh ;
 }
 
-.basket-menu-sections.simplebar__wrapper {
-    height: calc(100vh - 100px);
+// .basket-menu-sections.simplebar__wrapper {
+//     height: calc(100vh - 100px);
 
-    .simplebar__width {
-        width: 399px;
-    }
-}
+//     .simplebar__width {
+//         border: 1px solid green;
+//         width: 399px;
+//     }
+// }
 
-#catalog-size {
+// #catalog-size {
 
-    .simplebar__wrapper{
-       height: calc(100vh - 0px);
-    }
-    .simplebar__width {
-        margin-right: 30px;
-        width: 460px; 
-    }
-}
+//     .simplebar__wrapper{
+//        height: calc(100vh - 0px);
+//        border: 1px solid green;
+//        overflow-x: hidden;
+
+//     }
+//     .simplebar__width {
+//         margin-right: 30px;
+//         // width: 460px; 
+//         // width: 272px;
+//         border: 1px solid blue;
+//     }
+// }

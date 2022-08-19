@@ -1,16 +1,17 @@
 #catalog-size.size-menu.size-menu_visible1
 
-    .basket-inner.page-inner--w2
-      .size-open.size-menu__close1.size-menu__close
-      .basket-menu-sections.simplebar__wrapper
-        .basket-mobile-menu__header
-          .size-menu__title Таблица размеров
-        .basket-mobile-menu__body.simplebar
-          .size-menu__text.simplebar__width
+  .basket-inner.page-inner--w2
+    .size-open.size-menu__close1.size-menu__close
+    .basket-menu-sections
+      .size-menu__title Таблица размеров
+      .basket-mobile-menu__body.simplebar
+        div(style1='max-width: 515px; border: 1px solid red;') 
+          .size-menu__text
             | Этот справочник по размерам носит ориентировочный характер.
             | Если у вас уже есть похожая модель нашего бренда, размер
             | которой вам подходит, рекомендуем выбрать тот же размер.
-          .size-table.simplebar__width(id='#tabNav')
+
+          .size-table(id='#tabNav')
             .size-items.tabs-heading
               label.active(data-tab='#size-tabs_one' data-tabs='.size-tab')
                 .size-item-content
@@ -34,7 +35,6 @@
                 .size-item-content
                   .size-item-title Рост H2
             .tabs-content
-
               #size-tabs_one.tab-content-item.size-tab.active
                 .table-size
                   each row in oneRows
@@ -65,7 +65,6 @@
                     .table-size__row
                       div= row.name
                       div= row.size
-
               #size-tabs_six.tab-content-item.size-tab
                 .table-size 
                   each row in sixRows
@@ -78,7 +77,5 @@
                     .table-size__row
                       div= row.name
                       div= row.size
-
-          .size-menu__title.size-menu__title_left.simplebar__width Как снять мерки для себя
-          .size-img.simplebar__width
-            img(src='../dummy/SizeGuide.jpg' alt='Как снять мерки для себя')          
+          .size-menu__title.size-menu__title_left Как снять мерки для себя
+          //- img.size-menu__img(src='../dummy/SizeGuide.jpg' alt='Как снять мерки для себя')       

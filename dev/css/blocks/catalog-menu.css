@@ -1,3 +1,7 @@
+#catalog-menu {
+  min-height: 100vh;
+}
+
 a.catalog-menu__link.mb-20px {
   margin-bottom: 20px;
 }
@@ -283,19 +287,4 @@ a.catalog-menu__link_lowercase {
 }
 .simplebar__wrapper {
   height: 100vh;
-}
-
-.basket-menu-sections.simplebar__wrapper {
-  height: calc(100vh - 100px);
-}
-.basket-menu-sections.simplebar__wrapper .simplebar__width {
-  width: 399px;
-}
-
-#catalog-size .simplebar__wrapper {
-  height: calc(100vh - 0px);
-}
-#catalog-size .simplebar__width {
-  margin-right: 30px;
-  width: 460px;
 }/*# sourceMappingURL=catalog-menu.css.map */
