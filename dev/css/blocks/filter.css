@@ -6,7 +6,7 @@
 }
 @media screen and (max-width: 480px) {
   .filters-rezult__not-found {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
 }
 
