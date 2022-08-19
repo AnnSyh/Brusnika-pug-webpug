@@ -157,10 +157,11 @@
 
 .accordion ul,
 .product-properties { border: 1px solid red;
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 20px;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    margin-bottom: 20px !important;
 }
+
 
 .card-photo-item {
     position: relative;
