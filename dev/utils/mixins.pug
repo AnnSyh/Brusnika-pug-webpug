@@ -21,8 +21,8 @@ mixin listTwo(classname, data)
 		each item in data
 			li
 				.product__availability
-					span= item.name
-					span= item.balance 
+					span= item.name 
+					span= `(` + `${item.balance}`+ `)`
 
 //- список соц сетей
 mixin listSocial(classname,...items)
