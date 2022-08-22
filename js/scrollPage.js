@@ -90,6 +90,12 @@ const simplebar1 = document.querySelector('.basket-mobile-menu__body.test.simple
 new SimpleBar(simplebar1, { autoHide: false });
 
 
+
+$('.jcf-option-notify-about-arrival').on("click", function (e) {
+  console.log('notify-about-arrival !!!');
+});
+
+
 $('.sms-not-coming').on("click", function (e) {
   console.log('sms-not-coming');
   e.preventDefault();
@@ -162,3 +168,10 @@ productListLinks.forEach((item) => {
 //переключение картинки при нажатии на цвета в карточках
 // слайдеры 'Вам также может понравиться' и 'Ранее вы смотрели' др блоки с карточками
 
+
+const sizeGuideLink = document.querySelector('.size-guide-link');
+
+sizeGuideLink.addEventListener('click', (e) => {
+  console.log('sizeGuideLink');
+  
+});

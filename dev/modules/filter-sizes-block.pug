@@ -1,5 +1,6 @@
 .mobile-filter-item-content
-    a.mobile-filter__link.size-open(href='#') Руководство по размерам
+    //- a.link.link--black_border(href='#message-you-subscribed' data-popup='{"type":"inline"}') Сообщение об удачной подписке
+    a.mobile-filter__link.size-guide-link(href='#message-you-subscribed' data-popup='{"type":"inline"}') Руководство по размерам
     each size in sizes
       .filter-row.filter-row__size
         label.form-checkbox

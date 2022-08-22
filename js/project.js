@@ -1033,7 +1033,7 @@
 
 					shopLinks.forEach((item) => {
 						item.addEventListener('click', (e) => {
-							e.preventDefault();
+							// e.preventDefault();
 							const dataShop = item.getAttribute('data-shop');
 							// если есть id балуна то находим его координаты
 							if (dataShop) {
