@@ -302,11 +302,11 @@
   }
 }
 @media screen and (min-width: 960px) {
-  .order-table__row {
+  .basket__body .order-table__row {
     border-top: 1px solid #E1E1E1;
     padding: 15px 0;
   }
-  .order-table__row.last {
+  .basket__body .order-table__row.last {
     border-bottom: 1px solid #E1E1E1;
   }
 }

@@ -51,6 +51,8 @@
 
 					// self.$filterMenu = $(".filter-menu", $sel.page);
 
+					self.$simplebar = $(".simplebar", $sel.page);
+
 					self.$catalogItemSlider = $(".catalog-items--slider", $sel.page);
 					
 					self.$sizeOpenBtn = $(".size-open", $sel.page);
@@ -291,11 +293,22 @@
 				},
 
 				openSizeMenu: function () {
-					console.log('openSizeMenu');
+					console.log('openSizeMenu 111');
 					var self = this;
 
 					self.$sizeMenu.addClass("size-menu_visible");
 					self.$sizeOpenBtn.addClass("active");
+
+					
+					// new SimpleBar(self.$simplebar, { autoHide: false });
+					// console.log('self.$simplebar = ',self.$simplebar);
+					// const  scrool = self.$simplebar;
+					// scrool.forEach((item) => {
+					// 	new SimpleBar(item, {
+					// 	  autoHide: false,
+					// 	});
+					//   })
+					
 
 					// очистить класы менюшек у боди т.е.закрыть их
 					// self.$buyerMenu.hide();
@@ -1415,6 +1428,12 @@
 					$(".mobile-filter-open", $sel.body).on("click", function (e) {
 						e.preventDefault();
 						// $sel.body.addClass("show-filter");
+
+console.log('simplebar1');
+
+						const simplebar1 = document.querySelector('.basket-mobile-menu__body.test.simplebar');
+						new SimpleBar(simplebar1, { autoHide: false });
+
 						$sel.body.toggleClass("show-filter");
 						// bodyScrollLock.disableBodyScroll($(".mobile-filter-scroll-holder", $sel.body)[0]);
 						// bodyScrollLock.disableBodyScroll($(".mobile-filter-scroll-inner", $sel.body)[0]);

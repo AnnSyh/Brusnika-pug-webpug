@@ -3,7 +3,7 @@ extends layout/main
 block variables
   - var title = 'Текущие заказы'
   - var mainPage = false
-
+  - const activeMenuLink = 'Заказы (1)'
 
 block content
   main.page-content
@@ -20,7 +20,8 @@ block content
 
           .row
            .col-md-3.d-none.d-lg-block 
-                include modules/menus/personal-menu
+                //- include modules/menus/personal-menu
+                +menu('personal-menu', personalMenuData, activeMenuLink)
            .col-lg-1
            .col-12.col-md-8.offset-md-2.col-lg-9.offset-lg-0.col-xl-8
                include modules/personal/last-order 

@@ -81,13 +81,22 @@ $('#catalog-basket').on("click", function (e) {
 
 // simplebarsList.forEach((item) => {
 //   new SimpleBar(item, {
-//     // autoHide: false,
+//     autoHide: false,
 //   });
 // })
+// 
+// simpleBar.unMount()
 
 const simplebar1 = document.querySelector('.basket-mobile-menu__body.test.simplebar');
+const body =  document.querySelector('body');
 
-new SimpleBar(simplebar1, { autoHide: false });
+if( body.classList.contains('size-open')){
+  console.log('contains(size-open)');
+  new SimpleBar(simplebar1, { autoHide: false });
+}
+
+
+
 
 
 
@@ -169,9 +178,21 @@ productListLinks.forEach((item) => {
 // слайдеры 'Вам также может понравиться' и 'Ранее вы смотрели' др блоки с карточками
 
 
-const sizeGuideLink = document.querySelector('.size-guide-link');
+// const sizeGuideLink = document.querySelector('.size-guide-link');
 
-sizeGuideLink.addEventListener('click', (e) => {
-  console.log('sizeGuideLink');
-  
-});
+// sizeGuideLink.addEventListener('click', (e) => {
+//   console.log('sizeGuideLink');
+
+// });
+
+// -----------page-favorites-----------------------
+const favoritesList = document.querySelectorAll('.page-favorites .catalog-item.w2 .catalog-item-like');
+
+favoritesList.forEach((item) => {
+  item.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    const parent = evt.target.parentNode;
+    parent.classList.toggle('d-none');
+
+  });
+})

@@ -1,15 +1,6 @@
 - 
-    const activeLink = 'История заказов'
+    const activeLink = 'Личные данные'
 
-    //- Пункты меню
-    const personalMenuData1 = [
-        {name: 'Текущие заказы (1)',    url: 'orders.html'},
-        {name: 'История заказов',       url: 'history.html'},
-        {name: 'Корзина (2)',           url: 'basket.html'}, 
-        {name: 'Избранное (2)',         url: 'favorites.html'},
-        {name: 'Личные данные',         url: 'personal.html'},
-        {name: 'Выйти',                 url: '#'},
-        ]
 
 mixin menu(classname, data, activeLink)
   div(class= ""+classname)
@@ -21,4 +12,4 @@ mixin menu(classname, data, activeLink)
           a(href=`${item.url}` class=`link link--black`)= item.name   
 
 
-+menu('personal-menu', personalMenuData1, activeLink)
++menu('personal-menu', personalMenuData, activeLink)

@@ -3,6 +3,8 @@ extends layout/main
 block variables
   - var title = 'Текущие заказы'
   - var mainPage = false
+  - const activeLink = 'Заказы (1)'
+  
 
 
 block content
@@ -19,7 +21,7 @@ block content
 
         .row
             .col-md-3.d-none.d-lg-block 
-              +menu('personal-menu', personalMenuData, title)
+              +menu('personal-menu', personalMenuData, activeLink)
             .col-lg-1
             .col-12.col-md-8.offset-md-2.col-lg-9.offset-lg-0.col-xl-8
               include modules/personal/order-cancel 
