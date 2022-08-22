@@ -76,14 +76,19 @@ $('#catalog-basket').on("click", function (e) {
 
 
 
-const simplebarsList = document.querySelectorAll('.simplebar');
-console.log('simplebarsList = ', simplebarsList);
+// const simplebarsList = document.querySelectorAll('.simplebar');
+// console.log('simplebarsList = ', simplebarsList);
 
-simplebarsList.forEach((item) => {
-  new SimpleBar(item, {
-    autoHide: false,
-  });
-})
+// simplebarsList.forEach((item) => {
+//   new SimpleBar(item, {
+//     // autoHide: false,
+//   });
+// })
+
+const simplebar1 = document.querySelector('.basket-mobile-menu__body.test.simplebar');
+
+new SimpleBar(simplebar1, { autoHide: false });
+
 
 $('.sms-not-coming').on("click", function (e) {
   console.log('sms-not-coming');
