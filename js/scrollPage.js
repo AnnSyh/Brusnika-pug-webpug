@@ -195,4 +195,12 @@ favoritesList.forEach((item) => {
     parent.classList.toggle('d-none');
 
   });
-})
+});
+
+// ---закрыть корзину показать попап 'Вы подписаны'------------------------------
+const sizeGuideLink = document.querySelector('.size-guide-link');
+const pageBody = document.querySelector('body');
+sizeGuideLink.addEventListener('click', (evt) => {
+  pageBody.classList.remove('show-filter');
+
+});
