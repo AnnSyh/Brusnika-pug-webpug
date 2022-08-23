@@ -1,0 +1,18 @@
+
+extends layout/main
+
+block variables
+  - var title = 'brand-large'
+  - var mainPage = false
+
+
+block content
+  main.page-content
+      .page-inner.page-inner--w1.page-inner--mobile_empty
+        include modules/filter-large
+      .page-inner.page-inner--w2 
+        include modules/catalog-large 
+      .page-inner--w1.page-inner.hidden-x
+        .page-inner.page-inner--w2
+          .catalog
+            include modules/slider-prev-watched

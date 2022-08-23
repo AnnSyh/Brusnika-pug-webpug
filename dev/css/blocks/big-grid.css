@@ -1,0 +1,77 @@
+.big-grid {
+  border:1px solid red;
+  display: grid;
+  grid-template-columns: repeat(28, calc(100% / 28 - 12px));
+  gap: 16px;
+
+}
+
+.big-grid__item-one-center {
+  grid-column: 9/19;
+  background-color: green;
+  color:  #fff;
+  text-align: center;
+}
+.big-grid__item-double-center {
+  grid-column: 2/26;
+  background-color: red;
+  color:  #fff;
+  text-align: center;
+}
+
+.big-grid__item-two-center-left {
+  grid-column: 2/14;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+}
+.big-grid__item-two-center-right {
+  grid-column: 14/26;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+}
+
+.big-grid__item-four-left {
+  grid-column: 2/10;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+}
+.big-grid__item-four-center {
+  grid-column: 10/18;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+}
+.big-grid__item-four-right {
+  grid-column: 18/26;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+}
+
+.big-grid__item-three-one {
+  grid-column: 2/8;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+}
+.big-grid__item-three-two {
+  grid-column: 8/14;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+}
+.big-grid__item-three-three {
+  grid-column: 14/20;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+}
+.big-grid__item-three-four {
+  grid-column: 20/26;
+  background-color: green;
+  color: #fff;
+  text-align: center;
+}
