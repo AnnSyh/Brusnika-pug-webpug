@@ -1,5 +1,10 @@
 @import '../variables.scss';
 
+.filters-block-wrapper {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 
 .filters-rezult__not-found {
     display: flex;
@@ -7,7 +12,7 @@
     align-items: center;
     margin-bottom: 30px;
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 480px) {
         margin-bottom: 10px;
     }
 }
@@ -18,7 +23,7 @@
     line-height: 25px;
     margin-bottom: 10px;
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 480px) {
         font-size: 14px;
         line-height: 20px;
     }
@@ -29,9 +34,9 @@
     font-size: 14px;
     line-height: 20px;
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 480px) {
         font-size: 12px;
-    }    
+    }
 }
 
 .filters-row {
@@ -45,19 +50,19 @@
     height: 50px;
     margin-bottom: 30px;
 
-    @media screen and (max-width: 768px) { 
+    @media screen and (max-width: 768px) {
         height: 20px;
         margin-bottom: 10px;
     }
 
-    @media screen and (max-width: 400px){
-        
+    @media screen and (max-width: 400px) {
+
         .slick-initialized .slick-slide {
             font-size: 10px;
             display: block;
             overflow-x: hidden;
             text-align: center;
-          }
+        }
     }
 
 }
@@ -120,7 +125,8 @@
 .filters-list-small a:active,
 .filters-list-small a:hover {
     // color: #bebebe;
-    color: #1D1D1D;;
+    color: #1D1D1D;
+    ;
 }
 
 

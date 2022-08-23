@@ -8,21 +8,24 @@ block variables
 block content
   main.page-content
 
-      .page-inner.page-inner--w2
-        .page-heading
-          .page-heading-title.page-heading-title_personal.uppercase= title
-          .page-heading-description.d-lg-none
-            | Здравствуйте, Максим
-      .page-inner.page-inner--w2
-        .d-none.d-lg-block
-          .row.mb-4.align-items-baseline
-            .col-auto
-              .h2 Здравствуйте, Максим
-            .col-auto
-              a.link.link--black_border.uppercase(href='#') ВЫЙТИ
-        .row.personal-blocks
+    .page-inner.page-inner--w2
 
-          each item in personalMenuData
-            .col-lg-3.mb-lg-4
-              a.personal-block(href=`${item.url}`)
-                span.h3= item.name 
+      .personal-grid
+
+        .personal-grid-block-one 
+          .page-heading-title.page-heading-title_personal.uppercase(style="margin-bottom: 100px;")= title
+          div
+            .h2.mb-2 Здравствуйте, Максим
+            a.d-none.d-lg-inline-flex.link.link--black_border.uppercase(href='#') ВЫЙТИ                  
+
+        .personal-grid-block-two
+          .row.personal-blocks
+
+            each item in personalMenuDataWithOutEnter
+              .col-lg-3.mb-lg-4
+                a.personal-block(href=`${item.url}`)
+                  span.h3= item.name 
+            
+            .col-lg-3.mb-lg-4.d-lg-none(style="line-height: 60px;")
+                a.personal-block(href='#')
+                  span.h3 Выйти 

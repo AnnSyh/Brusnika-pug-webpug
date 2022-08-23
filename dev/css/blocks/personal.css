@@ -45,6 +45,16 @@
   left: -138px;
   position: relative;
 }
+.personal-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 3fr;
+}
+@media screen and (max-width: 991px) {
+  .personal-grid {
+    grid-template-columns: none;
+  }
+}
 
 .page-section_personal {
   padding-bottom: 0;
@@ -96,7 +106,7 @@
   max-width: 320px;
   padding: 45px 50px;
   background-color: #f7f5f5;
-  border-radius: 20px;
+  border-radius: 0px;
 }
 
 .personal-menu .personal-menu-item {
@@ -175,9 +185,6 @@
 
 /*** //Personal ***/
 @media screen and (max-width: 480px) {
-  .personal-blocks .col-lg-3.mb-lg-4:last-child {
-    border: 1px solid red;
-  }
   .personal-blocks .col-lg-3.mb-lg-4:last-child a {
     text-decoration: underline;
     text-transform: uppercase;

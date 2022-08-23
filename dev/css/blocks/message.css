@@ -1,7 +1,13 @@
+@charset "UTF-8";
 .message {
   width: 60%;
   margin: auto;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .message { /* для thanks-for-order.html */
+    width: 100%;
+  }
 }
 .message__title {
   font-weight: 600;
