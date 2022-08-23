@@ -587,7 +587,7 @@
 								{
 									breakpoint: 1000,
 									settings: {
-										slidesToShow: 2.2,
+										slidesToShow: 3,
 										slidesToScroll: 1,
 										arrows: false,
 										speed: 200
