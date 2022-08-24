@@ -1,74 +1,123 @@
 .big-grid {
-  border:1px solid red;
-  display: grid;
-  grid-template-columns: repeat(28, 1fr);
-  gap: 20px;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(28, 1fr);
+    gap: 20px;
+
+    @media screen and (max-width: 600px) {
+        column-gap: 6px;
+        row-gap: 30px;
+    }
 
 }
 
 .big-grid__item-one-center {
-  grid-column: 9/21;
-  border: 1px solid green;
-  text-align: center;
+    grid-column: 9/21;
+    border: 1px solid green;
+    text-align: center;
+
+    @media screen and (max-width: 600px) {
+        grid-column: 1/29;
+    }
 }
 
 .big-grid__item-double-center {
-  grid-column: 3/27;
-  border: 1px solid red;
-  text-align: center;
+    grid-column: 3/27;
+    border: 1px solid red;
+    text-align: center;
+
+    @media screen and (max-width: 600px) {
+        grid-column: 1/29;
+    }
 }
 
 
 .big-grid__item-two-center-left {
-  grid-column: 3/15;
-  border: 1px solid green;
-  text-align: center;
+    grid-column: 3/15;
+    border: 1px solid green;
+    text-align: center;
 }
+
 .big-grid__item-two-center-right {
-  grid-column: 15/27;
-  border: 1px solid green;
-  text-align: center;
+    grid-column: 15/27;
+    border: 1px solid green;
+    text-align: center;
 }
 
 
 .big-grid__item-four-left {
-  grid-column: 3/11;
-  border: 1px solid green;
-  text-align: center;
+    grid-column: 3/11;
+    border: 1px solid green;
+    text-align: center;
 }
+
 .big-grid__item-four-center {
-  grid-column: 11/19;
-  border: 1px solid green;
-  text-align: center;
+    grid-column: 11/19;
+    border: 1px solid green;
+    text-align: center;
 }
+
 .big-grid__item-four-right {
-  grid-column: 19/27;
-  border: 1px solid green;
-  text-align: center;
+    grid-column: 19/27;
+    border: 1px solid green;
+    text-align: center;
 }
 
 
 .big-grid__item-three-one {
-  grid-column: 3/9;
-  border: 1px solid green;
-  text-align: center;
+    grid-column: 3/9;
+    border: 1px solid green;
+    text-align: center;
+
+    @media screen and (max-width: 600px) {
+        grid-column: 3/15;
+    }    
 }
+
 .big-grid__item-three-two {
-  grid-column: 9/15;
-  border: 1px solid green;
-  text-align: center;
+    grid-column: 9/15;
+    border: 1px solid green;
+    text-align: center;
+
+    @media screen and (max-width: 600px) {
+        grid-column: 15/27;
+    }      
 }
+
 .big-grid__item-three-three {
-  grid-column: 15/21;
-  border: 1px solid green;
-  text-align: center;
+    grid-column: 15/21;
+    border: 1px solid green;
+    text-align: center;
+
+    @media screen and (max-width: 600px) {
+        grid-column: 3/15;
+    }     
 }
+
 .big-grid__item-three-four {
-  grid-column: 21/27;
-  border: 1px solid green;
-  text-align: center;
+    grid-column: 21/27;
+    border: 1px solid green;
+    text-align: center;
+
+    @media screen and (max-width: 600px) {
+        grid-column: 15/27;
+    }     
 }
 
 .height-50 {
     height: 50%;
+}
+
+// -----------надо сделать такие отступы для каждого .big-grid__...   свои----------------------------------
+.big-grid__item-double-center {
+
+    .catalog-item.w2 .catalog-item-photo-holder {
+        border: 1px solid orange;
+        padding-top: calc(85% - 170px);
+    }
+
+    .catalog-item.w2 .slider-size {
+        bottom: 85px;
+    }
+
 }
