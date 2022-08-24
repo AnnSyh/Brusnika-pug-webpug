@@ -1,8 +1,9 @@
 .big-grid {
-  border: 1px solid red;
+  border:1px solid red;
   display: grid;
   grid-template-columns: repeat(28, 1fr);
   gap: 20px;
+
 }
 
 .big-grid__item-one-center {
@@ -17,54 +18,51 @@
   text-align: center;
 }
 
+
 .big-grid__item-two-center-left {
   grid-column: 3/15;
   border: 1px solid green;
   text-align: center;
 }
-
 .big-grid__item-two-center-right {
   grid-column: 15/27;
   border: 1px solid green;
   text-align: center;
 }
 
+
 .big-grid__item-four-left {
   grid-column: 3/11;
   border: 1px solid green;
   text-align: center;
 }
-
 .big-grid__item-four-center {
   grid-column: 11/19;
   border: 1px solid green;
   text-align: center;
 }
-
 .big-grid__item-four-right {
   grid-column: 19/27;
   border: 1px solid green;
   text-align: center;
 }
 
+
 .big-grid__item-three-one {
   grid-column: 3/9;
   border: 1px solid green;
   text-align: center;
 }
-
 .big-grid__item-three-two {
   grid-column: 9/15;
   border: 1px solid green;
   text-align: center;
 }
-
 .big-grid__item-three-three {
   grid-column: 15/21;
   border: 1px solid green;
   text-align: center;
 }
-
 .big-grid__item-three-four {
   grid-column: 21/27;
   border: 1px solid green;
@@ -72,5 +70,5 @@
 }
 
 .height-50 {
-  height: 50%;
-}/*# sourceMappingURL=big-grid.css.map */
+    height: 50%;
+}

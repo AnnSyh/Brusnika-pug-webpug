@@ -36,8 +36,11 @@
 @import url(../css/blocks/personal.css); /* Личный кабинет */
 @import url(../css/blocks/shop.css); /* Личный кабинет */
 @import url(../css/blocks/loyalty-card.css); 
+@import url(../css/blocks/big-grid.css); 
   
-
+.text-left {
+  text-align: left;
+}
 .overflow-x {
   overflow-x: hidden;
 }
