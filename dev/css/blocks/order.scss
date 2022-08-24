@@ -130,6 +130,12 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+
+    &_last {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 }
 
 .color-beg {
@@ -149,10 +155,43 @@
     display: flex;
     border-radius: 50%;
 }
+.color-green {
+    background-color: green;
+    width: 13px;
+    height: 13px;
+    padding: 1px;
+    display: flex;
+    border-radius: 50%;
+}
+
+.color-blue {
+    background-color: blue;
+    width: 13px;
+    height: 13px;
+    padding: 1px;
+    display: flex;
+    border-radius: 50%;
+}
+.color-red {
+    background-color: red;
+    width: 13px;
+    height: 13px;
+    padding: 1px;
+    display: flex;
+    border-radius: 50%;
+}
+
+.color-violet {
+    background-color: violet;
+    width: 13px;
+    height: 13px;
+    padding: 1px;
+    display: flex;
+    border-radius: 50%;
+}
 
 .color-active {
     border: 1px solid #D7C9BC;
-    border-radius: 50%;
     padding: 1px;
 }
 

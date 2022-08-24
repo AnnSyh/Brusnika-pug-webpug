@@ -1,3 +1,7 @@
+block variables
+  - var activeLink = 'color-beg'
+  - var activeLink1 = 'color-violet'
+
 #catalog-items
     .catalog-items.row(data-params='')
 
@@ -30,7 +34,8 @@
                       .catalog-item-price= item.price + ' РУБ'
 
                     .catalog-item-color +3 цвета
-                  include card-colors-block
+                    +color(dataTableColor, activeLink1)
+                    //- include card-colors-block  
 
                   a.catalog-item-link(href='card.html')
                   button.catalog-item-like(type='button')   
@@ -49,9 +54,10 @@
                 .catalog-item-text__title
                     | ПЛАТЬЯ И КОМБИНЕЗОНЫ НОВОГО
                     | СЕЗОНА ДЛЯ ЖЕНЩИН
-                //- .catalog-item-text__lid
-                //-     | Подготовьте свой гардероб к первым дням весны с нашей новой подборкой,
-                //-     | в которую вошли новые модели актуальных оттенков
+                .catalog-item-text__lid
+                    | Подготовьте свой гардероб к первым дням весны с нашей новой подборкой,
+                    br
+                    | в которую вошли новые модели актуальных оттенков
                 a.link-more(href='#') Подробнее
 
         each tovar in tovars
@@ -77,7 +83,8 @@
 
                   include card-sizes-block
                   .catalog-item-title= tovar.name
-                    include card-colors-block
+                    +color(dataTableColor, activeLink)
+                    //- include card-colors-block  
 
                   .catalog-item-price= tovar.price + ' 11РУБ'
                   a.catalog-item-link(href='card.html')
