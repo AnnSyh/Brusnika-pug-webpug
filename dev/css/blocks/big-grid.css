@@ -1,5 +1,4 @@
 .big-grid {
-  border: 1px solid red;
   display: grid;
   grid-template-columns: repeat(28, 1fr);
   gap: 20px;
@@ -12,9 +11,33 @@
   }
 }
 
+.mtb-100-xs-lg {
+  margin: 100px 0 100px 0;
+}
+@media screen and (max-width: 600px) {
+  .mtb-100-xs-lg {
+    margin: 50px 0 50px 0;
+  }
+}
+
+.big-grid__item-one-center-text {
+  grid-column: 5/25;
+  text-align: center;
+}
+.big-grid__item-one-center-text .catalog-item-text {
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  .big-grid__item-one-center-text {
+    grid-column: 1/29;
+  }
+  .big-grid__item-one-center-text .catalog-item-text {
+    margin: 50px auto;
+  }
+}
+
 .big-grid__item-one-center {
   grid-column: 9/21;
-  border: 1px solid green;
   text-align: center;
 }
 @media screen and (max-width: 600px) {
@@ -25,7 +48,6 @@
 
 .big-grid__item-double-center {
   grid-column: 3/27;
-  border: 1px solid red;
   text-align: center;
 }
 @media screen and (max-width: 600px) {
@@ -34,39 +56,48 @@
   }
 }
 
+.catalog-item.w2 .catalog-item-photo-holder {
+  padding-top: 149%;
+}
+
+.catalog-item.w2 .catalog-item-photo-holder .slick-list.draggable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .big-grid__item-two-center-left {
   grid-column: 3/15;
-  border: 1px solid green;
   text-align: center;
 }
 
 .big-grid__item-two-center-right {
   grid-column: 15/27;
-  border: 1px solid green;
+  text-align: center;
+}
+
+.big-grid__item-four-left,
+.big-grid__item-four-center,
+.big-grid__item-four-right {
   text-align: center;
 }
 
 .big-grid__item-four-left {
   grid-column: 3/11;
-  border: 1px solid green;
-  text-align: center;
 }
 
 .big-grid__item-four-center {
   grid-column: 11/19;
-  border: 1px solid green;
-  text-align: center;
 }
 
 .big-grid__item-four-right {
   grid-column: 19/27;
-  border: 1px solid green;
-  text-align: center;
 }
 
 .big-grid__item-three-one {
   grid-column: 3/9;
-  border: 1px solid green;
   text-align: center;
 }
 @media screen and (max-width: 600px) {
@@ -77,7 +108,6 @@
 
 .big-grid__item-three-two {
   grid-column: 9/15;
-  border: 1px solid green;
   text-align: center;
 }
 @media screen and (max-width: 600px) {
@@ -88,7 +118,6 @@
 
 .big-grid__item-three-three {
   grid-column: 15/21;
-  border: 1px solid green;
   text-align: center;
 }
 @media screen and (max-width: 600px) {
@@ -99,7 +128,6 @@
 
 .big-grid__item-three-four {
   grid-column: 21/27;
-  border: 1px solid green;
   text-align: center;
 }
 @media screen and (max-width: 600px) {

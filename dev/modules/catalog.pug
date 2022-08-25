@@ -49,16 +49,7 @@ block variables
                 //-     a.catalog-item-link(href='#')
                 //-     button.catalog-item-like(type='button')  
 
-        .col-12
-            .catalog-item-text
-                .catalog-item-text__title
-                    | ПЛАТЬЯ И КОМБИНЕЗОНЫ НОВОГО
-                    | СЕЗОНА ДЛЯ ЖЕНЩИН
-                .catalog-item-text__lid
-                    | Подготовьте свой гардероб к первым дням весны с нашей новой подборкой,
-                    br
-                    | в которую вошли новые модели актуальных оттенков
-                a.link-more(href='#') Подробнее
+        include catalog/static-dress-for-new-season
 
         each tovar in tovars
             .col-6.col-lg-3
@@ -87,6 +78,9 @@ block variables
                     //- include card-colors-block  
 
                   .catalog-item-price= tovar.price + ' 11РУБ'
+                  .catalog-item-labels
+                    .catalog-item-label.black Хит
+                    
                   a.catalog-item-link(href='card.html')
                   button.catalog-item-like(type='button')             
    

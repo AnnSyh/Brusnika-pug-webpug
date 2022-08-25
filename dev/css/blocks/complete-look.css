@@ -45,7 +45,6 @@
 
 .catalog-item.w2 .catalog-item-photo-holder {
   padding-top: calc(165% - 70px);
-  border: 1px solid blue;
 }
 
 @media screen and (max-width: 1023px) {
