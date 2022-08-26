@@ -1,10 +1,13 @@
 # Brusnika
 
 ##### Сборка проекта:
+- git clone git@github.com:AnnSyh/Brusnika-pug.git - склонировать проект 
+- npm i - установка зависимостей
+- pug -w  brand-large.pug   -P -o public - сборка стр  brand-large в папку public
 
 
 ##### Структура проекта:
-
+```sh
 dev
   css (для вресения правок редактировать файлы вида *.scss )
     blocks - классы для блоков сайта
@@ -23,3 +26,5 @@ js
   plugins - *.js для scrool, sclik-slider, .....
   .....   - *.js для сайта
 svg
+
+```
