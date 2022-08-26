@@ -1,11 +1,5 @@
 # Brusnika
 
-##### Сборка проекта:
-- git clone git@github.com:AnnSyh/Brusnika-pug.git - склонировать проект 
-- npm i - установка зависимостей
-- pug -w  brand-large.pug   -P -o public - сборка стр  brand-large в папку public
-
-
 ##### Структура проекта:
 ```sh
 dev
@@ -28,3 +22,18 @@ js
 svg
 
 ```
+
+##### Сборка проекта:
+- git clone git@github.com:AnnSyh/Brusnika-pug.git - склонировать проект 
+- cd dev 
+- npm i - установка зависимостей
+- pug -w  brand-large.pug   -P -o public - сборка стр  brand-large в папку public
+
+##### Установка Pug:
+```sh
+npm init -y
+npm install pug -D
+npm install pug-cli
+
+```
+
