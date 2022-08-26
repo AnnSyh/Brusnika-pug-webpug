@@ -1,3 +1,8 @@
+//- block variables
+//-   - var imgUrl = '../dummy/catalog-large/'
+//-   - var imgUrlMobile = '../dummy/catalog-large/mobile/'
+
+
 #catalog-items.big-grid 
     
       .big-grid__item-one-center 
@@ -849,7 +854,7 @@
           button.catalog-item-like(type='button')       
 
      
-      .big-grid__item-double-center.big-grid__item-double-center_alon блок посередине с двойной картинкой
+      .big-grid__item-double-center.big-grid__item-double-center_alon 
         .catalog-item.w2.m-0
           .slider-arrows
             span.catalog-item-slider-arrow.prev
@@ -862,11 +867,15 @@
                 path(d='M21.332 13C21.6082 13 21.832 12.7761 21.832 12.5C21.832 12.2239 21.6082 12 21.332 12L21.332 13ZM4.66537 12C4.38923 12 4.16537 12.2239 4.16537 12.5C4.16537 12.7761 4.38922 13 4.66537 13L4.66537 12ZM21.332 12L4.66537 12L4.66537 13L21.332 13L21.332 12Z' fill='#1D1D1D')
                 path(d='M20.9785 12.8523C21.1737 13.0475 21.4903 13.0475 21.6856 12.8523C21.8808 12.657 21.8808 12.3404 21.6856 12.1451L20.9785 12.8523ZM14.3939 4.85348C14.1987 4.65822 13.8821 4.65822 13.6868 4.85348C13.4915 5.04874 13.4915 5.36532 13.6868 5.56058L14.3939 4.85348ZM21.6856 12.1451L14.3939 4.85348L13.6868 5.56058L20.9785 12.8523L21.6856 12.1451Z' fill='#1D1D1D')
                 path(d='M20.9785 12.1438C21.1737 11.9486 21.4903 11.9486 21.6856 12.1438C21.8808 12.3391 21.8808 12.6557 21.6856 12.8509L20.9785 12.1438ZM14.3939 20.1426C14.1987 20.3379 13.8821 20.3379 13.6868 20.1426C13.4915 19.9474 13.4915 19.6308 13.6868 19.4355L14.3939 20.1426ZM21.6856 12.8509L14.3939 20.1426L13.6868 19.4355L20.9785 12.1438L21.6856 12.8509Z' fill='#1D1D1D')
-          .catalog-item-photo-holder.catalog-item-slider(data-params='{"slidesToShow": 1, "slidesToScroll": 1}')
+          //- .catalog-item-photo-holder.catalog-item-slider(data-params='{"slidesToShow": 1, "slidesToScroll": 1}')
+          .catalog-item-photo-holder
 
-            //- img(srcset='../dummy/catalog-large/mobile/с28.jpg 600w' sizes="(max-width:800px) 30vw,  600px" src='../dummy/catalog-large/c1.png' alt=' ')
+            img.cover(src='../dummy/catalog-large/с28.jpg' )
+            //- img.cover(src = imgUrl + 'с27.jpg' ) 
 
-            img(src='../dummy/catalog-large/с28.jpg')
+            //- srcset = imgUrlMobile + 'c28.jpg'
+            //- img.cover(src='../dummy/catalog-large/с28.jpg')
+
 
             //- if (window.screen.width >= 600 )
             //-   p больше 600
@@ -876,10 +885,10 @@
               //- img.cover(src='../dummy/catalog-large/mobile/с28.jpg')
 
 
-            //- img(src='../dummy/catalog-large/c8.jpg')
-            //- img(src='../dummy/catalog-large/c8.jpg')
-            //- img(src='../dummy/catalog-large/c8.jpg')
-            //- img(src='../dummy/catalog-large/c8.jpg')
+            //- img.cover(src='../dummy/catalog-large/c8.jpg')
+            //- img.cover(src='../dummy/catalog-large/c8.jpg')
+            //- img.cover(src='../dummy/catalog-large/c8.jpg')
+            //- img.cover(src='../dummy/catalog-large/c8.jpg')
           //- include card-sizes-block    
           //- .catalog-item-title 
           //-   span 

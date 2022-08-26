@@ -34,7 +34,7 @@ block variables
                       .catalog-item-price= item.price + ' РУБ'
 
                     .catalog-item-color +3 цвета
-                    +color(dataTableColor, activeLink1)
+                    +color(dataTableColor, activeLink1, 2)
                     //- include card-colors-block  
 
                   a.catalog-item-link(href='card.html')
@@ -74,7 +74,7 @@ block variables
 
                   include card-sizes-block
                   .catalog-item-title= tovar.name
-                    +color(dataTableColor, activeLink)
+                    +color(dataTableColor, activeLink, 1)
                     //- include card-colors-block  
 
                   .catalog-item-price= tovar.price + ' 11РУБ'

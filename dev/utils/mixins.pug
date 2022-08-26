@@ -71,7 +71,7 @@ mixin menu(classname, data, activeLink)
 				else 
 					a(href=`${item.url}` class=`link link--black`)= item.name  
 
-mixin color(data, activeLink)
+mixin color(data, activeLink, count)
 	.order-table__color
 		each item in data
 			if (activeLink === item.name)
@@ -81,4 +81,4 @@ mixin color(data, activeLink)
 				a(href='#' class=`order-table__color-link`) 
 					span(class=`${item.name}`)
 
-		div.order-table__color-link.order-table__color-link_last +4
+		div.order-table__color-link.order-table__color-link_last= '+' + count

@@ -19,6 +19,9 @@
     width: calc(100% + 30px);
   }
 }
+.big-grid .slick-track img.cover {
+  position: relative;
+}
 
 .mtb-100-xs-lg {
   margin: 100px 0 100px 0;

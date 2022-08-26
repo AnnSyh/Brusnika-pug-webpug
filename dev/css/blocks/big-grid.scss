@@ -15,6 +15,10 @@
         margin-right: -15px;
         width: calc(100% + 30px);
     }
+
+    .slick-track img.cover { 
+        position: relative;
+    }
 }
 
 .mtb-100-xs-lg {
@@ -235,3 +239,5 @@
     }
 
 }
+
+
