@@ -215,24 +215,5 @@ if (linkMore){
   });
 }
 
-// -----------найти ширину экрана ----------------
-// 1024px
 
-  // const doubleCenter = this.document.querySelector('.big-grid__item-double-center_alon')
-  // const imgUrl = this.document.querySelector('.big-grid__item-double-center_alon .catalog-item-photo-holder img')
-
-
-  // const imgUrConst = '../dummy/catalog-large/'
-  // const imgUrlMobile= '../dummy/catalog-large/mobile/'
-
-  // if ( window.innerWidth <= 600){
-  //   console.log('window.innerWidth = ', window.innerWidth);
-  //   console.log('doubleCenter = ', imgUrl.src);
-  //   imgUrl.src = '../dummy/catalog-large/mobile/' + '/mobile/'
-  //   console.log('doubleCenter = ', imgUrl.src);
-
-
-  // } else {
-  //   console.log('window.innerWidth > 600');
-  // }
 
