@@ -207,11 +207,13 @@ sizeGuideLink.addEventListener('click', (evt) => {
 // ---кнопка 'Подробнее'------------------------------
 const linkMore = document.querySelector('.link-more-js');
 
-linkMore.addEventListener('click', (evt) => {
-  evt.preventDefault();
-  evt.target.nextElementSibling.classList.toggle('d-none');
-
-});
+if (linkMore){
+  linkMore.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    evt.target.nextElementSibling.classList.toggle('d-none');
+  
+  });
+}
 
 // -----------найти ширину экрана ----------------
 // 1024px
