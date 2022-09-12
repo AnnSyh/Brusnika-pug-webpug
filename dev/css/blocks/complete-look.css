@@ -62,4 +62,4 @@
   .gallery {
     grid-template-columns: repeat(4, calc(25% - 15px));
   }
-}/*# sourceMappingURL=complete-look.css.map */
+}

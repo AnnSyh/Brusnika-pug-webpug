@@ -1,11 +1,11 @@
 @import '../variables.scss';
 
-.filters-block-wrapper {
-    padding-left: 25px;
-    padding-right: 25px;
+.filters-block-wrapper { 
+    padding-left: 25px;  
+    padding-right: 25px; 
 }
 
-
+ 
 .filters-rezult__not-found {
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
 
 .filters-rezult__title {
     font-weight: 600;
-    font-size: 18px;
+    font-size:  18px;
     line-height: 25px;
     margin-bottom: 10px;
 

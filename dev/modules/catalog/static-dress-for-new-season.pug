@@ -1,14 +1,10 @@
-.col-12
+each item in catalogStaticDress
+ .col-12
   .catalog-item-text
-    .catalog-item-text__title
-      | ПЛАТЬЯ И КОМБИНЕЗОНЫ НОВОГО
-      | СЕЗОНА ДЛЯ ЖЕНЩИН
-    .catalog-item-text__lid
-      | Подготовьте свой гардероб к первым дням весны с нашей новой подборкой,
-      br
-      | в которую вошли новые модели актуальных оттенков
-    a.link-more.link-more-js(href='#') Подробнее
-    div.d-none
-        | текст подробнее
-        | текст подробнее
-        | текст подробнее
+    .catalog-item-text__title= item.title
+    .catalog-item-text__lid= item.lid
+    a.link-more.link-more-js(href=`${item.href}`) Подробнее
+    div.d-none= item.text
+        //- | текст подробнее
+        //- | текст подробнее
+        //- | текст подробнее
