@@ -637,7 +637,7 @@
   font-size: 12px;
   display: flex;
   justify-content: space-around;
-  max-width: 63%;
+  max-width: 140px;
   margin: auto;
 }
 .slider-size a:hover {

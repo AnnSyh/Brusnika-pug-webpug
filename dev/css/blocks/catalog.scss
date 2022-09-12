@@ -752,11 +752,12 @@
         margin-bottom: 10px;
     }
 
-    &__list ul {
+    &__list ul {     
         font-size: 12px;
         display: flex;
         justify-content: space-around;
-        max-width: 63%;
+        // max-width: 63%;
+        max-width: 140px;
         margin: auto;
     }
     a:hover {

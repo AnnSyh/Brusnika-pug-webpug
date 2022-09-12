@@ -55,11 +55,11 @@
 }
 @media screen and (min-width: 1024px) {
   .gallery {
-    grid-template-columns: repeat(3, calc(33.3333333333% - 20px));
+    grid-template-columns: repeat(3, calc(33.3333333333% - 15px));
   }
 }
 @media screen and (min-width: 1280px) {
   .gallery {
-    grid-template-columns: repeat(4, calc(25% - 20px));
+    grid-template-columns: repeat(4, calc(25% - 15px));
   }
 }/*# sourceMappingURL=complete-look.css.map */
