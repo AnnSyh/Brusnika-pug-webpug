@@ -1250,9 +1250,6 @@
 			searchForm: {
 				init: function () {
 					$(".search-form input", $sel.page).on("input",function(ev){
-						console.log($(ev.target).val());
-						console.log('click search-form input !!! ev.target = ', ev.target);
-
 						$(ev.target).next().addClass('input__clear_visibility_visible');
 					  });
 
