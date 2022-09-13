@@ -41,14 +41,6 @@ $(".order-table-delete").on("click", function (e) {
   parent.classList.toggle('d-none');
 });
 
-
-$(".search-form__clear").on("click", function (e) {
-  e.preventDefault();
-  const parent = e.target.parentNode
-  console.log('search-form__clear ', parent);
-  // parent.classList.toggle('d-none');
-});
-
 const dimensionsList = document.querySelectorAll('.check-dimensions-list a');
 
 dimensionsList.forEach((item) => {

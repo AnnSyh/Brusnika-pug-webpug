@@ -14,6 +14,7 @@
 				self.header.init();
 				self.catalog.init();
 				self.note.init();
+				self.searchForm.init();
 				self.glossary.init();
 				self.forms.init();
 				self.pager.init();
@@ -101,10 +102,7 @@
 								speed: 500,
 								arrows: false,
 							});
-						
 						// --------------------------
-					
-					
 					});
 
 					self.$btn.on("click", function (e) { //раскрытие меню при клике
@@ -138,6 +136,11 @@
 
 					$sel.window.on("click", function (e) {
 
+						if (!$('.only-desktop_header-menu .open-search').length){
+							const searchIcon = $('.only-desktop_header-menu');
+							searchIcon.removeClass("open-search");
+						}
+
 						if (!$(e.target).closest("#catalog-menu").length) {
 							if (self.opened) {
 								self.closeMenu();
@@ -147,7 +150,8 @@
 						if (!$(e.target).closest("#catalog-search-menu").length) {
 							if (self.openedSearchMenu) {
 								self.closeSearchMenu();
-							}
+							} 
+
 						}
 
 						if (!$(e.target).closest("#catalog-basket").length) {
@@ -1242,6 +1246,24 @@
 				}
 			},
 
+
+			searchForm: {
+				init: function () {
+					$(".search-form input", $sel.page).on("input",function(ev){
+						console.log($(ev.target).val());
+						console.log('click search-form input !!! ev.target = ', ev.target);
+
+						$(ev.target).next().addClass('input__clear_visibility_visible');
+					  });
+
+					  $(".search-form__clear").on("click", function (e) {
+						e.preventDefault();
+						const parent = e.target.parentNode;
+						const input =  parent.querySelector('.search-form__input');
+						input.value = '';
+					  });
+				}
+			},
 
 			note: {
 				init: function () {

@@ -11,6 +11,8 @@
         width: 100%;
     }
 
+
+
 }
 
 .page-heading .page-heading-description {
@@ -24,6 +26,12 @@
     width: 100%;
     background: #fff;
     z-index: 1000;
+
+    .catalog-search-menu { 
+        width: 0;
+    }
+
+
 }
 
 .header-logo {

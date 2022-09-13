@@ -21,6 +21,9 @@
   background: #fff;
   z-index: 1000;
 }
+.page-header-fixed .catalog-search-menu {
+  width: 0;
+}
 
 .header-logo {
   max-width: 201px;
@@ -424,7 +427,7 @@ a.catalog-menu__link_lowercase {
 }
 
 #catalog-search-menu .menu-sections {
-  top: 130px;
+  top: 104px;
   flex-direction: column;
 }
 
@@ -3010,6 +3013,15 @@ ul.footer-top__list {
   position: relative;
   right: 200px;
   position: absolute;
+  opacity: 0;
+}
+
+.input__clear_visibility_visible {
+  visibility: visible;
+  cursor: pointer;
+  pointer-events: auto;
+  opacity: 1;
+  transition: opacity 0.1s ease-out;
 }
 
 .search-form__form {
@@ -4209,7 +4221,7 @@ ul.footer-top__list {
   display: block;
   width: 25px;
   height: 25px;
-  background: url(../../svg/share.svg) no-repeat center center;
+  background: url(../svg/share.svg) no-repeat center center;
   background-size: auto;
   background-size: contain;
 }
