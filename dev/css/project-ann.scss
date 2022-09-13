@@ -1,42 +1,42 @@
 @import url(../fonts/fonts.css);
-@import url(../css/variables.css);
+@import '../scss/variables';
 
-@import url(../css/blocks/header-menu.css);
-@import url(../css/blocks/catalog-menu.css);
-@import url(../css/blocks/basket-menu.css);
-@import url(../css/blocks/size-menu.css);
-@import url(../css/blocks/catalog.css);
-@import url(../css/blocks/page-note.css);
-@import url(../css/blocks/filter.css);
-@import url(../css/blocks/mobile-menu-filter.css);
+@import '../scss/blocks/header-menu';
+@import '../scss/blocks/catalog-menu';
+@import'../scss/blocks/basket-menu';
+@import '../scss/blocks/size-menu';
+@import '../scss/blocks/catalog';
+@import '../scss/blocks/page-note';
+@import'../scss/blocks/filter';
+@import '../scss/blocks/mobile-menu-filter';
 
 // переиспользуемые компоненты
-@import url(../css/blocks/btns.css);
-@import url(../css/blocks/form.css);
-@import url(../css/blocks/page-popup.css);
+@import '../scss/blocks/btns';
+@import '../scss/blocks/form';
+@import '../scss/blocks/page-popup';
 // /переиспользуемые компоненты
 
-@import url(../css/blocks/footer.css);
-@import url(../css/blocks/search.css);
-@import url(../css/blocks/form-tabs.css);
-@import url(../css/blocks/order.css);
-@import url(../css/blocks/product.css);
-@import url(../css/blocks/product-photos.css);//для слайдера на стр товаров
-@import url(../css/blocks/sliders-style.css);//для слайдеров
+@import '../scss/blocks/footer';
+@import '../scss/blocks/search';
+@import '../scss/blocks/form-tabs';
+@import '../scss/blocks/order';
+@import '../scss/blocks/product';
+@import '../scss/blocks/product-photos';//для слайдера на стр товаров
+@import '../scss/blocks/sliders-style';//для слайдеров
 
-@import url(../css/blocks/complete-look.css);
-@import url(../css/blocks/look.css);
+@import '../scss/blocks/complete-look';
+@import '../scss/blocks/look';
 
-@import url(../css/blocks/tables.css);
-@import url(../css/blocks/card-popup.css);
+@import '../scss/blocks/tables';
+// @import '../scss/blocks/card-popup';
 
-@import url(../css/blocks/favorites.css);
-@import url(../css/blocks/basket.css);
-@import url(../css/blocks/message.css); /* стили сообщ типа 'СПАСИБО ЗА ЗАКАЗ!' */
-@import url(../css/blocks/personal.css); /* Личный кабинет */
-@import url(../css/blocks/shop.css); /* Личный кабинет */
-@import url(../css/blocks/loyalty-card.css); 
-@import url(../css/blocks/big-grid.css); 
+@import '../scss/blocks/favorites';
+@import '../scss/blocks/basket';
+@import'../scss/blocks/message'; /* стили сообщ типа 'СПАСИБО ЗА ЗАКАЗ!' */
+@import '../scss/blocks/personal'; /* Личный кабинет */
+@import '../scss/blocks/shop'; /* Личный кабинет */
+@import '../scss/blocks/loyalty-card'; 
+@import '../scss/blocks/big-grid'; 
   
 .text-left {
   text-align: left;
