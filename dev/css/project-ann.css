@@ -1152,10 +1152,6 @@ a.basket-menu__link_lowercase {
   padding-top: 116%;
 }
 
-.catalog-item.w1 .catalog-item-price {
-  text-align: center;
-}
-
 .catalog-item.w2 .catalog-item-photo-holder {
   padding-top: 112%;
 }
@@ -1463,7 +1459,6 @@ a.basket-menu__link_lowercase {
   padding-top: 150%;
 }
 
-.catalog-items--slider .catalog-item-title,
 .catalog-items--slider .catalog-item-price {
   /* margin-top: 15px; */
   justify-content: center;
@@ -4880,6 +4875,15 @@ ul.footer-top__list {
     right: 15px;
   }
 }
+.section {
+  margin-top: 46px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    margin-top: 100px;
+  }
+}
+
 .text-left {
   text-align: left;
 }
@@ -5271,7 +5275,7 @@ body,
 }
 
 .page-content {
-  margin-top: 45px;
+  margin-top: 15px;
   margin-bottom: 340px;
 }
 @media screen and (max-width: 768px) {

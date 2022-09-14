@@ -297,9 +297,10 @@
   padding-top: 116%;
 }
 
-.catalog-item.w1 .catalog-item-price {
-  text-align: center;
-}
+// .catalog-item.w1 .catalog-item-price {
+//   border: 1px solid red;
+//   text-align: center;
+// }
 
 .catalog-item.w2 .catalog-item-photo-holder {
   padding-top: 112%;
@@ -673,7 +674,7 @@
   padding-top: 150%;
 }
 
-.catalog-items--slider .catalog-item-title,
+// .catalog-items--slider .catalog-item-title,
 .catalog-items--slider .catalog-item-price {
   /* margin-top: 15px; */
   justify-content: center;
