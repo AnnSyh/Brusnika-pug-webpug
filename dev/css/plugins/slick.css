@@ -73,6 +73,7 @@
   display: block;
   margin: auto;
   width: 100%;
+  cursor: url(../../dummy/svg/zoom-in.svg), zoom-in;
 }
 
 .slick-slide.slick-loading img {
@@ -99,4 +100,8 @@
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.slick-vertical .slick-slide {
+  border-right: 20px solid transparent;
 }

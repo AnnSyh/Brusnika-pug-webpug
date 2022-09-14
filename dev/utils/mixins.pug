@@ -80,5 +80,7 @@ mixin color(data, activeLink, count)
 			else 
 				a(href='#' class=`order-table__color-link`) 
 					span(class=`${item.name}`)
-
-		div.order-table__color-link.order-table__color-link_last= '+' + count
+		if (count === '')
+			div.order-table__color-link.order-table__color-link_last.d-none
+		else
+			div.order-table__color-link.order-table__color-link_last= '+' + count

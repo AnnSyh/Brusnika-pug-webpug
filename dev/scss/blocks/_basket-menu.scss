@@ -230,12 +230,13 @@ a.basket-menu__link_lowercase {
 }
 
 .basket-menu-sections {  
-    height: calc(100vh - 159px);
+    height: calc(100vh - 91px);
     padding-top: 25px;
     position: relative;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    padding-right: 20px;
 
     .order-table__mr:first-child {
         border: 1px solid transparent;
@@ -247,6 +248,10 @@ a.basket-menu__link_lowercase {
         padding: 0px;
     }
 
+}
+
+#catalog-basket .basket-menu-sections {
+    height: calc(100vh - 187px); 
 }
 
 .basket-mobile-menu__header {
@@ -261,9 +266,8 @@ a.basket-menu__link_lowercase {
     }
 }
 
-.basket-mobile-menu__body {
-    height: 100%;
-    overflow-y: auto;
+.basket-mobile-menu__body .order-table__block:last-child .order-table__row {
+    margin-bottom: 0px;
 }
 
 .basket-mobile-menu__footer {
@@ -271,6 +275,7 @@ a.basket-menu__link_lowercase {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .basket-mobile-menu__footer-links {

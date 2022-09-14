@@ -1,7 +1,7 @@
 .catalog
   .row.justify-content-between.align-items-center
     .col-auto.p-0
-      .title-block 11Вам также может понравиться
+      .title-block Вам также может понравиться
     .slider-arrows-wrap.col-auto.d-none.d-lg-block
       .slider-arrows
         span.slider-arrow.prev
@@ -25,7 +25,8 @@
           include card-sizes-block
           .catalog-item-title.justify-content-between= item.name
             .catalog-item-color +31 цвета
-          include card-colors-block            
+          .order-table__color
+              +color(dataTableColorItem1, activeLink1, '2')          
 
           .catalog-item-price= item.price + ' РУБ.'
 

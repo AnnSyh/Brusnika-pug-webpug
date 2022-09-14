@@ -24,7 +24,8 @@
 
                   include card-sizes-block
                   .catalog-item-title= item.name
-                    include card-colors-block
+                    .order-table__color
+                      +color(dataTableColorItem1, activeLink1, '5')
 
                   .catalog-item-price= item.price + ' РУБ'
                   a.catalog-item-link(href='card.html')

@@ -156,7 +156,9 @@
 
 						if (!$(e.target).closest("#catalog-basket").length) {
 							if (self.openedBasketMenu) {
-								self.closeBasketMenu();
+								if (!e.target.classList.contains('jcf-option')) {
+									self.closeBasketMenu();
+								}
 							}
 						}
 
@@ -592,6 +594,15 @@
 									breakpoint: 1000,
 									settings: {
 										slidesToShow: 3,
+										slidesToScroll: 1,
+										arrows: false,
+										speed: 200
+									}
+								},
+								{
+									breakpoint: 480,
+									settings: {
+										slidesToShow: 1.5,
 										slidesToScroll: 1,
 										arrows: false,
 										speed: 200

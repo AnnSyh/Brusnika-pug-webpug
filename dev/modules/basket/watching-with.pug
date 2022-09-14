@@ -1,4 +1,4 @@
-.order-table__title.order-table__mr С этим товаром смотрят
+.order-table__title С этим товаром смотрят
 each item in BasketProductsMenuWatchWith
   .order-table__block.order-table__mr
     .order-table.basket
@@ -12,8 +12,10 @@ each item in BasketProductsMenuWatchWith
               .order-table__name= item.title 
               a.order-table-heart(href='#') 
 
-            .order-table__price= item.price + ' Р'
-            .order-table__link
-              a(href='#') +2 цвета
-            .order-table__link
-              a(href='#') 1Добавить к заказу
+            .order-table__price= item.price + ' РУБ.'
+            .order-table__color
+              +color(dataTableColorItem1, activeLink1, '')
+
+            //- .order-table__link
+            //-   a(href='#') 1Добавить к заказу
+            include ../basket/product-size-select

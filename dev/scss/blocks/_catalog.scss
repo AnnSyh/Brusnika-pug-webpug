@@ -585,15 +585,15 @@
   }
 }
 
-.catalog-item-color {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+// .catalog-item-color {
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 20px;
 
-  @media screen and (max-width:480px) {
-    font-size: 10px;
-  }
-}
+//   @media screen and (max-width:480px) {
+//     font-size: 10px;
+//   }
+// }
 
 .catalog-item-price {
   font-style: normal;
@@ -761,7 +761,7 @@
     margin-bottom: 10px;
 
     @media screen and (max-width:480px) {
-      font-size: 12px;
+      font-size: 10px;
     }
   }
 
@@ -772,6 +772,11 @@
     // max-width: 63%;
     max-width: 140px;
     margin: auto;
+
+    @media screen and (max-width:480px) { 
+      font-size: 10px;
+    }
+
   }
 
   a:hover {

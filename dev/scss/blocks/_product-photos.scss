@@ -5,15 +5,15 @@
 
 .products-photos-only-mobile {
     display: none !important;
-    
+
 }
 
 .products-photos-only-desktop {
     display: block !important;
 }
 
-.for-slick-slider{
-    min-width:0;// slik-slider -без этого не работает внутри flex обертки
+.for-slick-slider {
+    min-width: 0; // slik-slider -без этого не работает внутри flex обертки
 }
 
 @media screen and (max-width: 1230px) {
@@ -21,66 +21,74 @@
     .products-photos-only-mobile {
         display: flex !important;
     }
-    .products-photos-only-desktop { 
+
+    .products-photos-only-desktop {
         display: none !important;
     }
 
 
 }
+
 // -----------навигация-------------
 .product-photos-nav {
     @media screen and (max-width: 1230px) {
         display: none;
     }
+
     @media screen and (min-width: 1230px) {
-        max-width: 70px;
+        // max-width: 70px;
+        max-width: 90px;
         position: absolute;
         top: 0px;
         height: 100%;
         background: #fff;
-    
+
         &.slick-list.draggable {
             height: 100vh !important;
             background: #fff;
         }
     }
 }
+
 // -----------сам слайдер-------------
 .product-photos__inner {
     @media screen and (max-width: 1230px) {
         display: block;
     }
+
     @media screen and (min-width: 1230px) {
-        
-            display: flex;
-            flex-direction: column-reverse;
-            position: relative;
+
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
     }
 }
 
 .product-photos-gallery {
     position: relative;
-  
+
     .slick-list {
-      padding: 0px 50px;
-      margin-left: -50px;
-      margin-right: -50px;
-      width: calc(100% + 100px);
+        padding: 0px 50px;
+        margin-left: -50px;
+        margin-right: -50px;
+        width: calc(100% + 100px);
     }
 
-    &__img {
-      object-fit: cover;
-      width: 100%;
+    &__img { 
+        object-fit: cover;
+        width: 100%;
     }
-      // сдвиг slick-dots на картинку
+
+    // сдвиг slick-dots на картинку
     .slick-dots {
         position: relative;
         top: -50px;
     }
 
-  }
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
     //растягиваю слайдер на всю ширину
     .products-photos__wrapper {
         justify-content: center;
@@ -89,9 +97,3 @@
         width: calc(100% + 40px);
     }
 }
-
-  
-
-
-
-

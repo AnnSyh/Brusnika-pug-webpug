@@ -9,8 +9,8 @@
 
           include card-sizes-block
           .catalog-item-title.justify-content-between= item.name
-            //-     .catalog-item-color +3 цвета
-            //-   include card-colors-block            
+          .order-table__color
+            +color(dataTableColorItem1, activeLink1, '')
 
           .catalog-item-price= item.price + ' РУБ.'
 
