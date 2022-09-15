@@ -230,7 +230,8 @@ a.basket-menu__link_lowercase {
 }
 
 .basket-menu-sections {  
-    height: calc(100vh - 91px);
+    height: calc(100vh - 122px);
+    // height: calc(100vh - 91px);
     padding-top: 25px;
     position: relative;
     display: flex;
@@ -259,6 +260,7 @@ a.basket-menu__link_lowercase {
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 20px;
+    padding: 0 0 0 20px;
 
     @media screen and (max-width:768px) {
         flex-direction: column;
@@ -274,8 +276,8 @@ a.basket-menu__link_lowercase {
     margin-top: auto;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-right: 20px;
 }
 
 .basket-mobile-menu__footer-links {
