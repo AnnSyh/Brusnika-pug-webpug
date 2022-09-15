@@ -1457,7 +1457,7 @@
 				filter: function () {
 					$(".mobile-filter-open", $sel.body).on("click", function (e) {
 						e.preventDefault();
-						// $sel.body.addClass("show-filter");
+						$sel.body.addClass("show-filter");
 
 console.log('simplebar1');
 

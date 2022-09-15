@@ -48,7 +48,10 @@
     line-height: 20px;
     text-transform: uppercase;
     height: 50px;
-    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 30px;
+    }
 
     @media screen and (max-width: 768px) {
         height: 20px;
@@ -98,6 +101,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    // gap: 20px;
 }
 
 .filters-list-small {
@@ -116,6 +120,7 @@
     text-decoration: none;
     color: $color-black;
 }
+
 .filters-list a:hover {
    font-weight: 600;
 }

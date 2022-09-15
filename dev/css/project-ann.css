@@ -1647,6 +1647,8 @@ a.basket-menu__link_lowercase {
   line-height: 20px;
   text-transform: uppercase;
   height: 50px;
+}
+.filters-row:last-child {
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
@@ -1657,10 +1659,9 @@ a.basket-menu__link_lowercase {
 }
 @media screen and (max-width: 400px) {
   .filters-row .slick-initialized .slick-slide {
-    font-size: 10px;
+    font-size: 9px;
     display: block;
     overflow-x: hidden;
-    text-align: center;
   }
 }
 
