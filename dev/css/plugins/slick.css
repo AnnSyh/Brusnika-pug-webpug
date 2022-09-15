@@ -73,7 +73,15 @@
   display: block;
   margin: auto;
   width: 100%;
+}
+
+.product-photos__inner .slick-current img {
   cursor: url(../../dummy/svg/zoom-in.svg), zoom-in;
+}
+
+.product-photos-gallery .slick-dots li {
+  height: 29px;
+  cursor: pointer;
 }
 
 .slick-slide.slick-loading img {

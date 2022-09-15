@@ -441,6 +441,10 @@ a.catalog-menu__link_lowercase {
   position: relative;
 }
 
+.catalog-search-menu#catalog-search-menu {
+  width: 0;
+}
+
 .buyer-menu__link {
   font-size: 14px;
   line-height: 20px;
@@ -1377,6 +1381,16 @@ a.basket-menu__link_lowercase {
   z-index: 1;
   left: -50px;
   right: -50px;
+}
+@media screen and (max-width: 1660px) {
+  .catalog .slider-arrows-wrap {
+    max-width: calc(100% + 60px);
+    top: calc(50% - 20px);
+    z-index: 1;
+    left: -30px;
+    right: -30px;
+    padding: 0;
+  }
 }
 
 .catalog-item-title {

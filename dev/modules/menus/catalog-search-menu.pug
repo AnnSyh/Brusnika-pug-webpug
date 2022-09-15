@@ -18,8 +18,8 @@ mixin listLinks(classname,titlename,...items)
               +listLinks('search-history__list', 'Часто ищут', 'Боди', 'Платье', 'Топы', 'Футболки')
 
             .search-products.for-slick-slider
-              .row.search-products__catalog-items
-                  // поставить слайдер
+              .row.search-products__catalog-items(style='margin-right: -20px; width: calc(100% + 41px);')
+                  //- поставить слайдер
                   include ../slider-search-menu
                   //- .col-3
                   //-   .catalog-item.w1
