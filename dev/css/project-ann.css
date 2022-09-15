@@ -2334,6 +2334,7 @@ a.basket-menu__link_lowercase {
   white-space: nowrap;
   overflow: auto;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .mobile-slider::-webkit-scrollbar {
@@ -2342,12 +2343,12 @@ a.basket-menu__link_lowercase {
 
 .mobile-slider::-webkit-scrollbar-track {
   background-color: transparent;
-  border-bottom: 1px solid #989595;
+  border-bottom: 1px solid transparent;
 }
 
 .mobile-slider::-webkit-scrollbar-thumb {
   cursor: pointer;
-  background-color: #1f1d1d;
+  background-color: transparent;
 }
 
 .mobile-slider > div,
@@ -2370,6 +2371,16 @@ a.basket-menu__link_lowercase {
 
 .row.mobile-slider > * {
   width: auto;
+}
+
+.row.mobile-slider a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: #1D1D1D;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .btn {

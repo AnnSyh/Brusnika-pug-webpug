@@ -4,20 +4,22 @@
     padding-bottom: 20px;
     white-space: nowrap;
     overflow: auto;
-
     margin-bottom: 20px;
+    text-align: center;
   }
+
   .mobile-slider::-webkit-scrollbar {
     height: 4px;
   }
   .mobile-slider::-webkit-scrollbar-track {
     background-color: transparent;
-    border-bottom: 1px solid #989595;
+    border-bottom: 1px solid transparent;
   }
   .mobile-slider::-webkit-scrollbar-thumb {
     cursor: pointer;
-    background-color: #1f1d1d;
+    background-color: transparent;
   }
+
   .mobile-slider > div,
   .mobile-slider > a {
     vertical-align: top;
@@ -37,4 +39,15 @@
 
   .row.mobile-slider > * {
     width: auto;
+  }
+
+  .row.mobile-slider a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: #1D1D1D;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
   }
