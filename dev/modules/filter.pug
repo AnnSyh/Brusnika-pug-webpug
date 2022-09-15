@@ -1,11 +1,14 @@
+.row.mobile-slider
+   each item in filterItems
+      a(href=`${item.href}`)= item.name
+
+
 .filters-block
   .filters-row.d-flex.d-lg-none
     .filter-items.filters-list(data-params='{"slidesToShow": 10}')
-      a(href='#') Эко–кожа
-      a(href='#') вискоза / хлопок
-      a(href='#') Шерсть / кашемир
-      a(href='#') комбинезоны
-      a(href='#') Цвет
+     each item in filterItems
+      a(href=`${item.href}`)= item.name
+
   .filters-row
     .filters-list
       a.mobile-filter-open(href='#') Фильтры(2)
@@ -28,13 +31,15 @@
         li
           span.active Мелко
 
-    //- .catalog-filtered.d-none.d-lg-block
-    //-   .catalog-filtered-items
-    //-     span.catalog-filtered-item Показано 398 товаров
-    //-     a.catalog-filtered-item.link.link--black(href='#') Бежевый 
-    //-     a.catalog-filtered-item.link.link--black(href='#') XXL
-    //-     a.catalog-filtered-item.link.link--black(href='#') Цена от 10 000 до 50 000 Р
-    //-     a.catalog-filtered-item.link.link--black(href='#') Полиэстер 
-    //-     a.mobile-filter-heading-reset.link.link--black_border(href='#' onclick='window.location.reload();return false;')
-    //-       | Очистить фильтр
+
+
+  //- .catalog-filtered.d-none.d-lg-block
+  //-   .catalog-filtered-items
+  //-     span.catalog-filtered-item Показано 398 товаров
+  //-     a.catalog-filtered-item.link.link--black(href='#') Бежевый 
+  //-     a.catalog-filtered-item.link.link--black(href='#') XXL
+  //-     a.catalog-filtered-item.link.link--black(href='#') Цена от 10 000 до 50 000 Р
+  //-     a.catalog-filtered-item.link.link--black(href='#') Полиэстер 
+  //-     a.mobile-filter-heading-reset.link.link--black_border(href='#' onclick='window.location.reload();return false;')
+  //-       | Очистить фильтр
 
