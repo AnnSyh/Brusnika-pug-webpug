@@ -5,6 +5,16 @@
     background-color: transparent;
     color: $color-black;
     font-size: 14px;
+
+    @media screen and (max-width:480px) {
+        .page-inner {
+            padding: 0;
+        }
+        .footer-content {
+            padding: 0 15px;
+        }
+    }
+
 }
 
 .footer-top {
@@ -23,6 +33,10 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width:480px) {
+        font-size: 10px;
+    }
 }
 
 
@@ -40,6 +54,7 @@ ul.footer-top__list {
 
 .footer-top__item {
 	border: 1px solid $color-gray-two;
+    border-right: 1px solid transparent;
 	display: flex;
 	flex: 1;
 	height: 70px;
@@ -49,6 +64,10 @@ ul.footer-top__list {
 	&:last-child {
 		border-right: 1px solid transparent;
 	}
+
+    @media screen and (max-width:480px) {
+        height: 40px;
+    }
 }
 
 .footer-link-ios,
@@ -101,12 +120,18 @@ ul.footer-top__list {
 .footer-bottom__right,
 .footer-bottom__center a,
 .footer-bottom__list a,
-.footer-content__list a {
+.footer-content__list a { 
     text-decoration: none;
     color: $color-gray-four;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
+
+    @media screen and (min-width:480px) {
+        font-size: 14px;
+      }
+
+
 }
 
 .footer-content__list li {
@@ -134,6 +159,12 @@ ul.footer-top__list {
     font-size: 12px;
     line-height: 20px;
     text-transform: uppercase;
+
+    @media screen and (max-width:480px) {
+        font-size: 10px;
+    }
+
+
 }
 
 .footer-content .accordion-item {
@@ -193,6 +224,7 @@ ul.footer-top__list {
 }
 .footer-form__form input {
     border: 1px solid $color-gray-two;
+    border-right: 1px solid transparent;
 }
 
 .footer-form__form input {

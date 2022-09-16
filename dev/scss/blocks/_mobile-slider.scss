@@ -50,4 +50,8 @@
     font-size: 12px;
     line-height: 20px;
     text-transform: uppercase;
+
+    &:hover {
+      font-weight: 600;
+    }
   }

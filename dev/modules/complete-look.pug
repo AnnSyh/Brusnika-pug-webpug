@@ -5,7 +5,7 @@ section.section
       img(src='../dummy/catalog/c3.jpg' alt='')
 
     each look in looks
-      .gallery__item
+      .gallery__item.d-none.d-md-block
         .catalog-item.w2
           .slider-arrows
             span.catalog-item-slider-arrow.prev
@@ -27,7 +27,7 @@ section.section
           //- .catalog-item-photo-holder
           //-   img.cover(src=`../dummy/catalog/${look.image}` alt='')
           include card-sizes-block
-          
+
           .catalog-item-title= look.name
             .order-table__color
               +color(dataTableColorItem1, activeLink1, '3')
@@ -35,6 +35,26 @@ section.section
           .catalog-item-price= look.price + ' РУБ'
           a.catalog-item-link(href='card.html')
           a.catalog-item-like(href='#fav-add-popup' data-popup='{"type":"inline"}') 
+
+      .gallery__item.gallery__item-mobile.d-block.d-md-none
+        .catalog-item.catalog-item__mobile.w2
+          
+            .gallery__item-mobile-col
+              .catalog-item-photo-holder.catalog-item-slider
+                img(src=`../dummy/catalog/${look.image}`)
+              a.catalog-item-link(href='card.html')
+              a.catalog-item-like(href='#fav-add-popup' data-popup='{"type":"inline"}')   
+
+            .gallery__item-mobile-col
+              span     
+                .catalog-item-title= look.name
+                .catalog-item-price= look.price + ' РУБ'
+              span
+                a.link.link--black_border.link-add-basket(href='#change-color-popup' data-popup='{"type":"inline"}') +2 цвета 
+              span       
+                a.link.link--black_border.link-add-basket(href='#change-size-popup' data-popup='{"type":"inline"}') Добавить в корзину 
+
+
 
   .complite-look__info
     .complite-look__text

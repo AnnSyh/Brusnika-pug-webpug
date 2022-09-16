@@ -986,3 +986,11 @@ body .mobile-nav-menu-item-holder.open:before {
     padding-top: 100%;
   }
 }
+@media screen and (max-width: 760px) and (max-width: 480px) {
+  .footer-content {
+    margin-bottom: 0;
+  }
+  .footer-bottom {
+    margin-top: 0;
+  }
+}

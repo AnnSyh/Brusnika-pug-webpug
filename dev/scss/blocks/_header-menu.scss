@@ -11,6 +11,10 @@
         width: 100%;
     }
 
+    @media screen and (max-width:480px) {
+        height: 40px;  
+    }
+
 
 
 }
@@ -217,13 +221,13 @@
     .header-menu__item-catalog:before,
     .header-menu__item_search.open-search:before,
     .header-menu__item_search:before {
-        width: 18px;
-        height: 18px;
+        width: 16px;
+        height: 16px;
         background-size: contain;
     }
 
     .header-basket-item img {
-        width: 18px;
+        width: 16px;
     }
 
     .header-menu__item span {
