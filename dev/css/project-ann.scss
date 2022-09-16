@@ -44,54 +44,6 @@
 @import '../scss/blocks/loyalty-card';
 @import '../scss/blocks/big-grid';
 
-#change-color-popup.page-popup,
-#change-size-popup.page-popup {
-  padding: 20px;
-}
-
-.page-popup {
-  .size-list {
-    flex-direction: column;
-    align-items: center;
-
-    li {
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      margin: 12px 0;
-
-      &:hover {
-        color: #ffffff;
-        background-color: #1D1D1D;
-      }
-    }
-  }
-  .product-list {
-    gap: 25px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .product-list-link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    color: #1D1D1D;
-
-    &__img {
-      display: flex !important;
-      align-items: center;
-      gap: 15px;
-    }
-  }
-
-}
-
-
-
-
 
 .section {
   margin-top: 46px;

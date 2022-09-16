@@ -10,7 +10,7 @@ mixin listLinks(classname,...items)
   .page-popup-heading
     .page-popup-heading-title.center.h1 Уточните необходимые размеры
     each item in dataClozes
-        .check-dimensions-list
+        .check-dimensions-list.check-list
             .col= item.name
             .col
                 +listLinks('size-list', 'XS', 'S', 'M','L','XL')

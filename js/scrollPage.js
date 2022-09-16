@@ -41,18 +41,18 @@ $(".order-table-delete").on("click", function (e) {
   parent.classList.toggle('d-none');
 });
 
-const dimensionsList = document.querySelectorAll('.check-dimensions-list a');
+const checkList = document.querySelectorAll('.check-list a');
 
-dimensionsList.forEach((item) => {
-  console.log('dimensionsList');
+checkList.forEach((item) => {
   item.addEventListener('click', (e) => {
-    console.log('click');
+    console.log('click dimensionsList');
     e.preventDefault();
     const item = e.target
     item.classList.toggle('active');
   });
 
 });
+
 
 // $("button.basket-open").on("click", function (e) {
 //   e.preventDefault();

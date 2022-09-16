@@ -2710,10 +2710,57 @@ a.basket-menu__link_lowercase {
   color: #ffffff;
   background-color: #1D1D1D;
 }
+.page-popup .size-list_vertical {
+  flex-direction: column;
+  align-items: center;
+}
+.page-popup .size-list_vertical li {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 12px 0;
+}
+.page-popup .size-list_vertical li a {
+  text-decoration: none;
+  color: #1D1D1D;
+}
+.page-popup .size-list_vertical li a:hover {
+  color: #ffffff;
+  background-color: #1D1D1D;
+}
+.page-popup .product-list {
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.page-popup .product-list-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #1D1D1D;
+}
+.page-popup .product-list-link__img {
+  display: flex !important;
+  align-items: center;
+  gap: 15px;
+}
+.page-popup .product-list-link img {
+  border: 1px solid transparent;
+}
+.page-popup .product-list-link:hover img {
+  border: 1px solid #A4A1A1;
+}
 
 .page-popup .size-list a.active {
   color: #ffffff;
   background-color: #1D1D1D;
+}
+
+#change-color-popup.page-popup,
+#change-size-popup.page-popup {
+  padding: 20px;
 }
 
 .page-footer {
@@ -5026,44 +5073,6 @@ ul.footer-top__list {
     right: 15px;
   }
 }
-#change-color-popup.page-popup,
-#change-size-popup.page-popup {
-  padding: 20px;
-}
-
-.page-popup .size-list {
-  flex-direction: column;
-  align-items: center;
-}
-.page-popup .size-list li {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin: 12px 0;
-}
-.page-popup .size-list li:hover {
-  color: #ffffff;
-  background-color: #1D1D1D;
-}
-.page-popup .product-list {
-  gap: 25px;
-  display: flex;
-  flex-direction: column;
-}
-.page-popup .product-list-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-  color: #1D1D1D;
-}
-.page-popup .product-list-link__img {
-  display: flex !important;
-  align-items: center;
-  gap: 15px;
-}
-
 .section {
   margin-top: 46px;
 }
