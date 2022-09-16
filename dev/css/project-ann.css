@@ -437,6 +437,11 @@ a.catalog-menu__link_lowercase {
   top: 104px;
   flex-direction: column;
 }
+@media screen and (max-width: 480px) {
+  #catalog-search-menu .menu-sections {
+    top: 77px;
+  }
+}
 
 #catalog-buyer-menu .menu-sections {
   top: 104px;
@@ -3127,8 +3132,10 @@ ul.footer-top__list {
   width: 100%;
 }
 
+.search-products__catalog-items .catalog-item-price,
 .search-products__catalog-items .catalog-item-title {
-  justify-content: center;
+  justify-content: center !important;
+  text-align: center;
 }
 
 .search-form__input {
@@ -5400,6 +5407,11 @@ body,
   left: auto !important;
   height: auto !important;
   box-shadow: 2px 0px 14px rgba(96, 96, 96, 0.2);
+}
+@media screen and (max-width: 480px) {
+  .tooltipster-white {
+    min-width: auto;
+  }
 }
 
 .tooltipster-white .tooltipster-box {

@@ -222,6 +222,10 @@ a.catalog-menu__link_lowercase {
     top: 104px;
     // top: 130px;
     flex-direction: column;
+
+    @media screen and (max-width: 480px) {
+        top: 77px;
+    }
 }
 
 #catalog-buyer-menu .menu-sections {

@@ -40,8 +40,10 @@
     width: 100%;
 }
 
+.search-products__catalog-items .catalog-item-price,
 .search-products__catalog-items .catalog-item-title {
-    justify-content: center;
+    justify-content: center !important;
+    text-align: center;
 }
 
 

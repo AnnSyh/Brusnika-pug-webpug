@@ -101,7 +101,7 @@
 								slidesToScroll: 2,
 								dots: false,
 								arrows: true,
-								infinite: false,
+								infinite: true,
 								autoplay: false,
 								speed: 500,
 								arrows: false,
